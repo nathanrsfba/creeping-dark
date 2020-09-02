@@ -1,6 +1,35 @@
 {
 	"dependencies": "thermalfoundation",
 	"populate": {
+		"oil_pools": {
+			"enabled": "true",
+			"distribution": "surface",
+			"generator": {
+                            "type": "lake",
+				"block": "thermalfoundation:fluid_crude_oil",
+				"material": [
+					"minecraft:sand",
+					"minecraft:sandstone",
+					"minecraft:stone"
+				],
+			},
+			"cluster-count": 4,
+			"chunk-chance": 10,
+			"min-height": 10,
+			"max-height": 80,
+			"in-village": "false",
+			"retrogen": "true",
+			"biome": {
+				"restriction": "whitelist",
+				"value": [
+					{
+						"type": "dictionary",
+						"entry": "SANDY"
+					}
+				]
+			},
+			"dimension": "all"
+		},
 		"oil_sand_clathrate": {
 			"enabled": "true",
 			"distribution": "uniform",
