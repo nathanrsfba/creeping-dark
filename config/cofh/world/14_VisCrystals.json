@@ -1,0 +1,102 @@
+{
+    "dependencies": "thaumcraft",
+    "populate": {
+        "viscrystal": {
+            "distribution": "surface",
+            "follow-terrain": "true",
+            "generator": [
+            {
+                "type": "lake",
+                "block": [
+                    "thaumcraft:crystal_aer",
+                    {
+                        "name": "air",
+                        "weight": 300
+                    }
+                ],
+                "use-material": false,
+                "outline-block": "aether_legacy:holystone",
+                "solid-outline": true
+            },
+            {
+                "type": "lake",
+                "block": [
+                    "thaumcraft:crystal_ignis",
+                    {
+                        "name": "air",
+                        "weight": 300
+                    }
+                        ],
+                "use-material": false,
+                "outline-block": "aether_legacy:holystone",
+                "solid-outline": true
+            },
+            {
+                "type": "lake",
+                "block": [
+                    "thaumcraft:crystal_aqua",
+                    {
+                        "name": "air",
+                        "weight": 300
+                    }
+                        ],
+                "use-material": false,
+                "outline-block": "aether_legacy:holystone",
+                "solid-outline": true
+            },
+            {
+                "type": "lake",
+                "block": [
+                    "thaumcraft:crystal_terra",
+                    {
+                        "name": "air",
+                        "weight": 300
+                    }
+                        ],
+                "use-material": false,
+                "outline-block": "aether_legacy:holystone",
+                "solid-outline": true
+            },
+            {
+                "type": "lake",
+                "block": [
+                    "thaumcraft:crystal_ordo",
+                    {
+                        "name": "air",
+                        "weight": 300
+                    }
+                        ],
+                "use-material": false,
+                "outline-block": "aether_legacy:holystone",
+                "solid-outline": true
+            },
+            {
+                "type": "lake",
+                "block": [
+                    "thaumcraft:crystal_perditio",
+                    {
+                        "name": "air",
+                        "weight": 300
+                    }
+                        ],
+                "use-material": false,
+                "outline-block": "aether_legacy:holystone",
+                "solid-outline": true
+            }
+            ],
+            "material": "aether_legacy:aether_grass",
+            "cluster-count": 1,
+            "chunk-chance": 20,
+            "min-height": 0,
+            "max-height": 256,
+            "retrogen": false,
+            "biome": "all",
+            "dimension": {
+                "restriction": "whitelist",
+                "value": [
+                    4
+                    ]
+            }
+        }
+    }
+}

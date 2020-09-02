@@ -1,0 +1,55 @@
+{
+	"dependencies": "actuallyadditions",
+	"populate": {
+		"netherblackquartz": {
+
+			"distribution": "uniform",
+			"generator": {
+				"block": "contenttweaker:netherblackquartz",
+				"material": "minecraft:netherrack",
+				"cluster-size": 15
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 256,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		},
+		"blackquartz": {
+
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+                                    "name": "actuallyadditions:block_misc",
+                                    "properties": {
+                                        "type": "ore_black_quartz"
+                                    }
+                                }
+				"material": "minecraft:stone",
+				"cluster-size": 15
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 256,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+                                        -11325
+                                        -6
+                                        7
+                                        66
+                                        1304
+                                        28885
+				]
+			}
+		}
+        }
+}

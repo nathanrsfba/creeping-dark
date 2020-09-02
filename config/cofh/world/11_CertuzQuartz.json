@@ -1,0 +1,32 @@
+{
+	"dependencies": "appliedenergistics2",
+	"populate": {
+		"certusquartz": {
+
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+                                    "name": "appliedenergistics2:quartz_ore",
+                                }
+				"material": "stone",
+				"cluster-size": 12
+			},
+			"cluster-count": 40,
+			"min-height": 0,
+			"max-height": 256,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+                                    7
+                                    28885 
+                                    -6
+                                    1304
+                                    66
+                                    -11325
+				]
+			}
+		}
+        }
+}

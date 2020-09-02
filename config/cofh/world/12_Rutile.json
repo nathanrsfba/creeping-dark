@@ -1,0 +1,30 @@
+{
+	"dependencies": "libvulpes",
+	"populate": {
+		"rutile": {
+
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+                                    "name": "libvulpes:ore0",
+                                    "properties": {
+                                        "varient": "8"
+                                    }
+                                }
+				"material": "stone",
+				"cluster-size": 12
+			},
+			"cluster-count": 40,
+			"min-height": 0,
+			"max-height": 256,
+			"retrogen": false,
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+                                    -11325
+				]
+			}
+		}
+        }
+}
