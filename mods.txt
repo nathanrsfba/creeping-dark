@@ -131,6 +131,7 @@ ThermalExpansion-1.12.2-5.5.7.1-universal.jar
 ThermalFoundation-1.12.2-2.6.7.1-universal.jar
 tinkersjei-1.2.jar
 Toast Control-1.12.2-1.8.1.jar
+TombManyGraves-1.12-4.2.0.jar
 topaddons-1.12.2-1.13.0.jar
 twilightforest-1.12.2-3.10.1013-universal.jar
 Wawla-1.12.2-2.5.273.jar
