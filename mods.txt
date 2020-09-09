@@ -26,6 +26,7 @@ CodeChickenLib-1.12.2-3.2.3.358-universal.jar
 CoFHCore-1.12.2-4.6.6.1-universal.jar
 CoFHWorld-1.12.2-1.4.0.1-universal.jar
 ContentTweaker-1.12.2-4.9.1.jar
+Controlling-3.0.10.jar
 CookingForBlockheads_1.12.2-6.5.0.jar
 CosmeticArmorReworked-1.12.2-v5a.jar
 CraftingTweaks_1.12.2-8.1.9.jar
