@@ -41,3 +41,8 @@ if( loadedMods has "twilightforest" )
     <ore:listAllvenisonraw>.add( <twilightforest:raw_venison> );
 }
 
+// Add a recipe for BBQ Jackfruit
+// (Recipe taken from harvestcraft github)
+
+recipes.addShapeless( "bbqjackfruit", <harvestcraft:bbqjackfruititem>,
+      [<ore:toolSkillet>, <harvestcraft:jackfruititem>, <ore:foodBbqsauce>] );
