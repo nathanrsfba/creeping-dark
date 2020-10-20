@@ -1,8 +1,8 @@
 Creeping Dark
 =============
 
-A standard kitchen-sink tech mod pack. With a bit of exploration. And a 
-bit of progression. And an artifact hunt quest. But mostly a standard
+A standard kitchen-sink tech mod pack. With a bit of exploration. And a bit of
+progression. And an artifact hunt quest. But mostly a standard
 kitchen-sink tech mod pack.
 
 Also, the sun is slowly being blotted out.
@@ -16,6 +16,46 @@ unlocks a new tier of technology... and one of the Keys.
 
 While there is a progression mechanic, the recipes are unchanged, with a few
 exceptions. Once you've "unlocked" a mod, it works the way it always has.
+
+Questions
+---------
+
+Q: I see a console message about objects being summoned?  
+A: That's a redstone mechanism I have hidden away in a utility dimension that
+recreates certain objects. You can just ignore the message.
+
+Q: The Blaze boss spatial IO isn't loading or regenerating, or the 
+'Swamp Magic' frequency isn't showing up in the entangloporter  
+A: Apparently my utility dimension gets nuked sometimes. Why? Haven't
+a goddamn clue. To fix this, try exiting your world/restarting the server a
+couple times. It should get regenerated every time the world loads.
+
+Q: RFTools dimensions don't seem to be generating dimensional shard ore  
+A: If the base block of the dimension isn't plain stone, ore generation won't
+occur. (This is part of Minecraft's own oregen mechanics.) Try generating
+more dimensions until you get one with a base material of stone.
+
+Q: The rocket assembler does nothing when I try to scan or build a rocket  
+A: I ran into this once... try making the structure tower a little taller,
+even if it looks like you have enough.
+
+Q: When I try to run a standalone server, it runs obscenely slowly  
+A: Try adding the 'nogui' option. The GUI really fucks everything up
+for god knows what reason
+
+Q: Minibosses aren't spawning when running a standalone server  
+A: Edit your server.properties and enable command blocks
+
+Changes in v1.4.2
+-----------------
+
+* The weedwood quest should recognize all forms of weedwood now
+* Updated the gecko quest to accomodate changes in Betweenlands
+* Enabled Mekanism recipes for Open Modular Turrets
+* Liquid oil pools now generate in desert biomes
+* Immersive Petroleum can now process Thermal Expansion oil
+* Updated mods
+* Miscellaneous cleanup
 
 About This Repository
 ---------------------
