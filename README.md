@@ -46,6 +46,12 @@ for god knows what reason
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
 
+Changes in v1.4.3
+-----------------
+
+* Updated the Plagued Skies mod. It should cause dragonskin to decay
+  in 'patches', instead of individual blocks. Still somewhat untested.
+
 Changes in v1.4.2
 -----------------
 
