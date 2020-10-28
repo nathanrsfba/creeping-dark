@@ -17,6 +17,16 @@ unlocks a new tier of technology... and one of the Keys.
 While there is a progression mechanic, the recipes are unchanged, with a few
 exceptions. Once you've "unlocked" a mod, it works the way it always has.
 
+Installation
+------------
+
+This pack is meant to be installed using the Twitch launcher, or other launcher
+that has the ability to install Curse mod packs.
+
+To install the pack file in the Twitch launcher: Click Mods, then Minecraft,
+click 'Create Custom Profile', then click "Import a previously created
+profile". Then select the pack zipfile.
+
 Questions
 ---------
 
