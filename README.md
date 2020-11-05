@@ -56,6 +56,21 @@ for god knows what reason
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
 
+Changes in v1.4.4
+-----------------
+
+Made some changes to deal with some dumbassery on the part of
+LandMaster.
+
+1. Replaced PlusTiC with MoreToolMats, a fork by a third party
+2. LandCraft and LandCore are now included in the pack file, instead of
+   downloaded from Curse, from which they are now banned. This is a far from
+   ideal solution (as nobody has really properly audited the code for either
+   mod) but will have to serve until I can figure out a suitable replacement
+   (or somebody forks the code). The malicious code that was inserted into
+   PlusTTic does not appear to be in either LandCraft or LandCore, but I
+   haven't looked too deeply into the code.
+
 Changes in v1.4.3
 -----------------
 
