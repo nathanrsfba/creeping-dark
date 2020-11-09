@@ -16,22 +16,6 @@ recipes.addShaped( "GaeanKeystone", keystone, [
 [stonebricks, stonebricks, stonebricks]
 ] );
 
-// Gate Landia to IE + tungsten
-var marker = <landcraft:landia_portal_marker>;
-var diamond = <minecraft:diamond>;
-var landium = <ore:ingotLandium>;
-var tungsten = <ore:ingotTungsten>;
-var pearl = <minecraft:ender_pearl>;
-var emerald = <minecraft:emerald>;
-var board = <immersiveengineering:material:27>;
-
-recipes.remove( marker );
-recipes.addShaped( "LandiaMarker", marker, [ 
-[null, diamond, null],
-[landium, pearl, landium],
-[tungsten, board, tungsten]
-] );
-
 // Gate Hunting Dimension to TE
 var frame = <huntingdim:frame>;
 var log = <ore:logWood>;
@@ -68,13 +52,6 @@ recipes.addShaped( "MiningTool", miningtool, [
 [shard, flintsteel, shard],
 [shard, stick, shard]
 ] );
-
-// Gate Deep Dark to EU2 + Landia
-val ddportal = <extrautils2:teleporter:1>;
-val kell = <landcraft:landia_metal>;
-
-recipes.remove( ddportal );
-mods.extrautils2.Resonator.add( ddportal, kell, 3200 );
 
 // Gate Aether to Botania
 var oaksap = <minecraft:sapling:0>;
