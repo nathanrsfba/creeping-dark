@@ -1,4 +1,4 @@
-// Gate Deep Dark to EU2 + Landia
+// Gate Deep Dark to EU2 + Atum
 val ddportal = <extrautils2:teleporter:1>;
 val face = <atum:khnumite_face>;
 
