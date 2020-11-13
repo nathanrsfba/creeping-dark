@@ -1,0 +1,38 @@
+{
+  "pools": [
+    {
+        "name": "amethystkey",
+        "rolls": 1,
+        "entries": [
+        {
+            "type": "item",
+            "name": "contenttweaker:amethystkey"
+        }
+        ]
+    },
+    {
+      "name": "atum:sarcophagus_guaranteed_artifact",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "atum:artifacts",
+          "weight": 1,
+          "quality": 2
+        }
+      ]
+    },
+    {
+      "name": "atum:sarcophagus_loot",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "atum:chests/pharaoh",
+          "weight": 1,
+          "quality": 0
+        }
+      ]
+    }
+  ]
+}

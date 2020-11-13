@@ -1,15 +1,9 @@
 {
-	"dependencies": "landcore",
 	"populate": {
-		"tungsten": {
+		"relic": {
 			"distribution": "uniform",
 			"generator": {
-				"block": {
-                                    "name": "landcore:block_ore",
-                                    "properties": {
-                                        "type": "tungsten"
-                                    }
-                                }
+				"block": "atum:relic_ore",
 				"material": "stone",
 				"cluster-size": 12
 			},

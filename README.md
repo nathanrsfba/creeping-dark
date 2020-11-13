@@ -1,3 +1,20 @@
+Notes about v1.5 Alpha
+======================
+
+This is an early work-in-progress for replacing Landia in Creeping Dark.
+
+Currently, Atum has been inserted in place of Landia for the purpose of
+obtaining the Amethyst Key:
+
+* Relic ore is found in the Mining/Hunting dimensions (instead of Tungsten)
+* The portal scarab is made by putting a golden brooch into the resonator
+* The resonator requires an IE circuit board (instead of the board being used
+  directly in the creation of the portal)
+* The amethyst key is found in the Pharaoh's sarcophagus after killing him
+
+Still looking for a suitable replacement for the Landia crafting altar for
+creating the water key
+
 Creeping Dark
 =============
 

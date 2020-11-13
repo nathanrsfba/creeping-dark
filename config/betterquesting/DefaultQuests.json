@@ -2146,7 +2146,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Circuit Board",
-          "desc:8": "You\u0027ll need to make a circuit board to build the portal to Landia"
+          "desc:8": "You\u0027ll need to make a circuit board to build a Resonator, needed to open the portal to Atum"
         }
       },
       "tasks:9": {
@@ -2185,33 +2185,34 @@
     },
     "28:10": {
       "questID:3": 28,
-      "preRequisites:11": [
-        8
-      ],
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "lockedprogress:1": 1,
           "tasklogic:8": "AND",
-          "repeattime:3": -1,
+          "repeattime:3": 0,
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "landcore:block_ore",
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "minecraft:cake",
             "Count:3": 1,
-            "Damage:2": 2,
+            "Damage:2": 0,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
           "questlogic:8": "AND",
-          "partysinglereward:1": 0,
+          "partysinglereward:1": 1,
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Landium",
-          "desc:8": "The Amethyst Key is hidden in the realm of Landia... a land of perpetual storms.\n\nStart by searching the Nether for Landium ore.\n\nYou\u0027ll only need 2 to make the portal, but grab any you find because you\u0027ll need more later."
+          "name:8": "Cake",
+          "desc:8": ""
         }
       },
       "tasks:9": {
@@ -2221,13 +2222,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 0,
+          "consume:1": 1,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "landcore:item_ingot",
-              "Count:3": 2,
-              "Damage:2": 2,
-              "OreDict:8": "ingotLandium"
+              "id:8": "contenttweaker:coppercoin",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -2239,7 +2240,10 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "contenttweaker:bronzecoin",
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "minecraft:cake",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -2252,8 +2256,8 @@
       "questID:3": 29,
       "preRequisites:11": [
         27,
-        28,
-        37
+        37,
+        99
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2265,7 +2269,10 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "landcraft:landia_portal_marker",
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "atum:scarab",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -2277,8 +2284,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Landia Portal",
-          "desc:8": "Create the Portal marker, place it a few blocks above ground, then murder an undead creature near it."
+          "name:8": "Scary",
+          "desc:8": "Build a Resonator, and throw the golden brooch into it. Unlike most Resonator recipes, this needs no power."
         }
       },
       "tasks:9": {
@@ -2291,7 +2298,10 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "landcraft:landia_portal_marker",
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "atum:scarab",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -2330,7 +2340,7 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "landcraft:landia_ore",
+            "id:8": "minecraft:sandstone",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -2342,57 +2352,26 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "More Mining",
-          "desc:8": "Go and mine some of Landia\u0027s unique metals.\n\nExcept for Landium, you\u0027ll need to get the previous tier of metal and upgrade your pick to get the next tier."
+          "name:8": "Atumic",
+          "desc:8": "To build the portal to Atum:\n\n1. Place a 5x5 block of sandstone\n2. Place a 1-block thick \u0027ring\u0027 of sandstone on top of it, and fill it with water\n3. Place a 2-block tall pillar of sandstone at each corner\n4. Finally, throw the scarab into the water.\n\nThen... jump in!"
         }
       },
       "tasks:9": {
         "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "visible:1": 0,
+          "invert:1": 0,
+          "range:3": -1,
           "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "landcore:item_ingot",
-              "Count:3": 54,
-              "Damage:2": 2,
-              "OreDict:8": "ingotLandium"
-            },
-            "1:10": {
-              "id:8": "landcraft:landia_ingot",
-              "Count:3": 27,
-              "Damage:2": 4,
-              "OreDict:8": "ingotFriscion"
-            },
-            "2:10": {
-              "id:8": "landcraft:landia_ingot",
-              "Count:3": 27,
-              "Damage:2": 1,
-              "OreDict:8": "ingotGarfax"
-            },
-            "3:10": {
-              "id:8": "landcraft:landia_ingot",
-              "Count:3": 27,
-              "Damage:2": 2,
-              "OreDict:8": "ingotMorganine"
-            },
-            "4:10": {
-              "id:8": "landcraft:landia_ingot",
-              "Count:3": 27,
-              "Damage:2": 3,
-              "OreDict:8": "ingotRacheline"
-            },
-            "5:10": {
-              "id:8": "landcraft:landia_ingot",
-              "Count:3": 45,
-              "Damage:2": 0,
-              "OreDict:8": "ingotKelline"
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
+          "structure:8": "",
+          "hideInfo:1": 0,
+          "posX:3": 0,
+          "posY:3": 0,
+          "posZ:3": 0,
+          "biome:8": "",
+          "name:8": "Realm of Atum",
+          "dimension:3": 17,
+          "taxiCabDist:1": 0,
+          "taskID:8": "bq_standard:location"
         }
       },
       "rewards:9": {
@@ -2425,7 +2404,7 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "landcraft:landia_tower",
+            "id:8": "atum:sarcophagus",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -2437,8 +2416,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "He is watching...",
-          "desc:8": "The Amethyst key is held by Big Brother in Landia. To summon him, create a Tower of Landia, place it in Landia, right click on it and follow the instructions.\n\n(When it says \"three meters\", it means three meters from the edges of the blocks, not the centers.)"
+          "name:8": "*cough*",
+          "desc:8": "The Amethyst key is held by the Pharaoh, in the realm of Atum.\n\nSearch the sands of Atum for a pyramid. Dig into it, navigate the dungeon within until you find the sarcophagus.\n\nPlace four Royal Torches around the corners of the sarcophagus (or, if they\u0027re already there, relight them with a torch). Then, open the sarcophagus to bring the Pharaoh to life.\n\nOnce he\u0027s dead, you\u0027ll find the key within the sarcophagus"
         }
       },
       "tasks:9": {
@@ -2467,7 +2446,7 @@
           "rewards:9": {
             "0:10": {
               "id:8": "contenttweaker:platinumcoin",
-              "Count:3": 2,
+              "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -2854,9 +2833,9 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "landcore:item_ingot",
+            "id:8": "atum:loot_gold_broach",
             "Count:3": 1,
-            "Damage:2": 1,
+            "Damage:2": 0,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -2866,8 +2845,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Tounges",
-          "desc:8": "You\u0027ll need Tungsten to get into Landia. It can be found either in the Hunting Dimension or the Mining Dimension."
+          "name:8": "Relics",
+          "desc:8": "You can find Relic Ore in both the Hunting Dimension and the Mining Dimension. Find some, and mine a bunch. Wash off what you find by throwing it into water, until you find a golden broach."
         }
       },
       "tasks:9": {
@@ -2880,10 +2859,10 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "landcore:item_ingot",
+              "id:8": "atum:loot_gold_broach",
               "Count:3": 1,
-              "Damage:2": 1,
-              "OreDict:8": "ingotTungsten"
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -7192,7 +7171,7 @@
     "98:10": {
       "questID:3": 98,
       "preRequisites:11": [
-        29
+        27
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -7553,7 +7532,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "How deep is your dark?",
-          "desc:8": "The Copper Key is hidden in the Deep Dark... an underground realm where the darkness is alive. And angry."
+          "desc:8": "The Copper Key is hidden in the Deep Dark... an underground realm where the darkness is alive. And angry.\n\nTo reach it, first you must dig deep into the sands of Atum until you find Khnumite. Dig some up, create a face out of it using a diamond, then place it into the resonator"
         }
       },
       "tasks:9": {
@@ -18462,161 +18441,6 @@
       }
     },
     "241:10": {
-      "questID:3": 241,
-      "preRequisites:11": [
-        29
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 1,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "ALWAYS",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "landcraft:pho",
-            "Count:3": 1,
-            "Damage:2": 1,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "partysinglereward:1": 0,
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "ismain:1": 0,
-          "repeat_relative:1": 1,
-          "name:8": "Landia Food",
-          "desc:8": "You\u0027ll need a bit of Pho and Bun Rieu to build the Landia altar. Make a pot, get some ingredients, and get cooking."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "landcraft:pot",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "id:8": "landcraft:bun_rieu",
-              "Count:3": 1,
-              "Damage:2": 1,
-              "OreDict:8": ""
-            },
-            "2:10": {
-              "id:8": "landcraft:pho",
-              "Count:3": 1,
-              "Damage:2": 1,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "id:8": "contenttweaker:bronzecoin",
-              "Count:3": 5,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
-    },
-    "242:10": {
-      "questID:3": 242,
-      "preRequisites:11": [
-        31,
-        241
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 1,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "ALWAYS",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "id:8": "landcraft:landia_altar",
-            "Count:3": 1,
-            "Damage:2": 1,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "partysinglereward:1": 0,
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "ismain:1": 0,
-          "repeat_relative:1": 1,
-          "name:8": "Landia Altar",
-          "desc:8": "You\u0027ll need some of the materials from Big Brother to create the crafting altar required to reconstitute the Water key.\n\nPlace five of the material blocks down in the shape of a cross, put pedestals in the corners, and the core on the top."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "id:8": "landcraft:landia_altar",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "id:8": "landcraft:landia_altar",
-              "Count:3": 5,
-              "Damage:2": 1,
-              "OreDict:8": ""
-            },
-            "2:10": {
-              "id:8": "landcraft:landia_altar",
-              "Count:3": 4,
-              "Damage:2": 2,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "id:8": "contenttweaker:bronzecoin",
-              "Count:3": 3,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
-    },
-    "243:10": {
       "questID:3": 243,
       "preRequisites:11": [
         117
@@ -18685,13 +18509,12 @@
         }
       }
     },
-    "244:10": {
+    "242:10": {
       "questID:3": 244,
       "preRequisites:11": [
         115,
         156,
         240,
-        242,
         243
       ],
       "properties:10": {
@@ -18704,7 +18527,7 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "landcraft:landia_altar",
+            "id:8": "actuallyadditions:block_empowerer",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -18717,7 +18540,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Watery Grave",
-          "desc:8": "To reconstitute the water key, place the core on the alter, along with the sapling, some valonite, and a wight heart.\n\nThen murder a squid at the top of it."
+          "desc:8": "You\u0027ll need to use the Empowerer to reconstitute the water key. Place a bucket of water on the empowerer, then place the core, the sapling, some valonite, and a wight heart on the display stands."
         }
       },
       "tasks:9": {
@@ -18754,7 +18577,7 @@
         }
       }
     },
-    "245:10": {
+    "243:10": {
       "questID:3": 245,
       "preRequisites:11": [
         21,
@@ -18820,7 +18643,7 @@
         }
       }
     },
-    "246:10": {
+    "244:10": {
       "questID:3": 246,
       "preRequisites:11": [
         245
@@ -18885,7 +18708,7 @@
         }
       }
     },
-    "247:10": {
+    "245:10": {
       "questID:3": 247,
       "preRequisites:11": [
         23,
@@ -18969,7 +18792,7 @@
         }
       }
     },
-    "248:10": {
+    "246:10": {
       "questID:3": 248,
       "preRequisites:11": [
         21
@@ -19037,7 +18860,7 @@
         }
       }
     },
-    "249:10": {
+    "247:10": {
       "questID:3": 249,
       "preRequisites:11": [
         21
@@ -19114,7 +18937,7 @@
         }
       }
     },
-    "250:10": {
+    "248:10": {
       "questID:3": 250,
       "preRequisites:11": [
         247,
@@ -19181,7 +19004,7 @@
         }
       }
     },
-    "251:10": {
+    "249:10": {
       "questID:3": 251,
       "preRequisites:11": [],
       "properties:10": {
@@ -19224,7 +19047,7 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "contenttweaker:coppercoin",
-              "Count:3": 3,
+              "Count:3": 9,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -19250,7 +19073,7 @@
         }
       }
     },
-    "252:10": {
+    "250:10": {
       "questID:3": 252,
       "preRequisites:11": [],
       "properties:10": {
@@ -19290,7 +19113,7 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "contenttweaker:coppercoin",
-              "Count:3": 4,
+              "Count:3": 16,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -19313,7 +19136,7 @@
         }
       }
     },
-    "253:10": {
+    "251:10": {
       "questID:3": 253,
       "preRequisites:11": [],
       "properties:10": {
@@ -19328,7 +19151,7 @@
           "icon:10": {
             "id:8": "actuallyadditions:item_food",
             "Count:3": 1,
-            "Damage:2": 3,
+            "Damage:2": 20,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -19338,7 +19161,7 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Fish and Chips",
+          "name:8": "Bacon",
           "desc:8": ""
         }
       },
@@ -19353,7 +19176,7 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "contenttweaker:coppercoin",
-              "Count:3": 7,
+              "Count:3": 2,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -19369,14 +19192,14 @@
             "0:10": {
               "id:8": "actuallyadditions:item_food",
               "Count:3": 1,
-              "Damage:2": 3,
+              "Damage:2": 20,
               "OreDict:8": ""
             }
           }
         }
       }
     },
-    "254:10": {
+    "252:10": {
       "questID:3": 254,
       "preRequisites:11": [],
       "properties:10": {
@@ -19389,9 +19212,9 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "landcraft:pho",
+            "id:8": "thebetweenlands:jam_donut",
             "Count:3": 1,
-            "Damage:2": 1,
+            "Damage:2": 0,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -19401,8 +19224,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Pho",
-          "desc:8": ""
+          "name:8": "Jam Donut",
+          "desc:8": "Edible in the Betweenlands!"
         }
       },
       "tasks:9": {
@@ -19415,8 +19238,8 @@
           "consume:1": 1,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "contenttweaker:bronzecoin",
-              "Count:3": 1,
+              "id:8": "contenttweaker:coppercoin",
+              "Count:3": 11,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -19430,16 +19253,16 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "landcraft:pho",
+              "id:8": "thebetweenlands:jam_donut",
               "Count:3": 1,
-              "Damage:2": 1,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
         }
       }
     },
-    "255:10": {
+    "253:10": {
       "questID:3": 255,
       "preRequisites:11": [],
       "properties:10": {
@@ -19478,8 +19301,8 @@
           "consume:1": 1,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "contenttweaker:bronzecoin",
-              "Count:3": 1,
+              "id:8": "contenttweaker:coppercoin",
+              "Count:3": 18,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -19502,7 +19325,7 @@
         }
       }
     },
-    "256:10": {
+    "254:10": {
       "questID:3": 256,
       "preRequisites:11": [],
       "properties:10": {
@@ -19571,7 +19394,7 @@
         }
       }
     },
-    "257:10": {
+    "255:10": {
       "questID:3": 257,
       "preRequisites:11": [],
       "properties:10": {
@@ -20020,7 +19843,7 @@
         }
       }
     },
-    "258:10": {
+    "256:10": {
       "questID:3": 258,
       "preRequisites:11": [],
       "properties:10": {
@@ -20105,7 +19928,7 @@
         }
       }
     },
-    "259:10": {
+    "257:10": {
       "questID:3": 259,
       "preRequisites:11": [],
       "properties:10": {
@@ -20189,7 +20012,7 @@
         }
       }
     },
-    "260:10": {
+    "258:10": {
       "questID:3": 260,
       "preRequisites:11": [],
       "properties:10": {
@@ -20278,7 +20101,7 @@
         }
       }
     },
-    "261:10": {
+    "259:10": {
       "questID:3": 261,
       "preRequisites:11": [],
       "properties:10": {
@@ -20363,7 +20186,7 @@
         }
       }
     },
-    "262:10": {
+    "260:10": {
       "questID:3": 262,
       "preRequisites:11": [],
       "properties:10": {
@@ -20678,7 +20501,7 @@
         }
       }
     },
-    "263:10": {
+    "261:10": {
       "questID:3": 263,
       "preRequisites:11": [],
       "properties:10": {
@@ -20755,7 +20578,7 @@
         }
       }
     },
-    "264:10": {
+    "262:10": {
       "questID:3": 264,
       "preRequisites:11": [],
       "properties:10": {
@@ -21664,7 +21487,7 @@
         }
       }
     },
-    "265:10": {
+    "263:10": {
       "questID:3": 265,
       "preRequisites:11": [],
       "properties:10": {
@@ -21741,7 +21564,7 @@
         }
       }
     },
-    "266:10": {
+    "264:10": {
       "questID:3": 266,
       "preRequisites:11": [],
       "properties:10": {
@@ -21837,7 +21660,7 @@
         }
       }
     },
-    "267:10": {
+    "265:10": {
       "questID:3": 267,
       "preRequisites:11": [],
       "properties:10": {
@@ -21933,7 +21756,7 @@
         }
       }
     },
-    "268:10": {
+    "266:10": {
       "questID:3": 268,
       "preRequisites:11": [],
       "properties:10": {
@@ -22085,7 +21908,7 @@
         }
       }
     },
-    "269:10": {
+    "267:10": {
       "questID:3": 269,
       "preRequisites:11": [],
       "properties:10": {
@@ -22491,29 +22314,29 @@
         "8:10": {
           "sizeX:3": 24,
           "x:3": 72,
-          "y:3": -60,
-          "id:3": 28,
-          "sizeY:3": 24
-        },
-        "9:10": {
-          "sizeX:3": 24,
-          "x:3": 72,
           "y:3": -24,
           "id:3": 29,
           "sizeY:3": 24
         },
-        "10:10": {
+        "9:10": {
           "sizeX:3": 24,
           "x:3": 72,
           "y:3": 12,
           "id:3": 30,
           "sizeY:3": 24
         },
-        "11:10": {
+        "10:10": {
           "sizeX:3": 24,
           "x:3": 72,
           "y:3": 48,
           "id:3": 31,
+          "sizeY:3": 24
+        },
+        "11:10": {
+          "sizeX:3": 24,
+          "x:3": 72,
+          "y:3": -60,
+          "id:3": 37,
           "sizeY:3": 24
         },
         "12:10": {
@@ -22540,7 +22363,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Immersive Engineering and Landia"
+          "desc:8": "Immersive Engineering and Atum"
         }
       },
       "order:3": 6
@@ -22885,47 +22708,54 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
+          "x:3": -72,
+          "y:3": 48,
+          "id:3": 37,
+          "sizeY:3": 24
+        },
+        "1:10": {
+          "sizeX:3": 24,
           "x:3": -108,
           "y:3": -24,
           "id:3": 68,
           "sizeY:3": 24
         },
-        "1:10": {
+        "2:10": {
           "sizeX:3": 24,
           "x:3": -72,
           "y:3": -60,
           "id:3": 75,
           "sizeY:3": 24
         },
-        "2:10": {
+        "3:10": {
           "sizeX:3": 24,
           "x:3": -72,
           "y:3": -24,
           "id:3": 76,
           "sizeY:3": 24
         },
-        "3:10": {
+        "4:10": {
           "sizeX:3": 24,
           "x:3": -36,
           "y:3": -24,
           "id:3": 77,
           "sizeY:3": 24
         },
-        "4:10": {
+        "5:10": {
           "sizeX:3": 24,
           "x:3": -36,
           "y:3": 12,
           "id:3": 78,
           "sizeY:3": 24
         },
-        "5:10": {
+        "6:10": {
           "sizeX:3": 24,
           "x:3": -72,
           "y:3": 12,
           "id:3": 79,
           "sizeY:3": 24
         },
-        "6:10": {
+        "7:10": {
           "sizeX:3": 24,
           "x:3": -108,
           "y:3": 12,
@@ -23699,453 +23529,460 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
+          "x:3": -276,
+          "y:3": 0,
+          "id:3": 28,
+          "sizeY:3": 24
+        },
+        "1:10": {
+          "sizeX:3": 24,
           "x:3": -180,
           "y:3": -120,
           "id:3": 170,
           "sizeY:3": 24
         },
-        "1:10": {
+        "2:10": {
           "sizeX:3": 24,
           "x:3": -156,
           "y:3": -120,
           "id:3": 171,
           "sizeY:3": 24
         },
-        "2:10": {
+        "3:10": {
           "sizeX:3": 24,
           "x:3": -60,
           "y:3": -120,
           "id:3": 172,
           "sizeY:3": 24
         },
-        "3:10": {
+        "4:10": {
           "sizeX:3": 24,
           "x:3": -84,
           "y:3": -120,
           "id:3": 173,
           "sizeY:3": 24
         },
-        "4:10": {
+        "5:10": {
           "sizeX:3": 24,
           "x:3": -108,
           "y:3": -120,
           "id:3": 174,
           "sizeY:3": 24
         },
-        "5:10": {
+        "6:10": {
           "sizeX:3": 24,
           "x:3": -132,
           "y:3": -120,
           "id:3": 175,
           "sizeY:3": 24
         },
-        "6:10": {
+        "7:10": {
           "sizeX:3": 24,
           "x:3": -180,
           "y:3": -36,
           "id:3": 176,
           "sizeY:3": 24
         },
-        "7:10": {
+        "8:10": {
           "sizeX:3": 24,
           "x:3": -156,
           "y:3": -36,
           "id:3": 177,
           "sizeY:3": 24
         },
-        "8:10": {
+        "9:10": {
           "sizeX:3": 24,
           "x:3": -108,
           "y:3": -36,
           "id:3": 178,
           "sizeY:3": 24
         },
-        "9:10": {
+        "10:10": {
           "sizeX:3": 24,
           "x:3": -132,
           "y:3": -36,
           "id:3": 179,
           "sizeY:3": 24
         },
-        "10:10": {
+        "11:10": {
           "sizeX:3": 24,
           "x:3": -156,
           "y:3": -96,
           "id:3": 180,
           "sizeY:3": 24
         },
-        "11:10": {
+        "12:10": {
           "sizeX:3": 24,
           "x:3": -60,
           "y:3": -36,
           "id:3": 181,
           "sizeY:3": 24
         },
-        "12:10": {
+        "13:10": {
           "sizeX:3": 24,
           "x:3": -180,
           "y:3": -96,
           "id:3": 182,
           "sizeY:3": 24
         },
-        "13:10": {
+        "14:10": {
           "sizeX:3": 24,
           "x:3": -84,
           "y:3": -36,
           "id:3": 184,
           "sizeY:3": 24
         },
-        "14:10": {
+        "15:10": {
           "sizeX:3": 24,
           "x:3": -180,
           "y:3": -12,
           "id:3": 185,
           "sizeY:3": 24
         },
-        "15:10": {
+        "16:10": {
           "sizeX:3": 24,
           "x:3": -156,
           "y:3": -12,
           "id:3": 186,
           "sizeY:3": 24
         },
-        "16:10": {
+        "17:10": {
           "sizeX:3": 24,
           "x:3": -132,
           "y:3": -12,
           "id:3": 187,
           "sizeY:3": 24
         },
-        "17:10": {
+        "18:10": {
           "sizeX:3": 24,
           "x:3": -108,
           "y:3": -12,
           "id:3": 188,
           "sizeY:3": 24
         },
-        "18:10": {
+        "19:10": {
           "sizeX:3": 24,
           "x:3": -132,
           "y:3": -96,
           "id:3": 191,
           "sizeY:3": 24
         },
-        "19:10": {
+        "20:10": {
           "sizeX:3": 24,
           "x:3": -108,
           "y:3": -96,
           "id:3": 192,
           "sizeY:3": 24
         },
-        "20:10": {
+        "21:10": {
           "sizeX:3": 24,
           "x:3": -84,
           "y:3": -12,
           "id:3": 193,
           "sizeY:3": 24
         },
-        "21:10": {
+        "22:10": {
           "sizeX:3": 24,
           "x:3": -180,
           "y:3": 12,
           "id:3": 194,
           "sizeY:3": 24
         },
-        "22:10": {
+        "23:10": {
           "sizeX:3": 24,
           "x:3": -60,
           "y:3": -12,
           "id:3": 195,
           "sizeY:3": 24
         },
-        "23:10": {
+        "24:10": {
           "sizeX:3": 24,
           "x:3": -84,
           "y:3": -96,
           "id:3": 197,
           "sizeY:3": 24
         },
-        "24:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": -60,
           "y:3": -96,
           "id:3": 198,
           "sizeY:3": 24
         },
-        "25:10": {
+        "26:10": {
           "sizeX:3": 24,
           "x:3": -180,
           "y:3": -72,
           "id:3": 199,
           "sizeY:3": 24
         },
-        "26:10": {
+        "27:10": {
           "sizeX:3": 24,
           "x:3": -156,
           "y:3": -72,
           "id:3": 200,
           "sizeY:3": 24
         },
-        "27:10": {
+        "28:10": {
           "sizeX:3": 24,
           "x:3": -132,
           "y:3": -72,
           "id:3": 201,
           "sizeY:3": 24
         },
-        "28:10": {
+        "29:10": {
           "sizeX:3": 24,
           "x:3": -348,
           "y:3": -120,
           "id:3": 202,
           "sizeY:3": 24
         },
-        "29:10": {
+        "30:10": {
           "sizeX:3": 24,
           "x:3": -324,
           "y:3": -120,
           "id:3": 214,
           "sizeY:3": 24
         },
-        "30:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": -300,
           "y:3": -120,
           "id:3": 215,
           "sizeY:3": 24
         },
-        "31:10": {
+        "32:10": {
           "sizeX:3": 24,
           "x:3": -276,
           "y:3": -120,
           "id:3": 216,
           "sizeY:3": 24
         },
-        "32:10": {
+        "33:10": {
           "sizeX:3": 24,
           "x:3": -252,
           "y:3": -120,
           "id:3": 217,
           "sizeY:3": 24
         },
-        "33:10": {
+        "34:10": {
           "sizeX:3": 24,
           "x:3": -228,
           "y:3": -120,
           "id:3": 218,
           "sizeY:3": 24
         },
-        "34:10": {
+        "35:10": {
           "sizeX:3": 24,
           "x:3": -348,
           "y:3": -96,
           "id:3": 219,
           "sizeY:3": 24
         },
-        "35:10": {
+        "36:10": {
           "sizeX:3": 24,
           "x:3": -276,
           "y:3": -36,
           "id:3": 225,
           "sizeY:3": 24
         },
-        "36:10": {
+        "37:10": {
           "sizeX:3": 24,
           "x:3": -252,
           "y:3": -36,
           "id:3": 226,
           "sizeY:3": 24
         },
-        "37:10": {
+        "38:10": {
           "sizeX:3": 24,
           "x:3": -348,
           "y:3": -60,
           "id:3": 227,
           "sizeY:3": 24
         },
-        "38:10": {
+        "39:10": {
           "sizeX:3": 24,
           "x:3": -324,
           "y:3": -60,
           "id:3": 228,
           "sizeY:3": 24
         },
-        "39:10": {
+        "40:10": {
           "sizeX:3": 24,
           "x:3": -300,
           "y:3": -60,
           "id:3": 229,
           "sizeY:3": 24
         },
-        "40:10": {
+        "41:10": {
           "sizeX:3": 24,
           "x:3": -276,
           "y:3": -60,
           "id:3": 230,
           "sizeY:3": 24
         },
-        "41:10": {
+        "42:10": {
           "sizeX:3": 24,
           "x:3": -252,
           "y:3": -60,
           "id:3": 231,
           "sizeY:3": 24
         },
-        "42:10": {
+        "43:10": {
           "sizeX:3": 24,
           "x:3": -228,
           "y:3": -60,
           "id:3": 232,
           "sizeY:3": 24
         },
-        "43:10": {
+        "44:10": {
           "sizeX:3": 24,
           "x:3": -348,
           "y:3": -36,
           "id:3": 233,
           "sizeY:3": 24
         },
-        "44:10": {
+        "45:10": {
           "sizeX:3": 24,
           "x:3": -324,
           "y:3": -36,
           "id:3": 234,
           "sizeY:3": 24
         },
-        "45:10": {
+        "46:10": {
           "sizeX:3": 24,
           "x:3": -300,
           "y:3": -36,
           "id:3": 235,
           "sizeY:3": 24
         },
-        "46:10": {
-          "sizeX:3": 24,
-          "x:3": -348,
-          "y:3": 0,
-          "id:3": 251,
-          "sizeY:3": 24
-        },
         "47:10": {
           "sizeX:3": 24,
           "x:3": -324,
           "y:3": 0,
-          "id:3": 252,
+          "id:3": 251,
           "sizeY:3": 24
         },
         "48:10": {
           "sizeX:3": 24,
           "x:3": -300,
           "y:3": 0,
-          "id:3": 253,
+          "id:3": 252,
           "sizeY:3": 24
         },
         "49:10": {
           "sizeX:3": 24,
-          "x:3": -276,
+          "x:3": -348,
           "y:3": 0,
-          "id:3": 254,
+          "id:3": 253,
           "sizeY:3": 24
         },
         "50:10": {
           "sizeX:3": 24,
           "x:3": -252,
           "y:3": 0,
-          "id:3": 255,
+          "id:3": 254,
           "sizeY:3": 24
         },
         "51:10": {
+          "sizeX:3": 24,
+          "x:3": -228,
+          "y:3": 0,
+          "id:3": 255,
+          "sizeY:3": 24
+        },
+        "52:10": {
           "sizeX:3": 24,
           "x:3": -348,
           "y:3": 36,
           "id:3": 256,
           "sizeY:3": 24
         },
-        "52:10": {
+        "53:10": {
           "sizeX:3": 24,
           "x:3": -324,
           "y:3": 36,
           "id:3": 257,
           "sizeY:3": 24
         },
-        "53:10": {
+        "54:10": {
           "sizeX:3": 24,
           "x:3": -300,
           "y:3": 36,
           "id:3": 258,
           "sizeY:3": 24
         },
-        "54:10": {
+        "55:10": {
           "sizeX:3": 24,
           "x:3": -276,
           "y:3": 36,
           "id:3": 259,
           "sizeY:3": 24
         },
-        "55:10": {
+        "56:10": {
           "sizeX:3": 24,
           "x:3": -252,
           "y:3": 36,
           "id:3": 260,
           "sizeY:3": 24
         },
-        "56:10": {
+        "57:10": {
           "sizeX:3": 24,
           "x:3": -348,
           "y:3": 60,
           "id:3": 261,
           "sizeY:3": 24
         },
-        "57:10": {
+        "58:10": {
           "sizeX:3": 24,
           "x:3": -300,
           "y:3": 60,
           "id:3": 262,
           "sizeY:3": 24
         },
-        "58:10": {
+        "59:10": {
           "sizeX:3": 24,
           "x:3": -252,
           "y:3": 60,
           "id:3": 263,
           "sizeY:3": 24
         },
-        "59:10": {
+        "60:10": {
           "sizeX:3": 24,
           "x:3": -276,
           "y:3": 60,
           "id:3": 264,
           "sizeY:3": 24
         },
-        "60:10": {
+        "61:10": {
           "sizeX:3": 24,
           "x:3": -348,
           "y:3": 84,
           "id:3": 265,
           "sizeY:3": 24
         },
-        "61:10": {
+        "62:10": {
           "sizeX:3": 24,
           "x:3": -324,
           "y:3": 84,
           "id:3": 266,
           "sizeY:3": 24
         },
-        "62:10": {
+        "63:10": {
           "sizeX:3": 24,
           "x:3": -300,
           "y:3": 84,
           "id:3": 267,
           "sizeY:3": 24
         },
-        "63:10": {
+        "64:10": {
           "sizeX:3": 24,
           "x:3": -324,
           "y:3": 60,
           "id:3": 268,
           "sizeY:3": 24
         },
-        "64:10": {
+        "65:10": {
           "sizeX:3": 24,
           "x:3": -276,
           "y:3": 84,
@@ -24318,36 +24155,22 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": -120,
-          "y:3": -132,
+          "x:3": -180,
+          "y:3": -108,
           "id:3": 240,
           "sizeY:3": 24
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": -48,
-          "y:3": -132,
-          "id:3": 241,
+          "x:3": -84,
+          "y:3": -108,
+          "id:3": 243,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": -48,
-          "y:3": -60,
-          "id:3": 242,
-          "sizeY:3": 24
-        },
-        "3:10": {
-          "sizeX:3": 24,
-          "x:3": -120,
-          "y:3": -60,
-          "id:3": 243,
-          "sizeY:3": 24
-        },
-        "4:10": {
-          "sizeX:3": 24,
-          "x:3": -84,
-          "y:3": -96,
+          "x:3": -132,
+          "y:3": -108,
           "id:3": 244,
           "sizeY:3": 24
         }
@@ -24356,7 +24179,7 @@
       "properties:10": {
         "betterquesting:10": {
           "visibility:8": "UNLOCKED",
-          "name:8": "Storm and Swamp",
+          "name:8": "Eye of Evil",
           "icon:10": {
             "id:8": "thebetweenlands:sapling_spirit_tree",
             "Count:3": 1,
@@ -24365,7 +24188,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "More Betweenlands and LandCraft"
+          "desc:8": "More Betweenlands"
         }
       },
       "order:3": 15
@@ -24441,7 +24264,7 @@
       "home_anchor_y:5": 0.0,
       "livesmax:3": 10,
       "home_anchor_x:5": 0.0,
-      "editmode:1": 0,
+      "editmode:1": 1,
       "hardcore:1": 0,
       "home_image:8": "plaguesky:plague.png",
       "party_enable:1": 1,

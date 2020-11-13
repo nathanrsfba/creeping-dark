@@ -1,40 +1,23 @@
 import mods.thaumcraft.Infusion;
 
-/* Recipe to activate the water key using the landcraft altar */
-val waterkey = <contenttweaker:waterkey>;
-val waterkeyfrag = <contenttweaker:waterkeyfrag>;
-val heart = <thebetweenlands:wight_heart>;
-val valonite = <thebetweenlands:sapling_spirit_tree>;
-val spiritsapling = <thebetweenlands:items_misc:19>;
+/* Recipe to activate the water key using the AA empowerer */
+var water = <minecraft:water_bucket>;
+var spiritsapling = <thebetweenlands:sapling_spirit_tree>;
+var heart = <thebetweenlands:wight_heart>;
+var valonite = <thebetweenlands:items_misc:19>;
+var waterkeycore = <contenttweaker:waterkeyfrag>;
+var waterkey = <contenttweaker:waterkey>;
 
-mods.landcraft.machines.addAltarRecipeEntityDeathTrigger( waterkey, 1, [waterkeyfrag, heart, valonite, spiritsapling], "minecraft:squid" );
-
-/* Alter the altar recipe so it doesn't require post-end materials */
-val altarmat = <landcraft:landia_altar:1>;
-val altarped = <landcraft:landia_altar:2>;
-val landium = <landcore:item_ingot:2>;
-val morganine = <landcraft:landia_ingot:2>;
-val garfax = <landcraft:landia_ingot:1>;
-val kelline = <landcraft:landia_ingot:0>;
-val rachelineblock = <landcraft:landia_metal:3>;
-val friscionblock = <landcraft:landia_metal:4>;
-val bunrieu = <landcraft:bun_rieu:1>;
-val pho = <landcraft:pho:1>;
-val star = <minecraft:nether_star>;
-val tower = <landcraft:landia_tower>;
-
-recipes.remove( altarmat );
-recipes.remove( altarped );
-
-recipes.addShaped( "landaltar", altarmat * 5, 
-[[landium, star, landium],
-[garfax, kelline, morganine],
-[rachelineblock, rachelineblock, rachelineblock]] );
-
-recipes.addShaped( "landped", altarped,
-[[null, null, null], 
-[null, friscionblock, null],
-[bunrieu, tower, pho]] );
+mods.actuallyadditions.Empowerer.addRecipe(
+    waterkey,
+    water,
+    heart,
+    spiritsapling,
+    valonite,
+    waterkeycore,
+    500,
+    200
+);
 
 /* Recipe to activate the earth key using the botania altar */
 val earthkey = <contenttweaker:earthkey>;

@@ -217,6 +217,7 @@ Known dimensions:
 2: AE2 storage dimension
 4: Aether
 7: Twilight Forest
+17: Atum
 20: Promised Land (BOP)
 66: Erebus
 87: My utility dimension
