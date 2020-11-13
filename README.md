@@ -1,20 +1,3 @@
-Notes about v1.5 Alpha
-======================
-
-This is an early work-in-progress for replacing Landia in Creeping Dark.
-
-Currently, Atum has been inserted in place of Landia for the purpose of
-obtaining the Amethyst Key:
-
-* Relic ore is found in the Mining/Hunting dimensions (instead of Tungsten)
-* The portal scarab is made by putting a golden brooch into the resonator
-* The resonator requires an IE circuit board (instead of the board being used
-  directly in the creation of the portal)
-* The amethyst key is found in the Pharaoh's sarcophagus after killing him
-
-Still looking for a suitable replacement for the Landia crafting altar for
-creating the water key
-
 Creeping Dark
 =============
 
@@ -33,6 +16,18 @@ unlocks a new tier of technology... and one of the Keys.
 
 While there is a progression mechanic, the recipes are unchanged, with a few
 exceptions. Once you've "unlocked" a mod, it works the way it always has.
+
+Notes about v1.5 Alpha
+----------------------
+
+This is a somewhat early work-in-progress for replacing Landia in Creeping
+Dark. LandCraft has been replaced with Atum. Other recipes involving Landia
+have been altered to reflect this change.
+
+I feel like some 'progression' has been lost, but there doesn't really seem to
+be anything that really *properly* fills the hole left by Landia.
+
+See the changelog below for the full details.
 
 Installation
 ------------
@@ -72,6 +67,20 @@ for god knows what reason
 
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
+
+Changes in v1.5-alpha
+---------------------
+
+* Removed LandCraft; added Atum
+* Relic ore is found in the Mining/Hunting dimensions (instead of Tungsten)
+* The portal scarab is made by putting a golden brooch into the resonator
+* The resonator requires an IE circuit board (instead of the board being used
+  directly in the creation of the portal, which felt a bit contrived)
+* The amethyst key is found in the Pharaoh's sarcophagus after killing him
+* The Deep Dark portal is now created using Khnumite
+* The water key is now reconstituted using the AA empowerer
+* Slightly adjusted the food section in the shop
+
 
 Changes in v1.4.4
 -----------------
