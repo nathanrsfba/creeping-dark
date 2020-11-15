@@ -41,6 +41,15 @@ if( loadedMods has "twilightforest" )
     <ore:listAllvenisonraw>.add( <twilightforest:raw_venison> );
 }
 
+if( loadedMods has "atum" )
+{
+    // Add oredict entries for atum food
+    <ore:listAllmeatraw>.add( <atum:camel_raw> );
+    <ore:listAllmeatcooked>.add( <atum:camel_cooked> );
+    <ore:listAllfruit>.add( <atum:date> );
+    <ore:cropDate>.add( <atum:date> );
+}
+
 // Add a recipe for BBQ Jackfruit
 // (Recipe taken from harvestcraft github)
 
