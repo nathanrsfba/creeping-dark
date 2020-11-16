@@ -140,6 +140,7 @@ tinkersjei-1.2.jar
 Toast Control-1.12.2-1.8.1.jar
 TombManyGraves-1.12-4.2.0.jar
 topaddons-1.12.2-1.13.0.jar
+tropicraft-MC1.12.2-7.1.9.115.jar
 twilightforest-1.12.2-3.10.1013-universal.jar
 Wawla-1.12.2-2.5.273.jar
 Waystones_1.12.2-4.1.0.jar
