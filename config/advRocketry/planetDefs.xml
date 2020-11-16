@@ -251,7 +251,7 @@
         <gravitationalMultiplier>14</gravitationalMultiplier>
         <orbitalDistance>318</orbitalDistance>
         <rotationalPeriod>384000</rotationalPeriod>
-        <biomeIds>advancedrocketry:alien forest</biomeIds>
+        <biomeIds>advancedrocketry:alien_forest</biomeIds>
         <OreGen>
             <ore block="minecraft:lapis_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Lapis Lazuli Block -->
             <ore block="nuclearcraft:ingot_block" meta="8" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Graphite Block -->
