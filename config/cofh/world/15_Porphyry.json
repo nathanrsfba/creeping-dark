@@ -1,0 +1,25 @@
+{
+	"populate": {
+		"porphyry": {
+			"distribution": "uniform",
+			"generator": {
+				"block": "atum:porphyry",
+				"material": "minecraft:stone",
+				"cluster-size": 33
+			},
+			"cluster-count": 10,
+			"min-height": 0,
+			"max-height": 80,
+			"retrogen": false,
+			"biome": "all",
+
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+                                    -6,
+                                    28885
+				]
+			}
+		}
+        }
+}

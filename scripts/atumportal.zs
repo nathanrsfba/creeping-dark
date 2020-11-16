@@ -11,9 +11,9 @@ recipes.addShaped( "resonator", resonator,
 [iron, redcrystal, iron],
 [iron, iron, iron]] );
 
-// Gate Atum to EU2 and relics
+// Gate Atum to EU2 and TropiCraft
 var scarab = <atum:scarab>;
-var broach = <atum:loot_gold_broach>;
+var wand = <tropicraft:portal_enchanter>;
 
 recipes.removeByRecipeName( "atum:scarab" );
-mods.extrautils2.Resonator.add( scarab, broach, 0 );
+mods.extrautils2.Resonator.add( scarab, wand, 0 );
