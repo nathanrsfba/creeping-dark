@@ -2256,8 +2256,8 @@
       "questID:3": 29,
       "preRequisites:11": [
         27,
-        37,
-        99
+        99,
+        273
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2285,7 +2285,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Scary",
-          "desc:8": "Build a Resonator, and throw the golden brooch into it. Unlike most Resonator recipes, this needs no power."
+          "desc:8": "Build a Resonator, and throw the Tropics wand into it. Unlike most Resonator recipes, this needs no power."
         }
       },
       "tasks:9": {
@@ -2833,7 +2833,7 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "atum:loot_gold_broach",
+            "id:8": "atum:porphyry",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -2845,8 +2845,8 @@
           "autoclaim:1": 0,
           "ismain:1": 0,
           "repeat_relative:1": 1,
-          "name:8": "Relics",
-          "desc:8": "You can find Relic Ore in both the Hunting Dimension and the Mining Dimension. Find some, and mine a bunch. Wash off what you find by throwing it into water, until you find a golden broach."
+          "name:8": "Phire and Brimstone",
+          "desc:8": "You can find Porphyry in both the Hunting Dimension and the Mining Dimension. It generates like andesite and similar minerals."
         }
       },
       "tasks:9": {
@@ -2859,7 +2859,7 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "atum:loot_gold_broach",
+              "id:8": "atum:porphyry",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -2874,7 +2874,7 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "contenttweaker:silvercoin",
+              "id:8": "contenttweaker:bronzecoin",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -18441,6 +18441,166 @@
       }
     },
     "241:10": {
+      "questID:3": 241,
+      "preRequisites:11": [
+        37
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "tropicraft:drink_mixer",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "OR",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Shake It, Baby",
+          "desc:8": "Find some bamboo, make some mugs, then make a drink mixer"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "tropicraft:drink_mixer",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:bronzecoin",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "242:10": {
+      "questID:3": 242,
+      "preRequisites:11": [
+        241
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "tropicraft:cocktail",
+            "Count:3": 1,
+            "tag:10": {
+              "Ingredients:9": {
+                "0:10": {
+                  "IngredientID:1": 10
+                },
+                "1:10": {
+                  "IngredientID:1": 12
+                }
+              },
+              "Color:3": 15724527,
+              "DrinkID:1": 6
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "OR",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Tropical Punch",
+          "desc:8": "Find some coconut and pineapple, cut them into chunks, then place both of them in the drink mixer, and then a bamboo mug.\n\n(Right click the §obase§r of the mixer to add items)"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "tropicraft:cocktail",
+              "Count:3": 1,
+              "tag:10": {
+                "Ingredients:9": {
+                  "0:10": {
+                    "IngredientID:1": 10
+                  },
+                  "1:10": {
+                    "IngredientID:1": 12
+                  }
+                },
+                "Color:3": 15724527,
+                "DrinkID:1": 6
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:bronzecoin",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "243:10": {
       "questID:3": 243,
       "preRequisites:11": [
         117
@@ -18509,7 +18669,7 @@
         }
       }
     },
-    "242:10": {
+    "244:10": {
       "questID:3": 244,
       "preRequisites:11": [
         115,
@@ -18577,7 +18737,7 @@
         }
       }
     },
-    "243:10": {
+    "245:10": {
       "questID:3": 245,
       "preRequisites:11": [
         21,
@@ -18643,7 +18803,7 @@
         }
       }
     },
-    "244:10": {
+    "246:10": {
       "questID:3": 246,
       "preRequisites:11": [
         245
@@ -18708,7 +18868,7 @@
         }
       }
     },
-    "245:10": {
+    "247:10": {
       "questID:3": 247,
       "preRequisites:11": [
         23,
@@ -18792,7 +18952,7 @@
         }
       }
     },
-    "246:10": {
+    "248:10": {
       "questID:3": 248,
       "preRequisites:11": [
         21
@@ -18860,7 +19020,7 @@
         }
       }
     },
-    "247:10": {
+    "249:10": {
       "questID:3": 249,
       "preRequisites:11": [
         21
@@ -18937,7 +19097,7 @@
         }
       }
     },
-    "248:10": {
+    "250:10": {
       "questID:3": 250,
       "preRequisites:11": [
         247,
@@ -19004,7 +19164,7 @@
         }
       }
     },
-    "249:10": {
+    "251:10": {
       "questID:3": 251,
       "preRequisites:11": [],
       "properties:10": {
@@ -19073,7 +19233,7 @@
         }
       }
     },
-    "250:10": {
+    "252:10": {
       "questID:3": 252,
       "preRequisites:11": [],
       "properties:10": {
@@ -19136,7 +19296,7 @@
         }
       }
     },
-    "251:10": {
+    "253:10": {
       "questID:3": 253,
       "preRequisites:11": [],
       "properties:10": {
@@ -19199,7 +19359,7 @@
         }
       }
     },
-    "252:10": {
+    "254:10": {
       "questID:3": 254,
       "preRequisites:11": [],
       "properties:10": {
@@ -19262,7 +19422,7 @@
         }
       }
     },
-    "253:10": {
+    "255:10": {
       "questID:3": 255,
       "preRequisites:11": [],
       "properties:10": {
@@ -19325,7 +19485,7 @@
         }
       }
     },
-    "254:10": {
+    "256:10": {
       "questID:3": 256,
       "preRequisites:11": [],
       "properties:10": {
@@ -19394,7 +19554,7 @@
         }
       }
     },
-    "255:10": {
+    "257:10": {
       "questID:3": 257,
       "preRequisites:11": [],
       "properties:10": {
@@ -19843,7 +20003,7 @@
         }
       }
     },
-    "256:10": {
+    "258:10": {
       "questID:3": 258,
       "preRequisites:11": [],
       "properties:10": {
@@ -19928,7 +20088,7 @@
         }
       }
     },
-    "257:10": {
+    "259:10": {
       "questID:3": 259,
       "preRequisites:11": [],
       "properties:10": {
@@ -20012,7 +20172,7 @@
         }
       }
     },
-    "258:10": {
+    "260:10": {
       "questID:3": 260,
       "preRequisites:11": [],
       "properties:10": {
@@ -20101,7 +20261,7 @@
         }
       }
     },
-    "259:10": {
+    "261:10": {
       "questID:3": 261,
       "preRequisites:11": [],
       "properties:10": {
@@ -20186,7 +20346,7 @@
         }
       }
     },
-    "260:10": {
+    "262:10": {
       "questID:3": 262,
       "preRequisites:11": [],
       "properties:10": {
@@ -20501,7 +20661,7 @@
         }
       }
     },
-    "261:10": {
+    "263:10": {
       "questID:3": 263,
       "preRequisites:11": [],
       "properties:10": {
@@ -20578,7 +20738,7 @@
         }
       }
     },
-    "262:10": {
+    "264:10": {
       "questID:3": 264,
       "preRequisites:11": [],
       "properties:10": {
@@ -21487,7 +21647,7 @@
         }
       }
     },
-    "263:10": {
+    "265:10": {
       "questID:3": 265,
       "preRequisites:11": [],
       "properties:10": {
@@ -21564,7 +21724,7 @@
         }
       }
     },
-    "264:10": {
+    "266:10": {
       "questID:3": 266,
       "preRequisites:11": [],
       "properties:10": {
@@ -21660,7 +21820,7 @@
         }
       }
     },
-    "265:10": {
+    "267:10": {
       "questID:3": 267,
       "preRequisites:11": [],
       "properties:10": {
@@ -21756,7 +21916,7 @@
         }
       }
     },
-    "266:10": {
+    "268:10": {
       "questID:3": 268,
       "preRequisites:11": [],
       "properties:10": {
@@ -21908,7 +22068,7 @@
         }
       }
     },
-    "267:10": {
+    "269:10": {
       "questID:3": 269,
       "preRequisites:11": [],
       "properties:10": {
@@ -21963,6 +22123,291 @@
           "rewards:9": {
             "0:10": {
               "id:8": "nuclearcraft:rtg_californium",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "270:10": {
+      "questID:3": 270,
+      "preRequisites:11": [
+        242
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "tropicraft:chair",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "OR",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Drift Away...",
+          "desc:8": "Make a beach chair, then sit on it at sunset and drink a Piña Colada. You\u0027ll shortly find yourself drifting into the Tropics.\n\n(You might want to make an extra Piña Colada, as you need to drink another one to use the return portal)"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "visible:1": 0,
+          "invert:1": 0,
+          "range:3": -1,
+          "index:3": 0,
+          "structure:8": "",
+          "hideInfo:1": 0,
+          "posX:3": 0,
+          "posY:3": 0,
+          "posZ:3": 0,
+          "biome:8": "",
+          "name:8": "The Tropics",
+          "dimension:3": -127,
+          "taxiCabDist:1": 0,
+          "taskID:8": "bq_standard:location"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:bronzecoin",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "271:10": {
+      "questID:3": 271,
+      "preRequisites:11": [
+        270
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "tropicraft:chunk",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "OR",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Chunky",
+          "desc:8": "Find some Chunks O\u0027 Head.\n\nThere are three ways to get them:\n\n1. Find and murder an Easter Island Head mob. You\u0027ll need a pickaxe to kill it.\n\n2. Find an Easter Island Head statue and mine the blocks it\u0027s made of. Careful of the lava inside.\n\n3. Find a volcano, which is also made of chunk. Obviously the same caveat about lava applies."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "tropicraft:chunk",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:bronzecoin",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "272:10": {
+      "questID:3": 272,
+      "preRequisites:11": [
+        270
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "tropicraft:azurite",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "OR",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Tropical Gems",
+          "desc:8": "Go mining to find some Azurite and Zircon"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "tropicraft:azurite",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "tropicraft:zircon",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:bronzecoin",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "273:10": {
+      "questID:3": 273,
+      "preRequisites:11": [
+        272,
+        271
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "tropicraft:portal_enchanter",
+            "Count:3": 1,
+            "tag:10": {},
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "OR",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Portal Wand",
+          "desc:8": "Build the Tropics Portal Enchantment Wand. This can be used to create TropiCraft portals, but it has another use..."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "tropicraft:portal_enchanter",
+              "Count:3": 1,
+              "tag:10": {},
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:bronzecoin",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -22285,14 +22730,14 @@
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": -48,
+          "x:3": -36,
           "y:3": -24,
           "id:3": 24,
           "sizeY:3": 24
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": -96,
+          "x:3": -72,
           "y:3": -24,
           "id:3": 25,
           "sizeY:3": 24
@@ -22306,28 +22751,28 @@
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": 24,
-          "y:3": 12,
+          "x:3": -36,
+          "y:3": 48,
           "id:3": 27,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": 72,
-          "y:3": -24,
+          "x:3": 0,
+          "y:3": 12,
           "id:3": 29,
           "sizeY:3": 24
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": 72,
-          "y:3": 12,
+          "x:3": 0,
+          "y:3": 48,
           "id:3": 30,
           "sizeY:3": 24
         },
         "10:10": {
           "sizeX:3": 24,
-          "x:3": 72,
+          "x:3": 36,
           "y:3": 48,
           "id:3": 31,
           "sizeY:3": 24
@@ -22341,9 +22786,51 @@
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": -96,
+          "x:3": -72,
           "y:3": 12,
           "id:3": 45,
+          "sizeY:3": 24
+        },
+        "13:10": {
+          "sizeX:3": 24,
+          "x:3": 36,
+          "y:3": -60,
+          "id:3": 241,
+          "sizeY:3": 24
+        },
+        "14:10": {
+          "sizeX:3": 24,
+          "x:3": 36,
+          "y:3": -24,
+          "id:3": 242,
+          "sizeY:3": 24
+        },
+        "15:10": {
+          "sizeX:3": 24,
+          "x:3": 72,
+          "y:3": -24,
+          "id:3": 270,
+          "sizeY:3": 24
+        },
+        "16:10": {
+          "sizeX:3": 24,
+          "x:3": 72,
+          "y:3": 12,
+          "id:3": 271,
+          "sizeY:3": 24
+        },
+        "17:10": {
+          "sizeX:3": 24,
+          "x:3": 36,
+          "y:3": 12,
+          "id:3": 272,
+          "sizeY:3": 24
+        },
+        "18:10": {
+          "sizeX:3": 24,
+          "x:3": 72,
+          "y:3": 48,
+          "id:3": 273,
           "sizeY:3": 24
         }
       },
