@@ -139,7 +139,6 @@ TickCentral-3.1.jar
 tinkersjei-1.2.jar
 Toast Control-1.12.2-1.8.1.jar
 TombManyGraves-1.12-4.2.0.jar
-topaddons-1.12.2-1.13.0.jar
 tropicraft-MC1.12.2-7.1.9.115.jar
 twilightforest-1.12.2-3.11.1021-universal.jar
 Waystones_1.12.2-4.1.0.jar
