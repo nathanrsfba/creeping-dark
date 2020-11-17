@@ -91,7 +91,7 @@ natura-1.12.2-4.3.2.69.jar
 NoMobSpawningOnTrees-1.2.2-mc1.12.2.jar
 NuclearCraft-2.18y-1.12.2.jar
 Nutrition-1.12.2-4.6.1.jar
-omlib-1.12.2-3.2.0-256.jar
+omlib-1.12.2-3.1.4-249.jar
 OpenBlocks-1.12.2-1.8.1.jar
 OpenComputers-MC1.12.2-1.7.5.192.jar
 OpenModsLib-1.12.2-0.12.2.jar
@@ -132,7 +132,6 @@ tesla-core-lib-1.12.2-1.0.17.jar
 Thaumcraft-1.12.2-6.1.BETA26.jar
 ThaumicJEI-1.12.2-1.6.0-27.jar
 TheBetweenlands-3.7.1-universal.jar
-theoneprobe-1.12-1.4.28.jar
 ThermalDynamics-1.12.2-2.5.6.1-universal.jar
 ThermalExpansion-1.12.2-5.5.7.1-universal.jar
 ThermalFoundation-1.12.2-2.6.7.1-universal.jar
