@@ -17,12 +17,12 @@ unlocks a new tier of technology... and one of the Keys.
 While there is a progression mechanic, the recipes are unchanged, with a few
 exceptions. Once you've "unlocked" a mod, it works the way it always has.
 
-Notes about v1.5 Alpha
+Notes about v1.5 Beta
 ----------------------
 
-This is a somewhat early work-in-progress for replacing Landia in Creeping
-Dark. LandCraft has been replaced with Atum. Other recipes involving Landia
-have been altered to reflect this change.
+Due to the drama surrounding LandMaster mods, LandCraft has been removed
+from the pack. In its place have been inserted TropiCraft and Atum. Other
+recipes involving Landia have been altered to reflect this change.
 
 I feel like some 'progression' has been lost, but there doesn't really seem to
 be anything that really *properly* fills the hole left by Landia.
@@ -68,6 +68,23 @@ for god knows what reason
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
 
+Changes in v1.5-beta.1
+----------------------
+
+* Added TropiCraft to the progression, leading into Atum
+* Pina Colada (necessary to enter the Tropics) must now be made with the
+  drink mixer
+* The drink mixer can now be made using porphyry (from Atum) in addition
+  Chunk'O'Head
+* Porphyry can now be found in the Mining and Hunting dimensions. It
+  generates similarly to andesite
+* The Tropis portal enchanter wand now uses a piece of chunk to craft
+  (just to provide slightly more to do in the dimension)
+* The golden scarab (for opening the Atum portal) is now made using the
+  Tropics portal wand in the resonator
+* Mods have been updated to latest versions
+* Some minor tweaks and integrations
+
 Changes in v1.5-alpha
 ---------------------
 
@@ -80,7 +97,6 @@ Changes in v1.5-alpha
 * The Deep Dark portal is now created using Khnumite
 * The water key is now reconstituted using the AA empowerer
 * Slightly adjusted the food section in the shop
-
 
 Changes in v1.4.4
 -----------------
