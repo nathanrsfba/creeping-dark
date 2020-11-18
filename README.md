@@ -68,6 +68,12 @@ for god knows what reason
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
 
+Changes in v1.5-beta.3
+----------------------
+
+* Re-ran the Just Enough Resources profiler. New blocks that generate in the
+  world in the latest version should now show up in JEI
+
 Changes in v1.5-beta.2
 ----------------------
 
