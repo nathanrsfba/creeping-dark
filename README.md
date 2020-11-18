@@ -68,6 +68,16 @@ for god knows what reason
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
 
+Changes in v1.5-beta.2
+----------------------
+
+* Removed TheOneProbe, added HWYLA and WAWLA
+  (For reasons that are not clear to me, I somehow had both TOP and HWYLA in
+  the pack at the same time. I've decided to go with HWYLA, at least for now.)
+* Removed most TropiCraft worldgen from the overworld. It just seemed to 
+  'clutter' the overworld quite a bit. You can make the required materials from
+  HarvestCraft coconuts and pineapples. Bamboo still generates.
+
 Changes in v1.5-beta.1
 ----------------------
 
