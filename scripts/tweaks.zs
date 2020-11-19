@@ -44,6 +44,19 @@ recipes.addShaped( "GoldGearNew", goldgear, [
 ] );
 
 // ------------------------------------------------------------
+// New recipe for AG iron frames
+// (also to resolve conflict with aether rings)
+val ironframe = <advgenerators:iron_frame>;
+// val iron = <minecraft:iron_ingot>; // Defined above
+
+recipes.remove( ironframe );
+recipes.addShaped( "IronFrameNew", ironframe, [ 
+[iron, null, iron],
+[null, null, null],
+[iron, null, iron]
+] );
+
+// ------------------------------------------------------------
 // Thermoelectric generator fuels
 
 mods.immersiveengineering.Thermoelectric.addTemperatureSource( <nuclearcraft:ingot_block:3>, 1700 );
