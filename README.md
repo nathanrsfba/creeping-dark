@@ -68,6 +68,12 @@ for god knows what reason
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
 
+Changes in v1.5-beta.4
+----------------------
+
+* Fixed a recipe conflict that prevented the crafting of Advanced Generators
+  iron frames
+
 Changes in v1.5-beta.3
 ----------------------
 

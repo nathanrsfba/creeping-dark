@@ -50,7 +50,7 @@ val ironframe = <advgenerators:iron_frame>;
 // val iron = <minecraft:iron_ingot>; // Defined above
 
 recipes.remove( ironframe );
-recipes.addShaped( "IronFrameNew", ironframe, [ 
+recipes.addShaped( "IronFrameNew", ironframe * 2, [ 
 [iron, null, iron],
 [null, null, null],
 [iron, null, iron]
