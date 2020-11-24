@@ -68,6 +68,13 @@ for god knows what reason
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
 
+Changes in v1.5-beta.6
+----------------------
+
+* Added recipes for Advanced Generators advanced pressure valve
+  and gold turbine. (AG appears to not be properly registering Induction
+  Smelter recipes)
+
 Changes in v1.5-beta.5
 ----------------------
 
