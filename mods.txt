@@ -39,7 +39,7 @@ DefaultWorldGenerator-port-1.12-2.3.jar
 diethopper-1.1.jar
 Ding-1.12.2-1.0.2.jar
 EnderCore-1.12.2-0.5.76.jar
-EnderIO-1.12.2-5.2.61.jar
+EnderIO-1.12.2-5.2.65.jar
 EnderStorage-1.12.2-2.4.6.137-universal.jar
 Erebus-1.0.31.jar
 Exchangers-1.12.2-2.9.jar
