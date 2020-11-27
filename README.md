@@ -68,6 +68,11 @@ for god knows what reason
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
 
+Changes in v1.5-beta.7
+----------------------
+
+* Updated EnderIO to fix an incompatibility with LagGoggles
+
 Changes in v1.5-beta.6
 ----------------------
 
