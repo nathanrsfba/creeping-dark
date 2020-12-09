@@ -32,12 +32,13 @@ See the changelog below for the full details.
 Installation
 ------------
 
-This pack is meant to be installed using the Twitch launcher, or other launcher
-that has the ability to install Curse mod packs.
+As of 1.5 Beta 8, Twitch no longer supports Minecraft mods, and its replacement
+isn't ready yet, so I'm now targetting GDLauncher. It's supposed to create
+CurseForge compatible packs, so feel free to use the official launcher
+(whenever it gets its shit together), but from now on GDLauncher will be the
+official platform for this pack.
 
-To install the pack file in the Twitch launcher: Click Mods, then Minecraft,
-click 'Create Custom Profile', then click "Import a previously created
-profile". Then select the pack zipfile.
+To install the pack in GDLauncher, click the [+] button, select "Import Zip", then navigate to the Creeping Dark .zip file.
 
 Questions
 ---------
@@ -67,6 +68,12 @@ for god knows what reason
 
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
+
+Changes in v1.5-beta.8
+----------------------
+
+* Some minor updates to the quest descriptions, particularly information on how
+  to enter the pyramids in Atum. Also working on some nicer questline names
 
 Changes in v1.5-beta.7
 ----------------------
