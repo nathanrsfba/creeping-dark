@@ -218,7 +218,7 @@ Known dimensions:
 4: Aether
 7: Twilight Forest
 17: Atum
-20: Promised Land (BOP)
+20: Betweenlands
 66: Erebus
 87: My utility dimension
 150+: AR planets
