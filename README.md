@@ -17,15 +17,12 @@ unlocks a new tier of technology... and one of the Keys.
 While there is a progression mechanic, the recipes are unchanged, with a few
 exceptions. Once you've "unlocked" a mod, it works the way it always has.
 
-Notes about v1.5 Beta
-----------------------
+About v1.5
+----------
 
 Due to the drama surrounding LandMaster mods, LandCraft has been removed
 from the pack. In its place have been inserted TropiCraft and Atum. Other
 recipes involving Landia have been altered to reflect this change.
-
-I feel like some 'progression' has been lost, but there doesn't really seem to
-be anything that really *properly* fills the hole left by Landia.
 
 See the changelog below for the full details.
 
@@ -39,6 +36,51 @@ CurseForge compatible packs, so feel free to use the official launcher
 official platform for this pack.
 
 To install the pack in GDLauncher, click the [+] button, select "Import Zip", then navigate to the Creeping Dark .zip file.
+
+Server Installation
+-------------------
+
+1. Download Minecraft Forge v14.23.5.2854 and install it into a folder
+   (The standalone server doesn't seem to like v2847, even though it works on
+   the client just file)
+2. From the command line, run the server and accept the EULA.
+   The command will look something like the following:
+   ```java -jar forge-1.12.2-14.23.5.2854 nogui```
+   The 'nogui' part is important. For some reason, the GUI will slow the
+   server to a crawl
+3. Run the server again to generate the needed files and folders, then
+   shut it down
+4. In the server.properties file, set "enable-command-block" to "true".
+   (And adjust any other options to taste)
+5. From a Creeping Dark client install, copy the following folders into
+   the server folder:
+
+   * config
+   * mods
+   * resources
+   * scripts
+   * structures
+   
+   Remove the following mods from the 'mods' folder as they're client side
+   only, and not required on the server:
+
+   * controlling
+   * ctgui
+   * ctm
+   * ding
+   * jeiintegration
+   * jeresources
+   * llor
+   * moreoverlays
+   * mousetweaks
+   * thaumicjei
+   * toastcontrol
+   * reauth
+
+6. Start the server, or upload the folder to your hosting platform and run it
+
+This is not fully tested in the most recent version. A new world appears to
+work, but I've had issues trying to import a world from singleplayer.
 
 Questions
 ---------
@@ -69,81 +111,21 @@ for god knows what reason
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
 
-Changes in v1.5-beta.8
-----------------------
+Changes in v1.5
+---------------
 
-* Some minor updates to the quest descriptions, particularly information on how
-  to enter the pyramids in Atum. Also working on some nicer questline names
-
-Changes in v1.5-beta.7
-----------------------
-
-* Updated EnderIO to fix an incompatibility with LagGoggles
-
-Changes in v1.5-beta.6
-----------------------
-
-* Added recipes for Advanced Generators advanced pressure valve
-  and gold turbine. (AG appears to not be properly registering Induction
-  Smelter recipes)
-
-Changes in v1.5-beta.5
-----------------------
-
-* Fixed the jetpack item in the shop that broke due to an update to 
-  Simply Jetpacks
-
-Changes in v1.5-beta.4
-----------------------
-
-* Fixed a recipe conflict that prevented the crafting of Advanced Generators
-  iron frames
-
-Changes in v1.5-beta.3
-----------------------
-
-* Re-ran the Just Enough Resources profiler. New blocks that generate in the
-  world in the latest version should now show up in JEI
-
-Changes in v1.5-beta.2
-----------------------
-
-* Removed TheOneProbe, added HWYLA and WAWLA
-  (For reasons that are not clear to me, I somehow had both TOP and HWYLA in
-  the pack at the same time. I've decided to go with HWYLA, at least for now.)
-* Removed most TropiCraft worldgen from the overworld. It just seemed to 
-  'clutter' the overworld quite a bit. You can make the required materials from
-  HarvestCraft coconuts and pineapples. Bamboo still generates.
-
-Changes in v1.5-beta.1
-----------------------
-
-* Added TropiCraft to the progression, leading into Atum
-* Pina Colada (necessary to enter the Tropics) must now be made with the
-  drink mixer
-* The drink mixer can now be made using porphyry (from Atum) in addition
-  Chunk'O'Head
-* Porphyry can now be found in the Mining and Hunting dimensions. It
-  generates similarly to andesite
-* The Tropis portal enchanter wand now uses a piece of chunk to craft
-  (just to provide slightly more to do in the dimension)
-* The golden scarab (for opening the Atum portal) is now made using the
-  Tropics portal wand in the resonator
-* Mods have been updated to latest versions
-* Some minor tweaks and integrations
-
-Changes in v1.5-alpha
----------------------
-
-* Removed LandCraft; added Atum
-* Relic ore is found in the Mining/Hunting dimensions (instead of Tungsten)
-* The portal scarab is made by putting a golden brooch into the resonator
-* The resonator requires an IE circuit board (instead of the board being used
-  directly in the creation of the portal, which felt a bit contrived)
-* The amethyst key is found in the Pharaoh's sarcophagus after killing him
-* The Deep Dark portal is now created using Khnumite
+* Due to drama involving LandMaster, LandCraft has been removed from the pack.
+  PlusTiC has been replaced by a third-party fork.
+* To replace Landia, TropiCraft and Atum2 have been added to the pack.
+* TropiCraft can be accessed after either the Mining Dimension or the Hunting
+  Dimension
+* TropiCraft leads to Atum, using bits from Immersive Engineering and Extra
+  Utilities.
+* The Deep Dark portal is now created using Khnumite from Atum
 * The water key is now reconstituted using the AA empowerer
-* Slightly adjusted the food section in the shop
+* Mods have been updated
+* Various tweaks, integrations and bugfixes
+* Updated Forge to a slightly newer version
 
 Changes in v1.4.4
 -----------------
@@ -211,4 +193,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 IN THE SOFTWARE.
+
 
