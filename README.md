@@ -79,9 +79,6 @@ Server Installation
 
 6. Start the server, or upload the folder to your hosting platform and run it
 
-This is not fully tested in the most recent version. A new world appears to
-work, but I've had issues trying to import a world from singleplayer.
-
 Questions
 ---------
 
@@ -110,6 +107,11 @@ for god knows what reason
 
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
+
+Changes in v1.5.1
+-----------------
+
+* Updated EnderIO which resolved the issues I was having with running a server
 
 Changes in v1.5
 ---------------
