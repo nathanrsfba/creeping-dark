@@ -36,7 +36,7 @@ Controlling-3.0.10.jar
 CookingForBlockheads_1.12.2-6.5.0.jar
 CosmeticArmorReworked-1.12.2-v5a.jar
 CraftingTweaks_1.12.2-8.1.9.jar
-CraftTweaker2-1.12-4.1.20.602.jar
+CraftTweaker2-1.12-4.1.20.618.jar
 CTM-MC1.12.2-1.0.2.31.jar
 Decocraft-2.6.3_1.12.2.jar
 DefaultWorldGenerator-port-1.12-2.3.jar
@@ -100,6 +100,7 @@ mysticallib-1.12.2-1.9.0.jar
 natura-1.12.2-4.3.2.69.jar
 NoMobSpawningOnTrees-1.2.2-mc1.12.2.jar
 NuclearCraft-2.18y-1.12.2.jar
+Numina-1.12.2-1.0.38.jar
 Nutrition-1.12.2-4.6.1.jar
 omlib-1.12.2-3.1.4-249.jar
 OpenBlocks-1.12.2-1.8.1.jar
