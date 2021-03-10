@@ -4449,7 +4449,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "The Sky is Falling",
-          "desc:8": "The good news: You don\u0027t have go hunting all over the countryside for meteorites anymore. You just need to find one. You can duplicate whatever press(es) you find and convert them into the others using sky stone dust."
+          "desc:8": "The good news: You don\u0027t have go hunting all over the countryside for meteorites anymore. You just need to find one. You can duplicate whatever press(es) you find and convert them into the others using sky stone dust.\n\nIf you\u0027re having trouble finding even a single meteor, build a meteorite compass."
         }
       },
       "tasks:9": {
@@ -4462,36 +4462,30 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "appliedenergistics2:sky_compass",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
               "id:8": "appliedenergistics2:material",
               "Count:3": 1,
               "Damage:2": 14,
               "OreDict:8": ""
             },
-            "2:10": {
+            "1:10": {
               "id:8": "appliedenergistics2:material",
               "Count:3": 1,
               "Damage:2": 15,
               "OreDict:8": ""
             },
-            "3:10": {
+            "2:10": {
               "id:8": "appliedenergistics2:material",
               "Count:3": 1,
               "Damage:2": 13,
               "OreDict:8": ""
             },
-            "4:10": {
+            "3:10": {
               "id:8": "appliedenergistics2:material",
               "Count:3": 1,
               "Damage:2": 19,
               "OreDict:8": ""
             },
-            "5:10": {
+            "4:10": {
               "id:8": "appliedenergistics2:sky_stone_block",
               "Count:3": 16,
               "Damage:2": 0,
@@ -24751,7 +24745,7 @@
       "home_anchor_y:5": 0.0,
       "livesmax:3": 10,
       "home_anchor_x:5": 0.0,
-      "editmode:1": 0,
+      "editmode:1": 1,
       "hardcore:1": 0,
       "home_image:8": "plaguesky:plague.png",
       "party_enable:1": 1,
