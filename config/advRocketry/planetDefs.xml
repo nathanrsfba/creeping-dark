@@ -30,7 +30,7 @@
     <planet name="Mercury" customIcon="MarsLike" DIMID="150">
       <isKnown>True</isKnown>
       <GasGiant>false</GasGiant>
-      <atmosphereDensity>70</atmosphereDensity>
+      <atmosphereDensity>76</atmosphereDensity>
       <gravitationalMultiplier>38</gravitationalMultiplier>
       <orbitalDistance>39</orbitalDistance>
       <rotationalPeriod>4224000</rotationalPeriod>
@@ -43,8 +43,9 @@
     <planet name="Venus" customIcon="MarsLike" DIMID="151">
       <isKnown>True</isKnown>
       <GasGiant>false</GasGiant>
-      <atmosphereDensity>7500</atmosphereDensity>
+      <atmosphereDensity>124</atmosphereDensity>
       <gravitationalMultiplier>91</gravitationalMultiplier>
+      <fogColor>4.0,1.0,4.0</fogColor>
       <orbitalDistance>72</orbitalDistance>
       <rotationalPeriod>2808000</rotationalPeriod>
       <biomeIds>advancedrocketry:deepswamp</biomeIds>
@@ -76,11 +77,13 @@
     <planet name="Mars" customIcon="MarsLike" DIMID="153">
       <isKnown>True</isKnown>
       <GasGiant>false</GasGiant>
-      <atmosphereDensity>70</atmosphereDensity>
+      <atmosphereDensity>76</atmosphereDensity>
+      <fogColor>1.0,0.9,0.9</fogColor>
+      <skyColor>1.0,0.9,0.9</skyColor>
       <gravitationalMultiplier>38</gravitationalMultiplier>
       <orbitalDistance>152</orbitalDistance>
       <rotationalPeriod>24000</rotationalPeriod>
-      <biomeIds>advancedrocketry:hotdryrock</biomeIds>
+      <biomeIds>advancedrocketry:hotdryrock,minecraft:desert_hills,minecraft:desert,minecraft:mutated_mesa,minecraft:mesa</biomeIds>
       <planet name="Phobos" customIcon="moon" DIMID="154">
         <isKnown>True</isKnown>
         <GasGiant>false</GasGiant>
@@ -128,7 +131,7 @@
       <planet name="Io" customIcon="moon" DIMID="158">
         <isKnown>True</isKnown>
         <GasGiant>false</GasGiant>
-        <atmosphereDensity>70</atmosphereDensity>
+        <atmosphereDensity>76</atmosphereDensity>
         <gravitationalMultiplier>18</gravitationalMultiplier>
         <orbitalDistance>110</orbitalDistance>
         <rotationalPeriod>48000</rotationalPeriod>
@@ -141,7 +144,7 @@
       <planet name="Europa" customIcon="moon" DIMID="159">
         <isKnown>True</isKnown>
         <GasGiant>false</GasGiant>
-        <atmosphereDensity>75</atmosphereDensity>
+        <atmosphereDensity>76</atmosphereDensity>
         <gravitationalMultiplier>13</gravitationalMultiplier>
         <orbitalDistance>175</orbitalDistance>
         <rotationalPeriod>96000</rotationalPeriod>
@@ -247,7 +250,7 @@
       <planet name="Titan" customIcon="moon" DIMID="168">
         <isKnown>True</isKnown>
         <GasGiant>false</GasGiant>
-        <atmosphereDensity>75</atmosphereDensity>
+        <atmosphereDensity>76</atmosphereDensity>
         <gravitationalMultiplier>14</gravitationalMultiplier>
         <orbitalDistance>318</orbitalDistance>
         <rotationalPeriod>384000</rotationalPeriod>
@@ -456,7 +459,7 @@
           <orbitalDistance>88</orbitalDistance>
           <orbitalPhi>0</orbitalPhi>
           <rotationalPeriod>28895</rotationalPeriod>
-          <atmosphereDensity>200</atmosphereDensity>
+          <atmosphereDensity>126</atmosphereDensity>
           <biomeIds>advancedrocketry:hotdryrock</biomeIds>
           <oceanBlock>minecraft:lava</oceanBlock>
           <OreGen>
@@ -507,7 +510,7 @@
           <orbitalDistance>137</orbitalDistance>
           <orbitalPhi>4</orbitalPhi>
           <rotationalPeriod>17082</rotationalPeriod>
-          <atmosphereDensity>73</atmosphereDensity>
+          <atmosphereDensity>76</atmosphereDensity>
           <biomeIds>minecraft:desert_hills,minecraft:mutated_jungle,minecraft:forest_hills,minecraft:forest,minecraft:roofed_forest</biomeIds>
           <OreGen>
               <ore block="nuclearcraft:ingot_block" meta="3" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Thorium Block -->
