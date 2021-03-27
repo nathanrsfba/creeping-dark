@@ -40,7 +40,7 @@
           <ore block="minecraft:coal_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Coal -->
       </OreGen>
     </planet>
-    <planet name="Venus" customIcon="MarsLike" DIMID="151">
+    <planet name="Venus" customIcon="Venusian" DIMID="151">
       <isKnown>True</isKnown>
       <GasGiant>false</GasGiant>
       <atmosphereDensity>124</atmosphereDensity>
@@ -89,7 +89,7 @@
         <GasGiant>false</GasGiant>
         <atmosphereDensity>0</atmosphereDensity>
         <gravitationalMultiplier>10</gravitationalMultiplier>
-        <orbitalDistance>2</orbitalDistance>
+        <orbitalDistance>12</orbitalDistance>
         <rotationalPeriod>6000</rotationalPeriod>
         <OreGen>
             <ore block="thermalfoundation:storage" meta="6" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Platinum -->
@@ -101,7 +101,7 @@
         <GasGiant>false</GasGiant>
         <atmosphereDensity>0</atmosphereDensity>
         <gravitationalMultiplier>10</gravitationalMultiplier>
-        <orbitalDistance>6</orbitalDistance>
+        <orbitalDistance>24</orbitalDistance>
         <rotationalPeriod>24000</rotationalPeriod>
         <OreGen>
             <ore block="nuclearcraft:ingot_block" meta="10" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Zirconium Block -->
@@ -109,7 +109,7 @@
         </OreGen>
       </planet>
     </planet>
-    <planet name="Ceres" customIcon="MarsLike" DIMID="156">
+    <planet name="Ceres" customIcon="Moon" DIMID="156">
       <isKnown>True</isKnown>
       <GasGiant>false</GasGiant>
       <atmosphereDensity>0</atmosphereDensity>
@@ -128,7 +128,7 @@
       <gravitationalMultiplier>253</gravitationalMultiplier>
       <orbitalDistance>520</orbitalDistance>
       <rotationalPeriod>12000</rotationalPeriod>
-      <planet name="Io" customIcon="moon" DIMID="158">
+      <planet name="Io" customIcon="Lava" DIMID="158">
         <isKnown>True</isKnown>
         <GasGiant>false</GasGiant>
         <atmosphereDensity>76</atmosphereDensity>
@@ -141,7 +141,7 @@
             <ore block="thermalfoundation:storage" meta="5" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Nickel -->
         </OreGen>
       </planet>
-      <planet name="Europa" customIcon="moon" DIMID="159">
+      <planet name="Europa" customIcon="WaterWorld" DIMID="159">
         <isKnown>True</isKnown>
         <GasGiant>false</GasGiant>
         <atmosphereDensity>76</atmosphereDensity>
@@ -166,7 +166,7 @@
             <ore block="nuclearcraft:ingot_block" meta="3" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Thorium Block -->
         </OreGen>
       </planet>
-      <planet name="Callisto" customIcon="moon" DIMID="161">
+      <planet name="Callisto" customIcon="IceWorld" DIMID="161">
         <isKnown>True</isKnown>
         <GasGiant>false</GasGiant>
         <atmosphereDensity>0</atmosphereDensity>
@@ -180,9 +180,10 @@
         </OreGen>
       </planet>
     </planet>
-    <planet name="Saturn" customIcon="GasGiantRed" DIMID="162">
+    <planet name="Saturn" customIcon="GasGiantBrown" DIMID="162">
       <isKnown>True</isKnown>
       <GasGiant>true</GasGiant>
+      <hasRings>true</hasRings>
       <atmosphereDensity>0</atmosphereDensity>
       <gravitationalMultiplier>107</gravitationalMultiplier>
       <orbitalDistance>958</orbitalDistance>
@@ -247,7 +248,7 @@
             <ore block="projectred-exploration:stone" meta="7" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Peridot -->
         </OreGen>
       </planet>
-      <planet name="Titan" customIcon="moon" DIMID="168">
+      <planet name="Titan" customIcon="Venusian" DIMID="168">
         <isKnown>True</isKnown>
         <GasGiant>false</GasGiant>
         <atmosphereDensity>76</atmosphereDensity>
