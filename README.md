@@ -108,6 +108,22 @@ for god knows what reason
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
 
+Changes in v1.5.2
+-----------------
+
+* Added some new content mods: Modular Powersuits, Construct's Armory,
+  Decocraft, MrCrayfish's Furniture Mod, Blockcraftery, and Gas Conduits
+* Added some new behind-the-scenes mods: AttributeFix, Dupefix Project, UniDict
+  and FoamFix
+* Updated a number of mods
+* Some minor tweaks to accomodate new mods and mod updates
+* Updated the Plagued Skies mod to fix a problem with plague not being seeded
+  properly when the player changes worlds
+* The Ghast holding the Fire Key Core now has a rather large amount of health
+  (thanks to AttributeFix). You can still kill it with weapons, but it's much
+  easier to reflect its fireballs back at it.
+* Now has a crappy, low-effort custom menu screen, just on general principles.
+
 Changes in v1.5.1
 -----------------
 
