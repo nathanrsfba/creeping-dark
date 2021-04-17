@@ -43,7 +43,7 @@ Decocraft-2.6.3_1.12.2.jar
 DefaultWorldGenerator-port-1.12-2.3.jar
 diethopper-1.1.jar
 Ding-1.12.2-1.0.2.jar
-DupeFixProject-1.12.2-3.1.1.jar
+DupeFixProject-1.12.2-3.1.2.jar
 EnderCore-1.12.2-0.5.76.jar
 EnderIO-1.12.2-5.2.66.jar
 EnderStorage-1.12.2-2.4.6.137-universal.jar
@@ -72,7 +72,7 @@ InventoryTweaks-1.63.jar
 IronBackpacks-1.12.2-3.0.8-12.jar
 ironchest-1.12.2-7.0.72.847.jar
 IvToolkit-1.3.3-1.12.jar
-JAOPCA-1.12.2-2.2.8.103.jar
+JAOPCA-1.12.2-2.2.8.104.jar
 jeiintegration_1.12.2-1.6.0.jar
 jei_1.12.2-4.16.1.302.jar
 journeymap-1.12.2-5.7.1.jar
@@ -97,7 +97,7 @@ Morpheus-1.12.2-3.5.106.jar
 MouseTweaks-2.10-mc1.12.2.jar
 MrTJPCore-1.12.2-2.1.4.43-universal.jar
 MTLib-3.0.6.jar
-mysticallib-1.12.2-1.9.0.jar
+mysticallib-1.12.2-1.10.0.jar
 natura-1.12.2-4.3.2.69.jar
 NoMobSpawningOnTrees-1.2.2-mc1.12.2.jar
 NuclearCraft-2.18y-1.12.2.jar
@@ -145,7 +145,7 @@ tellme-1.12.2-0.7.0-dev.20200919.184303.jar
 tesla-core-lib-1.12.2-1.0.17.jar
 Thaumcraft-1.12.2-6.1.BETA26.jar
 ThaumicJEI-1.12.2-1.6.0-27.jar
-TheBetweenlands-3.7.2-universal.jar
+TheBetweenlands-3.7.3-universal.jar
 ThermalDynamics-1.12.2-2.5.6.1-universal.jar
 ThermalExpansion-1.12.2-5.5.7.1-universal.jar
 ThermalFoundation-1.12.2-2.6.7.1-universal.jar
@@ -155,7 +155,7 @@ Toast Control-1.12.2-1.8.1.jar
 TombManyGraves-1.12-4.2.0.jar
 tropicraft-MC1.12.2-7.1.9.115.jar
 twilightforest-1.12.2-3.11.1021-universal.jar
-UniDict-1.12.2-3.0.6.jar
+UniDict-1.12.2-3.0.8.jar
 WanionLib-1.12.2-2.5.jar
 Wawla-1.12.2-2.6.275.jar
 Waystones_1.12.2-4.1.0.jar
