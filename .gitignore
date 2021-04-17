@@ -3,6 +3,9 @@
 *.bak
 *.swp
 
+# JEI bookmarks live in config. We don't want it spamming up the repo
+config/jei/bookmarks.ini
+
 # Various crap that generally lives in the minecraft folder
 *.dll
 /.ReAuth.cfg
