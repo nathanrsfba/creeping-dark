@@ -11,6 +11,10 @@
     {
       "item": "forge:bucketfilled|0",
       "emc": 0
+    },
+    {
+      "item": "immersiveengineering:treated_wood|0",
+      "emc": 8
     }
   ]
 }
