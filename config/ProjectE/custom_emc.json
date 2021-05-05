@@ -7,6 +7,10 @@
     {
       "item": "minecraft:furnace|0",
       "emc": 8
+    },
+    {
+      "item": "forge:bucketfilled|0",
+      "emc": 0
     }
   ]
 }
