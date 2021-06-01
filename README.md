@@ -108,6 +108,17 @@ for god knows what reason
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
 
+Changes in v1.5.3
+-----------------
+
+* Updated mods
+* A few minor tweaks for ProjectE. While it's not actually part of the pack,
+  players that choose to add it manually will have a slightly better time.
+  (Put another way: I played through the pack with ProjectE for shits and
+  giggles, and squashed a few minor bugs along the way.)
+* Added a custom end message at the credits screen. So stick around for a
+  minute when you come back from the End.
+
 Changes in v1.5.2
 -----------------
 
