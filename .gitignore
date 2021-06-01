@@ -3,8 +3,10 @@
 *.bak
 *.swp
 
-# JEI bookmarks live in config. We don't want it spamming up the repo
+# End-user settings that for some reason live in config.
+# Don't want them spamming up the repo.
 config/jei/bookmarks.ini
+config/machinemuse/powersuits-keybinds.cfg
 
 # Various crap that generally lives in the minecraft folder
 *.dll
