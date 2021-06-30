@@ -18669,7 +18669,8 @@
         115,
         156,
         240,
-        243
+        243,
+        275
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -18681,9 +18682,9 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "actuallyadditions:block_empowerer",
-            "Count:3": 1,
-            "Damage:2": 0,
+            "id:8": "tconstruct:casting",
+            "Count:3": 2,
+            "Damage:2": 1,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -18694,7 +18695,7 @@
           "ismain:1": 0,
           "repeat_relative:1": 1,
           "name:8": "Watery Grave",
-          "desc:8": "You\u0027ll need to use the Empowerer to reconstitute the water key. Place a bucket of water on the empowerer, then place the core, the sapling, some valonite, and a wight heart on the display stands."
+          "desc:8": "You\u0027ll need to use the Smeltery to reconstitute the water key. Place the sapling, some valonite, and a wight heart into the smeltry and let them melt and combine. Then put a casting basin under the faucet, put the core in it, then pour the smeltery contents onto it."
         }
       },
       "tasks:9": {
@@ -22409,6 +22410,160 @@
           }
         }
       }
+    },
+    "274:10": {
+      "questID:3": 274,
+      "preRequisites:11": [
+        117
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "astralsorcery:cap_item_amulet_holder:10": {}
+            },
+            "id:8": "tconstruct:book",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "RTFM (Tinkerers Edition)",
+          "desc:8": "Not technically required. But it tells you how to do stuff."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "astralsorcery:cap_item_amulet_holder:10": {}
+              },
+              "id:8": "tconstruct:book",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:bronzecoin",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "275:10": {
+      "questID:3": 275,
+      "preRequisites:11": [
+        117
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 1,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "ALWAYS",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "tconstruct:smeltery_controller",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "partysinglereward:1": 0,
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "ismain:1": 0,
+          "repeat_relative:1": 1,
+          "name:8": "Melty Tank",
+          "desc:8": "Chances are you already have a smeltery by now. But in case you don\u0027t: You\u0027ll need one to reconstitute the Water Key.\n\nThe Smeltery is a multiblock structure. Consult Materials and You to learn how to build and use it."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "tconstruct:smeltery_controller",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "tconstruct:smeltery_io",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "tconstruct:faucet",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "tconstruct:casting",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "contenttweaker:bronzecoin",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     }
   },
   "questLines:9": {
@@ -24654,6 +24809,20 @@
           "y:3": -108,
           "id:3": 244,
           "sizeY:3": 24
+        },
+        "3:10": {
+          "sizeX:3": 24,
+          "x:3": -180,
+          "y:3": -144,
+          "id:3": 274,
+          "sizeY:3": 24
+        },
+        "4:10": {
+          "sizeX:3": 24,
+          "x:3": -132,
+          "y:3": -144,
+          "id:3": 275,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 16,
@@ -24745,7 +24914,7 @@
       "home_anchor_y:5": 0.0,
       "livesmax:3": 10,
       "home_anchor_x:5": 0.0,
-      "editmode:1": 1,
+      "editmode:1": 0,
       "hardcore:1": 0,
       "home_image:8": "plaguesky:plague.png",
       "party_enable:1": 1,
