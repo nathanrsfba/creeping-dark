@@ -1,8 +1,12 @@
 #loader contenttweaker
 
-// Create the keys to make the End Key
-
 import mods.contenttweaker.Item;
+import mods.contenttweaker.VanillaFactory;
+import mods.contenttweaker.Fluid;
+import mods.contenttweaker.Color;
+
+
+// Create the keys to make the End Key
 
 var diamondkey = mods.contenttweaker.VanillaFactory.createItem( "diamondkey" );
 diamondkey.register();
@@ -55,5 +59,16 @@ waterkeyfrag.register();
 // Disabled talisman head, to be activated using Mekanism
 var talishead = mods.contenttweaker.VanillaFactory.createItem( "disabledtalismanhead" );
 talishead.register();
+
+// Fluids for reconstituting the water key
+
+var liquidHeart = VanillaFactory.createFluid( "heart_essence", Color.fromHex("eeeeee"));
+liquidHeart.register();
+var liquidTree = VanillaFactory.createFluid( "spirit_essence", Color.fromHex("e5bf57"));
+liquidTree.register();
+var liquidValonite = VanillaFactory.createFluid( "liquid_valonite", Color.fromHex("f2eaf2"));
+liquidValonite.register();
+var waterKeyEssence = VanillaFactory.createFluid( "water_key_essence", Color.fromHex("0080c0"));
+waterKeyEssence.register();
 
 

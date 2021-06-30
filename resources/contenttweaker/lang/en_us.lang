@@ -27,3 +27,7 @@ item.contenttweaker.bronzecoin.name=Bronze Coin
 item.contenttweaker.coppercoin.name=Copper Coin
 item.contenttweaker.inactivestar.name=Inert Nether Star
 tile.contenttweaker.netherblackquartz.name=Black Quartz
+fluid.heart_essence=Wight Heart Essence
+fluid.spirit_essence=Spirit Tree Essence
+fluid.liquid_valonite=Molten Valonite
+fluid.water_key_essence=Water Key Essence
