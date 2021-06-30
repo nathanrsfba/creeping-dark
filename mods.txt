@@ -38,7 +38,6 @@ CosmeticArmorReworked-1.12.2-v5a.jar
 CraftingTweaks_1.12.2-8.1.9.jar
 CraftTweaker2-1.12-4.1.20.618.jar
 CTM-MC1.12.2-1.0.2.31.jar
-CustomMainMenu-MC1.12.2-2.0.9.1.jar
 Decocraft-2.6.3_1.12.2.jar
 DefaultWorldGenerator-port-1.12-2.3.jar
 diethopper-1.1.jar
@@ -51,6 +50,7 @@ Erebus-1.0.31.jar
 Exchangers-1.12.2-2.10.1.jar
 ExtraCells-1.12.2-2.6.5.jar
 extrautils2-1.12-1.9.9.jar
+fancymenu_2.1.2_MC_1.12-1.12.2.jar
 foamfix-0.10.11-1.12.2.jar
 Forgelin-1.8.4.jar
 ForgeMultipart-1.12.2-2.6.2.83-universal.jar
@@ -79,6 +79,7 @@ journeymap-1.12.2-5.7.1.jar
 JustEnoughEnergistics-1.12.2-1.0.8.jar
 JustEnoughIDs-1.0.3-55.jar
 JustEnoughResources-1.12.2-0.9.2.60.jar
+konkrete_1.1.6_MC_1.12-1.12.2.jar
 LagGoggles-1.12.2-5.8-132.jar
 LibVulpes-1.12.2-0.4.2-75-universal.jar
 LLOverlayReloaded-1.1.6-mc1.12.2.jar
@@ -90,6 +91,7 @@ MCMultiPart-2.5.3.jar
 Mekanism-1.12.2-9.8.3.390.jar
 MekanismGenerators-1.12.2-9.8.3.390.jar
 MekanismTools-1.12.2-9.8.3.390.jar
+MixinBootstrap-1.0.5.jar
 modtweaker-4.0.18.jar
 ModularPowersuits-1.12.2-1.0.46.jar
 moreoverlays-1.15.1-mc1.12.2.jar

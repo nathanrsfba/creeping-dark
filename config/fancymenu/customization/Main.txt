@@ -1,0 +1,26 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiMainMenu
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  path = resources/creeping/textures/gui/bg.png
+  action = texturizebackground
+}
+
+customization {
+  path = resources/creeping/textures/gui/minecraft.png
+  orientation = top-centered
+  x = -97
+  width = 195
+  actionid = b9676d7b-ff94-410e-81d6-eef151f770551625040884681
+  action = addtexture
+  y = 14
+  height = 94
+}
+
