@@ -108,6 +108,17 @@ for god knows what reason
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
 
+Changes in v1.5.4
+-----------------
+
+* The Water Key is now reconstituted using the Smeltery
+* You can now choose between HWYLA and TheOneProbe, with HWYLA being
+  the default. Go into the keybinds and bind keys to hide one, and 
+  enable the other
+* The custom main menu is now implemented using FancyMenu. No real
+  chagne to the end user, except now Ding works again
+* Updated mods
+
 Changes in v1.5.3
 -----------------
 
@@ -203,7 +214,7 @@ License
 This pack and its assets (not including the mods, which are copyright their
 respective authors) are released under the MIT license:
 
-Copyright 2020 Nathan Roberts
+Copyright 2021 Nathan Roberts
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to
