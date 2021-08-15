@@ -1,6 +1,10 @@
+// Miscellaneous tweaks to make things run smoother, make mods work
+// together better, or fix bugs
+
 // ----------------------------------------
 // Recipes to convert presses amongst each other
 // Taken from ATM3 Remix
+
 var calc = <appliedenergistics2:material:13>;
 var engi = <appliedenergistics2:material:14>;
 var logi = <appliedenergistics2:material:15>;
@@ -19,42 +23,6 @@ recipes.addShapeless( "SiliconPress", sili, [logi, skydust, skydust] );
 recipes.addShapeless( "LogicPress", logi, [engi, skydust, skydust] );
 recipes.addShapeless( "EngPress", engi, [calc, skydust, skydust] );
 recipes.addShapeless( "CalcPress", calc, [sili, skydust, skydust] );
-
-// ------------------------------------------------------------
-// New recipe for iron and gold gears
-// (to resolve conflict with aether rings)
-val irongear = <thermalfoundation:material:24>;
-val goldgear = <thermalfoundation:material:25>;
-val iron = <minecraft:iron_ingot>;
-val gold = <minecraft:gold_ingot>;
-val stick = <minecraft:stick>;
-
-recipes.remove( irongear );
-recipes.addShaped( "IronGearNew", irongear, [ 
-[null, iron, null],
-[iron, stick, iron],
-[null, iron, null]
-] );
-
-recipes.remove( goldgear );
-recipes.addShaped( "GoldGearNew", goldgear, [ 
-[null, gold, null],
-[gold, stick, gold],
-[null, gold, null]
-] );
-
-// ------------------------------------------------------------
-// New recipe for AG iron frames
-// (also to resolve conflict with aether rings)
-val ironframe = <advgenerators:iron_frame>;
-// val iron = <minecraft:iron_ingot>; // Defined above
-
-recipes.remove( ironframe );
-recipes.addShaped( "IronFrameNew", ironframe * 2, [ 
-[iron, null, iron],
-[null, null, null],
-[iron, null, iron]
-] );
 
 // ------------------------------------------------------------
 // Thermoelectric generator fuels
