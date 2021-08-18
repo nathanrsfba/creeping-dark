@@ -1,14 +1,20 @@
 // Tweaks to resolve cross-mod recipe conflicts 
 
+// Some common items
+
+val iron = <minecraft:iron_ingot>;
+val gold = <minecraft:gold_ingot>;
+val stick = <minecraft:stick>;
+val wood = <ore:plankWood>;
+val lapis = <minecraft:dye:4>;
+val paper = <minecraft:paper>;
+
 // ------------------------------------------------------------
 // New recipe for iron and gold gears
 // (to resolve conflict with aether rings)
 
 val irongear = <thermalfoundation:material:24>;
 val goldgear = <thermalfoundation:material:25>;
-val iron = <minecraft:iron_ingot>;
-val gold = <minecraft:gold_ingot>;
-val stick = <minecraft:stick>;
 
 recipes.remove( irongear );
 recipes.addShaped( "IronGearNew", irongear, [ 
@@ -163,5 +169,78 @@ recipes.addShapeless( "scaffoldingconvert",
     <openblocks:scaffolding>,
     [<randomthings:blockofsticks>, <randomthings:blockofsticks>] );
 
+// ------------------------------------------------------------
+// Resolve conflict between Agricraft and Quark trowels
+
+val qtrowel = <quark:trowel>;
+
+recipes.remove( qtrowel );
+recipes.addShaped( "QuarkTrowel", qtrowel, [ 
+[null, iron, iron],
+[stick, null, null],
+[null, null, null]
+] );
+
+// ------------------------------------------------------------
+// Resolve conflict with sound box vs. stained planks
+
+val soundbox = <randomthings:soundbox>;
+recipes.remove( soundbox );
+recipes.addShaped( "soundbox", soundbox, [ 
+[wood, wood, wood],
+[wood, wood, wood],
+[wood, lapis, wood]
+] );
+
+// ------------------------------------------------------------
+// Resolve conflict with iron ladder vs. rusty ladder
+
+val rladder = <malisisdoors:rustyladder>;
+recipes.remove( rladder );
+recipes.addShaped( "rladder", rladder * 2, [ 
+[iron, iron, null],
+[iron, iron, iron],
+[null, iron, iron]
+] );
+
+// ------------------------------------------------------------
+// Resolve conflict with BiblioCraft vs. RT compasses
+
+val bccompass = <bibliocraft:compass>;
+val compass = <minecraft:compass>;
+
+recipes.remove( bccompass );
+recipes.addShaped( "bccompass", bccompass, [ 
+[gold, null, gold],
+[null, compass, null],
+[gold, null, gold]
+] );
+
+// ------------------------------------------------------------
+// Resolve conflict with RT ID card vs. Black Paper
+
+val bpaper = <enderio:item_material:77>;
+val blackink = <ore:dyeBlack>;
+
+recipes.remove( bpaper );
+recipes.addShaped( "bpaper", bpaper, [ 
+[paper, null, null],
+[null, blackink, null],
+[null, null, null]
+] );
+
+// ------------------------------------------------------------
+// New respawn obelisk recipe, to resolve conflict with chest shortcut recipe
+
+val gwood = <natura:nether_planks>;
+val glog = <natura:nether_logs>;
+val respawn = <natura:respawn_obelisk>;
+
+recipes.remove( respawn );
+recipes.addShaped( "respawn", respawn, [ 
+[glog, glog, glog], 
+[glog, gwood, glog], 
+[glog, glog, glog]
+] );
 
 
