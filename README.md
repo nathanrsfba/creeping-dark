@@ -108,6 +108,23 @@ for god knows what reason
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
 
+Changes in v1.5.4.1
+-------------------
+
+Fixed some recipe conflicts:
+
+    * Quark vs. Agricraft trowel
+    * Sound box vs. stained planks
+    * Iron ladder vs. rusty ladder
+    * Bibliocraft vs. Random Things golden compass
+    * RandomThings ID card vs. EnderIO black paper
+    * Respawn obelisk vs. Minecraft chest
+    * Multiple variants of marble bricks
+    * Multiple variants of bronze tools
+    * Malisis curtains vs. Aether capes
+    * Multiple variantes of sickles
+    * Scaffolding vs. Block of Sticks
+
 Changes in v1.5.4
 -----------------
 
