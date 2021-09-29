@@ -23,7 +23,7 @@
 	}],
 	rewards: [{
 		uid: "4f219a17",
-		type: "item",
-		item: "contenttweaker:goldcoin"
+		type: "ftbmoney:money",
+		ftb_money: 512L
 	}]
 }

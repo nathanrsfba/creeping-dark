@@ -79,7 +79,7 @@
 	}],
 	rewards: [{
 		uid: "956e58fa",
-		type: "item",
-		item: "contenttweaker:bronzecoin"
+		type: "ftbmoney:money",
+		ftb_money: 8L
 	}]
 }

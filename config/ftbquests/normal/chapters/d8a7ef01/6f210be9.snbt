@@ -19,7 +19,7 @@
 	}],
 	rewards: [{
 		uid: "57050b9c",
-		type: "item",
-		item: "contenttweaker:silvercoin"
+		type: "ftbmoney:money",
+		ftb_money: 64L
 	}]
 }

@@ -26,7 +26,7 @@
 	}],
 	rewards: [{
 		uid: "28fec969",
-		type: "item",
-		item: "contenttweaker:platinumcoin"
+		type: "ftbmoney:money",
+		ftb_money: 4096L
 	}]
 }
