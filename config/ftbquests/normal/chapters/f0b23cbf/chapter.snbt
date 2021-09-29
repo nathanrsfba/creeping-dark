@@ -1,0 +1,10 @@
+{
+	title: "Rock Bottom",
+	icon: "extrautils2:teleporter 1 1",
+	description: [
+		"Extra Utilities"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

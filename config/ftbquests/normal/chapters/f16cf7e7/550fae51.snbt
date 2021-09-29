@@ -1,0 +1,34 @@
+{
+	title: "Life Crystal",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "thebetweenlands:life_crystal"
+	},
+	x: 4.0d,
+	y: -6.0d,
+	text: [
+		"A rare crystal, used as a power source. You can find them deep in the caves. Look for stalagmites with glowing white stripes at the base."
+	],
+	dependencies: [
+		"1fd04681"
+	],
+	tasks: [{
+		uid: "17becfb2",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "thebetweenlands:life_crystal"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f31b5fe1",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

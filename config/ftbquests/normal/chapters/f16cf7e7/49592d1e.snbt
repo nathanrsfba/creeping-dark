@@ -1,0 +1,24 @@
+{
+	title: "Refinement",
+	icon: "mekanism:otherdust 1 5",
+	x: -0.5d,
+	y: -9.5d,
+	text: [
+		"Crush some obsidian, and put the dust into the infuser with a diamond. (Or, again, make compressed diamond in the enrichment chamber and make eight times as much with a single diamond)"
+	],
+	dependencies: [
+		"dcc1c885"
+	],
+	tasks: [{
+		uid: "d8a29dcd",
+		type: "item",
+		items: [{
+			item: "mekanism:otherdust 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "cc87336c",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

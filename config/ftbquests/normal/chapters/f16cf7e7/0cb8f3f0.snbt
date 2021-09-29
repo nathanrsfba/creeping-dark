@@ -1,0 +1,41 @@
+{
+	title: "Grindr",
+	icon: "thebetweenlands:mortar",
+	x: -0.5d,
+	y: 1.5d,
+	text: [
+		"Grind up various bits of plant and animal and feed the result to your gecko.",
+		"",
+		"For science.",
+		"",
+		"Or maybe alchemy."
+	],
+	dependencies: [
+		"69c17638",
+		"eb4c1f41"
+	],
+	tasks: [{
+		uid: "4e0d4883",
+		type: "item",
+		items: [{
+			item: "thebetweenlands:mortar"
+		}]
+	},
+	{
+		uid: "6d90cfa2",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "thebetweenlands:pestle",
+			tag: {}
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "e2c47231",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

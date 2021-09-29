@@ -1,0 +1,28 @@
+{
+	title: "Nether Quartz",
+	icon: "minecraft:quartz",
+	x: -3.0d,
+	y: 0.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"fdb4609c"
+	],
+	tasks: [{
+		uid: "fb15ed89",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bronzecoin 4"
+		}],
+		count: 4L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "73733be4",
+		type: "item",
+		team_reward: true,
+		item: "minecraft:quartz_ore",
+		count: 6
+	}]
+}

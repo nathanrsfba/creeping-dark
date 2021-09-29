@@ -1,0 +1,42 @@
+{
+	title: "Advanced Alloys",
+	icon: "enderio:item_alloy_ingot 1 2",
+	x: 5.5d,
+	y: -1.0d,
+	text: [
+		"You'll need these alloys for lots of EnderIO stuff"
+	],
+	tasks: [{
+		uid: "5e459bde",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_ingot"
+		}]
+	},
+	{
+		uid: "bde98448",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_ingot 1 1"
+		}]
+	},
+	{
+		uid: "bd77fa47",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_ingot 1 2"
+		}]
+	},
+	{
+		uid: "f6e36297",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_ingot 1 7"
+		}]
+	}],
+	rewards: [{
+		uid: "276327ef",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

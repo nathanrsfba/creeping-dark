@@ -1,0 +1,47 @@
+{
+	title: "Fuel",
+	icon: "advancedrocketry:fuelingstation",
+	x: 3.0d,
+	y: 4.0d,
+	text: [
+		"To make rocket fuel, pipe the hydrogen and oxygen from the electrolyzer into a chemical reactor. You can store it in tanks and load them into your rocket using a fueling station. Use the linker to connect the fueling station to the rocket.",
+		"",
+		"(The chemical reactor is, once again, a multiblock.)"
+	],
+	dependencies: [
+		"59581749"
+	],
+	tasks: [{
+		uid: "bf93aaff",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:chemicalreactor"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "5034a395",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:fuelingstation"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "43f61646",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "libvulpes:linker"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "167a2c3a",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

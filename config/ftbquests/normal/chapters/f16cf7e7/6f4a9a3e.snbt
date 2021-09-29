@@ -1,0 +1,24 @@
+{
+	title: "Turing Pit",
+	icon: "thebetweenlands:items_misc 1 24",
+	x: 4.0d,
+	y: -3.0d,
+	text: [
+		"Find some Sludge Plains and murder some Tar Beasts."
+	],
+	dependencies: [
+		"1fd04681"
+	],
+	tasks: [{
+		uid: "2004ae36",
+		type: "item",
+		items: [{
+			item: "thebetweenlands:items_misc 1 24"
+		}]
+	}],
+	rewards: [{
+		uid: "e268f01f",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

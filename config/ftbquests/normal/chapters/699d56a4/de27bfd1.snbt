@@ -1,0 +1,93 @@
+{
+	title: "Hammerspace",
+	icon: {
+		id: "enderstorage:ender_storage",
+		tag: {
+			Frequency: {
+				middle: 1,
+				left: 14,
+				right: 4
+			}
+		}
+	},
+	x: -7.5d,
+	y: -3.0d,
+	text: [
+		"The spatial storage unit holding the gold key is hidden away in Ender Space. You'll need to build an ender chest (from Ender Storage) and key it to the following colors: Red, Orange, Yellow. (Get some dyes of that color, then click the key pieces at the top of the chest.)",
+		"",
+		"The storage cell will regenerate one minute after being taken out of the chest, so you can reload it if you screw up and lose the key, or are playing multiplayer."
+	],
+	dependencies: [
+		"4f6e4f14"
+	],
+	tasks: [{
+		uid: "29bf8651",
+		type: "item",
+		items: [{
+			item: "enderstorage:ender_storage"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b2b13d7d",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "dyeRed",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dyeRed"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "de39ea16",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "dyeOrange",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dyeOrange"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "76aaad02",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "dyeYellow",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dyeYellow"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2387bf74",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	title: "Lead",
+	icon: "thermalfoundation:material 1 131",
+	x: -4.0d,
+	y: -4.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"627c3307"
+	],
+	tasks: [{
+		uid: "b6abb945",
+		type: "item",
+		items: [{
+			item: "contenttweaker:silvercoin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "dddee6aa",
+		type: "item",
+		team_reward: true,
+		item: "thermalfoundation:ore 1 3",
+		count: 16
+	}]
+}

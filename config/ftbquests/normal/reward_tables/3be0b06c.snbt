@@ -1,0 +1,54 @@
+{
+	title: "Rare",
+	loot_size: 1,
+	rewards: [{
+		item: "minecraft:diamond"
+	},
+	{
+		item: "minecraft:emerald"
+	},
+	{
+		item: "minecraft:gold_ingot",
+		count: 16
+	},
+	{
+		item: "minecraft:ender_pearl",
+		count: 4
+	},
+	{
+		item: "botania:manaresource 1 4"
+	},
+	{
+		item: "minecraft:ghast_tear"
+	},
+	{
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "exchangers:iron_exchanger",
+			tag: {
+				exmode: 0,
+				forceDropItems: 0b,
+				range: 0,
+				blockstate: {
+					Name: "minecraft:air"
+				}
+			}
+		}
+	},
+	{
+		item: "thermalfoundation:material 1 134",
+		count: 4
+	}],
+	loot_crate: {
+		string_id: "rare",
+		item_name: "Rare",
+		color: 16777215,
+		drops: {
+			boss: 0,
+			passive: 0,
+			monster: 0
+		}
+	}
+}

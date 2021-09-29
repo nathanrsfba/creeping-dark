@@ -1,0 +1,26 @@
+{
+	title: "Unearthed",
+	icon: "botania:livingrock",
+	x: -4.5d,
+	y: -3.5d,
+	text: [
+		"To reconstitute the Earth key, place the core and the materials on the Botania Infusion Alter and give it some mana. When it's ready, finish it off with a piece of livingrock"
+	],
+	dependencies: [
+		"17c66393",
+		"8916494c",
+		"b41d4337"
+	],
+	tasks: [{
+		uid: "168e657e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:earthkey"
+		}]
+	}],
+	rewards: [{
+		uid: "4dfbffee",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

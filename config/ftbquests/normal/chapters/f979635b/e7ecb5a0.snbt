@@ -1,0 +1,36 @@
+{
+	title: "Lapis",
+	icon: "minecraft:dye 1 4",
+	x: -6.0d,
+	y: -1.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"627c3307"
+	],
+	tasks: [{
+		uid: "5768d056",
+		type: "item",
+		items: [{
+			item: "contenttweaker:silvercoin"
+		}],
+		consume_items: true
+	},
+	{
+		uid: "8d805b78",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bronzecoin 5"
+		}],
+		count: 5L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "494e0675",
+		type: "item",
+		team_reward: true,
+		item: "minecraft:lapis_ore",
+		count: 3
+	}]
+}

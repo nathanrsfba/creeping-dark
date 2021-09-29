@@ -1,0 +1,28 @@
+{
+	title: "Boron",
+	icon: "nuclearcraft:ingot 1 5",
+	x: -7.0d,
+	y: -2.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"f7842afb"
+	],
+	tasks: [{
+		uid: "a0345167",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bronzecoin 4"
+		}],
+		count: 4L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "4b3a4657",
+		type: "item",
+		team_reward: true,
+		item: "nuclearcraft:ore 1 5",
+		count: 16
+	}]
+}

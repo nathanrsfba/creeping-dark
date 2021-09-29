@@ -1,0 +1,17 @@
+{
+	title: "Food",
+	loot_size: 1,
+	rewards: [{
+		item: "actuallyadditions:item_food 1 3"
+	}],
+	loot_crate: {
+		string_id: "food",
+		item_name: "Food",
+		color: 16777215,
+		drops: {
+			boss: 0,
+			passive: 0,
+			monster: 0
+		}
+	}
+}

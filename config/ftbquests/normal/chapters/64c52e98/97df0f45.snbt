@@ -1,0 +1,27 @@
+{
+	title: "Breath of Life",
+	icon: "thaumcraft:pedestal_arcane",
+	x: -1.0d,
+	y: 0.0d,
+	text: [
+		"The Infusion Alter is required to reconstitute the air key. Place the core on the central pedestal, place the egg, sapling, and gravitite onto the outer pedestals, and supply a jar with 10 units of Aer essense, and begin the infusion.",
+		"",
+		"You might want to make some candles and surround the altar with them, to stabilize it. Make sure to make them symmetrical around the center of the alter, else it will just make matters worse."
+	],
+	dependencies: [
+		"db0b82ef",
+		"750b51de"
+	],
+	tasks: [{
+		uid: "ff2feef6",
+		type: "item",
+		items: [{
+			item: "contenttweaker:airkey"
+		}]
+	}],
+	rewards: [{
+		uid: "5e26ce17",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

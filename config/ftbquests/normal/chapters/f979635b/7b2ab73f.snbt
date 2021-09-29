@@ -1,0 +1,24 @@
+{
+	title: "Jam Donut",
+	icon: "thebetweenlands:jam_donut",
+	x: -10.0d,
+	y: 0.5d,
+	text: [
+		"Edible in the Betweenlands!"
+	],
+	tasks: [{
+		uid: "b8cde2e7",
+		type: "item",
+		items: [{
+			item: "contenttweaker:coppercoin 11"
+		}],
+		count: 11L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "f85b814e",
+		type: "item",
+		team_reward: true,
+		item: "thebetweenlands:jam_donut"
+	}]
+}

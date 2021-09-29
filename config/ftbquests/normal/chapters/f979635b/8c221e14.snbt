@@ -1,0 +1,27 @@
+{
+	title: "Sand",
+	icon: "minecraft:sand",
+	x: -12.0d,
+	y: -4.5d,
+	text: [
+		"Sometimes you just need the most basic materials."
+	],
+	dependencies: [
+		"627c3307"
+	],
+	tasks: [{
+		uid: "62ef2e0c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:coppercoin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "eb7a448d",
+		type: "item",
+		team_reward: true,
+		item: "minecraft:sand",
+		count: 32
+	}]
+}

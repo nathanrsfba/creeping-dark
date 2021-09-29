@@ -1,0 +1,26 @@
+{
+	title: "Antlion Overlord",
+	icon: "erebus:antlion_egg",
+	x: -3.0d,
+	y: -3.5d,
+	text: [
+		"The Earth Key Core is held by the Antlion Overlord. Search the Erebus for his pyramid and solve the puzzles within to reach him.",
+		"",
+		"Once he's dead, break open his egg to reveal the fragment within."
+	],
+	dependencies: [
+		"10d047d4"
+	],
+	tasks: [{
+		uid: "6c2cac7c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:earthkeyfrag"
+		}]
+	}],
+	rewards: [{
+		uid: "0ca7e781",
+		type: "item",
+		item: "contenttweaker:platinumcoin"
+	}]
+}

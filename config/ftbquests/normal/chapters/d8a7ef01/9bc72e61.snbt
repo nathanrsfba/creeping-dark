@@ -1,0 +1,27 @@
+{
+	title: "32 Oz",
+	icon: "enderio:block_fused_quartz",
+	x: 1.0d,
+	y: 3.5d,
+	text: [
+		"A block of blast-resistant glass.",
+		"",
+		"Can also generally be used in recipes that call for hardened glass."
+	],
+	dependencies: [
+		"031c96a4",
+		"bc67b8ca"
+	],
+	tasks: [{
+		uid: "96f14da7",
+		type: "item",
+		items: [{
+			item: "enderio:block_fused_quartz"
+		}]
+	}],
+	rewards: [{
+		uid: "25b74fda",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

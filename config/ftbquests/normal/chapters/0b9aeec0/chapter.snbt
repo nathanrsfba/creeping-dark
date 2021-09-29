@@ -1,0 +1,10 @@
+{
+	title: "Eye of Evil",
+	icon: "thebetweenlands:sapling_spirit_tree",
+	description: [
+		"More Betweenlands"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

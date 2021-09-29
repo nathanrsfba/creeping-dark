@@ -1,0 +1,28 @@
+{
+	title: "Black Quartz",
+	icon: "actuallyadditions:item_misc 1 5",
+	x: -4.0d,
+	y: 0.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"43a2bab9"
+	],
+	tasks: [{
+		uid: "32d8ce61",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bronzecoin 4"
+		}],
+		count: 4L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "bc28d3c6",
+		type: "item",
+		team_reward: true,
+		item: "actuallyadditions:block_misc 1 3",
+		count: 16
+	}]
+}

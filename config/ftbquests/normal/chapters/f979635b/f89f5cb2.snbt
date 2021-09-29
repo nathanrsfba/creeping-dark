@@ -1,0 +1,49 @@
+{
+	title: "Flamethrower",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "mekanism:flamethrower",
+		tag: {
+			mekData: {
+				stored: {
+					amount: 24000,
+					gasName: "hydrogen"
+				}
+			}
+		}
+	},
+	x: -14.0d,
+	y: 3.0d,
+	text: [
+		"Burn, baby, burn"
+	],
+	tasks: [{
+		uid: "4a12845b",
+		type: "item",
+		items: [{
+			item: "contenttweaker:silvercoin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "2711a4e0",
+		type: "item",
+		team_reward: true,
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "mekanism:flamethrower",
+			tag: {
+				mekData: {
+					stored: {
+						amount: 24000,
+						gasName: "hydrogen"
+					}
+				}
+			}
+		}
+	}]
+}

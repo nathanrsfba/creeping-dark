@@ -1,0 +1,28 @@
+{
+	title: "Gold",
+	icon: "minecraft:gold_ingot",
+	x: -2.0d,
+	y: -4.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"627c3307"
+	],
+	tasks: [{
+		uid: "1d0edb1f",
+		type: "item",
+		items: [{
+			item: "contenttweaker:silvercoin 4"
+		}],
+		count: 4L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "d925bb43",
+		type: "item",
+		team_reward: true,
+		item: "minecraft:gold_ore",
+		count: 16
+	}]
+}

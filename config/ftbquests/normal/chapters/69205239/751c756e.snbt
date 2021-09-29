@@ -1,0 +1,36 @@
+{
+	title: "Dilithium",
+	icon: "libvulpes:productgem",
+	x: 4.5d,
+	y: 4.0d,
+	text: [
+		"You'll need dilithium to fuel the warp drive. You'll find it on Earth's Moon. Find some ore, grind it up, and put it into the crystallizer to make crystals."
+	],
+	dependencies: [
+		"6aa3e3b0"
+	],
+	tasks: [{
+		uid: "4a745ebc",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "gemDilithium",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any gemDilithium"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7b86d463",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

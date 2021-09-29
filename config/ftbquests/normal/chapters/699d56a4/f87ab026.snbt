@@ -1,0 +1,24 @@
+{
+	title: "Electric crystals",
+	icon: "appliedenergistics2:material 1 1",
+	x: -4.5d,
+	y: -3.0d,
+	text: [
+		"You'll need Certus Quartz to get started with AE2. You can find it in the Twilight Forest. Charged Certus doesn't generate naturally, but can be created using Thermal Foundation's Energetic Infuser"
+	],
+	dependencies: [
+		"4f6e4f14"
+	],
+	tasks: [{
+		uid: "29a5cbc8",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "3104395f",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

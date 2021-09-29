@@ -1,0 +1,24 @@
+{
+	title: "Circuit City",
+	icon: "advancedrocketry:ic",
+	x: 0.0d,
+	y: 2.5d,
+	text: [
+		"Throw the circuit plate back into the cutting machine to make circuits"
+	],
+	dependencies: [
+		"51c540af"
+	],
+	tasks: [{
+		uid: "d49496c0",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:ic"
+		}]
+	}],
+	rewards: [{
+		uid: "a06ae7dc",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

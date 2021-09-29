@@ -1,0 +1,24 @@
+{
+	title: "Wafer biscuits",
+	icon: "advancedrocketry:wafer",
+	x: 0.0d,
+	y: 1.0d,
+	text: [
+		"Build a cutting machine and use that to cut the boule into wafers"
+	],
+	dependencies: [
+		"6ecb0744"
+	],
+	tasks: [{
+		uid: "c52b340a",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:wafer"
+		}]
+	}],
+	rewards: [{
+		uid: "6d54dae9",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

@@ -1,0 +1,35 @@
+{
+	title: "Scary",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "atum:scarab"
+	},
+	x: 0.5d,
+	y: 1.0d,
+	text: [
+		"Build a Resonator, and throw the Tropics wand into it. Unlike most Resonator recipes, this needs no power."
+	],
+	dependencies: [
+		"302f304f",
+		"d4b97adb",
+		"8970e2a3"
+	],
+	tasks: [{
+		uid: "848ce1c9",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "atum:scarab"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "8f38e93d",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

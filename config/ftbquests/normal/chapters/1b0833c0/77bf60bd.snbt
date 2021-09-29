@@ -1,0 +1,26 @@
+{
+	title: "Suck It Up",
+	icon: "immersiveengineering:material 1 26",
+	x: -1.0d,
+	y: 1.0d,
+	text: [
+		"You'll need vacuum tubes to make a circuitboard"
+	],
+	dependencies: [
+		"9cf5af8d",
+		"c7606fe2",
+		"a6b862cf"
+	],
+	tasks: [{
+		uid: "660ce75c",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:material 1 26"
+		}]
+	}],
+	rewards: [{
+		uid: "1f428dcc",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

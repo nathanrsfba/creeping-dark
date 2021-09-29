@@ -1,0 +1,10 @@
+{
+	title: "Fading Fast",
+	icon: "minecraft:grass",
+	description: [
+		"The basics, and the first Key to the End"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

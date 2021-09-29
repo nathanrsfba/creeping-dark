@@ -1,0 +1,31 @@
+{
+	title: "Atumic",
+	icon: "minecraft:sandstone",
+	x: 0.5d,
+	y: 2.5d,
+	text: [
+		"To build the portal to Atum:",
+		"",
+		"1. Place a 5x5 block of sandstone",
+		"2. Place a 1-block thick 'ring' of sandstone on top of it, and fill it with water",
+		"3. Place a 2-block tall pillar of sandstone at each corner",
+		"4. Finally, throw the scarab into the water.",
+		"",
+		"Then... jump in!",
+		"",
+		"You'll want to sleep in a bed near the portal; if you die, you'll respawn in the Atum realm... totally helpless."
+	],
+	dependencies: [
+		"8cf33963"
+	],
+	tasks: [{
+		uid: "22308bd7",
+		type: "dimension",
+		dim: 17
+	}],
+	rewards: [{
+		uid: "1b2a408e",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

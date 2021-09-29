@@ -1,0 +1,10 @@
+{
+	title: "Playing God",
+	icon: "rftools:dimensional_shard",
+	description: [
+		"RFTools and the Mining Dimension"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

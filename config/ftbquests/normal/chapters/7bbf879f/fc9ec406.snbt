@@ -1,0 +1,69 @@
+{
+	title: "Hide in the Sky",
+	icon: "aether_legacy:skyroot_sapling",
+	x: -1.0d,
+	y: 2.5d,
+	text: [
+		"The Silver Key is hidden in the sky realm of the Aether.",
+		"",
+		"To reach it, you'll need to build a portal out of Glowstone Blocks (in the same shape as a Nether portal), and activate it by pouring water into it from a skyroot bucket.",
+		"",
+		"You'll need to get skyroot. It can only found naturally in the Aether, but you can make it using the Conjuration Catalyst. Throw an oak sapling and a piece of dirt into a catalyst-equipped mana pool, then plant the resulting sapling on the resulting dirt."
+	],
+	dependencies: [
+		"58213296"
+	],
+	tasks: [{
+		uid: "2ae573ba",
+		type: "item",
+		items: [{
+			item: "minecraft:glowstone 10"
+		}],
+		count: 10L
+	},
+	{
+		uid: "5fa138cd",
+		type: "item",
+		items: [{
+			item: "botania:manaresource 2 8"
+		}],
+		count: 2L
+	},
+	{
+		uid: "4577eceb",
+		type: "item",
+		items: [{
+			item: "aether_legacy:skyroot_sapling"
+		}]
+	},
+	{
+		uid: "74b8ab85",
+		type: "item",
+		items: [{
+			item: "aether_legacy:aether_dirt"
+		}]
+	},
+	{
+		uid: "b18b7ab0",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "aether_legacy:skyroot_bucket",
+			Damage: 1s
+		}]
+	},
+	{
+		uid: "0d3f1462",
+		type: "item",
+		items: [{
+			item: "botania:conjurationcatalyst"
+		}]
+	}],
+	rewards: [{
+		uid: "294abe52",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

@@ -1,0 +1,34 @@
+{
+	title: "What in Blazes...",
+	icon: {
+		id: "openblocks:trophy",
+		tag: {
+			entity_id: "minecraft:blaze"
+		}
+	},
+	x: -6.0d,
+	y: -3.0d,
+	text: [
+		"The Gold Key is held by a Blaze hidden away in ME spatial storage.",
+		"",
+		"You'll need a 4x4x4 spacial chamber. Use the pylons to build a 5x5x5 wireframe, minus the corners. Then connect them to an ME network. Each strip of pylons requires a channel (12 in total) so you'll need an ME controller to connect them all.",
+		"",
+		"Once you've built the chamber, attach the spatial IO port to the network, place the storage unit into the left side of it, and give it a redstone pulse."
+	],
+	dependencies: [
+		"3b04b038",
+		"de27bfd1"
+	],
+	tasks: [{
+		uid: "bf71327a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:goldkey"
+		}]
+	}],
+	rewards: [{
+		uid: "1c680d7b",
+		type: "item",
+		item: "contenttweaker:goldcoin"
+	}]
+}

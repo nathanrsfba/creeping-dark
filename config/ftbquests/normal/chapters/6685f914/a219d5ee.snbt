@@ -1,0 +1,31 @@
+{
+	title: "ONE POINT TWENTY ONE JIGGAWATTS",
+	icon: {
+		id: "thermalexpansion:dynamo",
+		tag: {
+			RSControl: 0b,
+			Facing: 1b,
+			Energy: 0,
+			Level: 0b
+		}
+	},
+	x: -5.5d,
+	y: 1.5d,
+	text: [
+		"You'll need a way to generate RF power to run most of the machines you'll need.",
+		"",
+		"Just a few options are ...",
+		"* Dynamos from Thermal Expansion",
+		"* Furnace or Survivalist generators from Extra Utilities 2",
+		"* Coal (and later, canola oil) generator from Actually Additions",
+		"* Wind (or solar, but that's more complicated) generator from Mekanism",
+		"* Stirling generator from EnderIO",
+		"* Decay generator from NuclearCraft (craft one and plonk down some Uranium or Thorium blocks next to it)",
+		"",
+		"Some of these options may require unlocking their associated mods first."
+	],
+	tasks: [{
+		uid: "aadea719",
+		type: "checkmark"
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	title: "End!",
+	icon: "enderio:block_enderman_skull",
+	x: -1.0d,
+	y: 1.5d,
+	text: [
+		"Kill an enderman for its pearls"
+	],
+	tasks: [{
+		uid: "7aa6204d",
+		type: "kill",
+		entity: "minecraft:enderman",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "7607efb5",
+		type: "item",
+		item: "contenttweaker:bronzecoin",
+		count: 4
+	}]
+}

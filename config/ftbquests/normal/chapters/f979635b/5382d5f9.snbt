@@ -1,0 +1,28 @@
+{
+	title: "Aluminum",
+	icon: "thermalfoundation:material 1 132",
+	x: -7.0d,
+	y: -3.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"627c3307"
+	],
+	tasks: [{
+		uid: "7db34528",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bronzecoin 2"
+		}],
+		count: 2L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "1578e0ed",
+		type: "item",
+		team_reward: true,
+		item: "immersiveengineering:ore 1 1",
+		count: 16
+	}]
+}

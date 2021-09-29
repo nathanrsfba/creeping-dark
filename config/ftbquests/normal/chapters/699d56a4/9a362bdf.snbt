@@ -1,0 +1,41 @@
+{
+	title: "Implant Ore",
+	icon: "enderio:item_material 1 5",
+	x: -1.5d,
+	y: 0.0d,
+	text: [
+		"You'll need silicon to make energistics circuitry. There's a few ways to do it.",
+		"",
+		"* Smelt up some ground certus or nether quartz",
+		"",
+		"* Sand in the Mekanism crusher",
+		"",
+		"* Clay or sand in the SAG mill. (Sand only has a 50% chance to generate silicon)"
+	],
+	dependencies: [
+		"4f6e4f14"
+	],
+	tasks: [{
+		uid: "600fa6cc",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "itemSilicon",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any itemSilicon"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "02a527e1",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

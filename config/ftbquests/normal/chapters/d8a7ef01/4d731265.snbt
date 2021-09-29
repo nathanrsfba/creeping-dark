@@ -1,0 +1,36 @@
+{
+	title: "What does SAG stand for anyway?",
+	icon: "enderio:block_simple_alloy_smelter",
+	x: -0.5d,
+	y: 0.5d,
+	text: [
+		"You'll need these machines to make the industrial dyes required for later items.",
+		"",
+		"They can also be used for grinding stuff and making alloys."
+	],
+	dependencies: [
+		"582032bd"
+	],
+	tasks: [{
+		uid: "98826ad5",
+		type: "item",
+		items: [{
+			item: "enderio:block_simple_sag_mill"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "f0f16d91",
+		type: "item",
+		items: [{
+			item: "enderio:block_simple_alloy_smelter"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c48916fd",
+		type: "item",
+		item: "contenttweaker:bronzecoin",
+		count: 2
+	}]
+}

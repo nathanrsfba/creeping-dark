@@ -1,0 +1,28 @@
+{
+	title: "Glowstone",
+	icon: "minecraft:glowstone_dust",
+	x: -2.0d,
+	y: 0.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"fdb4609c"
+	],
+	tasks: [{
+		uid: "1163f082",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bronzecoin 6"
+		}],
+		count: 6L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "26039472",
+		type: "item",
+		team_reward: true,
+		item: "minecraft:glowstone",
+		count: 8
+	}]
+}

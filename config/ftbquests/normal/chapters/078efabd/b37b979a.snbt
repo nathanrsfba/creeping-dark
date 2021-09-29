@@ -1,0 +1,38 @@
+{
+	title: "Ender melt",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "ender",
+			Amount: 1000
+		}
+	},
+	x: -3.5d,
+	y: -1.0d,
+	text: [
+		"You'll need a bit of melted ender pearls to make the hunting portal frame. There's several ways to make it, including the magma crucible, the Nuclearcraft melter, or even just the smeltery. Melt some, pour it in a tank, and scoop it up with a bucket."
+	],
+	tasks: [{
+		uid: "cdbd12a1",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "ender",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "9270eeaf",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

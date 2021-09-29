@@ -1,0 +1,148 @@
+{
+	title: "Diggy Diggy Hole",
+	icon: "minecraft:iron_ore",
+	x: -4.0d,
+	y: -1.5d,
+	text: [
+		"You'll need a number of materials to complete your quest... time to start mining.",
+		"",
+		"This is by no means an exhaustive list of the materials you'll need... just the basics."
+	],
+	tasks: [{
+		uid: "4d8e4693",
+		type: "item",
+		items: [{
+			item: "minecraft:iron_ore"
+		}]
+	},
+	{
+		uid: "cbda1e1d",
+		type: "item",
+		items: [{
+			item: "minecraft:coal"
+		}]
+	},
+	{
+		uid: "d894d7bf",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "oreCopper",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreCopper"
+				}
+			}
+		}]
+	},
+	{
+		uid: "f46dba9a",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "oreTin",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreTin"
+				}
+			}
+		}]
+	},
+	{
+		uid: "1ecb8274",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "oreLead",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreLead"
+				}
+			}
+		}]
+	},
+	{
+		uid: "7e109a92",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "oreSilver",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreSilver"
+				}
+			}
+		}]
+	},
+	{
+		uid: "3b06d4ca",
+		type: "item",
+		items: [{
+			item: "minecraft:gold_ore"
+		}]
+	},
+	{
+		uid: "a9ba1e7f",
+		type: "item",
+		items: [{
+			item: "minecraft:dye 1 4"
+		}]
+	},
+	{
+		uid: "76c4f6b3",
+		type: "item",
+		items: [{
+			item: "minecraft:diamond"
+		}]
+	},
+	{
+		uid: "ef45b844",
+		type: "item",
+		items: [{
+			item: "minecraft:redstone"
+		}]
+	},
+	{
+		uid: "5ba82eb4",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "oreAluminum",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any oreAluminum"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "f5bbb3f9",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

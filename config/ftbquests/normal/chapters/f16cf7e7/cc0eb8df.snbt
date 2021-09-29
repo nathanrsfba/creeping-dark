@@ -1,0 +1,24 @@
+{
+	title: "Valonite",
+	icon: "thebetweenlands:items_misc 1 19",
+	x: -0.5d,
+	y: -1.5d,
+	text: [
+		"A valuable gem found deep underground"
+	],
+	dependencies: [
+		"b17715e5"
+	],
+	tasks: [{
+		uid: "adc98819",
+		type: "item",
+		items: [{
+			item: "thebetweenlands:items_misc 1 19"
+		}]
+	}],
+	rewards: [{
+		uid: "8b34d85a",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

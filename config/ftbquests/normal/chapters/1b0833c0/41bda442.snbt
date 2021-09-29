@@ -1,0 +1,54 @@
+{
+	title: "Tropical Punch",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "tropicraft:cocktail",
+		tag: {
+			Ingredients: [{
+				IngredientID: 10b
+			},
+			{
+				IngredientID: 12b
+			}],
+			Color: 15724527,
+			DrinkID: 6b
+		}
+	},
+	x: 2.0d,
+	y: -0.5d,
+	text: [
+		"Find some coconut and pineapple, cut them into chunks, then place both of them in the drink mixer, and then a bamboo mug.",
+		"",
+		"(Right click the §obase§r of the mixer to add items)"
+	],
+	dependencies: [
+		"4120ff7c"
+	],
+	tasks: [{
+		uid: "a73f850a",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tropicraft:cocktail",
+			tag: {
+				Ingredients: [{
+					IngredientID: 10b
+				},
+				{
+					IngredientID: 12b
+				}],
+				Color: 15724527,
+				DrinkID: 6b
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "afcfbf0c",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

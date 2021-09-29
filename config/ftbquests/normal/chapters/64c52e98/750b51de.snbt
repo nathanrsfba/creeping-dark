@@ -1,0 +1,34 @@
+{
+	title: "Infinity",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "thaumcraft:caster_basic"
+	},
+	x: 0.5d,
+	y: -1.5d,
+	text: [
+		"You'll need a casting gauntlet to activate arcane infusions. Check out the 'auromancy' knowledge tree in the Thaumonomicon"
+	],
+	dependencies: [
+		"ff80c365"
+	],
+	tasks: [{
+		uid: "589dc89b",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "thaumcraft:caster_basic"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "af502387",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	title: "Morbid",
+	icon: "thermalexpansion:morb 1 1",
+	x: -2.0d,
+	y: -2.5d,
+	text: [
+		"Next, you'll need to make a Morb. And a reusable one at that."
+	],
+	dependencies: [
+		"14d3dd41",
+		"627c3307",
+		"bc67b8ca",
+		"8f9f65b2"
+	],
+	tasks: [{
+		uid: "d1ea234c",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:morb 1 1"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4baeb64e",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

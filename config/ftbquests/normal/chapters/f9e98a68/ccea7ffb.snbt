@@ -1,0 +1,49 @@
+{
+	title: "Shocking!",
+	icon: "immersiveengineering:graphite_electrode",
+	x: -2.5d,
+	y: -3.5d,
+	text: [
+		"Smelt the graphite dust, and use the workbench to make electrodes out of it."
+	],
+	dependencies: [
+		"5c4d2040",
+		"c7606fe2"
+	],
+	tasks: [{
+		uid: "809d3c61",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "immersiveengineering:blueprint",
+			tag: {
+				blueprint: "electrode"
+			}
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "1a38f4df",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:material 12 19"
+		}],
+		count: 12L
+	},
+	{
+		uid: "ea128a74",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:graphite_electrode 3"
+		}],
+		count: 3L
+	}],
+	rewards: [{
+		uid: "d8e002d0",
+		type: "item",
+		item: "contenttweaker:bronzecoin",
+		count: 2
+	}]
+}

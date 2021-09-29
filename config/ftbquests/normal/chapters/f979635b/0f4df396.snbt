@@ -1,0 +1,49 @@
+{
+	title: "Builder's Wand",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "betterbuilderswands:wanddiamond"
+	},
+	x: -11.0d,
+	y: 2.0d,
+	text: [
+		"Make base-building easy"
+	],
+	tasks: [{
+		uid: "c94fb9b4",
+		type: "item",
+		items: [{
+			item: "contenttweaker:silvercoin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "65568fec",
+		type: "item",
+		team_reward: true,
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "betterbuilderswands:wanddiamond",
+			tag: {
+				bbw: {
+					lastBlock: "minecraft:anvil[damage=0,facing=east]",
+					lastItemBlock: "minecraft:anvil",
+					lastPlaced: [I;
+						-330,
+						4,
+						1247
+					],
+					lastBlockMeta: 0,
+					fluidmask: 1s,
+					lastPerBlock: 1,
+					mask: 7s
+				}
+			},
+			Damage: 1s
+		}
+	}]
+}

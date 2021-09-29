@@ -1,0 +1,36 @@
+{
+	title: "Otherworldly crafting",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "astralsorcery:blockaltar",
+		Damage: 2s
+	},
+	x: -2.5d,
+	y: 4.0d,
+	text: [
+		"The next tier of Astral crafting, and the one you need to make the key to the End.",
+		"",
+		"(As before, you need to pick up the altar to get quest credit)"
+	],
+	dependencies: [
+		"9942cab4"
+	],
+	tasks: [{
+		uid: "2a4ac201",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:blockaltar",
+			Damage: 2s
+		}]
+	}],
+	rewards: [{
+		uid: "92937411",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

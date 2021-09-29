@@ -1,0 +1,39 @@
+{
+	title: "Murder!",
+	icon: "minecraft:leather",
+	x: -1.0d,
+	y: -1.5d,
+	text: [
+		"Kill animals for organic resources"
+	],
+	tasks: [{
+		uid: "0dd37e8c",
+		type: "kill",
+		entity: "minecraft:cow",
+		value: 1L
+	},
+	{
+		uid: "b347893d",
+		type: "kill",
+		entity: "minecraft:pig",
+		value: 1L
+	},
+	{
+		uid: "a9365a1e",
+		type: "kill",
+		entity: "minecraft:chicken",
+		value: 1L
+	},
+	{
+		uid: "85f5da67",
+		type: "kill",
+		entity: "minecraft:sheep",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "fbe2e056",
+		type: "item",
+		item: "contenttweaker:bronzecoin",
+		count: 4
+	}]
+}

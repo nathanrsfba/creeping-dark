@@ -1,0 +1,27 @@
+{
+	title: "Coca-Cola",
+	icon: "immersiveengineering:material 1 6",
+	x: -5.5d,
+	y: -3.5d,
+	text: [
+		"You'll need an arc furnace for the next step... and for that you'll need electrodes.",
+		"",
+		"To start with, you'll need some coke dust. And for that, you'll need a crusher. Read the engineer's manual (and maybe build a projector) to learn how to build one"
+	],
+	dependencies: [
+		"6b9cf0dc"
+	],
+	tasks: [{
+		uid: "5fd16f0e",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:material 96 17"
+		}],
+		count: 96L
+	}],
+	rewards: [{
+		uid: "af239745",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

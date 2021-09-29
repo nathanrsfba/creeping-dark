@@ -1,0 +1,33 @@
+{
+	title: "Dimensionally Transcendental",
+	icon: "appliedenergistics2:spatial_io_port",
+	x: -6.0d,
+	y: 1.5d,
+	text: [
+		"With the Spatio IO system, you can suqeeze a bunch of stuff in the world into a digital storage unit."
+	],
+	dependencies: [
+		"cf640126"
+	],
+	tasks: [{
+		uid: "1956860e",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:spatial_io_port"
+		}]
+	},
+	{
+		uid: "0394816d",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:spatial_pylon 48"
+		}],
+		count: 48L
+	}],
+	rewards: [{
+		uid: "46984079",
+		type: "item",
+		item: "contenttweaker:silvercoin",
+		count: 2
+	}]
+}

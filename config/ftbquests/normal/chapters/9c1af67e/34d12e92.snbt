@@ -1,0 +1,41 @@
+{
+	title: "RTFM (Dimensional Edition)",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "rftools:rftools_manual"
+	},
+	x: -2.5d,
+	y: -2.0d,
+	text: [
+		"Not strictly required. But quite informative."
+	],
+	tasks: [{
+		uid: "597a1f40",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "rftools:rftools_manual"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "fba1a215",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "rftoolsdim:rftoolsdim_manual"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "44c2fd19",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

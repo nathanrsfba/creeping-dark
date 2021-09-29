@@ -1,0 +1,10 @@
+{
+	title: "Kicking Over Anthills",
+	icon: "erebus:materials 1 1",
+	description: [
+		"More Erebus"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

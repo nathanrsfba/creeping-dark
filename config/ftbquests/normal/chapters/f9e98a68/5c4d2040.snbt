@@ -1,0 +1,25 @@
+{
+	title: "Squeezably Soft",
+	icon: "immersiveengineering:material 1 18",
+	x: -4.0d,
+	y: -3.5d,
+	text: [
+		"Next, you'll need an industrial squeezer to extract graphite from the coke dust. Once again, read the manual and use the projector"
+	],
+	dependencies: [
+		"08bd2182"
+	],
+	tasks: [{
+		uid: "f5502bfa",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:material 12 18"
+		}],
+		count: 12L
+	}],
+	rewards: [{
+		uid: "605406ca",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

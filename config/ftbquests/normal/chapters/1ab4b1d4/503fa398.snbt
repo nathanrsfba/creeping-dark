@@ -1,0 +1,42 @@
+{
+	title: "Resonating Wand",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "astralsorcery:itemwand",
+		tag: {
+			astralsorcery: {}
+		}
+	},
+	x: 0.5d,
+	y: -0.5d,
+	text: [
+		"The 'wrench' of Astral Sorcery -- You'll need the Arcane Crafting Table to create it"
+	],
+	dependencies: [
+		"18a01080",
+		"fd901b98",
+		"ff80c365"
+	],
+	tasks: [{
+		uid: "17ea19d5",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemwand",
+			tag: {
+				astralsorcery: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "50fb9d97",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

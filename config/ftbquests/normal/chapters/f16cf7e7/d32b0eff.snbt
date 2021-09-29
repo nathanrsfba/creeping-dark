@@ -1,0 +1,42 @@
+{
+	title: "...shiny!",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "thebetweenlands:shimmer_stone",
+		tag: {
+			shimmering: 0b,
+			shimmeringTicks: 0
+		}
+	},
+	x: 4.0d,
+	y: 0.0d,
+	text: [
+		"Murder some Peat Mummies in marshes to get this"
+	],
+	dependencies: [
+		"1fd04681"
+	],
+	tasks: [{
+		uid: "fd5e7faf",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "thebetweenlands:shimmer_stone",
+			tag: {
+				shimmering: 0b,
+				shimmeringTicks: 0
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6fc7defe",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	title: "Shake It, Baby",
+	icon: "tropicraft:drink_mixer",
+	x: 2.0d,
+	y: -2.0d,
+	text: [
+		"Find some bamboo, make some mugs, then make a drink mixer"
+	],
+	dependencies: [
+		"452f6926"
+	],
+	tasks: [{
+		uid: "a812b2fe",
+		type: "item",
+		items: [{
+			item: "tropicraft:drink_mixer"
+		}]
+	}],
+	rewards: [{
+		uid: "526ebab9",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

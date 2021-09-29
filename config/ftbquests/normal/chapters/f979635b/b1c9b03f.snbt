@@ -1,0 +1,28 @@
+{
+	title: "Diamond",
+	icon: "minecraft:diamond",
+	x: -4.0d,
+	y: -1.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"627c3307"
+	],
+	tasks: [{
+		uid: "b073cc2e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:silvercoin 2"
+		}],
+		count: 2L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "575eed77",
+		type: "item",
+		team_reward: true,
+		item: "minecraft:diamond_ore",
+		count: 2
+	}]
+}

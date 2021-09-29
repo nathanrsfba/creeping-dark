@@ -1,0 +1,24 @@
+{
+	title: "High Octine",
+	icon: "thebetweenlands:octine_ingot",
+	x: 1.0d,
+	y: 0.0d,
+	text: [
+		"A fiery metal found in the Betweenlands caverns"
+	],
+	dependencies: [
+		"b17715e5"
+	],
+	tasks: [{
+		uid: "40adb4e9",
+		type: "item",
+		items: [{
+			item: "thebetweenlands:octine_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "39be92b2",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

@@ -1,0 +1,49 @@
+{
+	title: "Radio-Activity",
+	icon: "nuclearcraft:ingot 1 4",
+	x: -2.5d,
+	y: -1.5d,
+	text: [
+		"Useful for building and fueling nuclear reactors"
+	],
+	tasks: [{
+		uid: "4ba3380f",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:ore 1 3"
+		}]
+	},
+	{
+		uid: "ae226e1c",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:ore 1 4"
+		}]
+	},
+	{
+		uid: "d007208f",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:ore 1 6"
+		}]
+	},
+	{
+		uid: "62cb66d8",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:ore 1 7"
+		}]
+	},
+	{
+		uid: "b6ca5f23",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:ore 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "e0875d69",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

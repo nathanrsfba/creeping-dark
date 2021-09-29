@@ -1,0 +1,28 @@
+{
+	title: "Spider Eye",
+	icon: "minecraft:spider_eye",
+	x: -9.0d,
+	y: -2.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"dbbb018d"
+	],
+	tasks: [{
+		uid: "5752e983",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bronzecoin 2"
+		}],
+		count: 2L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "cda4a9a7",
+		type: "item",
+		team_reward: true,
+		item: "minecraft:spider_eye",
+		count: 4
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	title: "Circuitous",
+	icon: "mekanism:controlcircuit",
+	x: -3.5d,
+	y: -6.5d,
+	text: [
+		"Redstone and osmium in the infuser"
+	],
+	dependencies: [
+		"dcc1c885"
+	],
+	tasks: [{
+		uid: "d86772e2",
+		type: "item",
+		items: [{
+			item: "mekanism:controlcircuit"
+		}]
+	}],
+	rewards: [{
+		uid: "245f4e80",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

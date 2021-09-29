@@ -1,0 +1,63 @@
+{
+	title: "Airy Materials",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "aether_legacy:moa_egg",
+		tag: {
+			typeId: 0
+		}
+	},
+	x: -1.0d,
+	y: -1.5d,
+	text: [
+		"You will need some materials to reconstitute the Air key.",
+		"",
+		"First, an egg from a Moa, any color. Find some moas and wait until they lay one.",
+		"",
+		"Then, find a Golden Oak tree, cut it down, and take a sapling.",
+		"",
+		"Finally, dig down into the islands and look for some Gravitite."
+	],
+	dependencies: [
+		"fa1d3526"
+	],
+	tasks: [{
+		uid: "2b1b8886",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "aether_legacy:moa_egg",
+			tag: {
+				typeId: 0
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "26560c56",
+		type: "item",
+		items: [{
+			item: "aether_legacy:golden_oak_sapling"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "473b3974",
+		type: "item",
+		items: [{
+			item: "aether_legacy:gravitite_ore"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3aa9caad",
+		type: "item",
+		item: "contenttweaker:bronzecoin",
+		count: 3
+	}]
+}

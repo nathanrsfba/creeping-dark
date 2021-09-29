@@ -1,0 +1,10 @@
+{
+	title: "Forbidden Science",
+	icon: "enderio:item_basic_capacitor 1 2",
+	description: [
+		"Ender IO and the Erebus"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

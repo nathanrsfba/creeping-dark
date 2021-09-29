@@ -1,0 +1,24 @@
+{
+	title: "Chassy",
+	icon: "enderio:item_material",
+	x: -0.5d,
+	y: -1.0d,
+	text: [
+		"The base of almost every EnderIO machine"
+	],
+	dependencies: [
+		"031c96a4"
+	],
+	tasks: [{
+		uid: "2d8463dd",
+		type: "item",
+		items: [{
+			item: "enderio:item_material"
+		}]
+	}],
+	rewards: [{
+		uid: "76bd20ea",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

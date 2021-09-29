@@ -1,0 +1,50 @@
+{
+	title: "RTFM (Herbal edition)",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "thebetweenlands:manual_hl"
+	},
+	x: -2.0d,
+	y: 1.5d,
+	text: [
+		"Kill some lurkers, kick over some hollow logs, and make a book to record your alchemical discoveries in."
+	],
+	dependencies: [
+		"60492e34"
+	],
+	tasks: [{
+		uid: "397eca4e",
+		type: "item",
+		items: [{
+			item: "thebetweenlands:items_misc 1 4"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9cf7bf1b",
+		type: "item",
+		items: [{
+			item: "thebetweenlands:items_misc 1 13"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e198de8f",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "thebetweenlands:manual_hl"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "09db58b9",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

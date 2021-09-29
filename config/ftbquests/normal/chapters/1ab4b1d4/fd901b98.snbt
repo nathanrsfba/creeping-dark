@@ -1,0 +1,21 @@
+{
+	title: "Aquamarine",
+	icon: "astralsorcery:itemcraftingcomponent",
+	x: -1.0d,
+	y: -2.0d,
+	text: [
+		"These mystical gems can be found among the sand in bodies of water"
+	],
+	tasks: [{
+		uid: "563c6216",
+		type: "item",
+		items: [{
+			item: "astralsorcery:itemcraftingcomponent"
+		}]
+	}],
+	rewards: [{
+		uid: "d0499832",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

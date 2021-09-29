@@ -1,0 +1,277 @@
+{
+	title: "Revolver",
+	icon: {
+		ForgeCaps: {
+			Parent: {
+				Size: 21,
+				Items: [{
+					Slot: 0,
+					id: "immersiveengineering:bullet",
+					Count: 1b,
+					tag: {
+						bullet: "casull"
+					},
+					Damage: 2s
+				},
+				{
+					Slot: 1,
+					id: "immersiveengineering:bullet",
+					Count: 1b,
+					tag: {
+						bullet: "casull"
+					},
+					Damage: 2s
+				},
+				{
+					Slot: 2,
+					id: "immersiveengineering:bullet",
+					Count: 1b,
+					tag: {
+						bullet: "casull"
+					},
+					Damage: 2s
+				},
+				{
+					Slot: 3,
+					id: "immersiveengineering:bullet",
+					Count: 1b,
+					tag: {
+						bullet: "casull"
+					},
+					Damage: 2s
+				},
+				{
+					Slot: 4,
+					id: "immersiveengineering:bullet",
+					Count: 1b,
+					tag: {
+						bullet: "casull"
+					},
+					Damage: 2s
+				},
+				{
+					Slot: 5,
+					id: "immersiveengineering:bullet",
+					Count: 1b,
+					tag: {
+						bullet: "casull"
+					},
+					Damage: 2s
+				},
+				{
+					Slot: 6,
+					id: "immersiveengineering:bullet",
+					Count: 1b,
+					tag: {
+						bullet: "casull"
+					},
+					Damage: 2s
+				},
+				{
+					Slot: 7,
+					id: "immersiveengineering:bullet",
+					Count: 1b,
+					tag: {
+						bullet: "casull"
+					},
+					Damage: 2s
+				}]
+			},
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "immersiveengineering:revolver",
+		tag: {
+			upgrades: {}
+		}
+	},
+	x: -12.0d,
+	y: 3.0d,
+	text: [
+		"Do you feel lucky? Well do you, punk?",
+		"",
+		"Shift-right with the revolver to open its inventory. You can refill casings using the engineer's workbench"
+	],
+	tasks: [{
+		uid: "d36cedc8",
+		type: "item",
+		items: [{
+			item: "contenttweaker:goldcoin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "8484250a",
+		type: "item",
+		team_reward: true,
+		item: {
+			ForgeCaps: {
+				Parent: {
+					Size: 21,
+					Items: [{
+						Slot: 0,
+						id: "immersiveengineering:bullet",
+						Count: 1b,
+						tag: {
+							bullet: "casull"
+						},
+						Damage: 2s
+					},
+					{
+						Slot: 1,
+						id: "immersiveengineering:bullet",
+						Count: 1b,
+						tag: {
+							bullet: "casull"
+						},
+						Damage: 2s
+					},
+					{
+						Slot: 2,
+						id: "immersiveengineering:bullet",
+						Count: 1b,
+						tag: {
+							bullet: "casull"
+						},
+						Damage: 2s
+					},
+					{
+						Slot: 3,
+						id: "immersiveengineering:bullet",
+						Count: 1b,
+						tag: {
+							bullet: "casull"
+						},
+						Damage: 2s
+					},
+					{
+						Slot: 4,
+						id: "immersiveengineering:bullet",
+						Count: 1b,
+						tag: {
+							bullet: "casull"
+						},
+						Damage: 2s
+					},
+					{
+						Slot: 5,
+						id: "immersiveengineering:bullet",
+						Count: 1b,
+						tag: {
+							bullet: "casull"
+						},
+						Damage: 2s
+					},
+					{
+						Slot: 6,
+						id: "immersiveengineering:bullet",
+						Count: 1b,
+						tag: {
+							bullet: "casull"
+						},
+						Damage: 2s
+					},
+					{
+						Slot: 7,
+						id: "immersiveengineering:bullet",
+						Count: 1b,
+						tag: {
+							bullet: "casull"
+						},
+						Damage: 2s
+					}]
+				},
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "immersiveengineering:revolver",
+			tag: {
+				upgrades: {}
+			}
+		}
+	},
+	{
+		uid: "91a537e8",
+		type: "item",
+		team_reward: true,
+		item: {
+			ForgeCaps: {
+				Parent: {
+					Size: 8,
+					Items: [{
+						Slot: 0,
+						id: "immersiveengineering:bullet",
+						Count: 1b,
+						tag: {
+							bullet: "casull"
+						},
+						Damage: 2s
+					},
+					{
+						Slot: 1,
+						id: "immersiveengineering:bullet",
+						Count: 1b,
+						tag: {
+							bullet: "casull"
+						},
+						Damage: 2s
+					},
+					{
+						Slot: 2,
+						id: "immersiveengineering:bullet",
+						Count: 1b,
+						tag: {
+							bullet: "casull"
+						},
+						Damage: 2s
+					},
+					{
+						Slot: 3,
+						id: "immersiveengineering:bullet",
+						Count: 1b,
+						tag: {
+							bullet: "casull"
+						},
+						Damage: 2s
+					},
+					{
+						Slot: 4,
+						id: "immersiveengineering:bullet",
+						Count: 1b,
+						tag: {
+							bullet: "casull"
+						},
+						Damage: 2s
+					},
+					{
+						Slot: 5,
+						id: "immersiveengineering:bullet",
+						Count: 1b,
+						tag: {
+							bullet: "casull"
+						},
+						Damage: 2s
+					},
+					{
+						Slot: 6,
+						id: "immersiveengineering:bullet",
+						Count: 1b,
+						tag: {
+							bullet: "casull"
+						},
+						Damage: 2s
+					},
+					{
+						Slot: 7,
+						id: "immersiveengineering:bullet",
+						Count: 1b,
+						tag: {
+							bullet: "casull"
+						},
+						Damage: 2s
+					}]
+				},
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "immersiveengineering:speedloader"
+		}
+	}]
+}

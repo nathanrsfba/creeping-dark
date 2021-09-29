@@ -1,0 +1,10 @@
+{
+	title: "The Shop",
+	icon: "contenttweaker:goldcoin",
+	description: [
+		"We have wares if you have coin"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

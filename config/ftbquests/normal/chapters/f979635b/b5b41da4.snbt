@@ -1,0 +1,28 @@
+{
+	title: "Emerald",
+	icon: "minecraft:emerald",
+	x: -3.0d,
+	y: -1.0d,
+	text: [
+		"...buying money with money?"
+	],
+	dependencies: [
+		"b139ce5e"
+	],
+	tasks: [{
+		uid: "304ebda7",
+		type: "item",
+		items: [{
+			item: "contenttweaker:silvercoin 4"
+		}],
+		count: 4L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "c8775f9a",
+		type: "item",
+		team_reward: true,
+		item: "minecraft:emerald_ore",
+		count: 2
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	title: "Don't breathe this either",
+	icon: "enderio:item_material 1 20",
+	x: -6.0d,
+	y: -1.0d,
+	text: [
+		"You'll need Grains of Infinity to get unlock Ender IO. Dig down to the bottom of the Deep Dark, clear out a space, and set a bunch of bedrock on fire"
+	],
+	dependencies: [
+		"9452a68e"
+	],
+	tasks: [{
+		uid: "1c623940",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 20"
+		}]
+	}],
+	rewards: [{
+		uid: "d08ad66b",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	title: "Nickel",
+	icon: "thermalfoundation:material 1 133",
+	x: -6.0d,
+	y: -3.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"bc67b8ca"
+	],
+	tasks: [{
+		uid: "0b70501e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:silvercoin 2"
+		}],
+		count: 2L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "524a8502",
+		type: "item",
+		team_reward: true,
+		item: "thermalfoundation:ore 1 5",
+		count: 16
+	}]
+}

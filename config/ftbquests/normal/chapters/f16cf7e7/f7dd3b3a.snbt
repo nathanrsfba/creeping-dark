@@ -1,0 +1,65 @@
+{
+	title: "Armaniis",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "thebetweenlands:aspect_vial",
+		tag: {
+			blHerbloreAspects: {
+				container: [{
+					aspect: {
+						type: "Armaniis"
+					},
+					storage: {
+						hasStoredStatic: 0b,
+						storedStatic: 0,
+						dynamic: 2000
+					}
+				}]
+			}
+		}
+	},
+	x: 2.5d,
+	y: 3.0d,
+	text: [
+		"Once you determine what substance contains Armaniis, put it in the infuser with some swamp water, light a fire under it, and right-click it to stir it until it changes color. Then shift-right-click with a weedwood bucket, and pour the result into the alembic. When it's done, right-click with aspect vials until it's empty.",
+		"",
+		"(You can shift-right click a vial onto the ground and pour more of the same aspect into it to consolidate. Also, you don't need the exact amount, you just need one unit.)"
+	],
+	dependencies: [
+		"a5db3623",
+		"1d2f3ac6",
+		"1b6e1473"
+	],
+	tasks: [{
+		uid: "ca2ed705",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "thebetweenlands:aspect_vial",
+			tag: {
+				blHerbloreAspects: {
+					container: [{
+						aspect: {
+							type: "Armaniis"
+						},
+						storage: {
+							hasStoredStatic: 0b,
+							storedStatic: 0,
+							dynamic: 2000
+						}
+					}]
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "582cf2ef",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

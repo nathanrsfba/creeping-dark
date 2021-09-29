@@ -1,0 +1,39 @@
+{
+	title: "Hunt!",
+	icon: "minecraft:skull 1 4",
+	x: -1.0d,
+	y: 0.0d,
+	text: [
+		"Kill monsters for organic resources"
+	],
+	tasks: [{
+		uid: "13bb9f81",
+		type: "kill",
+		entity: "minecraft:zombie",
+		value: 1L
+	},
+	{
+		uid: "ad8ec7ed",
+		type: "kill",
+		entity: "minecraft:skeleton",
+		value: 1L
+	},
+	{
+		uid: "4fd2ce87",
+		type: "kill",
+		entity: "minecraft:spider",
+		value: 1L
+	},
+	{
+		uid: "ffb36113",
+		type: "kill",
+		entity: "minecraft:creeper",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "1d87a45d",
+		type: "item",
+		item: "contenttweaker:bronzecoin",
+		count: 4
+	}]
+}

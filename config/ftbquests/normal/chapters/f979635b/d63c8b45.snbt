@@ -1,0 +1,24 @@
+{
+	title: "Bacon",
+	icon: "actuallyadditions:item_food 1 20",
+	x: -14.0d,
+	y: 0.5d,
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "ab48292c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:coppercoin 2"
+		}],
+		count: 2L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "94b282c8",
+		type: "item",
+		team_reward: true,
+		item: "actuallyadditions:item_food 1 20"
+	}]
+}

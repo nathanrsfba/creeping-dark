@@ -1,0 +1,138 @@
+{
+	title: "Introduction",
+	icon: "minecraft:skull 1 5",
+	x: -4.0d,
+	y: -3.0d,
+	text: [
+		"The Dragon was banished from the face of the Earth, but she didn't go without leaving her mark on the world.",
+		"",
+		"The skies themselves are cursed; diseased with a slow growth of skin that, given time, will cover the Earth in utter darkness.",
+		"",
+		"The only way to break the curse is to travel to the End and kill the Dragon, retrieve her egg, and place it on Earth. But the way to the End is locked, and the keys are guarded by her minions, and scattered... across the Multiverse."
+	],
+	tasks: [{
+		uid: "1c26dcbe",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "c20071f4",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "ironbackpacks:backpack",
+			tag: {
+				packInfo: {
+					upgrade: [],
+					own: "0a21cf3d-6640-44f4-ace8-e313045239d9",
+					type: "ironbackpacks:basic",
+					spec: "NONE"
+				},
+				RepairCost: 0,
+				display: {
+					Name: "Anti-treepunching bag"
+				},
+				packInv: [{
+					ForgeCaps: {
+						"astralsorcery:cap_item_amulet_holder": {}
+					},
+					id: "minecraft:stone_axe",
+					Count: 1b,
+					Damage: 0s
+				},
+				{
+					ForgeCaps: {
+						"astralsorcery:cap_item_amulet_holder": {}
+					},
+					id: "minecraft:stone_shovel",
+					Count: 1b,
+					Damage: 0s
+				},
+				{
+					ForgeCaps: {
+						"astralsorcery:cap_item_amulet_holder": {}
+					},
+					id: "minecraft:stone_pickaxe",
+					Count: 1b,
+					Damage: 0s
+				},
+				{
+					id: "minecraft:log",
+					Count: 64b,
+					Damage: 0s
+				},
+				{
+					id: "minecraft:cobblestone",
+					Count: 64b,
+					Damage: 0s
+				},
+				{
+					id: "minecraft:torch",
+					Count: 64b,
+					Damage: 0s
+				},
+				{
+					id: "minecraft:apple",
+					Count: 16b,
+					Damage: 0s
+				},
+				{
+					id: "minecraft:air",
+					Count: 2b,
+					Damage: 0s
+				},
+				{
+					id: "minecraft:air",
+					Count: 2b,
+					Damage: 0s
+				},
+				{
+					id: "minecraft:air",
+					Count: 2b,
+					Damage: 0s
+				},
+				{
+					id: "minecraft:air",
+					Count: 2b,
+					Damage: 0s
+				},
+				{
+					id: "minecraft:air",
+					Count: 2b,
+					Damage: 0s
+				},
+				{
+					id: "minecraft:air",
+					Count: 2b,
+					Damage: 0s
+				},
+				{
+					id: "minecraft:air",
+					Count: 2b,
+					Damage: 0s
+				},
+				{
+					id: "minecraft:air",
+					Count: 2b,
+					Damage: 0s
+				},
+				{
+					id: "minecraft:air",
+					Count: 2b,
+					Damage: 0s
+				},
+				{
+					id: "minecraft:air",
+					Count: 2b,
+					Damage: 0s
+				},
+				{
+					id: "minecraft:air",
+					Count: 2b,
+					Damage: 0s
+				}]
+			}
+		}
+	}]
+}

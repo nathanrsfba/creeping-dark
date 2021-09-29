@@ -1,0 +1,27 @@
+{
+	title: "Uranium",
+	icon: "nuclearcraft:ingot 1 4",
+	x: -2.0d,
+	y: -3.5d,
+	text: [
+		"...whose?"
+	],
+	dependencies: [
+		"f7842afb"
+	],
+	tasks: [{
+		uid: "02ceb48d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:goldcoin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "bceb190b",
+		type: "item",
+		team_reward: true,
+		item: "nuclearcraft:ore 1 4",
+		count: 16
+	}]
+}

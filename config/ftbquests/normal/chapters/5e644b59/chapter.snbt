@@ -1,0 +1,10 @@
+{
+	title: "Abandon All Hope",
+	icon: "minecraft:netherrack",
+	description: [
+		"Venture into the Nether to find the next key..."
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

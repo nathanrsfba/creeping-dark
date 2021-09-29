@@ -1,0 +1,28 @@
+{
+	title: "Dimensional Shards",
+	icon: "rftools:dimensional_shard",
+	x: -7.0d,
+	y: 1.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"70ebbf49"
+	],
+	tasks: [{
+		uid: "6c3e8ef7",
+		type: "item",
+		items: [{
+			item: "contenttweaker:silvercoin 2"
+		}],
+		count: 2L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "b978bd3d",
+		type: "item",
+		team_reward: true,
+		item: "rftools:dimensional_shard_ore",
+		count: 2
+	}]
+}

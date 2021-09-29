@@ -1,0 +1,35 @@
+{
+	title: "Communism",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "thebetweenlands:sickle"
+	},
+	x: -0.5d,
+	y: 0.0d,
+	text: [
+		"Use this to harvest up some plant products, put them into the mortar and pestle, punch it to ground them up, then feed them to your caged gecko.",
+		"",
+		"(Try grinding up animal products too)"
+	],
+	dependencies: [
+		"cc0eb8df"
+	],
+	tasks: [{
+		uid: "d6860ba2",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "thebetweenlands:sickle"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "407d1629",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

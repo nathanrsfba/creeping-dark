@@ -1,0 +1,38 @@
+{
+	title: "Yoink",
+	icon: "enderio:item_material 1 16",
+	x: 1.0d,
+	y: 2.0d,
+	text: [
+		"Make a soul vial and trap an enderman in it. Then infuse it into a crystal."
+	],
+	dependencies: [
+		"e4bf84cc"
+	],
+	tasks: [{
+		uid: "08e56bc9",
+		type: "item",
+		items: [{
+			item: "enderio:item_soul_vial"
+		}]
+	},
+	{
+		uid: "929f7ee1",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 15"
+		}]
+	},
+	{
+		uid: "ba9707ce",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 16"
+		}]
+	}],
+	rewards: [{
+		uid: "87e8d4e9",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

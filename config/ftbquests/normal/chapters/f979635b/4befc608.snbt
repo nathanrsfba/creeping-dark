@@ -1,0 +1,54 @@
+{
+	title: "Exchanger",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "exchangers:iron_exchanger",
+		tag: {
+			exmode: 0,
+			forceDropItems: 0b,
+			range: 0,
+			blockstate: {
+				Name: "minecraft:air"
+			}
+		}
+	},
+	x: -10.0d,
+	y: 2.0d,
+	text: [
+		"Make base modification easy"
+	],
+	tasks: [{
+		uid: "01eda69a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bronzecoin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "39afb82e",
+		type: "item",
+		team_reward: true,
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "exchangers:iron_exchanger",
+			tag: {
+				exmode: 0,
+				forceDropItems: 0b,
+				range: 0,
+				blockstate: {
+					Properties: {
+						variant: "dirt",
+						snowy: "false"
+					},
+					Name: "minecraft:dirt"
+				}
+			},
+			Damage: 1s
+		}
+	}]
+}

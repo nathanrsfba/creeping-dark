@@ -1,0 +1,28 @@
+{
+	title: "Feathrs",
+	icon: "minecraft:feather",
+	x: -12.0d,
+	y: -2.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"fc30f0b2"
+	],
+	tasks: [{
+		uid: "1603bea4",
+		type: "item",
+		items: [{
+			item: "contenttweaker:coppercoin 6"
+		}],
+		count: 6L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "b62496bd",
+		type: "item",
+		team_reward: true,
+		item: "minecraft:feather",
+		count: 4
+	}]
+}

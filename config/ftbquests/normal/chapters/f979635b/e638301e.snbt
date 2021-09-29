@@ -1,0 +1,28 @@
+{
+	title: "Cobalt",
+	icon: "tconstruct:ingots",
+	x: -5.0d,
+	y: -3.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"ace5490a"
+	],
+	tasks: [{
+		uid: "7b7fc3f6",
+		type: "item",
+		items: [{
+			item: "contenttweaker:silvercoin 2"
+		}],
+		count: 2L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "48c8d614",
+		type: "item",
+		team_reward: true,
+		item: "tconstruct:ore",
+		count: 16
+	}]
+}

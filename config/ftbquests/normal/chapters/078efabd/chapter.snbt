@@ -1,0 +1,15 @@
+{
+	title: "Into Darkness",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "thermalfoundation:wrench"
+	},
+	description: [
+		"Thermal Expansion and the Hunting Dimension"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

@@ -1,0 +1,21 @@
+{
+	title: "Have you seen my marbles?",
+	icon: "astralsorcery:blockmarble",
+	x: 0.5d,
+	y: -2.0d,
+	text: [
+		"Marble comes in a few different forms. There's crafting recipes to make the different forms out of plain marble... or you could just use a chisel."
+	],
+	tasks: [{
+		uid: "35c7d423",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockmarble"
+		}]
+	}],
+	rewards: [{
+		uid: "27b91792",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

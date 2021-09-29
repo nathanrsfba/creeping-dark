@@ -1,0 +1,35 @@
+{
+	title: "Wires",
+	icon: "immersiveengineering:material 1 20",
+	x: -1.0d,
+	y: -0.5d,
+	text: [
+		"These will be necessary to make a circuit board... but they're also handy for making RF wiring. You can snip them from copper plates, or you can build the Metal Press (see the Engineer's Manual) if you're going to be making them regularly."
+	],
+	dependencies: [
+		"6b9cf0dc"
+	],
+	tasks: [{
+		uid: "af6be846",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "wireCopper",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any wireCopper"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "57d20590",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

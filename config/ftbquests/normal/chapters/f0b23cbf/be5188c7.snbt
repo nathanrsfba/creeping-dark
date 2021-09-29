@@ -1,0 +1,26 @@
+{
+	title: "Maybe She'll help...",
+	icon: "minecraft:web",
+	x: -3.0d,
+	y: -2.5d,
+	text: [
+		"The Copper Key is guarded by a giant spider in a glass dome in the Deep Dark.",
+		"",
+		"She moves fast. You might want to be ready for that."
+	],
+	dependencies: [
+		"9452a68e"
+	],
+	tasks: [{
+		uid: "6251f34a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:copperkey"
+		}]
+	}],
+	rewards: [{
+		uid: "aee27d67",
+		type: "item",
+		item: "contenttweaker:goldcoin"
+	}]
+}

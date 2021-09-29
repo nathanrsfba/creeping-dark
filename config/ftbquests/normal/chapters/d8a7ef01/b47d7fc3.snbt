@@ -1,0 +1,28 @@
+{
+	title: "There is such a thing as a tesseract.",
+	icon: "enderio:block_transceiver",
+	x: 2.5d,
+	y: 2.0d,
+	text: [
+		"Teleport things across dimensions"
+	],
+	dependencies: [
+		"f96111b3",
+		"534c81f6",
+		"7b5183ec",
+		"9bc72e61"
+	],
+	tasks: [{
+		uid: "7238b661",
+		type: "item",
+		items: [{
+			item: "enderio:block_transceiver"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "63d5c866",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

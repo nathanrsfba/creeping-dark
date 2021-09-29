@@ -1,0 +1,15 @@
+{
+	title: "Industrial Revolution",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "immersiveengineering:tool"
+	},
+	description: [
+		"Immersive Engineering, TropiCraft, and Atum"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

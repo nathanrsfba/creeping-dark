@@ -1,0 +1,24 @@
+{
+	title: "Flower Child",
+	icon: "botania:flower",
+	x: -2.0d,
+	y: -2.0d,
+	text: [
+		"Search the world to find some mystical flowers.",
+		"",
+		"Or brew up some Floral Fertilizer and grow your own."
+	],
+	tasks: [{
+		uid: "93ea4ff6",
+		type: "item",
+		items: [{
+			item: "botania:flower 2"
+		}],
+		count: 2L
+	}],
+	rewards: [{
+		uid: "93f4550c",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

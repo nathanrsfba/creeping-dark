@@ -1,0 +1,43 @@
+{
+	title: "Essentia Smelting",
+	icon: "thaumcraft:smelter_basic",
+	x: 3.5d,
+	y: -3.0d,
+	text: [
+		"Boil items down into their magical components"
+	],
+	dependencies: [
+		"13ecc919",
+		"c7677424"
+	],
+	tasks: [{
+		uid: "562db689",
+		type: "item",
+		items: [{
+			item: "thaumcraft:smelter_basic"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "adc94d6d",
+		type: "item",
+		items: [{
+			item: "thaumcraft:alembic"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "6a1dc56c",
+		type: "item",
+		items: [{
+			item: "thaumcraft:jar_normal"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "042afe6f",
+		type: "item",
+		item: "contenttweaker:bronzecoin",
+		count: 3
+	}]
+}

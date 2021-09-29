@@ -1,0 +1,35 @@
+{
+	title: "Spooky Action",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "mekanism:machineblock3"
+	},
+	x: 1.0d,
+	y: -6.5d,
+	text: [
+		"Transfer items (or fluids, or energy) without pipes!"
+	],
+	dependencies: [
+		"a407e963",
+		"fdce7fa8",
+		"949d64da"
+	],
+	tasks: [{
+		uid: "71a9711e",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "mekanism:machineblock3"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "176cef70",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	title: "Liquid Photons",
+	icon: "astralsorcery:blockwell",
+	x: -1.0d,
+	y: 2.5d,
+	text: [
+		"Make a light well and stick some aquamarine in it, and light itself will condense into a liquid.",
+		"",
+		"Yeah. I don't know how that works either."
+	],
+	dependencies: [
+		"5a8bff7a",
+		"add64d94",
+		"627c3307"
+	],
+	tasks: [{
+		uid: "8add4709",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockwell"
+		}]
+	}],
+	rewards: [{
+		uid: "88467b06",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

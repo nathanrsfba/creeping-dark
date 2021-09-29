@@ -1,0 +1,27 @@
+{
+	title: "Rotten Flesh",
+	icon: "minecraft:rotten_flesh",
+	x: -11.0d,
+	y: -2.0d,
+	text: [
+		"Surely this is good for §osomething"
+	],
+	dependencies: [
+		"dbbb018d"
+	],
+	tasks: [{
+		uid: "76db0313",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bronzecoin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "731f37e3",
+		type: "item",
+		team_reward: true,
+		item: "minecraft:rotten_flesh",
+		count: 8
+	}]
+}

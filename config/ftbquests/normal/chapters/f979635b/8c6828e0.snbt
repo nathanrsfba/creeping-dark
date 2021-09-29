@@ -1,0 +1,50 @@
+{
+	title: "iChisel",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "chisel:chisel_hitech",
+		tag: {
+			chiseldata: {}
+		}
+	},
+	x: -12.0d,
+	y: 2.0d,
+	text: [
+		"Make nice-looking blocks"
+	],
+	tasks: [{
+		uid: "e787c395",
+		type: "item",
+		items: [{
+			item: "contenttweaker:silvercoin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "c554b3e7",
+		type: "item",
+		team_reward: true,
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "chisel:chisel_hitech",
+			tag: {
+				chiseldata: {
+					preview: 0,
+					selectslot: 97,
+					targetslot: 1,
+					rotate: 0b,
+					target: {
+						id: "chisel:cobblestone",
+						Count: 1b,
+						Damage: 0s
+					}
+				}
+			},
+			Damage: 1s
+		}
+	}]
+}

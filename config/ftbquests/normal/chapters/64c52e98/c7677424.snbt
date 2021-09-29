@@ -1,0 +1,24 @@
+{
+	title: "Based on the play by Arthur Miller",
+	icon: "thaumcraft:crucible",
+	x: 2.0d,
+	y: -3.0d,
+	text: [
+		"A crucial step on the road to Alchemy"
+	],
+	dependencies: [
+		"ff80c365"
+	],
+	tasks: [{
+		uid: "c7938962",
+		type: "item",
+		items: [{
+			item: "thaumcraft:crucible"
+		}]
+	}],
+	rewards: [{
+		uid: "caced081",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

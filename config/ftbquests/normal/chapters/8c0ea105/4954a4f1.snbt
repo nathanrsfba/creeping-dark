@@ -1,0 +1,23 @@
+{
+	title: "Xykon",
+	icon: "twilightforest:trophy 1 1",
+	x: -1.0d,
+	y: 1.0d,
+	text: [
+		"Find the Twilight Lich atop his tower. Bat his projectiles back at him until his shields are gone, then finish him off. Picking up his sceptre will allow access to the swamp maze."
+	],
+	dependencies: [
+		"fc686225"
+	],
+	tasks: [{
+		uid: "9d011e0b",
+		type: "kill",
+		entity: "twilightforest:lich",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "31d904bf",
+		type: "item",
+		item: "contenttweaker:goldcoin"
+	}]
+}

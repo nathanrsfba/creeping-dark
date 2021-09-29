@@ -1,0 +1,26 @@
+{
+	title: "Pure Crystals",
+	icon: "appliedenergistics2:material 1 10",
+	x: -1.5d,
+	y: -1.5d,
+	text: [
+		"You can turn one certus quartz into two pure certus crystals by grinding it into dust, mixing it with sand, then putting it in the growth chamber. The pure versions can be used almost anywhere the regular ones can (for half the cost), and are also required for calculation processors.",
+		"",
+		"You can do the same with nether quartz and fluix crystals."
+	],
+	dependencies: [
+		"1f1632c3"
+	],
+	tasks: [{
+		uid: "ea47198c",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 10"
+		}]
+	}],
+	rewards: [{
+		uid: "e59cc389",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

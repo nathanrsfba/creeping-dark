@@ -1,0 +1,35 @@
+{
+	title: "Transmat",
+	icon: "rftools:matter_transmitter",
+	x: -1.0d,
+	y: -0.5d,
+	text: [
+		"You'll need a Matter Transmitter to teleport into your brand new dimension, and a Dialing Device to program it.",
+		"",
+		"You'll also need a way to get back. One way is to place a receiver in your base, take another transmitter and dialer with you, and something to power it all up wtih. But there's other options..."
+	],
+	dependencies: [
+		"7da77e1f"
+	],
+	tasks: [{
+		uid: "6a2c07b9",
+		type: "item",
+		items: [{
+			item: "rftools:matter_transmitter"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "d1221c17",
+		type: "item",
+		items: [{
+			item: "rftools:dialing_device"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "fa943151",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

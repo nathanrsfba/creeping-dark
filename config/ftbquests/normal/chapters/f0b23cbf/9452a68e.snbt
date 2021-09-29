@@ -1,0 +1,27 @@
+{
+	title: "How deep is your dark?",
+	icon: "extrautils2:teleporter 1 1",
+	x: -4.5d,
+	y: -2.5d,
+	text: [
+		"The Copper Key is hidden in the Deep Dark... an underground realm where the darkness is alive. And angry.",
+		"",
+		"To reach it, first you must dig deep into the sands of Atum until you find Khnumite. Dig some up, create a face out of it using a diamond, then place it into the resonator"
+	],
+	dependencies: [
+		"24151955",
+		"d4b97adb"
+	],
+	tasks: [{
+		uid: "e910f393",
+		type: "item",
+		items: [{
+			item: "extrautils2:teleporter 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "df0a4da3",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

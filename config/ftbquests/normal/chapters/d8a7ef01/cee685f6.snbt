@@ -1,0 +1,26 @@
+{
+	title: "Arachnophobia",
+	icon: "erebus:tarantula_egg",
+	x: 2.5d,
+	y: 3.5d,
+	text: [
+		"The Lead Key is guarded by the Tarantula Brood Mother. Look for her nest in her giant tree.",
+		"",
+		"Once she's dead, take her egg and break it open to retrieve the key within."
+	],
+	dependencies: [
+		"10d047d4"
+	],
+	tasks: [{
+		uid: "066f205d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:leadkey"
+		}]
+	}],
+	rewards: [{
+		uid: "079196fc",
+		type: "item",
+		item: "contenttweaker:platinumcoin"
+	}]
+}

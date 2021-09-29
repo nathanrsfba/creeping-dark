@@ -1,0 +1,31 @@
+{
+	title: "Living Dead Trees",
+	icon: "botania:livingrock",
+	x: 2.5d,
+	y: -2.0d,
+	text: [
+		"Plonk some logs and/or stone down adjacent (including diagonally) to the Pure Daisy and wait a minute."
+	],
+	dependencies: [
+		"541ad6b1"
+	],
+	tasks: [{
+		uid: "ace7e11f",
+		type: "item",
+		items: [{
+			item: "botania:livingwood"
+		}]
+	},
+	{
+		uid: "2d3eb08a",
+		type: "item",
+		items: [{
+			item: "botania:livingrock"
+		}]
+	}],
+	rewards: [{
+		uid: "d6b3e555",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

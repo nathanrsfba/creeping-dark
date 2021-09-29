@@ -1,0 +1,37 @@
+{
+	title: "Bone",
+	icon: "minecraft:bone",
+	x: -10.0d,
+	y: -2.0d,
+	text: [
+		"Thigh bone connected to the hip bone"
+	],
+	dependencies: [
+		"dbbb018d"
+	],
+	tasks: [{
+		uid: "09066099",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bronzecoin 2"
+		}],
+		count: 2L,
+		consume_items: true
+	},
+	{
+		uid: "3c878510",
+		type: "item",
+		items: [{
+			item: "contenttweaker:coppercoin 2"
+		}],
+		count: 2L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "8c9ebe28",
+		type: "item",
+		team_reward: true,
+		item: "minecraft:bone",
+		count: 4
+	}]
+}

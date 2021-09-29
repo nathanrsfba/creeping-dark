@@ -1,0 +1,28 @@
+{
+	title: "Ender Pearl",
+	icon: "minecraft:ender_pearl",
+	x: -12.0d,
+	y: -1.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"9f69a9b1"
+	],
+	tasks: [{
+		uid: "581742b4",
+		type: "item",
+		items: [{
+			item: "contenttweaker:silvercoin 2"
+		}],
+		count: 2L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "aa27b4f1",
+		type: "item",
+		team_reward: true,
+		item: "minecraft:ender_pearl",
+		count: 4
+	}]
+}

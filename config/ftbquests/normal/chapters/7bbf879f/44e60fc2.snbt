@@ -1,0 +1,59 @@
+{
+	title: "Terrasteel",
+	icon: "botania:manaresource 1 4",
+	x: -1.0d,
+	y: 1.0d,
+	text: [
+		"A magical alloy that needs a bunch of mana to create.",
+		"",
+		"Create a checkerboard pattern out of livingrock and lapis blocks, plonk the agglomeration plate on top, then place a spark above it and a mana pool.",
+		"",
+		"To create terrasteel, fill the mana pool at least half full, then drop a mana diamond, mana pearl, and manasteel on the plate and stand back."
+	],
+	dependencies: [
+		"17c66393"
+	],
+	tasks: [{
+		uid: "8309903b",
+		type: "item",
+		items: [{
+			item: "botania:livingrock 5"
+		}],
+		count: 5L
+	},
+	{
+		uid: "0a2f96ba",
+		type: "item",
+		items: [{
+			item: "minecraft:lapis_block 4"
+		}],
+		count: 4L
+	},
+	{
+		uid: "def9e0fc",
+		type: "item",
+		items: [{
+			item: "botania:terraplate"
+		}]
+	},
+	{
+		uid: "d494ac06",
+		type: "item",
+		items: [{
+			item: "botania:spark 2"
+		}],
+		count: 2L
+	},
+	{
+		uid: "8dfe74c3",
+		type: "item",
+		items: [{
+			item: "botania:manaresource 1 4"
+		}]
+	}],
+	rewards: [{
+		uid: "e71acee5",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

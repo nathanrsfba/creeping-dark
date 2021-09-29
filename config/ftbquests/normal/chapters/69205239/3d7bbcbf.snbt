@@ -1,0 +1,39 @@
+{
+	title: "Engage",
+	icon: "advancedrocketry:warpmonitor",
+	x: 3.0d,
+	y: 1.0d,
+	text: [
+		"Next, you'll need to install a warp core into your space station. This is another multiblock structure, so break out your holo-projector.",
+		"",
+		"You'll then need to place down a warp controller somewhere on your ship. This one is just a single block.",
+		"",
+		"Once you've warped to a destination, you can use the rocket you launched the station with to shuttle back and forth to the planet."
+	],
+	dependencies: [
+		"8ada114a",
+		"59581749",
+		"751c756e"
+	],
+	tasks: [{
+		uid: "62bb41df",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:warpmonitor"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "0447e895",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:warpcore"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "498c3163",
+		type: "item",
+		item: "contenttweaker:goldcoin"
+	}]
+}

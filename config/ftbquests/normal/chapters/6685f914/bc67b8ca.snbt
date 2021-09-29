@@ -1,0 +1,85 @@
+{
+	title: "The Enemoy of my Enemoy...",
+	icon: "thermalfoundation:material 1 163",
+	x: -4.0d,
+	y: 1.5d,
+	text: [
+		"Besides steel, there are many other alloys you'll need, which are made from a combination of metals (and sometimes other materials).",
+		"",
+		"Early options:",
+		"* Alloy Furnace from NuclearCraft",
+		"* Alloy Kiln from Immersive Engineering (see Engineer's Manual)",
+		"* Smeltery from Tinker's Construct (see Materials and You)",
+		"* Simpler alloys can be made by mixing the dusts together in the appropriate ratio in a crafting bench",
+		"",
+		"Later options:",
+		"* Alloy Smelter from EnderIO",
+		"* Induction Smelter from Thermal Expansion",
+		"* Metallurgic Infuser from Mekanism",
+		"",
+		"As always, not every machine can make every alloy, so check JEI to see what your options are."
+	],
+	dependencies: [
+		"5b8c506a"
+	],
+	dependency_requirement: "all_started",
+	tasks: [{
+		uid: "b2c5a1b4",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "ingotBronze",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotBronze"
+				}
+			}
+		}]
+	},
+	{
+		uid: "1a199a87",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "ingotInvar",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotInvar"
+				}
+			}
+		}]
+	},
+	{
+		uid: "5ce34ab8",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "ingotElectrum",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotElectrum"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "956e58fa",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

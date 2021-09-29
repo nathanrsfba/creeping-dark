@@ -1,0 +1,23 @@
+{
+	title: "Radioisotope Thermoelectric Generator",
+	icon: "nuclearcraft:rtg_californium",
+	x: -11.0d,
+	y: 4.0d,
+	text: [
+		"400RF/t. For free!"
+	],
+	tasks: [{
+		uid: "c6024d60",
+		type: "item",
+		items: [{
+			item: "contenttweaker:platinumcoin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "96b7a003",
+		type: "item",
+		team_reward: true,
+		item: "nuclearcraft:rtg_californium"
+	}]
+}

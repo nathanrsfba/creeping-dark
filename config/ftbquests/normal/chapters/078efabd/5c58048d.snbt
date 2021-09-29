@@ -1,0 +1,52 @@
+{
+	title: "Hunting Portal",
+	icon: {
+		id: "huntingdim:frame",
+		tag: {
+			BaseBlock: {
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": {}
+				},
+				id: "minecraft:log",
+				Count: 1b,
+				Damage: 0s
+			}
+		}
+	},
+	x: -2.0d,
+	y: -1.0d,
+	text: [
+		"Now take the morb and throw it at a zombie. Dunk it in some resonant ender, and pour it on 4 logs to make the frame for the hunting portal. Build it like a Nether portal, then right-click it with a sword to activate it.",
+		"",
+		"(You need to sneak into it to pass through.)",
+		"",
+		"You might want to fence it off... sometimes hostile mobs will wander through."
+	],
+	dependencies: [
+		"84cc58d4",
+		"b37b979a"
+	],
+	tasks: [{
+		uid: "f13906a0",
+		type: "item",
+		items: [{
+			id: "huntingdim:frame",
+			tag: {
+				BaseBlock: {
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": {}
+					},
+					id: "minecraft:log",
+					Count: 1b,
+					Damage: 0s
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "94d741a5",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

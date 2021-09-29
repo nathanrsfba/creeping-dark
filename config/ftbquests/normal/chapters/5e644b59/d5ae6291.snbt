@@ -1,0 +1,23 @@
+{
+	title: "Shed a tear",
+	icon: "minecraft:ghast_tear",
+	x: -0.5d,
+	y: -0.5d,
+	text: [
+		"Kill some ghasts for their tears"
+	],
+	dependencies: [
+		"2ec6a63f"
+	],
+	tasks: [{
+		uid: "9a335807",
+		type: "kill",
+		entity: "minecraft:ghast",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "bec6af8f",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

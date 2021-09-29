@@ -1,0 +1,27 @@
+{
+	title: "Silver",
+	icon: "thermalfoundation:material 1 130",
+	x: -3.0d,
+	y: -4.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"627c3307"
+	],
+	tasks: [{
+		uid: "b3042653",
+		type: "item",
+		items: [{
+			item: "contenttweaker:silvercoin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "3efb8fa3",
+		type: "item",
+		team_reward: true,
+		item: "thermalfoundation:ore 1 2",
+		count: 16
+	}]
+}

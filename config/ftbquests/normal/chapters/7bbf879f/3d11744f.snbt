@@ -1,0 +1,43 @@
+{
+	title: "Vis Crystals",
+	icon: {
+		id: "thaumcraft:crystal_essence",
+		tag: {
+			Aspects: [{
+				amount: 1,
+				key: "aer"
+			}]
+		}
+	},
+	x: 4.0d,
+	y: 1.0d,
+	text: [
+		"You'll need some Vis Crystals in order to study thaumaturgical magic.",
+		"",
+		"You can make them by zapping some crystals in the Atomic Reconstructor, breaking them down, then throwing them in a mana pool. You can also find them in deposits on the surface of the Aether. ",
+		"",
+		"Grab a few different flavors ... then follow your instincts"
+	],
+	dependencies: [
+		"69a8bd5b"
+	],
+	tasks: [{
+		uid: "3412f242",
+		type: "item",
+		items: [{
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "aer"
+				}]
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "dd12dbfe",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

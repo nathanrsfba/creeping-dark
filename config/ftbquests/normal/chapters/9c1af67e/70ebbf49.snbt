@@ -1,0 +1,24 @@
+{
+	title: "Shards",
+	icon: "rftools:dimensional_shard",
+	x: -1.0d,
+	y: 1.0d,
+	text: [
+		"Dimensional shards can be found in ore form, randomly strewn throughout RFtools dimensions."
+	],
+	dependencies: [
+		"7f44446f"
+	],
+	tasks: [{
+		uid: "92c49259",
+		type: "item",
+		items: [{
+			item: "rftools:dimensional_shard"
+		}]
+	}],
+	rewards: [{
+		uid: "d7da5a7c",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

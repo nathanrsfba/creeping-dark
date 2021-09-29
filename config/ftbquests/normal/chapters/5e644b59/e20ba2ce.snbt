@@ -1,0 +1,23 @@
+{
+	title: "Blaze a trail",
+	icon: "minecraft:blaze_rod",
+	x: -0.5d,
+	y: -2.0d,
+	text: [
+		"Kill some blazes for their rods"
+	],
+	dependencies: [
+		"2ec6a63f"
+	],
+	tasks: [{
+		uid: "6f823668",
+		type: "kill",
+		entity: "minecraft:blaze",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "4251cbe2",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

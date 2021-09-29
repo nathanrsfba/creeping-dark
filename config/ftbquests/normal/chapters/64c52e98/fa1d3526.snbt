@@ -1,0 +1,26 @@
+{
+	title: "Burgers",
+	icon: "aether_legacy:dungeon_trap 1 1",
+	x: -2.5d,
+	y: -1.5d,
+	text: [
+		"The Air key -- or the core of it -- is found in the Aether, held by the Slider. To find it, search the Aether for a stone opening in the ground. Go in, kill the Slider, and then search for his treasure chest.",
+		"",
+		"Bring a pickaxe that does some damage; you'll need it to fight the Slider"
+	],
+	dependencies: [
+		"fc9ec406"
+	],
+	tasks: [{
+		uid: "c72b4365",
+		type: "item",
+		items: [{
+			item: "contenttweaker:airkeyfrag"
+		}]
+	}],
+	rewards: [{
+		uid: "c5e541cb",
+		type: "item",
+		item: "contenttweaker:platinumcoin"
+	}]
+}

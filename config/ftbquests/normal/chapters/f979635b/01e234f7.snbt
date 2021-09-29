@@ -1,0 +1,36 @@
+{
+	title: "Strings",
+	icon: "minecraft:string",
+	x: -14.0d,
+	y: -1.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"dbbb018d"
+	],
+	tasks: [{
+		uid: "1a9e9545",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bronzecoin"
+		}],
+		consume_items: true
+	},
+	{
+		uid: "c2cf58fa",
+		type: "item",
+		items: [{
+			item: "contenttweaker:coppercoin 4"
+		}],
+		count: 4L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "5de6c706",
+		type: "item",
+		team_reward: true,
+		item: "minecraft:string",
+		count: 32
+	}]
+}

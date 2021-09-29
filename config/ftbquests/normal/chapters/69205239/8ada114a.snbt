@@ -1,0 +1,47 @@
+{
+	title: "Starship",
+	icon: "advancedrocketry:loader 1 1",
+	x: 3.0d,
+	y: 2.5d,
+	text: [
+		"To travel out of the solar system, you'll need to build a starship.",
+		"",
+		"First, you need to place a space station in orbit. To do that, build a station builder structure in the same fashion as building a rocket launch pad, except place down a space station assembler instead of a rocket assembler. (You can also reuse your rocket launch pad and just place the station assembler next to the rocket assembler.)",
+		"",
+		"Then you can build the space station in pretty much any size and shape you want, as long as it fits on the pad. Once you're ready to launch it, place an empty satellite bay and an unprogrammed satellite id chip into the satellite builder and build it.",
+		"",
+		"Then, build a rocket as before, except this time add a satellite bay to it. Place the satellite from the builder into the satellite bay, and the ID chip into the guidance computer. Fuel the rocket, jump on, and launch, and you'll land on your new satellite!"
+	],
+	dependencies: [
+		"59581749"
+	],
+	tasks: [{
+		uid: "875f8c9b",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:loader 1 1"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "423b3c2a",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:stationbuilder"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a1e1bef6",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:spacestationchip"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "73f749bc",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

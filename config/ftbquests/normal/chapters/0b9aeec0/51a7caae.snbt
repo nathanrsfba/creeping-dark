@@ -1,0 +1,32 @@
+{
+	title: "Malevolent",
+	icon: {
+		id: "thermalexpansion:morb",
+		tag: {
+			Generic: 1b,
+			id: "thebetweenlands:fortress_boss"
+		}
+	},
+	x: -3.0d,
+	y: -4.0d,
+	text: [
+		"The water key core is held by the Primordial Malevolence. Look for it in the Wight Tower in the marshes of the Betweenlands.",
+		"",
+		"To kill it, you'll need to fling its own projectiles back into it using a sword, then attack while its shield segments are down."
+	],
+	dependencies: [
+		"1fd04681"
+	],
+	tasks: [{
+		uid: "dc02a96e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:waterkeyfrag"
+		}]
+	}],
+	rewards: [{
+		uid: "28fec969",
+		type: "item",
+		item: "contenttweaker:platinumcoin"
+	}]
+}

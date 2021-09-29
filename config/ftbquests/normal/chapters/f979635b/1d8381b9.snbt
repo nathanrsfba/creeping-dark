@@ -1,0 +1,27 @@
+{
+	title: "Leather",
+	icon: "minecraft:leather",
+	x: -14.0d,
+	y: -2.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"fc30f0b2"
+	],
+	tasks: [{
+		uid: "90429e4b",
+		type: "item",
+		items: [{
+			item: "contenttweaker:coppercoin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "b02815a2",
+		type: "item",
+		team_reward: true,
+		item: "minecraft:leather",
+		count: 4
+	}]
+}

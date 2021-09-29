@@ -1,0 +1,31 @@
+{
+	title: "RTFM (Mechanical Edition)",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "immersiveengineering:tool",
+		Damage: 3s
+	},
+	x: -2.5d,
+	y: 1.0d,
+	text: [
+		"Not strictly required. But tells you how to do stuff."
+	],
+	tasks: [{
+		uid: "ae6f5799",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "immersiveengineering:tool",
+			Damage: 3s
+		}]
+	}],
+	rewards: [{
+		uid: "12c24b54",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

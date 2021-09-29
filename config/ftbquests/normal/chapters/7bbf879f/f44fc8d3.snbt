@@ -1,0 +1,41 @@
+{
+	title: "Ingots from Heaven",
+	icon: "botania:manaresource",
+	x: 2.0d,
+	y: 1.0d,
+	text: [
+		"Some very common mana-infused resources"
+	],
+	dependencies: [
+		"aba84c22",
+		"69a8bd5b",
+		"2af1d01f",
+		"14d9d8b6"
+	],
+	tasks: [{
+		uid: "fe9a76a5",
+		type: "item",
+		items: [{
+			item: "botania:manaresource 1 2"
+		}]
+	},
+	{
+		uid: "5127aa96",
+		type: "item",
+		items: [{
+			item: "botania:manaresource 1 1"
+		}]
+	},
+	{
+		uid: "f33098b3",
+		type: "item",
+		items: [{
+			item: "botania:manaresource"
+		}]
+	}],
+	rewards: [{
+		uid: "790a4e44",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

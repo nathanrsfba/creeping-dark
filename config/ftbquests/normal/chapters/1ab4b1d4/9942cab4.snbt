@@ -1,0 +1,24 @@
+{
+	title: "Out of this World",
+	icon: "astralsorcery:blockcustomore 1 1",
+	x: -1.0d,
+	y: 4.0d,
+	text: [
+		"Dig out a shrine so the crystal has a view of the sky. Then stick some iron ore in it and link it to the collector crystal"
+	],
+	dependencies: [
+		"19ae1663"
+	],
+	tasks: [{
+		uid: "c6948950",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockcustomore 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "8a519662",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

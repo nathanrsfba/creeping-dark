@@ -1,0 +1,24 @@
+{
+	title: "Workbench",
+	icon: "immersiveengineering:wooden_device0 1 2",
+	x: 0.5d,
+	y: -0.5d,
+	text: [
+		"The Engineer's Workbench. Useful for making a number of crafting components."
+	],
+	dependencies: [
+		"01919ced"
+	],
+	tasks: [{
+		uid: "bd1cf82d",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:wooden_device0 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "89ff103e",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

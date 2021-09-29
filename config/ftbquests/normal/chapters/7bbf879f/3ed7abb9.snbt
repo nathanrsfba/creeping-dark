@@ -1,0 +1,26 @@
+{
+	title: "Not a pharmacy",
+	icon: "botania:altar",
+	x: -0.5d,
+	y: -2.0d,
+	text: [
+		"The start of the Botania tech tree is the Petal Apothecary.",
+		"",
+		"Consult the Lexica Botania to learn more."
+	],
+	dependencies: [
+		"cc22d901"
+	],
+	tasks: [{
+		uid: "b81e8484",
+		type: "item",
+		items: [{
+			item: "botania:altar"
+		}]
+	}],
+	rewards: [{
+		uid: "7a5bf86e",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

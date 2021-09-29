@@ -1,0 +1,123 @@
+{
+	title: "Uncommon",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "actuallyadditions:item_paxel_crystal_white"
+		}
+	},
+	{
+		item: "minecraft:gold_ingot",
+		count: 4
+	},
+	{
+		item: "minecraft:glowstone_dust",
+		count: 16
+	},
+	{
+		item: "minecraft:ender_pearl"
+	},
+	{
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "betterbuilderswands:wanddiamond"
+		}
+	},
+	{
+		item: "botania:manaresource",
+		count: 4
+	},
+	{
+		item: "minecraft:blaze_rod",
+		count: 4
+	},
+	{
+		item: "thermalfoundation:material 1 130",
+		count: 16
+	},
+	{
+		item: "thermalfoundation:material 1 133",
+		count: 16
+	},
+	{
+		item: "tconstruct:ingots",
+		count: 16
+	},
+	{
+		item: "tconstruct:ingots 1 1",
+		count: 16
+	},
+	{
+		item: "mekanism:ingot 1 4",
+		count: 16
+	},
+	{
+		item: {
+			id: "landcore:item_ingot",
+			Count: 16,
+			Damage: 1
+		}
+	},
+	{
+		item: "nuclearcraft:ingot 1 4",
+		count: 16
+	},
+	{
+		item: "nuclearcraft:ingot 1 3"
+	},
+	{
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "actuallyadditions:item_bag"
+		}
+	},
+	{
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "ironchest:wood_iron_chest_upgrade"
+		}
+	},
+	{
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "mekanism:flamethrower",
+			tag: {
+				mekData: {
+					stored: {
+						amount: 24000,
+						gasName: "hydrogen"
+					}
+				}
+			}
+		}
+	},
+	{
+		item: "minecraft:experience_bottle",
+		count: 16
+	},
+	{
+		item: "minecraft:tnt",
+		count: 64
+	}],
+	loot_crate: {
+		string_id: "uncommon",
+		item_name: "Uncommon",
+		color: 16777215,
+		drops: {
+			boss: 0,
+			passive: 0,
+			monster: 0
+		}
+	}
+}

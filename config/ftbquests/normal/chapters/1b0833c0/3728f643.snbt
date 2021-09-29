@@ -1,0 +1,29 @@
+{
+	title: "Don't snort this",
+	icon: "immersiveengineering:stone_decoration",
+	x: -1.0d,
+	y: -2.0d,
+	text: [
+		"Put down coke bricks in a 3x3x3 cube, then thwack the front side with the engineer's hammer.",
+		"",
+		"Then shovel some coal or logs into it to start generating creosote oil.",
+		"",
+		"Logs will turn into charcoal; coal will turn into coke, which is useful for making steel."
+	],
+	dependencies: [
+		"6b9cf0dc"
+	],
+	tasks: [{
+		uid: "7f561503",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:stone_decoration 27"
+		}],
+		count: 27L
+	}],
+	rewards: [{
+		uid: "58f20c7b",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

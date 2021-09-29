@@ -1,0 +1,44 @@
+{
+	title: "Steel This Book",
+	icon: "thermalfoundation:material 1 160",
+	x: -2.5d,
+	y: 1.5d,
+	text: [
+		"Steel is one of the most commonly used alloys, and you'll need to learn how to make some.",
+		"",
+		"Some early options:",
+		" * Immersive Engineering Blast Furnace (See the Engineer's Manual for details)",
+		" * Iron and coal in the Alloy Furnace",
+		"",
+		"Some later options:",
+		" * Iron and pulverized coal or charcoal in an Induction Smelter",
+		" * Iron and either coal or charcoal in the Metallurgic Infuser"
+	],
+	dependencies: [
+		"5b8c506a"
+	],
+	dependency_requirement: "all_started",
+	tasks: [{
+		uid: "549d8058",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "ingotSteel",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotSteel"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "a264a4b0",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

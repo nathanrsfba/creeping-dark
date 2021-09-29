@@ -1,0 +1,21 @@
+{
+	title: "Money!",
+	icon: "minecraft:emerald",
+	x: -4.0d,
+	y: 0.0d,
+	text: [
+		"Mine it in Extreme Hills biomes, or sell some crap to a villager"
+	],
+	tasks: [{
+		uid: "d9e5e116",
+		type: "item",
+		items: [{
+			item: "minecraft:emerald"
+		}]
+	}],
+	rewards: [{
+		uid: "e0ed7de8",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

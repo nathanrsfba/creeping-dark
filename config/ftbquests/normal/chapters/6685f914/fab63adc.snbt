@@ -1,0 +1,26 @@
+{
+	title: "Jeweled Husk",
+	icon: {
+		id: "openblocks:trophy",
+		tag: {
+			entity_id: "minecraft:husk"
+		}
+	},
+	x: -4.0d,
+	y: 3.0d,
+	text: [
+		"The Diamond Key is hidden in the overworld, guarded by the Diamond Husk. You must seek his tower, the Broken Sphere, and take the key from him."
+	],
+	tasks: [{
+		uid: "ac012427",
+		type: "item",
+		items: [{
+			item: "contenttweaker:diamondkey"
+		}]
+	}],
+	rewards: [{
+		uid: "e73b57f0",
+		type: "item",
+		item: "contenttweaker:goldcoin"
+	}]
+}

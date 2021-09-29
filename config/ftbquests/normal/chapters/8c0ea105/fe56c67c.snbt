@@ -1,0 +1,64 @@
+{
+	title: "Diamatine",
+	icon: "actuallyadditions:item_crystal_empowered 1 2",
+	x: 2.0d,
+	y: -2.0d,
+	text: [
+		"Throw a diamond at the Atomic Reconstructor... then throw the result at the empowerer with the other bits."
+	],
+	dependencies: [
+		"1a2e0179"
+	],
+	tasks: [{
+		uid: "c20f00a5",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_crystal 1 2"
+		}]
+	},
+	{
+		uid: "b1f50be1",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_crystal_empowered 1 2"
+		}]
+	},
+	{
+		uid: "00d41763",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "dyeLightBlue",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dyeLightBlue"
+				}
+			}
+		}]
+	},
+	{
+		uid: "9a7d903f",
+		type: "item",
+		items: [{
+			item: "minecraft:clay"
+		}]
+	},
+	{
+		uid: "166c4e83",
+		type: "item",
+		items: [{
+			item: "minecraft:clay_ball 2"
+		}],
+		count: 2L
+	}],
+	rewards: [{
+		uid: "1343be1d",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

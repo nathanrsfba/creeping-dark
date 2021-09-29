@@ -1,0 +1,24 @@
+{
+	title: "Syrmorite",
+	icon: "thebetweenlands:items_misc 1 11",
+	x: -0.5d,
+	y: -3.0d,
+	text: [
+		"This is ... pretty much the Betweenland's equivalent of iron."
+	],
+	dependencies: [
+		"e0da8f23"
+	],
+	tasks: [{
+		uid: "7d59a07f",
+		type: "item",
+		items: [{
+			item: "thebetweenlands:items_misc 1 11"
+		}]
+	}],
+	rewards: [{
+		uid: "4ed9eea1",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

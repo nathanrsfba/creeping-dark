@@ -1,0 +1,36 @@
+{
+	title: "Blaze Rod",
+	icon: "minecraft:blaze_rod",
+	x: -11.0d,
+	y: -1.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"e20ba2ce"
+	],
+	tasks: [{
+		uid: "7bd92e9a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:silvercoin"
+		}],
+		consume_items: true
+	},
+	{
+		uid: "c3cb596c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bronzecoin 4"
+		}],
+		count: 4L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "520635b9",
+		type: "item",
+		team_reward: true,
+		item: "minecraft:blaze_rod",
+		count: 16
+	}]
+}

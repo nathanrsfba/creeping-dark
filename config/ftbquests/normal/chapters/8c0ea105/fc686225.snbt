@@ -1,0 +1,24 @@
+{
+	title: "Why did it have to be snakes?",
+	icon: "twilightforest:trophy",
+	x: -2.5d,
+	y: 1.0d,
+	text: [
+		"Once in the Twilight Forest, look for the Naga in its stone arena, and kill it. Taking the Naga Scales will allow you to reach the Twilight Lich"
+	],
+	dependencies: [
+		"b732fb81"
+	],
+	tasks: [{
+		uid: "38113943",
+		type: "item",
+		items: [{
+			item: "twilightforest:naga_scale"
+		}]
+	}],
+	rewards: [{
+		uid: "3e382514",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

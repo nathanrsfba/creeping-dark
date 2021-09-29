@@ -1,0 +1,38 @@
+{
+	title: "The Talisman",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "thebetweenlands:swamp_talisman"
+	},
+	x: 1.0d,
+	y: -4.5d,
+	text: [
+		"Find a druid altar in a swamp and murder some druids until you get the four pieces of the swamp talisman -- one of them inactive.",
+		"",
+		"Tune an entangloporter into the 'Swamp Magic' frequency. Pipe the inactive piece into it, wait a moment, then pipe out the final, activated piece of the talisman.",
+		"",
+		"Assemble the talisman at the altar near the druid hangout, then use it on a sapling to make a portal to the Betweenlands.",
+		"",
+		"The Betweenlands is a swampy world. Be aware that many overworld things won't work in the moist environment, including food, torches, and firestarters, and overworld weapons lose their efficiency as well."
+	],
+	dependencies: [
+		"8d65156f"
+	],
+	tasks: [{
+		uid: "cfe26bfc",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "thebetweenlands:swamp_talisman"
+		}]
+	}],
+	rewards: [{
+		uid: "659fd27e",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

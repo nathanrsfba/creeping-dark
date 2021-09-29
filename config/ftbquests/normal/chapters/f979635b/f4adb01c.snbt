@@ -1,0 +1,27 @@
+{
+	title: "Lithium",
+	icon: "nuclearcraft:ingot 1 6",
+	x: -5.0d,
+	y: -2.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"f7842afb"
+	],
+	tasks: [{
+		uid: "50bdf835",
+		type: "item",
+		items: [{
+			item: "contenttweaker:silvercoin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "1a175f16",
+		type: "item",
+		team_reward: true,
+		item: "nuclearcraft:ore 1 6",
+		count: 16
+	}]
+}

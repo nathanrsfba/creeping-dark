@@ -1,0 +1,30 @@
+{
+	title: "*cough*",
+	icon: "atum:sarcophagus",
+	x: 2.0d,
+	y: 2.5d,
+	text: [
+		"The Amethyst key is held by the Pharaoh, in the realm of Atum.",
+		"",
+		"Search the sands of Atum for a pyramid. Dig out the bottom of the 'stairs' until you find a doorway. Navigate the dungeon within until you find the sarcophagus.",
+		"",
+		"Place four Royal Torches around the corners of the sarcophagus (or, if they're already there, relight them with a torch). Then, open the sarcophagus to bring the Pharaoh to life.",
+		"",
+		"Once he's dead, you'll find the key within the sarcophagus"
+	],
+	dependencies: [
+		"80af8109"
+	],
+	tasks: [{
+		uid: "dd538866",
+		type: "item",
+		items: [{
+			item: "contenttweaker:amethystkey"
+		}]
+	}],
+	rewards: [{
+		uid: "b7276fe0",
+		type: "item",
+		item: "contenttweaker:platinumcoin"
+	}]
+}

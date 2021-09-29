@@ -1,0 +1,36 @@
+{
+	title: "Portal Wand",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "tropicraft:portal_enchanter",
+		tag: {}
+	},
+	x: 3.5d,
+	y: 2.5d,
+	text: [
+		"Build the Tropics Portal Enchantment Wand. This can be used to create TropiCraft portals, but it has another use..."
+	],
+	dependencies: [
+		"2dcf420f",
+		"3796f965"
+	],
+	tasks: [{
+		uid: "e4e3361a",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tropicraft:portal_enchanter",
+			tag: {}
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "a62363c4",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

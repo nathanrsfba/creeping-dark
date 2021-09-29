@@ -1,0 +1,25 @@
+{
+	title: "Vile",
+	icon: "thebetweenlands:dentrothyst_vial",
+	x: -5.0d,
+	y: 3.0d,
+	text: [
+		"Used for Betweenlands alchemy"
+	],
+	dependencies: [
+		"244ed8eb",
+		"1e6a0dc4"
+	],
+	tasks: [{
+		uid: "3d2c1081",
+		type: "item",
+		items: [{
+			item: "thebetweenlands:dentrothyst_vial"
+		}]
+	}],
+	rewards: [{
+		uid: "30b002d4",
+		type: "item",
+		item: "contenttweaker:silvercoin"
+	}]
+}

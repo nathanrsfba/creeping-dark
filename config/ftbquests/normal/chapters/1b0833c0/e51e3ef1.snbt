@@ -1,0 +1,24 @@
+{
+	title: "Drift Away...",
+	icon: "tropicraft:chair",
+	x: 3.5d,
+	y: -0.5d,
+	text: [
+		"Make a beach chair, then sit on it at sunset and drink a Piña Colada. You'll shortly find yourself drifting into the Tropics.",
+		"",
+		"(You might want to make an extra Piña Colada, as you need to drink another one to use the return portal)"
+	],
+	dependencies: [
+		"41bda442"
+	],
+	tasks: [{
+		uid: "315385f8",
+		type: "dimension",
+		dim: -127
+	}],
+	rewards: [{
+		uid: "d33496f0",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

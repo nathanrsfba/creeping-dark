@@ -1,0 +1,26 @@
+{
+	title: "Phire and Brimstone",
+	icon: "atum:porphyry",
+	x: 3.5d,
+	y: -2.0d,
+	text: [
+		"You can find Porphyry in both the Hunting Dimension and the Mining Dimension. It generates like andesite and similar minerals."
+	],
+	dependencies: [
+		"5c58048d",
+		"ebfed8eb"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "c0102d08",
+		type: "item",
+		items: [{
+			item: "atum:porphyry"
+		}]
+	}],
+	rewards: [{
+		uid: "b27542b9",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	title: "Tin",
+	icon: "thermalfoundation:material 1 129",
+	x: -6.0d,
+	y: -4.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"627c3307"
+	],
+	tasks: [{
+		uid: "ee7389bb",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bronzecoin 4"
+		}],
+		count: 4L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "68e01c2f",
+		type: "item",
+		team_reward: true,
+		item: "thermalfoundation:ore 1 1",
+		count: 16
+	}]
+}

@@ -1,0 +1,43 @@
+{
+	title: "Research Essentials",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "thaumcraft:thaumometer"
+	},
+	x: 0.5d,
+	y: -3.0d,
+	text: [
+		"You'll need these to perform research. Read about them in the thaumonomicon.",
+		"",
+		"(You need to pick the table up to get the reward)"
+	],
+	dependencies: [
+		"4bb00ca5"
+	],
+	tasks: [{
+		uid: "4c94c859",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "thaumcraft:thaumometer"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "174b42b0",
+		type: "item",
+		items: [{
+			item: "thaumcraft:research_table"
+		}]
+	}],
+	rewards: [{
+		uid: "2c17a304",
+		type: "item",
+		item: "contenttweaker:bronzecoin",
+		count: 2
+	}]
+}

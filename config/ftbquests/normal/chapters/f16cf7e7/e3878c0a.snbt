@@ -1,0 +1,24 @@
+{
+	title: "Don't be a sap",
+	icon: "thebetweenlands:sap_ball",
+	x: 1.5d,
+	y: -1.5d,
+	text: [
+		"Find a sap tree and chop it down. The sap can ward off the Decay"
+	],
+	dependencies: [
+		"e0da8f23"
+	],
+	tasks: [{
+		uid: "a85f2849",
+		type: "item",
+		items: [{
+			item: "thebetweenlands:sap_ball"
+		}]
+	}],
+	rewards: [{
+		uid: "d2affa56",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

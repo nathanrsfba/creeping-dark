@@ -1,0 +1,35 @@
+{
+	title: "Certus",
+	icon: "appliedenergistics2:material",
+	x: 2.0d,
+	y: -0.5d,
+	text: [
+		"You'll need Certus Quarts to unlock Thermal Expansion, RFTools, and Applied Energistics"
+	],
+	dependencies: [
+		"b732fb81"
+	],
+	tasks: [{
+		uid: "f6d97ee2",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "crystalCertusQuartz",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any crystalCertusQuartz"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "e3bd2848",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}

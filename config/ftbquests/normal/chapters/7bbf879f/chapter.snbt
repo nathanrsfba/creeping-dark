@@ -1,0 +1,10 @@
+{
+	title: "Hedge Alchemy",
+	icon: "botania:flower",
+	description: [
+		"Botania and the Aether"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

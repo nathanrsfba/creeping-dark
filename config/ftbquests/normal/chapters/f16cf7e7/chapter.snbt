@@ -1,0 +1,12 @@
+{
+	title: "Swamp Tech",
+	icon: "mekanism:enrichedalloy",
+	description: [
+		"Mekanism and the Betweenlands.",
+		"",
+		"Yeah, it's a mess. Betweenlands is complicated."
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

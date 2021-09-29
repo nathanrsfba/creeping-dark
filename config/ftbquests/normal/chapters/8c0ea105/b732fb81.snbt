@@ -1,0 +1,22 @@
+{
+	title: "Into the Twilight Forest",
+	icon: "twilightforest:miniature_structure",
+	x: 0.0d,
+	y: -0.5d,
+	text: [
+		"Create a 2x2 pool of water, surround it with plants (flowers, grass, saplings, whatever), and throw in the empowered diamatine."
+	],
+	dependencies: [
+		"fe56c67c"
+	],
+	tasks: [{
+		uid: "92cf8d4e",
+		type: "dimension",
+		dim: 7
+	}],
+	rewards: [{
+		uid: "d782cb9d",
+		type: "item",
+		item: "contenttweaker:bronzecoin"
+	}]
+}
