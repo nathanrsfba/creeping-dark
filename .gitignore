@@ -8,6 +8,7 @@ config.bak.json
 # Don't want them spamming up the repo.
 config/jei/bookmarks.ini
 config/machinemuse/powersuits-keybinds.cfg
+config/jei/worldSettings.cfg
 
 # Various crap that generally lives in the minecraft folder
 *.dll
