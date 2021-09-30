@@ -2,6 +2,7 @@
 *~
 *.bak
 *.swp
+config.bak.json
 
 # End-user settings that for some reason live in config.
 # Don't want them spamming up the repo.
