@@ -17,9 +17,6 @@
 		"",
 		"The storage cell will regenerate one minute after being taken out of the chest, so you can reload it if you screw up and lose the key, or are playing multiplayer."
 	],
-	dependencies: [
-		"4f6e4f14"
-	],
 	tasks: [{
 		uid: "29bf8651",
 		type: "item",
