@@ -1,11 +1,10 @@
 {
 	title: "Malevolent",
 	icon: {
-		id: "thermalexpansion:morb",
-		tag: {
-			Generic: 1b,
-			id: "thebetweenlands:fortress_boss"
-		}
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "thebetweenlands:shockwave_sword"
 	},
 	x: -3.0d,
 	y: -4.0d,
