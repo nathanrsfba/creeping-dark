@@ -26,6 +26,8 @@
 	{
 		uid: "00d41763",
 		type: "item",
+		title: "Light Blue Dye",
+		icon: "minecraft:dye 1 12",
 		items: [{
 			ForgeCaps: {
 				Parent: {

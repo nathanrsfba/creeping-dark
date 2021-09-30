@@ -26,6 +26,8 @@
 	tasks: [{
 		uid: "b2c5a1b4",
 		type: "item",
+		title: "Bronze",
+		icon: "thermalfoundation:material 1 163",
 		items: [{
 			ForgeCaps: {
 				Parent: {
@@ -44,6 +46,8 @@
 	{
 		uid: "1a199a87",
 		type: "item",
+		title: "Invar",
+		icon: "thermalfoundation:material 1 162",
 		items: [{
 			ForgeCaps: {
 				Parent: {
@@ -62,6 +66,8 @@
 	{
 		uid: "5ce34ab8",
 		type: "item",
+		title: "Electrum",
+		icon: "thermalfoundation:material 1 161",
 		items: [{
 			ForgeCaps: {
 				Parent: {

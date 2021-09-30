@@ -28,6 +28,8 @@
 	{
 		uid: "b2b13d7d",
 		type: "item",
+		title: "Red Dye",
+		icon: "minecraft:dye 1 1",
 		items: [{
 			ForgeCaps: {
 				Parent: {
@@ -47,6 +49,8 @@
 	{
 		uid: "de39ea16",
 		type: "item",
+		title: "Orange Dye",
+		icon: "minecraft:dye 1 14",
 		items: [{
 			ForgeCaps: {
 				Parent: {
@@ -66,6 +70,8 @@
 	{
 		uid: "76aaad02",
 		type: "item",
+		title: "Yellow Dye",
+		icon: "minecraft:dye 1 11",
 		items: [{
 			ForgeCaps: {
 				Parent: {

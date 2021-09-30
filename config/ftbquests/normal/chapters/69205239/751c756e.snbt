@@ -12,6 +12,7 @@
 	tasks: [{
 		uid: "4a745ebc",
 		type: "item",
+		title: "Dilithium Crystal",
 		items: [{
 			ForgeCaps: {
 				Parent: {

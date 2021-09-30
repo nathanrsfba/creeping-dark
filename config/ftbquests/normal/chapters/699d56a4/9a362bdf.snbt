@@ -18,6 +18,7 @@
 	tasks: [{
 		uid: "600fa6cc",
 		type: "item",
+		title: "Silicon",
 		items: [{
 			ForgeCaps: {
 				Parent: {

@@ -12,6 +12,7 @@
 	tasks: [{
 		uid: "f6d97ee2",
 		type: "item",
+		title: "Certus Quartz",
 		items: [{
 			ForgeCaps: {
 				Parent: {

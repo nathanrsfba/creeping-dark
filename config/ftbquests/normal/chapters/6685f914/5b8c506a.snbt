@@ -13,6 +13,8 @@
 	tasks: [{
 		uid: "8efe2c19",
 		type: "item",
+		title: "Copper Ingot",
+		icon: "thermalfoundation:material 1 128",
 		items: [{
 			ForgeCaps: {
 				Parent: {
@@ -31,6 +33,8 @@
 	{
 		uid: "4d25a8cf",
 		type: "item",
+		title: "Silver Ingot",
+		icon: "thermalfoundation:material 1 130",
 		items: [{
 			ForgeCaps: {
 				Parent: {
@@ -56,6 +60,8 @@
 	{
 		uid: "4233922f",
 		type: "item",
+		title: "Tin Ingot",
+		icon: "thermalfoundation:material 1 129",
 		items: [{
 			ForgeCaps: {
 				Parent: {
@@ -81,6 +87,8 @@
 	{
 		uid: "61bbfee0",
 		type: "item",
+		title: "Lead Ingot",
+		icon: "thermalfoundation:material 1 131",
 		items: [{
 			ForgeCaps: {
 				Parent: {

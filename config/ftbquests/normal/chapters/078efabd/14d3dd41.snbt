@@ -13,6 +13,7 @@
 	tasks: [{
 		uid: "2bebac4d",
 		type: "item",
+		title: "Slag",
 		items: [{
 			ForgeCaps: {
 				Parent: {

@@ -25,6 +25,8 @@
 	{
 		uid: "d894d7bf",
 		type: "item",
+		title: "Copper Ore",
+		icon: "thermalfoundation:ore",
 		items: [{
 			ForgeCaps: {
 				Parent: {
@@ -43,6 +45,8 @@
 	{
 		uid: "f46dba9a",
 		type: "item",
+		title: "Tin Ore",
+		icon: "thermalfoundation:ore 1 1",
 		items: [{
 			ForgeCaps: {
 				Parent: {
@@ -61,6 +65,8 @@
 	{
 		uid: "1ecb8274",
 		type: "item",
+		title: "Lead Ore",
+		icon: "thermalfoundation:ore 1 3",
 		items: [{
 			ForgeCaps: {
 				Parent: {
@@ -79,6 +85,8 @@
 	{
 		uid: "7e109a92",
 		type: "item",
+		title: "Silver Ore",
+		icon: "thermalfoundation:ore 1 2",
 		items: [{
 			ForgeCaps: {
 				Parent: {
@@ -125,6 +133,8 @@
 	{
 		uid: "5ba82eb4",
 		type: "item",
+		title: "Bauxite Ore",
+		icon: "immersiveengineering:ore 1 1",
 		items: [{
 			ForgeCaps: {
 				Parent: {

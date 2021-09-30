@@ -25,6 +25,8 @@
 	tasks: [{
 		uid: "f202924a",
 		type: "item",
+		title: "Iron Dust",
+		icon: "thermalfoundation:material",
 		items: [{
 			ForgeCaps: {
 				Parent: {
@@ -43,6 +45,8 @@
 	{
 		uid: "f6ef6daa",
 		type: "item",
+		title: "Copper Dust",
+		icon: "thermalfoundation:material 1 64",
 		items: [{
 			ForgeCaps: {
 				Parent: {
@@ -61,6 +65,8 @@
 	{
 		uid: "5a81389a",
 		type: "item",
+		title: "Tin Dust",
+		icon: "thermalfoundation:material 1 65",
 		items: [{
 			ForgeCaps: {
 				Parent: {
@@ -79,6 +85,8 @@
 	{
 		uid: "9f48c990",
 		type: "item",
+		title: "Silver Dust",
+		icon: "thermalfoundation:material 1 66",
 		items: [{
 			ForgeCaps: {
 				Parent: {
@@ -97,6 +105,8 @@
 	{
 		uid: "d53b0a61",
 		type: "item",
+		title: "Gold Dust Woman",
+		icon: "thermalfoundation:material 1 1",
 		items: [{
 			ForgeCaps: {
 				Parent: {
@@ -115,6 +125,8 @@
 	{
 		uid: "5ec4d394",
 		type: "item",
+		title: "Lead Dust",
+		icon: "thermalfoundation:material 1 67",
 		items: [{
 			ForgeCaps: {
 				Parent: {

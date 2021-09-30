@@ -12,6 +12,7 @@
 	tasks: [{
 		uid: "af6be846",
 		type: "item",
+		title: "Copper Wire",
 		items: [{
 			ForgeCaps: {
 				Parent: {

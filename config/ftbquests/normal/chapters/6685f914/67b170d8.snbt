@@ -21,6 +21,8 @@
 	tasks: [{
 		uid: "549d8058",
 		type: "item",
+		title: "Steel Ingot",
+		icon: "thermalfoundation:material 1 160",
 		items: [{
 			ForgeCaps: {
 				Parent: {

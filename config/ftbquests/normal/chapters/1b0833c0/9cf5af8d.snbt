@@ -12,6 +12,8 @@
 	tasks: [{
 		uid: "ff197b82",
 		type: "item",
+		title: "Copper Plate",
+		icon: "thermalfoundation:material 1 320",
 		items: [{
 			ForgeCaps: {
 				Parent: {

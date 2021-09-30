@@ -19,6 +19,7 @@
 	tasks: [{
 		uid: "0b5dd62a",
 		type: "item",
+		title: "Signalum",
 		items: [{
 			ForgeCaps: {
 				Parent: {

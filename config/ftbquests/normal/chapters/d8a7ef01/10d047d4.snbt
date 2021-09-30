@@ -32,6 +32,8 @@
 	{
 		uid: "b7149d3f",
 		type: "item",
+		title: "Leaves",
+		icon: "minecraft:leaves",
 		items: [{
 			ForgeCaps: {
 				Parent: {
