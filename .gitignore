@@ -10,6 +10,9 @@ config/jei/bookmarks.ini
 config/machinemuse/powersuits-keybinds.cfg
 config/jei/worldSettings.cfg
 
+# Various client-side crap that doesn't need to go in the repo
+config/thaumicjei_itemstack_aspects.json
+
 # Various crap that generally lives in the minecraft folder
 *.dll
 /.ReAuth.cfg
