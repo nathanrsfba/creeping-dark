@@ -14,7 +14,8 @@
 		type: "item",
 		items: [{
 			item: "thebetweenlands:log_weedwood"
-		}]
+		}],
+		ignore_damage: true
 	}],
 	rewards: [{
 		uid: "f383c78b",
