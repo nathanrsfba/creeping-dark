@@ -22,10 +22,21 @@
 		"* Stirling generator from EnderIO",
 		"* Decay generator from NuclearCraft (craft one and plonk down some Uranium or Thorium blocks next to it)",
 		"",
-		"Some of these options may require unlocking their associated mods first."
+		"Some of these options may require unlocking their associated mods first.",
+		"",
+		"To submit energy for the quest: Craft a Task Screen, right-click on it, select this task, then pipe energy into it."
+	],
+	dependencies: [
+		"5b8c506a"
 	],
 	tasks: [{
-		uid: "aadea719",
-		type: "checkmark"
+		uid: "e3c8d402",
+		type: "forge_energy",
+		value: 1000L
+	}],
+	rewards: [{
+		uid: "a8195194",
+		type: "ftbmoney:money",
+		ftb_money: 8L
 	}]
 }
