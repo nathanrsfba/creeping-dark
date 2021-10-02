@@ -35,7 +35,8 @@ CurseForge compatible packs, so feel free to use the official launcher
 (whenever it gets its shit together), but from now on GDLauncher will be the
 official platform for this pack.
 
-To install the pack in GDLauncher, click the [+] button, select "Import Zip", then navigate to the Creeping Dark .zip file.
+To install the pack in GDLauncher, click the [+] button, select "Import Zip",
+then navigate to the Creeping Dark .zip file.
 
 Server Installation
 -------------------
@@ -108,22 +109,33 @@ for god knows what reason
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
 
+Changes in v1.5.5
+-----------------
+
+Converted the quest system to FTB Quests.
+
+One notable change is that FTB Quests doesn't have the option to recognize
+progress on quests that are still locked. Some minor reworking of the quest
+lines has been done to minimize the impact of this, but you may occasionally
+find yourself having to 'redo' some task in order for it to be recognized. If
+you find any particularly egregious examples, please report them as issues.
+
 Changes in v1.5.4.1
 -------------------
 
 Fixed some recipe conflicts:
 
-    * Quark vs. Agricraft trowel
-    * Sound box vs. stained planks
-    * Iron ladder vs. rusty ladder
-    * Bibliocraft vs. Random Things golden compass
-    * RandomThings ID card vs. EnderIO black paper
-    * Respawn obelisk vs. Minecraft chest
-    * Multiple variants of marble bricks
-    * Multiple variants of bronze tools
-    * Malisis curtains vs. Aether capes
-    * Multiple variantes of sickles
-    * Scaffolding vs. Block of Sticks
+* Quark vs. Agricraft trowel
+* Sound box vs. stained planks
+* Iron ladder vs. rusty ladder
+* Bibliocraft vs. Random Things golden compass
+* RandomThings ID card vs. EnderIO black paper
+* Respawn obelisk vs. Minecraft chest
+* Multiple variants of marble bricks
+* Multiple variants of bronze tools
+* Malisis curtains vs. Aether capes
+* Multiple variantes of sickles
+* Scaffolding vs. Block of Sticks
 
 Changes in v1.5.4
 -----------------
