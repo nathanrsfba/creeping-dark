@@ -6,9 +6,6 @@
 	text: [
 		"Throw an obsidian, a diamond, and an emerald onto the offering table and wait a moment"
 	],
-	dependencies: [
-		"031c96a4"
-	],
 	tasks: [{
 		uid: "59a6b565",
 		type: "item",

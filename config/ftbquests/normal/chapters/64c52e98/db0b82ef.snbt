@@ -10,13 +10,6 @@
 		"ef4c409a"
 	],
 	tasks: [{
-		uid: "2e806ed5",
-		type: "item",
-		items: [{
-			item: "aether_legacy:zanite_gemstone"
-		}]
-	},
-	{
 		uid: "8ccd41bc",
 		type: "item",
 		items: [{

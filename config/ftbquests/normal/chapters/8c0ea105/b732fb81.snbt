@@ -12,6 +12,7 @@
 	tasks: [{
 		uid: "92cf8d4e",
 		type: "dimension",
+		title: "Enter the Twilight Forest",
 		dim: 7
 	}],
 	rewards: [{

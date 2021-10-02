@@ -11,23 +11,9 @@
 	],
 	dependency_requirement: "all_started",
 	tasks: [{
-		uid: "1704b988",
-		type: "item",
-		items: [{
-			item: "minecraft:obsidian 10"
-		}],
-		count: 10L
-	},
-	{
-		uid: "92d29cbf",
-		type: "item",
-		items: [{
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "minecraft:flint_and_steel"
-		}],
-		ignore_damage: true
+		uid: "2bdb9f0b",
+		type: "dimension",
+		dim: -1
 	}],
 	rewards: [{
 		uid: "f0130fd1",

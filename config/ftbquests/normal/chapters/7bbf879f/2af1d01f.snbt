@@ -18,6 +18,7 @@
 	dependencies: [
 		"be0aadeb"
 	],
+	dependency_requirement: "all_started",
 	tasks: [{
 		uid: "1c4b9827",
 		type: "item",

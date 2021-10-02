@@ -2,7 +2,7 @@
 	title: "Intelligent Machines",
 	icon: "enderio:item_material 1 53",
 	x: 1.0d,
-	y: 0.5d,
+	y: -1.0d,
 	text: [
 		"At what point does this cease being science and become eldritch magics?"
 	],

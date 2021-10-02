@@ -15,6 +15,7 @@
 	tasks: [{
 		uid: "0b3ed379",
 		type: "dimension",
+		title: "Land on Luna",
 		dim: 152
 	}],
 	rewards: [{

@@ -1,8 +1,8 @@
 {
 	title: "Soul Slavery",
 	icon: "enderio:block_soul_binder",
-	x: -0.5d,
-	y: 2.0d,
+	x: 1.0d,
+	y: 0.5d,
 	text: [
 		"Use the souls of your fallen enemies ... in machinery?"
 	],

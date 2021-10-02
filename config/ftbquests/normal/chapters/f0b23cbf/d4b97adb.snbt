@@ -7,7 +7,8 @@
 		"Like a crafting table... but requires Grid Power. (Read the EU2 manual to learn how to generate it)"
 	],
 	dependencies: [
-		"99eae7d4"
+		"99eae7d4",
+		"8970e2a3"
 	],
 	tasks: [{
 		uid: "5fb3d4b8",
