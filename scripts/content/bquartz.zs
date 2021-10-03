@@ -3,7 +3,10 @@
 import mods.contenttweaker.Block;
 import mods.contenttweaker.VanillaFactory;
 
-var nbquartz = VanillaFactory.createBlock( "netherblackquartz", <blockmaterial:rock> );
+// Nether version of Black Quartz
+
+var nbquartz = VanillaFactory.createBlock( 
+    "netherblackquartz", <blockmaterial:rock> );
 
 // Nether Black Quartz drops the regular stuff when mined
 nbquartz.setDropHandler(function(drops, world, position, state, fortune) {
@@ -12,7 +15,5 @@ nbquartz.setDropHandler(function(drops, world, position, state, fortune) {
 
     return;
 });
-
-
 
 nbquartz.register();
