@@ -12,9 +12,10 @@
 		uid: "93ea4ff6",
 		type: "item",
 		items: [{
-			item: "botania:flower 2"
+			item: "botania:flower"
 		}],
-		count: 2L
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "93f4550c",

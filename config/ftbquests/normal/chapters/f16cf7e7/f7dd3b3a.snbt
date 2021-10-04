@@ -29,8 +29,10 @@
 	],
 	dependencies: [
 		"a5db3623",
+		"0cb8f3f0",
 		"1d2f3ac6",
-		"1b6e1473"
+		"1b6e1473",
+		"eb4c1f41"
 	],
 	tasks: [{
 		uid: "ca2ed705",

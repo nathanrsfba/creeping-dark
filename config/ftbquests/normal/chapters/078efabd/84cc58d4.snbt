@@ -7,8 +7,8 @@
 		"Next, you'll need to make a Morb. And a reusable one at that."
 	],
 	dependencies: [
-		"14d3dd41",
-		"8f9f65b2"
+		"8f9f65b2",
+		"14d3dd41"
 	],
 	tasks: [{
 		uid: "d1ea234c",

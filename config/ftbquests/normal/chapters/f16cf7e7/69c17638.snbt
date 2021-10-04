@@ -14,7 +14,9 @@
 		"(Try grinding up animal products too)"
 	],
 	dependencies: [
-		"cc0eb8df"
+		"cc0eb8df",
+		"22e01f6d",
+		"b17715e5"
 	],
 	tasks: [{
 		uid: "d6860ba2",

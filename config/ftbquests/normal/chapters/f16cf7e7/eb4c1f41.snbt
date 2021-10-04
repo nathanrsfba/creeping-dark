@@ -7,30 +7,15 @@
 		id: "thebetweenlands:manual_hl"
 	},
 	x: -2.0d,
-	y: 1.5d,
+	y: 2.0d,
 	text: [
 		"Kill some lurkers, kick over some hollow logs, and make a book to record your alchemical discoveries in."
 	],
 	dependencies: [
 		"60492e34"
 	],
+	dependency_requirement: "all_started",
 	tasks: [{
-		uid: "397eca4e",
-		type: "item",
-		items: [{
-			item: "thebetweenlands:items_misc 1 4"
-		}],
-		ignore_nbt: 1b
-	},
-	{
-		uid: "9cf7bf1b",
-		type: "item",
-		items: [{
-			item: "thebetweenlands:items_misc 1 13"
-		}],
-		ignore_nbt: 1b
-	},
-	{
 		uid: "e198de8f",
 		type: "item",
 		items: [{

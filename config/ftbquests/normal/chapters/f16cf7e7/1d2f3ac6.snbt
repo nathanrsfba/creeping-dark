@@ -7,7 +7,6 @@
 		"A cauldron to boil magical elements out of items"
 	],
 	dependencies: [
-		"0cb8f3f0",
 		"6b66fc45"
 	],
 	tasks: [{

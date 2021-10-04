@@ -11,8 +11,7 @@
 		"Or maybe alchemy."
 	],
 	dependencies: [
-		"69c17638",
-		"eb4c1f41"
+		"69c17638"
 	],
 	tasks: [{
 		uid: "4e0d4883",

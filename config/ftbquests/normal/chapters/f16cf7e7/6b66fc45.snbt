@@ -7,8 +7,9 @@
 		"A fiery metal found in the Betweenlands caverns"
 	],
 	dependencies: [
-		"b17715e5"
+		"1fd04681"
 	],
+	dependency_requirement: "all_started",
 	tasks: [{
 		uid: "40adb4e9",
 		type: "item",
