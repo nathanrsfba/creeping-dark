@@ -36,6 +36,9 @@ config/machinemuse/powersuits-keybinds.cfg
 /tv-cache
 /usercache.json
 /usernamecache.json
+icon.png
+libraries/
+minecraftinstance.json
 
 # Junctions to other local repositories
 /master
