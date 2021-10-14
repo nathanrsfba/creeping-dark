@@ -77,6 +77,8 @@ my $mults = <<END
 # ----------------------------------------
 # Tinker's Construct
 
+# Based on stats for Iron tools
+
 tconstruct:
 broad*      Sword       0/1/2
 *           Shovel      0/2.5/1
@@ -90,6 +92,17 @@ scythe      Sword       0/0.5/8
 longsword   Katana      0/0.6/2
 rapier      Spear       0/1.6/4
 cleaver     Greatsword  0/2/3
+
+# ----------------------------------------
+# Construct Armory
+
+# Based on stats for Iron armor
+
+conarm:
+*   Helmet      1/6
+*   Chestplate  3/18
+*   Leggings    2.5/15
+*   Boots       1/6
 
 # ----------------------------------------
 # Actually Additions
@@ -508,6 +521,16 @@ faraday_suit_*
     Chest   2
     Legs    3
     Feet    1
+
+# ----------------------------------------
+# MachineMuse's Modular Powersuits
+
+powersuits:
+powerarmor_*
+    Head    2
+    Torso   6
+    Legs    5
+    Feet    2
 
 # ----------------------------------------
 # Mekanism
@@ -1230,6 +1253,7 @@ my %typealias = (
     HOOD   => "HELMET",
     CHEST  => "CHESTPLATE",
     PLATE  => "CHESTPLATE",
+    TORSO  => "CHESTPLATE",
     LEGS   => "LEGGINGS",
     PANTS  => "LEGGINGS",
     FEET   => "BOOTS",
