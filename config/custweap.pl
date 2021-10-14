@@ -1,26 +1,5 @@
 use strict;
 
-# Epic Fight Mod data for modded weapons
-# The following allows for directly specifying data for modded items
-# directly. It is essentially the same data as in the configuration
-# file, but in tabular format
-my $data = <<END
-# Registry Name         ArmNeg  Impact  Strikes Type
-tconstruct:broadsword   0       1       2       Sword
-tconstruct:shovel       0       2.5     1       Shovel
-tconstruct:excavator    0       4       1       Shovel
-tconstruct:pickaxe      12      -0.2    1       Pickaxe
-tconstruct:hatchet      20      3       1       Axe
-tconstruct:mattock      0       -0.2    1       Hoe
-tconstruct:kama         0       -0.2    1       Hoe
-tconstruct:hammer       0       5       1       Greatsword
-tconstruct:scythe       0       0.5     8       Sword
-tconstruct:longsword    0       0.6     2       Katana
-tconstruct:rapier       0       1.6     4       Spear
-tconstruct:cleaver      0       2       3       Greatsword
-END
-;
-
 # Simplified data for modded weapons. Relevant data is generated
 # automatically based on the type and damage. 
 #
@@ -35,6 +14,9 @@ END
 # For everything except SPEAR and SWORD, they may be abbreviated to just
 # their initial letter. "SW" and "W" are abbreviations for SWORD;
 # "SP" is SPEAR.
+#
+# Hammers are configured as greatswords, but with larger impact and
+# only one strike per swing
 #
 # A configuration entry for the item will be generated based on the
 # amount of damage the item does, and scaling it according to a template item
@@ -64,15 +46,22 @@ END
 #    actuallyadditions:item_pickaxe       Pickaxe 7
 #    actuallyadditions:item_axe           Axe     12
 #
+# Instead of specifying a damage value, you can directly specify the
+# armor negation, impact, and number of strikes, separated by slashes.
+# This will set the stats directly, rather than calculating them based
+# on their damage.
+#
 # Lines that are blank, consist entirely of spaces, or beginning with
 # a # symbol are considered comments and ignored
 #
 # Armors can be added the same way, using one of the following types:
 #   HELMET, CHESTPLATE, LEGGINGS, BOOTS
-# The paramater supplied should be the armor points
+# The paramater supplied should be the armor points, or the stun armor
+# and weight separated by slashes.
 #
 # The following alternate tool types are recognized:
-#   PICK, SPADE, KAMA (Hoe), HELM, CHEST, LEGS, PANTS
+#   PICK, SPADE, KAMA (Hoe), HAT, MASK, HEAD, HELM, HOOD, CHEST,
+#   PLATE, LEGS, PANTS, FEET
 # These alternate types will be inserted into the registry name when using *
 # notation, but will be recognized as their 'proper' types. Note that this is
 # different from the 'abbreviations' mentioned above -- abbreviations will
@@ -84,8 +73,24 @@ END
 # instance, if you think lead armor should have a higher weight,
 # you could give it a larger armor value.
 
-
 my $mults = <<END
+# ----------------------------------------
+# Tinker's Construct
+
+tconstruct:
+broad*      Sword       0/1/2
+*           Shovel      0/2.5/1
+excavator   Shovel      0/4/1
+*           Pickaxe     12/-0.2/1
+hatchet     Axe         20/3/1
+mattock     Hoe         0/-0.2/1
+*           Kama        0/-0.2/1
+*           Hammer      0/5/1
+scythe      Sword       0/0.5/8
+longsword   Katana      0/0.6/2
+rapier      Spear       0/1.6/4
+cleaver     Greatsword  0/2/3
+
 # ----------------------------------------
 # Actually Additions
 #
@@ -607,6 +612,12 @@ ghostwood_*
     Axe     7
     Kama    4
 
+imp_armor_*
+    Helmet      1
+    Chestplate  2
+    Leggings    3
+    Boots       1
+
 # ----------------------------------------
 # Nuclearcraft
 
@@ -618,24 +629,40 @@ nuclearcraft:
     Shovel  3
     Axe     3.5
     Hoe     1
+    Helm    3
+    Chest   8
+    Legs    6
+    Boots   3
 *_tough
     Sword   7
     Pickaxe 5
     Shovel  5.5
     Axe     4
     Hoe     1
+    Helm    3
+    Chest   7
+    Legs    6
+    Boots   3
 *_hard_carbon
     Sword   7
     Pickaxe 5
     Shovel  5.5
     Axe     4
     Hoe     1
+    Helm    3
+    Chest   7
+    Legs    5
+    Boots   3
 *_boron_nitride
     Sword   7.5
     Pickaxe 5.5
     Shovel  6
     Axe     4.5
     Hoe     1
+    Helm    3
+    Chest   8
+    Legs    6
+    Boots   3
 
 # ----------------------------------------
 # ProjectRed
@@ -647,18 +674,30 @@ peridot_*
     Pickaxe 4.75
     Hoe     1
     Axe     9
+    Helmet      3
+    Chestplate  8
+    Leggings    6
+    Boots       3
 ruby_*
     Sword   7
     Shovel  5.5
     Pickaxe 5
     Hoe     1
     Axe     9
+    Helmet      3
+    Chestplate  8
+    Leggings    6
+    Boots       3
 sapphire_*
     Sword   7
     Shovel  5.5
     Pickaxe 5
     Hoe     1
     Axe     9
+    Helmet      3
+    Chestplate  8
+    Leggings    6
+    Boots       3
 
 # ----------------------------------------
 # Random Things
@@ -669,6 +708,12 @@ spectre*
     Pickaxe 5
     Axe     9
     Shovel  5.5
+
+magic*                  Hood        2
+superlubricent*         Boots       2
+obsidianwaterwalking*   Boots       1
+lavawader               Boots       1
+waterwalking*           Boots       1
 
 # ----------------------------------------
 # Redstone Arsenal
@@ -685,6 +730,12 @@ tool.*_flux
 tool.battlewrench_flux  Hammer  7
 tool.excavator_flux     Hammer  6
 
+armor.*_flux
+    Helmet  3
+    Plate   8
+    Legs    6
+    Boots   3
+
 # ----------------------------------------
 # Thaumcraft
 
@@ -696,18 +747,60 @@ thaumium_*
     shovel  5
     hoe     1
     pick    4.5
+    helm    2
+    chest   6
+    legs    5
+    boots   2
 void_*
     axe     9
     sword   7
     shovel  5.5
     hoe     1
     pick    5
+    helm    3
+    chest   8
+    legs    6
+    boots   3
 elemental_*
     axe     9
     sword   7
     shovel  5.5
     hoe     1
     pick    5
+cloth_*
+    chest   3
+    legs    2
+    boots   1
+void_robe_*
+    helm    4
+    chest   9
+    legs    6
+void_*
+    helm    3
+    chest   8
+    legs    6
+fortress_*
+    helm    3
+    chest   7
+    legs    6
+crimson_robe_*
+    helm    2
+    chest   6
+    legs    5
+crimson_praetor_*
+    helm    3
+    chest   7
+    legs    6
+crimson_plate_*
+    helm    2
+    chest   6
+    legs    5
+
+
+goggles     Helmet  1
+traveller_* Boots   1
+crimson_*   Boots   2
+
 
 # ----------------------------------------
 # The Betweenlands
@@ -726,6 +819,11 @@ bone_*
     Axe     7
     Pickaxe 3
 
+    Helmet      2
+    Chestplate  5
+    Leggings    3
+    Boots       1
+
 octine_*
     Sword   6
     Shovel  4.5
@@ -738,6 +836,31 @@ valonite_*
     Axe     9
     Pickaxe 5
 
+    Helmet      3
+    Chestplate  8
+    Leggings    6
+    Boots       3
+
+lurker_skin_*
+    Helmet      1
+    Chestplate  3
+    Leggings    2
+    Boots       1
+
+syrmorite_*
+    Helmet      2
+    Chestplate  6
+    Leggings    5
+    Boots       2
+
+ancient_*
+    Helmet      3
+    Chestplate  8
+    Leggings    6
+    Boots       3
+
+
+
 wights_bane         Sword   4
 sludge_slicer       Sword   4
 critter_cruncher    Sword   4
@@ -747,6 +870,14 @@ swift_pick          Pickaxe 5
 ancient_greatsword  Greatsword  7
 ancient_battle_axe  Greatsword  9
 valonite_greataxe   Greatsword  9
+
+skull_*             Mask        2
+explorers_*         Hat         1
+rubber_*            Boots       1
+marsh_runner_*      Boots       1
+
+spirit_tree_face_large_*    Mask    2
+spirit_tree_face_small_*    Mask    2
 
 # ----------------------------------------
 # Thermal Expansion
@@ -948,6 +1079,17 @@ tropicraft:
     Pickaxe 4
     Hoe     1
 
+fire_*
+    Helmet      2
+    Chestplate  5
+    Leggings    4
+    Boots       2
+scale_*
+    Helmet      2
+    Chestplate  6
+    Leggings    5
+    Boots       2
+
 sword_zircon        SPEAR   5
 
 # ----------------------------------------
@@ -962,9 +1104,19 @@ ironwood_*
     Axe     9
     Hoe     1
 
+    Helmet      2
+    Chestplate  7
+    Leggings    5
+    Boots       2
+
 fiery_*
     Sword   8
     Pickaxe 6
+
+    Helmet      4
+    Chestplate  9
+    Leggings    7
+    Boots       4
 
 Steeleaf_*
     Sword   7
@@ -973,14 +1125,44 @@ Steeleaf_*
     Axe     10
     Hoe     1
 
+    Helmet      3
+    Chestplate  8
+    Leggings    6
+    Boots       3
+
 knightmetal_*
     Sword   7
     Pickaxe 5
     Axe     10
 
+    Helmet      3
+    Chestplate  8
+    Leggings    6
+    Boots       3
+
 giant_*
     Pickaxe 10
     Sword   12
+
+phantom_*
+    Helmet      3
+    Chestplate  8
+
+naga_*
+    Chestplate  7
+    Leggings    6
+
+yeti_*
+    Helmet      4
+    Chestplate  7
+    Leggings    6
+    Boots       3
+
+arctic_*
+    Helmet      2
+    Chestplate  7
+    Leggings    5
+    Boots       2
 
 minotaur_axe_gold       Axe     7
 minotaur_axe            Axe     10
@@ -988,24 +1170,17 @@ mazebreaker_*           Pickaxe 5
 ice_*                   Sword   7.5
 glass_*                 Sword   40
 
-
 END
 ;
 
+# Good code requires no comments. Therefore this program is
+# heavily commented.
 
-
-
-my @weapons;
-my @armors;
-
-for my $line (split "\n", $data)
-{
-    next if( $line eq '' || $line =~ /^#/ );
-    my( @stats ) = (split /\s+/, $line);
-    push @weapons, \@stats;
-}
+my @weapons;    # The defined weapons
+my @armors;     # The defined armors
 
 # Damage, armor negation, impact, and max strikes of iron tools
+# Used to calculate stats for other tools based on their damage values
 my %stats = (
     # Type           DMG NEG  IMP   STR
     SWORD =>        [  6,  0,  0.9, 2],
@@ -1028,6 +1203,7 @@ my %astats = (
     BOOTS =>        [  2,  1,   6]
 );
 
+# Abbreviations for several tool types
 my %typeabbr = (
     SW  => "SWORD",
     SH  => "SHOVEL",
@@ -1042,12 +1218,16 @@ my %typeabbr = (
     K   => "KATANA"
 );
 
+# Alternate names for some tool types
 my %typealias = (
     PICK   => "PICKAXE",
     SPADE  => "SHOVEL",
     KAMA   => "HOE",
+    HAT    => "HELMET",
+    MASK   => "HELMET",
     HEAD   => "HELMET",
     HELM   => "HELMET",
+    HOOD   => "HELMET",
     CHEST  => "CHESTPLATE",
     PLATE  => "CHESTPLATE",
     LEGS   => "LEGGINGS",
@@ -1055,15 +1235,15 @@ my %typealias = (
     FEET   => "BOOTS",
 );
 
-my $mod;
-my $spec;
+my $mod;        # Mod ID for subsequent entries
+my $spec;       # Registry name template for subsequent entries
 
 for my $line (split "\n", $mults)
 {
     # Skip blank lines and comments
     next if( $line =~ /^\s*$/ || $line =~ /^#/ );
 
-    # Look for a mod name specifier
+    # Check for a mod name specifier
     if( $line =~ /(.*):$/ )
     {
         $mod = $1;
@@ -1104,52 +1284,82 @@ for my $line (split "\n", $mults)
         $type = $typealias{$type};
     }
 
-
     my $isarm;          # Is this an armor item?
     my $statinfo;       # Stats for this item
 
+    # Check if this is a valid armor
     if( defined( $astats{$type} ))
     {
         $isarm = 1;
         $statinfo = $astats{$type};
     }
+    # Check if this is an invalid tool type
     elsif( !defined( $stats{$type} ))
     {
         die "Unknown type: $type\n";
     }
+    # ...otherwise it's a weapon
     else
     {
         $statinfo = $stats{$type};
     }
 
-    # Stat multiplier based on a template item
-    my $mult = $dmg / $statinfo->[0];
+    my $mult;       # Stat multiplier based on a template item
+    my @statspec;   # Stats directly specified
+
+    # If the 'damage' entry has slashes, it's actually an 
+    # explicit stats entry
+    if( $dmg =~ /\// )
+    {
+        @statspec = split '/', $dmg;
+    }
+    else
+    {
+        $mult = $dmg / $statinfo->[0];
+    }
 
     if( !$isarm )
     {
-        my $armneg = sprintf( "%.1f", $statinfo->[1] * $mult );
-        my $impact = $statinfo->[2];
-
-        # If impact is negative, higher-tier weapons should make it
-        # /larger/ -- I.E. more positive
-        if( $impact >= 0 )
+        my( $armneg, $impact, $strikes );
+        if( $mult )
         {
-            $impact *= $mult;
+            $armneg = sprintf( "%.1f", $statinfo->[1] * $mult );
+            $impact = $statinfo->[2];
+
+            # If impact is negative, higher-tier weapons should make it
+            # /larger/ -- I.E. more positive
+            if( $impact >= 0 )
+            {
+                $impact *= $mult;
+            }
+            else
+            {
+                $impact /= $mult;
+            }
+            $impact = sprintf( "%.1f", $impact );
+            $strikes = $statinfo->[3];
         }
         else
         {
-            $impact /= $mult;
+            ($armneg, $impact, $strikes) = @statspec;
         }
-        my $impact = sprintf( "%.1f", $impact );
-        my $strikes = $statinfo->[3];
         $type = "GREATSWORD" if( $type eq 'HAMMER' );
         my @stats = ($regname, $armneg, $impact, $strikes, $type);
         push @weapons, \@stats;
     }
     else
     {
-        my $stun = sprintf( "%.1f", $statinfo->[1] * $mult );
-        my $weight = sprintf( "%.1f", $statinfo->[2] * $mult );
+        my( $stun, $weight );
+
+        if( $mult )
+        {
+            $stun = sprintf( "%.1f", $statinfo->[1] * $mult );
+            $weight = sprintf( "%.1f", $statinfo->[2] * $mult );
+        }
+        else
+        {
+            ($stun, $weight) = @statspec;
+        }
 
         my @stats = ($regname, $stun, $weight);
         push @armors, \@stats;
@@ -1171,6 +1381,9 @@ for my $wep (@weapons)
 
     $type = uc $type;
     (my $id = $regname) =~ s/:/_/g;
+
+    # In the configuration file, 'max strikes' apparently means
+    # 'max extra strikes'
     $strikes--;
 
     print "        $id {\n";
