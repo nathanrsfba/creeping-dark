@@ -1,3 +1,5 @@
+use strict;
+
 # Epic Fight Mod data for modded weapons
 # The following allows for directly specifying data for modded items
 # directly. It is essentially the same data as in the configuration
@@ -64,6 +66,24 @@ END
 #
 # Lines that are blank, consist entirely of spaces, or beginning with
 # a # symbol are considered comments and ignored
+#
+# Armors can be added the same way, using one of the following types:
+#   HELMET, CHESTPLATE, LEGGINGS, BOOTS
+# The paramater supplied should be the armor points
+#
+# The following alternate tool types are recognized:
+#   PICK, SPADE, KAMA (Hoe), HELM, CHEST, LEGS, PANTS
+# These alternate types will be inserted into the registry name when using *
+# notation, but will be recognized as their 'proper' types. Note that this is
+# different from the 'abbreviations' mentioned above -- abbreviations will
+# be expanded to the full name when using * notation, while these are not
+#
+# Note that you're free to specify damage and armor values that don't
+# match the actual stats of the tool. This will change the EFM stats
+# for the tool, without affecting the actual damage or armor. For
+# instance, if you think lead armor should have a higher weight,
+# you could give it a larger armor value.
+
 
 my $mults = <<END
 # ----------------------------------------
@@ -78,6 +98,10 @@ item_*_emerald
     Shovel  7.5
     Sword   9
     Hoe     1
+    Helm    4
+    Chest   9
+    Pants   8
+    Boots   5
 
 item_*_obsidian
     Pickaxe 4
@@ -85,6 +109,10 @@ item_*_obsidian
     Shovel  4.5
     Sword   6
     Hoe     1
+    Helm    3
+    Chest   4
+    Pants   3
+    Boots   1
 
 item_*_quartz
     Pickaxe 4
@@ -92,6 +120,10 @@ item_*_quartz
     Shovel  4.5
     Sword   6
     Hoe     1
+    Helm    3
+    Chest   6
+    Pants   5
+    Boots   3
 
 item_*_crystal_red
     Pickaxe 4.25
@@ -99,6 +131,10 @@ item_*_crystal_red
     Shovel  4.75
     Sword   6.25
     Hoe     1
+    Helm    3
+    Chest   7
+    Pants   6
+    Boots   3
 
 item_*_crystal_blue
     Pickaxe 4.25
@@ -106,6 +142,10 @@ item_*_crystal_blue
     Shovel  4.75
     Sword   6.25
     Hoe     1
+    Helm    3
+    Chest   7
+    Pants   6
+    Boots   3
 
 item_*_crystal_light_blue
     Pickaxe 6
@@ -113,6 +153,10 @@ item_*_crystal_light_blue
     Shovel  6.5
     Sword   8
     Hoe     1
+    Helm    4
+    Chest   8
+    Pants   7
+    Boots   4
 
 item_*_crystal_black
     Pickaxe 4
@@ -120,6 +164,10 @@ item_*_crystal_black
     Shovel  4.5
     Sword   6
     Hoe     1
+    Helm    1
+    Chest   4
+    Pants   3
+    Boots   1
 
 item_*_crystal_green
     Pickaxe 7.5
@@ -127,6 +175,10 @@ item_*_crystal_green
     Shovel  8
     Sword   9.5
     Hoe     1
+    Helm    4
+    Chest   9
+    Pants   9
+    Boots   6
 
 item_*_crystal_white
     Pickaxe 4.5
@@ -134,6 +186,10 @@ item_*_crystal_white
     Shovel  5
     Sword   6.5
     Hoe     1
+    Helm    3
+    Chest   6
+    Pants   6
+    Boots   3
 
 # ----------------------------------------
 # Aether Legacy
@@ -157,17 +213,47 @@ zanite_*
   Axe     9
   Shovel  4.5
   Sword   4
+  Helmet      1
+  Chestplate  3
+  Leggings    2
+  Boots       1
 
 gravitite_*
   P 5
   A 9
   S 5.5
   W 7
+  Helmet      3
+  Chestplate  8
+  Leggings    6
+  Boots       3
+
+neptune_*
+  Helmet      3
+  Chestplate  8
+  Leggings    6
+  Boots       3
+
+phoenix_*
+  Helmet      3
+  Chestplate  8
+  Leggings    6
+  Boots       3
+
+obsidian_*
+  Helmet      3
+  Chestplate  8
+  Leggings    6
+  Boots       3
 
 valkyrie_*
   Pickaxe 5
   Axe     9
   Shovel  5.5
+  Helmet      3
+  Chestplate  8
+  Leggings    6
+  Boots       3
 
 valkyrie_lance  Spear   7
 flaming_*       Sword   7
@@ -186,15 +272,13 @@ certus_quartz_*
     Axe     9
     Pickaxe 4
     Sword   6
+    Spade   4.5
 nether_quartz_*
     Hoe     1
     Axe     9
     Pickaxe 4
     Sword   6
-
-# Apparently AE2 calls a spade a spade
-certus_quartz_spade Shovel  4.5
-nether_quartz_spade Shovel  4.5
+    Spade   4.5
 
 # ----------------------------------------
 # Astral Sorcery
@@ -246,6 +330,36 @@ anubiss_wrath   KATANA  6
 nuits_ire       SWORD   7
 nuits_quarter   SWORD   7
 
+wanderer_*
+    Helmet  1
+    Chest   3
+    Legs    2
+    Boots   1
+desert_*_iron
+    Helmet  2
+    Chest   6
+    Legs    5
+    Boots   2
+desert_*_gold
+    Helmet  2
+    Chest   5
+    Legs    3
+    Boots   1
+desert_*_diamond
+    Helmet  3
+    Chest   8
+    Legs    6
+    Boots   3
+
+eyes_of_atum    Helmet  3
+body_of_atum    Chest   8
+legs_of_atum    Legs    6
+feet_of_atum    Boots   3
+halo_of_ra      Helmet  3
+body_of_ra      Chest   8
+legs_of_ra      Legs    6
+feet_of_ra      Boots   3
+
 # ----------------------------------------
 # Botania
 
@@ -254,19 +368,37 @@ manasteel*
     Shovel  4.5
     Axe     9
     Sword   6
-manasteelpick   Pickaxe 4
+    Pick    4
+    Helm    2
+    Chest   6
+    Legs    5
+    Boots   2
 
-terra*      Sword   7
-terrapick   Pickaxe 5    
+terra*
+    Sword   7
+    Pick    5    
+terrasteel*
+    Helm    3
+    Chest   8
+    Legs    6
+    Boots   3
 
 elementium*
     Shovel  4.5
     Axe     9
     Sword   6
-elementiumpick   Pickaxe 4
+    Pick    4
+    Helm    2
+    Chest   6
+    Legs    5
+    Boots   2
 
 star*       Sword   7
 thunder*    Sword   7
+
+manasteelhelmreveal     Helmet  2
+terrasteelhelmreveal    Helmet  3
+elementiumhelmreveal    Helmet  2
 
 # ----------------------------------------
 # Ender IO
@@ -276,10 +408,18 @@ item_dark_steel_*
     Sword   7
     Pickaxe 5
     Axe     9
+    Helmet          3
+    Chestplate      8
+    Leggings        6
+    Boots           3
 item_end_steel_*
     Sword   9
     Pickaxe 7
     Axe     9
+    Helmet          5
+    Chestplate      12
+    Leggings        8
+    Boots           5
 
 # ----------------------------------------
 # Erebus
@@ -292,7 +432,45 @@ jade_*
     AXE     7
     SHOVEL  4.5
     HOE     1
-wasp_*      SWORD   10
+    HELMET      2
+    CHESTPLATE  7
+    LEGGINGS    5
+    BOOTS       3
+
+exoskeleton_*
+    Helmet      2
+    Chestplate  3
+    Leggings    2
+    Boots       2
+rein_exoskeleton_*
+    Helmet      3
+    Chestplate  8
+    Leggings    6
+    Boots       3
+rhino_exoskeleton_*
+    Helmet      2
+    Chestplate  8
+    Leggings    6
+    Boots       3
+bamboo_*
+    Helmet      2
+    Chestplate  4
+    Leggings    3
+    Boots       2
+
+wasp_*              SWORD   10
+jump_*              BOOTS   3
+mushroom_*          HELMET  3
+spider_t_shirt      CHEST   8
+water_striders      LEGS    3
+
+glider_*            CHESTPLATE  8
+glider_*_powered    CHESTPLATE  8
+sprint_*            LEGGINGS    6
+
+compound_goggles        HELMET  2
+rein_compound_goggles   HELMET  3
+
 
 # ----------------------------------------
 # Extra Utilities
@@ -314,6 +492,18 @@ immersiveengineering:
     Shovel  5
     Pickaxe 4.5
 
+steel_armor_*
+    Head    2
+    Chest   7
+    Legs    6
+    Feet    2
+
+faraday_suit_*
+    Head    1
+    Chest   2
+    Legs    3
+    Feet    1
+
 # ----------------------------------------
 # Mekanism
 
@@ -325,36 +515,62 @@ steel*
     Shovel  6.5
     Axe     9
     Pickaxe 6
+    Helmet      3
+    Chestplate  7
+    Leggings    6
+    Boots       3
 lapislazuli*
     Sword   6
     Hoe     1
     Shovel  4.5
     Axe     9
     Pickaxe 4
+    Helmet      2
+    Chestplate  5
+    Leggings    6
+    Boots       2
 obsidian*
     Sword   14
     Hoe     1
     Shovel  12.5
     Axe     13
     Pickaxe 12
+    Helmet      5
+    Chestplate  12
+    Leggings    8
+    Boots       5
 osmium*
     Sword   8
     Hoe     1
     Shovel  6.5
     Axe     9
     Pickaxe 6
+    Helmet      3
+    Chestplate  5
+    Leggings    6
+    Boots       3
 bronze*
     Sword   19
     Hoe     1
     Shovel  8.5
     Axe     9
     Pickaxe 8
+    Helmet      3
+    Chestplate  6
+    Leggings    5
+    Boots       2
 glowstone*
     Sword   9
     Hoe     1
     Shovel  7.5
     Axe     9
     Pickaxe 7
+    Helmet      3
+    Chestplate  7
+    Leggings    6
+    Boots       3
+
+mekanism:armoredjetpack  Chest   12
 
 # ----------------------------------------
 # Natura
@@ -365,32 +581,31 @@ netherquartz_*
     Pickaxe 3
     Shovel  3.5
     Axe     9
+    Kama    5
 fusewood_*
     Sword   6
     Pickaxe 4
     Shovel  4.5
     Axe     9
+    Kama    6
 darkwood_*
     Sword   5
     Pickaxe 3
     Shovel  3.5
     Axe     9
+    Kama    5
 bloodwood_*
     Sword   7
     Pickaxe 5
     Shovel  5.5
     Axe     4
+    Kama    7
 ghostwood_*
     Sword   4
     Pickaxe 2
     Shovel  2.5
     Axe     7
-
-netherquartz_kama       Hoe     5
-fusewood_kama           Hoe     6
-darkwood_kama           Hoe     5
-bloodwood_kama          Hoe     7
-ghostwood_kama          Hoe     4
+    Kama    4
 
 # ----------------------------------------
 # Nuclearcraft
@@ -480,20 +695,19 @@ thaumium_*
     sword   6.5
     shovel  5
     hoe     1
+    pick    4.5
 void_*
     axe     9
     sword   7
     shovel  5.5
     hoe     1
+    pick    5
 elemental_*
     axe     9
     sword   7
     shovel  5.5
     hoe     1
-
-thaumium_pick   Pickaxe 4.5
-void_pick       Pickaxe 5
-elemental_pick  Pickaxe 5
+    pick    5
 
 # ----------------------------------------
 # The Betweenlands
@@ -644,6 +858,78 @@ tool.excavator_diamond  Hammer  5
 tool.excavator_gold     Hammer  2
 tool.excavator_constantan   Hammer  3.5
 
+armor.*_copper
+    helmet  1
+    plate   3
+    legs    3
+    boots   1
+
+armor.*_tin
+    helmet  1
+    plate   4
+    legs    3
+    boots   1
+
+armor.*_silver
+    helmet  1
+    plate   4
+    legs    4
+    boots   2
+
+armor.*_lead
+    helmet  3
+    plate   5
+    legs    4
+    boots   2
+
+armor.*_aluminum
+    helmet  2
+    plate   4
+    legs    3
+    boots   1
+
+armor.*_nickel
+    helmet  2
+    plate   5
+    legs    5
+    boots   2
+
+armor.*_platinum
+    helmet  3
+    plate   8
+    legs    6
+    boots   3
+
+armor.*_steel
+    helmet  2
+    plate   7
+    legs    5
+    boots   2
+
+armor.*_electrum
+    helmet  2
+    plate   4
+    legs    4
+    boots   2
+
+armor.*_invar
+    helmet  2
+    plate   7
+    legs    5
+    boots   2
+
+armor.*_bronze
+    helmet  2
+    plate   6
+    legs    6
+    boots   2
+
+armor.*_constantan
+    helmet  2
+    plate   4
+    legs    4
+    boots   2
+
 # ----------------------------------------
 # Tropicraft
 
@@ -706,33 +992,12 @@ glass_*                 Sword   40
 END
 ;
 
-my $preamble = <<END
-custom {
 
-    custom_weaponry {
-END
-;
-
-my $postamble = <<END
-    }
-
-    custom_armor {
-
-        sample_armor {
-            S:registry_name=modid:registryname
-            D:stun_armor=0.0
-            D:weight=0.0
-        }
-
-    }
-
-}
-
-END
-;
 
 
 my @weapons;
+my @armors;
+
 for my $line (split "\n", $data)
 {
     next if( $line eq '' || $line =~ /^#/ );
@@ -754,7 +1019,16 @@ my %stats = (
     SPEAR  =>       [  6,  0,  1.6, 4]
 );
 
-my %typealias = (
+# Weight and Stun Armor of iron armor
+my %astats = (
+    # Type           ARM STN  WGT
+    HELMET =>       [  2,  1,   6],
+    CHESTPLATE =>   [  6,  3,  18],
+    LEGGINGS =>     [  5,2.5,  15],
+    BOOTS =>        [  2,  1,   6]
+);
+
+my %typeabbr = (
     SW  => "SWORD",
     SH  => "SHOVEL",
     SP  => "SPEAR",
@@ -766,6 +1040,19 @@ my %typealias = (
     G   => "GREATSWORD",
     H   => "HAMMER",
     K   => "KATANA"
+);
+
+my %typealias = (
+    PICK   => "PICKAXE",
+    SPADE  => "SHOVEL",
+    KAMA   => "HOE",
+    HEAD   => "HELMET",
+    HELM   => "HELMET",
+    CHEST  => "CHESTPLATE",
+    PLATE  => "CHESTPLATE",
+    LEGS   => "LEGGINGS",
+    PANTS  => "LEGGINGS",
+    FEET   => "BOOTS",
 );
 
 my $mod;
@@ -802,43 +1089,79 @@ for my $line (split "\n", $mults)
     # Append mod ID if not specified
     $regname = "$mod:$regname" if( $regname !~ /:/ );
 
-    # Resolve type aliases
+    # Resolve type abbreviations
     $type = uc $type;
+    if( defined $typeabbr{$type} )
+    {
+        $type = $typeabbr{$type};
+    }
+    # Insert type into template, if necessary
+    $regname =~ s/\*/\L$type\E/g;
+
+    # Resolve type aliases
     if( defined $typealias{$type} )
     {
         $type = $typealias{$type};
     }
 
-    # Insert type into template, if necessary
-    $regname =~ s/\*/\L$type\E/g;
 
-    if( !defined( $stats{$type} ))
+    my $isarm;          # Is this an armor item?
+    my $statinfo;       # Stats for this item
+
+    if( defined( $astats{$type} ))
+    {
+        $isarm = 1;
+        $statinfo = $astats{$type};
+    }
+    elsif( !defined( $stats{$type} ))
     {
         die "Unknown type: $type\n";
     }
-
-    my $mult = $dmg / $stats{$type}[0];
-    my $armneg = sprintf( "%.1f", $stats{$type}[1] * $mult );
-    my $impact = $stats{$type}[2];
-
-    # If impact is negative, higher-tier weapons should make it
-    # /larger/ -- I.E. more positive
-    if( $impact >= 0 )
+    else
     {
-        $impact *= $mult;
+        $statinfo = $stats{$type};
+    }
+
+    # Stat multiplier based on a template item
+    my $mult = $dmg / $statinfo->[0];
+
+    if( !$isarm )
+    {
+        my $armneg = sprintf( "%.1f", $statinfo->[1] * $mult );
+        my $impact = $statinfo->[2];
+
+        # If impact is negative, higher-tier weapons should make it
+        # /larger/ -- I.E. more positive
+        if( $impact >= 0 )
+        {
+            $impact *= $mult;
+        }
+        else
+        {
+            $impact /= $mult;
+        }
+        my $impact = sprintf( "%.1f", $impact );
+        my $strikes = $statinfo->[3];
+        $type = "GREATSWORD" if( $type eq 'HAMMER' );
+        my @stats = ($regname, $armneg, $impact, $strikes, $type);
+        push @weapons, \@stats;
     }
     else
     {
-        $impact /= $mult;
+        my $stun = sprintf( "%.1f", $statinfo->[1] * $mult );
+        my $weight = sprintf( "%.1f", $statinfo->[2] * $mult );
+
+        my @stats = ($regname, $stun, $weight);
+        push @armors, \@stats;
     }
-    my $impact = sprintf( "%.1f", $impact );
-    my $strikes = $stats{$type}[3];
-    $type = "GREATSWORD" if( $type eq 'HAMMER' );
-    my @stats = ($regname, $armneg, $impact, $strikes, $type );
-    push @weapons, \@stats;
 }
 
-print $preamble;
+print <<END
+custom {
+
+    custom_weaponry {
+END
+;
 
 for my $wep (@weapons)
 {
@@ -859,4 +1182,36 @@ for my $wep (@weapons)
     print "        }\n\n";
 }
 
-print $postamble;
+print <<END
+
+    }
+
+    custom_armor {
+END
+;
+
+for my $arm (@armors)
+{
+    my( $regname, $stun, $weight ) = @$arm;
+
+    (my $id = $regname) =~ s/:/_/g;
+
+    print "        $id {\n";
+    print "            S:registry_name=$regname\n";
+    print "            D:stun_armor=$stun\n";
+    print "            D:weight=$weight\n";
+    print "        }\n\n";
+}
+
+print <<END
+
+    }
+
+}
+END
+;
+
+# Manasteel
+# Nether wood
+# Thaumium
+# Certus
