@@ -425,6 +425,12 @@ elementium*
 star*       Sword   7
 thunder*    Sword   7
 
+manaweave*
+    helm    1
+    chest   2
+    legs    2
+    boots   1
+
 manasteelhelmreveal     Helmet  2
 terrasteelhelmreveal    Helmet  3
 elementiumhelmreveal    Helmet  2
