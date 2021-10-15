@@ -210,6 +210,17 @@ item_*_crystal_white
     Boots   3
 
 # ----------------------------------------
+# Advanced Rocketry
+
+advancedrocketry:
+
+space*
+    Helmet      1
+    Chestplate  3
+    Leggings    2
+    Boots       1
+
+# ----------------------------------------
 # Aether Legacy
 
 aether_legacy:
@@ -758,6 +769,16 @@ armor.*_flux
     Plate   8
     Legs    6
     Boots   3
+
+# ----------------------------------------
+# Simply Jetpacks
+
+# Unfortunately, simply jetpacks uses a single item for all
+# variants, so we can't adjust depending on tier
+
+simplyjetpacks:
+itemjetpack     Chest   6
+itemfluxpack    Chest   6
 
 # ----------------------------------------
 # Thaumcraft
