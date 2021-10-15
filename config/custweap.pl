@@ -365,10 +365,10 @@ wanderer_*
     Legs    2
     Boots   1
 desert_*_iron
-    Helmet  2
-    Chest   6
-    Legs    5
-    Boots   2
+    Helmet  3
+    Chest   9
+    Legs    7
+    Boots   3
 desert_*_gold
     Helmet  2
     Chest   5
@@ -437,18 +437,18 @@ item_dark_steel_*
     Sword   7
     Pickaxe 5
     Axe     9
-    Helmet          3
-    Chestplate      8
-    Leggings        6
-    Boots           3
+    Helmet          4
+    Chestplate      10
+    Leggings        9
+    Boots           4
 item_end_steel_*
     Sword   9
     Pickaxe 7
     Axe     9
-    Helmet          5
-    Chestplate      12
-    Leggings        8
-    Boots           5
+    Helmet          4
+    Chestplate      10
+    Leggings        9
+    Boots           4
 
 # ----------------------------------------
 # Erebus
@@ -522,10 +522,10 @@ immersiveengineering:
     Pickaxe 4.5
 
 steel_armor_*
-    Head    2
-    Chest   7
-    Legs    6
-    Feet    2
+    Head    3
+    Chest   9
+    Legs    9
+    Feet    3
 
 faraday_suit_*
     Head    1
@@ -555,8 +555,8 @@ steel*
     Axe     9
     Pickaxe 6
     Helmet      3
-    Chestplate  7
-    Leggings    6
+    Chestplate  9
+    Leggings    7
     Boots       3
 lapislazuli*
     Sword   6
@@ -585,8 +585,8 @@ osmium*
     Axe     9
     Pickaxe 6
     Helmet      3
-    Chestplate  5
-    Leggings    6
+    Chestplate  9
+    Leggings    7
     Boots       3
 bronze*
     Sword   19
@@ -674,8 +674,8 @@ nuclearcraft:
     Axe     4
     Hoe     1
     Helm    3
-    Chest   7
-    Legs    6
+    Chest   9
+    Legs    7
     Boots   3
 *_hard_carbon
     Sword   7
@@ -791,10 +791,10 @@ thaumium_*
     shovel  5
     hoe     1
     pick    4.5
-    helm    2
-    chest   6
-    legs    5
-    boots   2
+    helm    3
+    chest   9
+    legs    7
+    boots   3
 void_*
     axe     9
     sword   7
@@ -802,8 +802,8 @@ void_*
     hoe     1
     pick    5
     helm    3
-    chest   8
-    legs    6
+    chest   9
+    legs    7
     boots   3
 elemental_*
     axe     9
@@ -812,25 +812,21 @@ elemental_*
     hoe     1
     pick    5
 cloth_*
-    chest   3
+    chest   1
     legs    2
     boots   1
 void_robe_*
-    helm    4
-    chest   9
-    legs    6
-void_*
-    helm    3
-    chest   8
-    legs    6
+    helm    1
+    chest   2
+    legs    1
 fortress_*
     helm    3
     chest   7
     legs    6
 crimson_robe_*
-    helm    2
-    chest   6
-    legs    5
+    helm    1
+    chest   2
+    legs    1
 crimson_praetor_*
     helm    3
     chest   7
@@ -1053,9 +1049,9 @@ armor.*_silver
 
 armor.*_lead
     helmet  3
-    plate   5
-    legs    4
-    boots   2
+    plate   9
+    legs    7
+    boots   3
 
 armor.*_aluminum
     helmet  2
@@ -1076,10 +1072,10 @@ armor.*_platinum
     boots   3
 
 armor.*_steel
-    helmet  2
-    plate   7
-    legs    5
-    boots   2
+    helmet  3
+    plate   9
+    legs    7
+    boots   3
 
 armor.*_electrum
     helmet  2
@@ -1238,13 +1234,13 @@ my %stats = (
     SPEAR  =>       [  6,  0,  1.6, 4]
 );
 
-# Weight and Stun Armor of iron armor
+# Weight and Stun Armor of generic armor
 my %astats = (
     # Type           ARM STN  WGT
-    HELMET =>       [  2,  1,   6],
-    CHESTPLATE =>   [  6,  3,  18],
-    LEGGINGS =>     [  5,2.5,  15],
-    BOOTS =>        [  2,  1,   6]
+    HELMET =>       [  2,  1,   4],
+    CHESTPLATE =>   [  6,  3,  12],
+    LEGGINGS =>     [  5,2.5,  10],
+    BOOTS =>        [  2,  1,   4]
 );
 
 # Abbreviations for several tool types
