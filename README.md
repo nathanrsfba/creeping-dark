@@ -112,13 +112,20 @@ A: Edit your server.properties and enable command blocks
 Changes in v1.5.5
 -----------------
 
-Converted the quest system to FTB Quests.
+* Converted the quest system to FTB Quests.
 
-One notable change is that FTB Quests doesn't have the option to recognize
-progress on quests that are still locked. Some minor reworking of the quest
-lines has been done to minimize the impact of this, but you may occasionally
-find yourself having to 'redo' some task in order for it to be recognized. If
-you find any particularly egregious examples, please report them as issues.
+  One notable change is that FTB Quests doesn't have the option to recognize
+  progress on quests that are still locked. Some minor reworking of the quest
+  lines has been done to minimize the impact of this, but you may occasionally
+  find yourself having to 'redo' some task in order for it to be recognized. If
+  you find any particularly egregious examples, please report them as issues.
+
+* Added Epic Fight Mod, which gives you some new melee combat mechanics.
+
+  I've added configurations for most modded weapons and armors. Some items may
+  glitch out visually in combat mode, and some of the weapon types don't 100%
+  match with their EFM types, but everything should at least have reasonable
+  values.
 
 Changes in v1.5.4.1
 -------------------
