@@ -10,7 +10,11 @@ chdir '..' if( -d "../$modfolder" );
 
 open my $f, $listfile;
 my @modlist = <$f>;
-chomp @modlist;
+foreach (@modlist)
+{
+    s/[\r\n]//g;
+}
+# chomp @modlist;
 close $f;
 
 chdir $modfolder or die "Can't find mods folder";
@@ -82,12 +86,15 @@ if( $save )
         }
     }
 
-    open my $f, ">$listfile" or die "Couldn't open $listfile\n";
-    for my $mod (@modfiles)
+    if( $action > 0 )
     {
-        print $f "$mod\n" or die "Error writing to $listfile\n";
+        open my $f, ">../$listfile" or die "Couldn't open $listfile\n";
+        for my $mod (sort {lc $a cmp lc $b} @modfiles)
+        {
+            print $f "$mod\n" or die "Error writing to $listfile\n";
+        }
+        close $f
     }
-    close $f
 }
 elsif( $load )
 {
@@ -157,3 +164,4 @@ else
     print "$listfile and $modfolder/ are in sync\n";
 }
 
+exit $action;
