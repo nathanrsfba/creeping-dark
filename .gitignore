@@ -37,6 +37,7 @@ config/machinemuse/powersuits-keybinds.cfg
 /tv-cache
 /usercache.json
 /usernamecache.json
+modmg.bat
 
 # Junctions to other local repositories
 /master
