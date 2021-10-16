@@ -6,7 +6,7 @@ my $modfolder = 'mods';
 my $repofolder = 'modrepo';
 my $listfile = 'mods.txt';
 
-chdir '..' if( -d "../$modfolder" );
+chdir '..' if( -d "../$modfolder" && ! -d "$modfolder" );
 
 open my $f, $listfile;
 my @modlist = <$f>;
@@ -24,6 +24,11 @@ for my $mod (@modfiles)
 {
     if( ! -e "../$repofolder/$mod" )
     {
+        if( ! -d "../$repofolder" )
+        {
+            mkdir "../$repofolder" or die "Couldn't mkdir $repofolder\n";
+        }
+
         print "Archiving $mod...\n";
         copy( $mod, "../$repofolder/$mod" ) 
             or die "Couldn't copy $mod to $repofolder";
@@ -138,12 +143,13 @@ else
     {
         if( ! $modfiles{$mod} )
         {
-            print "Only in $listfile: $mod\n";
+            print "Only in $listfile: $mod";
             if( ! -e "../$repofolder/$mod" )
             {
-                print "  (Not in repository\n";
+                print " (Not in repository)";
             }
             $action++;
+            print "\n";
         }
     }
 }
