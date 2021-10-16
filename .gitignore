@@ -26,6 +26,7 @@ config/machinemuse/powersuits-keybinds.cfg
 /logs
 /manifest.json
 /mods
+/modrepo
 /natives
 /options.txt
 /patchouli_data.json
