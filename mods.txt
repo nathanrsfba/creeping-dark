@@ -39,6 +39,7 @@ CraftingTweaks_1.12.2-8.1.9.jar
 CraftTweaker2-1.12-4.1.20.660.jar
 CTM-MC1.12.2-1.0.2.31.jar
 Decocraft-2.6.3.7_1.12.2.jar
+DefaultOptions_1.12.2-9.2.8.jar
 DefaultWorldGenerator-port-1.12-2.3.jar
 diethopper-1.1.jar
 Ding-1.12.2-1.0.2.jar
