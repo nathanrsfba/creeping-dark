@@ -31,6 +31,7 @@ config/thaumicjei_itemstack_aspects.json
 /logs
 /manifest.json
 /mods
+/modrepo
 /natives
 /options.txt
 /patchouli_data.json
