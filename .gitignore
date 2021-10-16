@@ -45,6 +45,7 @@ config/thaumicjei_itemstack_aspects.json
 icon.png
 libraries/
 minecraftinstance.json
+modmg.bat
 
 # Junctions to other local repositories
 /master
