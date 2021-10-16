@@ -4,6 +4,7 @@ AdvancedRocketry-1.12.2-1.7.0-232-universal.jar
 ae2stuff-0.7.0.4-mc1.12.2.jar
 aether-1.12.2-v1.5.3.2.jar
 agricraft-2.12.0-1.12.2-b2.jar
+AkashicTome-1.2-12.jar
 AppleSkin-mc1.12-1.0.14.jar
 appliedenergistics2-rv6-stable-7.jar
 Aroma1997Core-1.12.2-2.0.0.2.b167.jar
@@ -156,6 +157,7 @@ ThermalExpansion-1.12.2-5.5.7.1-universal.jar
 ThermalFoundation-1.12.2-2.6.7.1-universal.jar
 TickCentral-3.2.jar
 tinkersjei-1.2.jar
+TinkerToolLeveling-1.12.2-1.1.0.jar
 Toast Control-1.12.2-1.8.1.jar
 TombManyGraves-1.12-4.2.0.jar
 tropicraft-MC1.12.2-7.1.9.115.jar
