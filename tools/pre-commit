@@ -1,0 +1,8 @@
+#!/bin/sh
+
+perl tools/modmg.pl
+
+if [ $? -gt 0 ]; then
+    echo "Aborting commit; mods unsynched"
+    exit 1
+fi

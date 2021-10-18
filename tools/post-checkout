@@ -1,0 +1,3 @@
+#!/bin/sh
+
+perl tools/modmg.pl load
