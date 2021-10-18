@@ -1,11 +1,6 @@
 {
 	title: "Jeweled Husk",
-	icon: {
-		id: "openblocks:trophy",
-		tag: {
-			entity_id: "minecraft:husk"
-		}
-	},
+	icon: "contenttweaker:huskicon",
 	x: -4.0d,
 	y: 3.0d,
 	text: [

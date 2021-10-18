@@ -1,11 +1,6 @@
 {
 	title: "Ill Intergalactic",
-	icon: {
-		id: "openblocks:trophy",
-		tag: {
-			entity_id: "minecraft:vindication_illager"
-		}
-	},
+	icon: "contenttweaker:axlicon",
 	x: 3.0d,
 	y: -0.5d,
 	text: [

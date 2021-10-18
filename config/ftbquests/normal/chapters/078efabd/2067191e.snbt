@@ -1,11 +1,6 @@
 {
 	title: "Just Like The Curse...",
-	icon: {
-		id: "openblocks:trophy",
-		tag: {
-			entity_id: "minecraft:stray"
-		}
-	},
+	icon: "contenttweaker:huntericon",
 	x: -0.5d,
 	y: -1.0d,
 	text: [
