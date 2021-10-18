@@ -48,6 +48,7 @@ EnderCore-1.12.2-0.5.76.jar
 EnderIO-1.12.2-5.3.70.jar
 EnderIO-conduits-mekanism-1.12.2-5.3.70.jar
 EnderStorage-1.12.2-2.4.6.137-universal.jar
+environmentalcreepers-1.12.2-1.6.0.jar
 EpicFightMod-1.12.2-2.2.7.jar
 Erebus-1.0.32.jar
 Exchangers-1.12.2-2.10.1.jar
