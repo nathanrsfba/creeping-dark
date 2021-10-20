@@ -46,6 +46,8 @@ icon.png
 libraries/
 minecraftinstance.json
 modmg.bat
+hs_err_pid5520.log
+knownkeys.txt
 
 # Junctions to other local repositories
 /master
