@@ -2,7 +2,7 @@
 	title: "Disk Drives",
 	icon: "appliedenergistics2:drive",
 	x: -4.5d,
-	y: 0.0d,
+	y: 0.5d,
 	text: [
 		"Used to put ME storage units... but you'll also need them for Spatial IO"
 	],

@@ -2,12 +2,11 @@
 	title: "Cyber Controller",
 	icon: "appliedenergistics2:controller",
 	x: -6.0d,
-	y: -1.5d,
+	y: -1.0d,
 	text: [
 		"You'll need an ME controller in order to connect more than 8 devices in an ME network"
 	],
 	dependencies: [
-		"8f53c45d",
 		"2abd4eef"
 	],
 	dependency_requirement: "one_started",

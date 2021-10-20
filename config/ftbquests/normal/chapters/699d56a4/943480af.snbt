@@ -4,7 +4,8 @@
 		id: "openblocks:trophy",
 		tag: {
 			entity_id: "minecraft:blaze"
-		}
+		},
+		Damage: 12s
 	},
 	x: -6.0d,
 	y: -3.0d,
@@ -17,7 +18,8 @@
 	],
 	dependencies: [
 		"3b04b038",
-		"de27bfd1"
+		"de27bfd1",
+		"8f53c45d"
 	],
 	tasks: [{
 		uid: "bf71327a",

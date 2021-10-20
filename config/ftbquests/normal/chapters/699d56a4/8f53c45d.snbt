@@ -1,7 +1,7 @@
 {
 	title: "Dimensionally Transcendental",
 	icon: "appliedenergistics2:spatial_io_port",
-	x: -6.0d,
+	x: -7.5d,
 	y: 1.5d,
 	text: [
 		"With the Spatio IO system, you can suqeeze a bunch of stuff in the world into a digital storage unit."
