@@ -26,7 +26,8 @@
 			id: "tropicraft:portal_enchanter",
 			tag: {}
 		}],
-		ignore_damage: true
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "a62363c4",
