@@ -83,6 +83,11 @@ Server Installation
 Questions
 ---------
 
+Q: My money disappeared!
+A: This seems to happen randomly, particuarly when changing dimensions.
+Signing out of the world/server and reconnecting seems to restore it.
+Also, completing a quest that gives money also seems to restore it.
+
 Q: I see a console message about objects being summoned?  
 A: That's a redstone mechanism I have hidden away in a utility dimension that
 recreates certain objects. You can just ignore the message.
