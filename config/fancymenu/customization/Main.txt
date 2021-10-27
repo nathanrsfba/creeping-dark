@@ -3,24 +3,191 @@ type = menu
 customization-meta {
   identifier = net.minecraft.client.gui.GuiMainMenu
   randomgroup = 1
-  renderorder = foreground
+  renderorder = background
   randommode = false
   randomonlyfirsttime = false
 }
 
 customization {
-  path = resources/creeping/textures/gui/bg.png
-  action = texturizebackground
+  name = mainbg
+  action = setbackgroundslideshow
+}
+
+customization {
+  keepaspectratio = true
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=400322%
+  orientation = top-left
+  x = 20
+  action = movebutton
+  y = 120
+}
+
+customization {
+  identifier = %id=400322%
+  width = 120
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=400322%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=400382%
+  orientation = top-left
+  x = 20
+  action = movebutton
+  y = 140
+}
+
+customization {
+  identifier = %id=400382%
+  width = 80
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=400382%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=502382%
+  orientation = top-left
+  x = 20
+  action = movebutton
+  y = 200
+}
+
+customization {
+  identifier = %id=502382%
+  width = 120
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=502382%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=376382%
+  orientation = top-left
+  x = 120
+  action = movebutton
+  y = 140
+}
+
+customization {
+  identifier = %id=376382%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=400298%
+  orientation = top-left
+  x = 20
+  action = movebutton
+  y = 100
+}
+
+customization {
+  identifier = %id=400298%
+  width = 120
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=400298%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=400346%
+  orientation = top-left
+  x = 20
+  action = movebutton
+  y = 160
+}
+
+customization {
+  identifier = %id=400346%
+  width = 120
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=400346%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=502346%
+  orientation = top-left
+  x = 20
+  action = movebutton
+  y = 180
+}
+
+customization {
+  identifier = %id=502346%
+  width = 120
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=502346%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=376346%
+  orientation = top-left
+  x = 100
+  action = movebutton
+  y = 140
+}
+
+customization {
+  identifier = %id=376346%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  path = config/fancymenu/strip.png
+  orientation = top-left
+  x = 0
+  width = 160
+  actionid = ebced461-3829-42d8-a757-50e934b5a8381635325471156
+  action = addtexture
+  y = 0
+  height = 400
 }
 
 customization {
   path = resources/creeping/textures/gui/minecraft.png
-  orientation = top-centered
-  x = -97
-  width = 195
+  orientation = top-left
+  x = 5
+  width = 150
   actionid = b9676d7b-ff94-410e-81d6-eef151f770551625040884681
   action = addtexture
-  y = 14
-  height = 94
+  y = 12
+  height = 75
+}
+
+customization {
+  identifier = %id=0%
+  action = vanilla_button_visibility_requirements
 }
 
