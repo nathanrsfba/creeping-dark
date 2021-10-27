@@ -209,6 +209,7 @@ Known dimensions:
 -343800852: Spectre cage
 -11325: Deep Dark
 -9999: EU2 Quarry
+-127: Tropics
 -6: Mining World
 -2: AR space dimension
 -1: Nether
