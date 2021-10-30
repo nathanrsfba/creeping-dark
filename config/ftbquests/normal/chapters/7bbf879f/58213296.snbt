@@ -35,14 +35,6 @@
 		}]
 	},
 	{
-		uid: "4618bf8f",
-		type: "item",
-		items: [{
-			item: "botania:pool 2"
-		}],
-		count: 2L
-	},
-	{
 		uid: "1c39b2ce",
 		type: "item",
 		items: [{
