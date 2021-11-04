@@ -29,14 +29,25 @@ See the changelog below for the full details.
 Installation
 ------------
 
-As of 1.5 Beta 8, Twitch no longer supports Minecraft mods, and its replacement
-isn't ready yet, so I'm now targetting GDLauncher. It's supposed to create
-CurseForge compatible packs, so feel free to use the official launcher
-(whenever it gets its shit together), but from now on GDLauncher will be the
-official platform for this pack.
+Creeping Dark officially supports GDLauncher as the preferred launcher
+platform, though it can be installed with the official Curse launcher as well.
 
-To install the pack in GDLauncher, click the [+] button, select "Import Zip",
-then navigate to the Creeping Dark .zip file.
+To install with GDLauncher:
+
+1. Install and launch [GDLauncher](https://gdevs.io/)
+2. Click the [+] button
+3. Select "Import Zip"
+4. Copy and paste in one of the following URLs:
+   * [v1.5.4.1 (Release)](https://github.com/nathanrsfba/creeping-dark/releases/download/v1.5.4.1/Creeping.Dark-1.5.4.1.zip)
+   * [v1.5.5b1 (Beta)](https://github.com/nathanrsfba/creeping-dark/releases/download/1.5.5-beta.1/Creeping.Dark-1.5.5b1.zip)
+
+To install with the Curse launcher:
+
+1. Install and launch the [CurseForge App](https://download.curseforge.com/)
+2. Download one of the files from the links above
+3. Click the "Create Custom Profile" button
+4. Click "import a previously created profile"
+5. Point it to the file you downloaded in step 2
 
 Server Installation
 -------------------
@@ -131,6 +142,14 @@ Changes in v1.5.5
   glitch out visually in combat mode, and some of the weapon types don't 100%
   match with their EFM types, but everything should at least have reasonable
   values.
+
+* Added MineTogether
+
+  This is a chat mod that connects you to a chat that is shared with anyone
+  playing a pack that has MineTogether in it. 
+
+  I'm not sure if it will go in the final release, but it's present in the
+  beta for now just because I use it myself
 
 Changes in v1.5.4.1
 -------------------
