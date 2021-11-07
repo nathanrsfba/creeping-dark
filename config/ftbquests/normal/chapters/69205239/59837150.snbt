@@ -51,8 +51,12 @@
 	{
 		uid: "8c4f7909",
 		type: "item",
+		title: "Rocket Engine",
 		items: [{
 			item: "advancedrocketry:rocketmotor"
+		},
+		{
+			item: "advancedrocketry:advrocketmotor"
 		}],
 		ignore_nbt: 1b
 	},
