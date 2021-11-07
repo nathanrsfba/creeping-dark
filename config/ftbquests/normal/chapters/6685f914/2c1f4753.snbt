@@ -1,0 +1,22 @@
+{
+	x: -5.5d,
+	y: -1.5d,
+	text: [
+		"Did all your money 'disappear' when you changed dimensions? Redeem this quest to give FTB Money a boot to the head and recover it.",
+		"",
+		"It also reappears when you log out and in again."
+	],
+	can_repeat: true,
+	optional: true,
+	tasks: [{
+		uid: "d165a7fb",
+		type: "checkmark",
+		title: "Money Trouble",
+		icon: "thermalfoundation:coin"
+	}],
+	rewards: [{
+		uid: "3de5395a",
+		type: "ftbmoney:money",
+		ftb_money: 0L
+	}]
+}

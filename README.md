@@ -95,9 +95,13 @@ Questions
 ---------
 
 Q: My money disappeared!
-A: This seems to happen randomly, particuarly when changing dimensions.
-Signing out of the world/server and reconnecting seems to restore it.
-Also, completing a quest that gives money also seems to restore it.
+A: This seems to happen when changing dimensions. Completing a quest that gives
+money seems to restore it. It's similar to the glitch where all your XP
+disappears when you change dimensions, but magically comes back when you pick
+up more XP. I've added a quest to the opening questline that gives you 0 money,
+which causes the missing money to reappear. Also, signing out of the
+world/server and signing back in seems to restore it, so it should never be
+truly 'gone'.
 
 Q: I see a console message about objects being summoned?  
 A: That's a redstone mechanism I have hidden away in a utility dimension that
