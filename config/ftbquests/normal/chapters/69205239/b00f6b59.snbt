@@ -10,9 +10,9 @@
 	x: 1.5d,
 	y: 4.0d,
 	text: [
-		"You'll need to build an Electrolyzer (a multiblock structure) in order to generate oxygen for your space suit. Pipe plain old water into it to separate it into hydrogen (which you'll need for fuel) and oxygen.",
+		"You'll need to build an Electrolyzer (a multiblock structure) in order to generate oxygen for your space suit. Pipe plain old water into it to separate it into hydrogen (which you'll also need for fuel) and oxygen.",
 		"",
-		"You'll also need at least one pressure tank (of any tier), a suit workbench to install it into your chestpiece, and a gas charge pad to fill it.",
+		"You'll also need at least one pressure tank (of any tier), a suit workbench to install it into your chestpiece, and a gas charge pad to fill it. You'll need to build a Rolling Machine in order to make the pressure tank.",
 		"",
 		"(As with the other machines, the Electrolyzer and the Rolling Machine are multiblock structures. Use the Holo-Projector to see how to build them)"
 	],
@@ -43,8 +43,40 @@
 	{
 		uid: "1b5171cb",
 		type: "item",
+		title: "Pressure Tank",
+		icon: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "advancedrocketry:pressuretank",
+			Damage: 1s
+		},
 		items: [{
-			item: "advancedrocketry:rollingmachine"
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "advancedrocketry:pressuretank"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "advancedrocketry:pressuretank",
+			Damage: 1s
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "advancedrocketry:pressuretank",
+			Damage: 2s
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "advancedrocketry:pressuretank",
+			Damage: 3s
 		}]
 	}],
 	rewards: [{
