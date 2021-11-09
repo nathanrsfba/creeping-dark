@@ -98,7 +98,6 @@ MCMultiPart-2.5.3.jar
 Mekanism-1.12.2-9.8.3.390.jar
 MekanismGenerators-1.12.2-9.8.3.390.jar
 MekanismTools-1.12.2-9.8.3.390.jar
-MineTogether-1.12.2-2.4.4RC1.jar
 MixinBootstrap-1.0.5.jar
 modtweaker-4.0.20.4.jar
 ModularPowersuits-1.12.2-1.0.46.jar
