@@ -147,14 +147,6 @@ Changes in v1.5.5
   match with their EFM types, but everything should at least have reasonable
   values.
 
-* Added MineTogether
-
-  This is a chat mod that connects you to a chat that is shared with anyone
-  playing a pack that has MineTogether in it. 
-
-  I'm not sure if it will go in the final release, but it's present in the
-  beta for now just because I use it myself
-
 Changes in v1.5.4.1
 -------------------
 
