@@ -9,6 +9,7 @@
 	dependencies: [
 		"ef4c409a"
 	],
+	dependency_requirement: "all_started",
 	tasks: [{
 		uid: "8ccd41bc",
 		type: "item",

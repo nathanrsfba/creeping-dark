@@ -9,6 +9,7 @@
 		"You might want to make some candles and surround the altar with them, to stabilize it. Make sure to make them symmetrical around the center of the alter, else it will just make matters worse."
 	],
 	dependencies: [
+		"fa1d3526",
 		"db0b82ef",
 		"750b51de",
 		"d6581bf7"

@@ -9,7 +9,7 @@
 			typeId: 0
 		}
 	},
-	x: -1.0d,
+	x: -2.5d,
 	y: -1.5d,
 	text: [
 		"You will need some materials to reconstitute the Air key.",
@@ -19,9 +19,6 @@
 		"Then, find a Golden Oak tree, cut it down, and take a sapling.",
 		"",
 		"Finally, dig down into the islands and look for some Gravitite."
-	],
-	dependencies: [
-		"fa1d3526"
 	],
 	tasks: [{
 		uid: "2b1b8886",
