@@ -17,15 +17,6 @@ unlocks a new tier of technology... and one of the Keys.
 While there is a progression mechanic, the recipes are unchanged, with a few
 exceptions. Once you've "unlocked" a mod, it works the way it always has.
 
-About v1.5
-----------
-
-Due to the drama surrounding LandMaster mods, LandCraft has been removed
-from the pack. In its place have been inserted TropiCraft and Atum. Other
-recipes involving Landia have been altered to reflect this change.
-
-See the changelog below for the full details.
-
 Installation
 ------------
 
@@ -37,14 +28,15 @@ To install with GDLauncher:
 1. Install and launch [GDLauncher](https://gdevs.io/)
 2. Click the [+] button
 3. Select "Import Zip"
-4. Copy and paste in one of the following URLs:
-   * [v1.5.4.1 (Release)](https://github.com/nathanrsfba/creeping-dark/releases/download/v1.5.4.1/Creeping.Dark-1.5.4.1.zip)
-   * [v1.5.5b1 (Beta)](https://github.com/nathanrsfba/creeping-dark/releases/download/1.5.5-beta.1/Creeping.Dark-1.5.5b1.zip)
+4. Copy the URL of the latest version of the .zip file from the
+   [releases](https://github.com/nathanrsfba/creeping-dark/releases) 
+   page, and paste it in to GDLauncher
 
 To install with the Curse launcher:
 
 1. Install and launch the [CurseForge App](https://download.curseforge.com/)
-2. Download one of the files from the links above
+2. Download one of the files from the 
+   [releases](https://github.com/nathanrsfba/creeping-dark/releases) page
 3. Click the "Create Custom Profile" button
 4. Click "import a previously created profile"
 5. Point it to the file you downloaded in step 2
