@@ -139,6 +139,12 @@ Changes in v1.5.5
   match with their EFM types, but everything should at least have reasonable
   values.
 
+* Added Akashic Tome, which lets you combine most of your guidebooks into
+  a single item
+
+* Added Tinkers Tool Leveling, which gives your tools extra modifier slots
+  as you use them
+
 * Fixed the recipes for marble bricks only giving one block of bricks instead
   of four
 
