@@ -19,14 +19,14 @@ val asmarbrick = <astralsorcery:blockmarble:1>;
 val prmarbrick = <projectred-exploration:stone:1>;
 
 recipes.remove( asmarbrick );
-recipes.addShaped( "asmarblebrick", asmarbrick, [ 
+recipes.addShapedMirrored( "asmarblebrick", asmarbrick * 4, [ 
 [asmarb, asmarb, null],
 [asmarb, asmarb, null],
 [null, null, null]
 ] );
 
 recipes.remove( prmarbrick );
-recipes.addShaped( "prmarblebrick", prmarbrick, [ 
+recipes.addShapedMirrored( "prmarblebrick", prmarbrick * 4, [ 
 [prmarb, prmarb, null],
 [prmarb, prmarb, null],
 [null, null, null]

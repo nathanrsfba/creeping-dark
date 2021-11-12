@@ -147,6 +147,9 @@ Changes in v1.5.5
   match with their EFM types, but everything should at least have reasonable
   values.
 
+* Fixed the recipes for marble bricks only giving one block of bricks instead
+  of four
+
 Changes in v1.5.4.1
 -------------------
 
