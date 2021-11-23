@@ -145,8 +145,20 @@ Changes in v1.5.5
 * Added Tinkers Tool Leveling, which gives your tools extra modifier slots
   as you use them
 
+* Added Nature's Compass, which can be used to find specific biomes
+
+* Creeper damage has been severly reduced, thanks to Environmental Creepers. No
+  more getting one-shot at full health and full armor! And no more damage to
+  your base!
+
 * Fixed the recipes for marble bricks only giving one block of bricks instead
   of four
+
+* Tweaked the dependencies for some of the questlines, so less chance of a
+  quest still being locked despite being completable. Some other minor
+  questline tweaks as well.
+
+* Tweaked the default keybindings a bit
 
 Changes in v1.5.4.1
 -------------------
