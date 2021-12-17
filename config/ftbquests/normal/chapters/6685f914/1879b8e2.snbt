@@ -15,11 +15,14 @@
 		type: "checkmark"
 	}],
 	rewards: [{
-		uid: "c20071f4",
+		uid: "198d0945",
 		type: "item",
 		item: {
 			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -5987286033772693031L,
+					AS_Amulet_HolderMost: 730092477226173684L
+				}
 			},
 			id: "ironbackpacks:backpack",
 			tag: {
@@ -78,8 +81,8 @@
 					Damage: 0s
 				},
 				{
-					id: "minecraft:air",
-					Count: 2b,
+					id: "prefab:item_start_house",
+					Count: 1b,
 					Damage: 0s
 				},
 				{
