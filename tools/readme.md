@@ -64,6 +64,12 @@ To compare the two and display status:
 
     modmg
 
+conflictfinder.zs
+-----------------
+A CraftTweaker script that can find potential recipe conflicts. To use it, drop
+it in scripts, load a world, and issue the command "/ct findconflict". The
+report will be sent to the CraftTweaker log file
+
 pre-commit
 ----------
 A shell script that runs modmg before commit, and aborts the commit if mods.txt
