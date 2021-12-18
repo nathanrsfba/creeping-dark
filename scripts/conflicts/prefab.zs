@@ -78,3 +78,12 @@ function replaceStair( matname as string, stonetype as int ) {
 replaceStair( "andesite", 5 );
 replaceStair( "diorite", 3 );
 replaceStair( "granite", 2 );
+
+// Only allow regular stone to create compressed stone
+
+val cstone = <prefab:block_compressed_stone>;
+val stone = <minecraft:stone>;
+recipes.remove( cstone );
+recipes.addShapeless( "compressedStoneReplaced", cstone,
+    [stone, stone, stone, stone, stone, stone, stone, stone, stone] );
+
