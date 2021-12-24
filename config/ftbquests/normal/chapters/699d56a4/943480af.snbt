@@ -1,20 +1,20 @@
 {
-	title: "What in Blazes...",
-	icon: {
-		id: "openblocks:trophy",
-		tag: {
-			entity_id: "minecraft:blaze"
-		},
-		Damage: 12s
-	},
+	title: "City on the Edge of ... Nothing",
+	icon: "minecraft:shulker_shell",
 	x: -6.0d,
 	y: -3.0d,
 	text: [
-		"The Gold Key is held by a Blaze hidden away in ME spatial storage.",
+		"The Gold Key is in a city hidden away in ME spatial storage.",
 		"",
-		"You'll need a 4x4x4 spacial chamber. Use the pylons to build a 5x5x5 wireframe, minus the corners. Then connect them to an ME network. Each strip of pylons requires a channel (12 in total) so you'll need an ME controller to connect them all.",
+		"You'll need a 4x4x4 spacial chamber. Use the pylons to build a 5x5x5 wireframe, minus the corners. Then connect them to an ME network. ",
 		"",
-		"Once you've built the chamber, attach the spatial IO port to the network, place the storage unit into the left side of it, and give it a redstone pulse."
+		"Each strip of pylons requires a channel (12 in total), but a regular fluix cable can only connect 8 channels, so you'll need an ME controller to connect them all. ",
+		"",
+		"You can either use dense fluix cables and connect all the strips together, or you can use strategically placed fluix cables and cable anchors, making sure no more than 8 strips are connected together.",
+		"",
+		"Once you've built the chamber, attach the spatial IO port to the network, charge the network with plenty of power (you'll probably need to attach an ME energy cell) place the storage unit into the left side of it, and stick a button (or other source of redstone pulse) onto it.",
+		"",
+		"Then stand inside the chamber, and ... zap yourself inside."
 	],
 	dependencies: [
 		"3b04b038",
