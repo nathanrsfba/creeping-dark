@@ -274,6 +274,7 @@ the appropriate point in progression. In particular:
   Botania
 * The Twilight Forest activation object is changed to an object created using
   Actually Additions tech
+* Ores for various mods have been restricted to certain dimensions
 
 Most of the other 'gates' are accomplished by editing recipes using
 CraftTweaker.
@@ -324,6 +325,9 @@ they instead build a smaller one, zap *themselves* inside it, and a
 redstone-activated command block teleports them to the dungeon proper. This
 contraption is spawned with the void city, and is actually inside the bedrock
 box in the corner.
+
+The spatial disk for this entry chamber is located in an Ender Chest, the code
+for which is given in the quests.
 
 The End Portal has been 'keyed' using a mod called Restricted Portals.
 
