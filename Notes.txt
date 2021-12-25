@@ -1,3 +1,6 @@
+Description
+===========
+
 A standard kitchen-sink tech mod pack. With a bit of exploration. And a tiny
 bit of progression. And an artifact hunt quest. But mostly a standard
 kitchen-sink tech mod pack.
@@ -11,8 +14,16 @@ to each of the dimensions, find and kill a boss for a fragment of the key to
 the End, combine the fragments to unlock the End, and kill the Dragon to end
 the plague that is slowly covering the sky.
 
+Early Changelog
+===============
 
-Changes from default configurations:
+What follows is mainly changes from before the pack data was hosted in Git.
+This is the sort of stuff that would have gone into commit logs if they
+existed at the time.
+
+Changes from default configurations
+-----------------------------------
+
 Planets added to Advanced Rocketry
 Removed ores from IE: Copper, Lead, Silver, Nickel
   (Will generate from Thermal Foundation instead)
@@ -63,7 +74,9 @@ Explicitly mapped Biomes O' Plenty biome IDs to not conflict (hopefully)
 Disabled /back, /home, /spawn, and /warp in FTButils
 Disabled block-o-bones in Erebus, since it overrides TMG
 
-Changes in 1.1:
+Changes in 1.1
+--------------
+
 Added four new keys: Earth, air, fire, water
 Keys are dropped as 'fragments' that must be activated with items from
   their respective realm
@@ -101,7 +114,9 @@ Skyroot sapling is now obtained from conjuration catalyst
 Hunting dimension frame is now made with a resuable morb containing a
   zombie, and some resonant ender, instead of a TE upgrade
 
-Changes in 1.2:
+Changes in 1.2
+--------------
+
 Added OreExcavaor
 Tweaked the Plagued Sky mod. Spread is now hard limited to 500 blocks per
   minute. (Adjustable in the configuration) A similar limit applies to
@@ -136,7 +151,9 @@ Fixed a bug that caused garbage to be pregenerated into the spatial io
   dimension (causing pregenerated spatial io units not to work)
 Wider variety of blocks for dragonscale to decay into
 
-Changes in 1.3:
+Changes in 1.3
+--------------
+
 Dimensions and mods now must (mostly) be unlocked in a given order. Once a mod
   is unlocked, it functions (more or less) as normal. Quest lines will be
   unlocked as mods become available.
@@ -159,7 +176,9 @@ Due to the above, Big Brother now drops an 'inert' nether star, which can
   be activated by combining it with a regular nether star, yielding two
   stars. This prevents you from skipping the Wither fight.
 
-Changes in 1.4:
+Changes in 1.4
+--------------
+
 The pack has been renamed to "Creeping Dark". ('plaguesky' is still used
   internally)
 The 'linear' version is now the only version. The previous linear version
@@ -178,7 +197,11 @@ New logo screen. Now 5% less rubbish!
 Some more, higher-tier shop loot. A use for all those platinum
   coins you've been hoarding
 
-Questions:
+Questions
+=========
+
+(Mostly duplicates of what's in the official Readme)
+
 Q: I see a console message about objects being summoned?
 A: That's a redstone mechanism I have hidden away in a utility dimension
 that recreates certain objects. You can just ignore the message.
@@ -205,7 +228,9 @@ for god knows what reason
 Q: Minibosses aren't spawning when running a standalone server
 A: Edit your server.properties and enable command blocks
 
-Known dimensions:
+Known Dimensions
+================
+
 -343800852: Spectre cage
 -11325: Deep Dark
 -9999: EU2 Quarry
@@ -221,14 +246,101 @@ Known dimensions:
 17: Atum
 20: Betweenlands
 66: Erebus
-87: My utility dimension
-150+: AR planets
-1304: Landia
+87: My utility dimension (RFTools)
+150+: AR planets (See config\advRocketry\planetDefs.xml for details)
+1304: Landia (No longer present in 1.5+)
 4598: NuclearCraft wasteland dimension
 28885: Hunting Dimension
 
+Technical Notes
+===============
 
-Some notes about the genesis of Creeping Dark:
+(A.k.a. Miscellaneous notes about the inner workings for myself/anyone else
+that wants to work on the pack)
+
+This pack does a few mildly novel things, and I'm far from an expect on
+Minecraft's deep inner workings, so I've pulled a few things that could
+charitably be called 'chicanery'.
+
+Most of the novel changes are implemented either in the custom mod Plagued
+Skies, or using CraftTweaker and friends. There is nothing particularly
+unusual about such changes; you can check the sources and scripts for the
+details.
+
+Some configuration options in various mods have been used to 'gate' the mod to
+the appropriate point in progression. In particular:
+
+* Aether portals require skyroot buckets; skyroot can now be acquired using
+  Botania
+* The Twilight Forest activation object is changed to an object created using
+  Actually Additions tech
+
+Most of the other 'gates' are accomplished by editing recipes using
+CraftTweaker.
+
+The Betweenlands talisman has been gated by changing the loot table for the
+druids; the talisman now needs Mekanism tech to 'activate' one of the pieces.
+
+One of the things included is a 'utility' dimension, in the form of a custom
+RFTools dimension. This dimension has two main purposes:
+
+1. To activate the Talisman Head when piped in from a tangloporter
+2. To generate the Void City spatial dungeon when the disk is removed from the
+   ender chest, and also to respawn the disk in the chest.
+
+These both are redstone contrpations, using a few modded blocks, and command
+blocks. It also uses a '/loadchunk' command (added by the Plagued Skies mod)
+to ensure certain chunks get loaded, and chunkloaders activated. The utility
+dimension itself is spawned from a Recurrent Structure on world load, though
+the chunks seem to not get loaded until the world is loaded a *second* time.
+This is a long-standing bug that so far I've been too lazy to fix.
+
+One of the mods used is defaultworldgenerator-port. This is used to copy some
+predefined data into each newly created world. Some of the things included
+here include:
+
+* Loot tables for mob drops. This has proven more reliable than CraftTweaker's
+  builtin methods for adding mob drops. See the Minecraft wiki on loot tables
+  to see the format of these files.
+* Data files for RFtools dimensions, for a custom RFTools dimension that
+  spawns in every world
+* Data files establishing AE2 spatial storage chambers
+* A pre-populated EnderStorage ender chest
+
+It also executes commands on world load to spawn and chunkload the utility
+dimension.
+
+The files are located in config\defaultworldgenerator-port\common.
+
+Recurrent Complex is used to spawn 'dungeons' containing minibosses in various
+places, containing quest items. Most of them are marked 'active', meaning they
+generate in the world automatically, but some of them are 'inactive', and
+generated explictly by the utility dimension, or world load commands.
+
+One of the dungeons in the game is the Void City, which is located in the
+Spatial Storage dimension. The dungeon is rather large (it's just a copied End
+City), so rather than have the player build an enormous spatial IO chamber,
+they instead build a smaller one, zap *themselves* inside it, and a
+redstone-activated command block teleports them to the dungeon proper. This
+contraption is spawned with the void city, and is actually inside the bedrock
+box in the corner.
+
+The End Portal has been 'keyed' using a mod called Restricted Portals.
+
+One thing I attempted but later abandoned, was to have the ability to launch
+rockets from dimensions other than Earth (or AR planets). AR has the ability
+to add other dimensions to its solar systems, but my attempts to add suitable
+dimensions resulted in nondeterministic crashes, so I gave up on it.
+
+The pack has a custom 'credits' message that displays when returning from the
+end. This is accomplished by having ResourceLoader load and override the
+minecraft:texts/end.txt resource. I have no idea how 'kosher' this is, but it
+seems to work.
+
+Genesis
+=======
+
+(A.k.a. "Some ramblings about the creation of the pack for those that care")
 
 For some time now I've had the idea rattling around the inside of my head of a
 mod pack centered around exploring the various extradimensional realms of the
