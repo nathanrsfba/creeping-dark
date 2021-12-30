@@ -64,11 +64,23 @@ To compare the two and display status:
 
     modmg
 
+<<<<<<< HEAD
 conflictfinder.zs
 -----------------
 A CraftTweaker script that can find potential recipe conflicts. To use it, drop
 it in scripts, load a world, and issue the command "/ct findconflict". The
 report will be sent to the CraftTweaker log file
+=======
+mkpkg.py
+--------
+A Python script to create a pack .zip files automatically. Takes information
+from the instance's config.json, and from the existing manifest.json (if
+available), generates an updated manifest, and a new .zip of the pack.
+
+For Creeping Dark, this command usually is something line the following:
+
+    mkpkg.py -n "Creeping Dark" -a NathanRsfba 1.6 mods config scripts structures resources 
+>>>>>>> master
 
 pre-commit
 ----------
