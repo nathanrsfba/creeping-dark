@@ -64,6 +64,16 @@ To compare the two and display status:
 
     modmg
 
+mkpkg.py
+--------
+A Python script to create a pack .zip files automatically. Takes information
+from the instance's config.json, and from the existing manifest.json (if
+available), generates an updated manifest, and a new .zip of the pack.
+
+For Creeping Dark, this command usually is something line the following:
+
+    mkpkg.py -n "Creeping Dark" -a NathanRsfba 1.6 mods config scripts structures resources 
+
 pre-commit
 ----------
 A shell script that runs modmg before commit, and aborts the commit if mods.txt
