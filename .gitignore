@@ -48,6 +48,18 @@ modmg.bat
 hs_err_pid5520.log
 knownkeys.txt
 
+# Server-related stuff
+banned-ips.json
+banned-players.json
+eula.txt
+forge-*.jar
+minecraft_server.*.jar
+ops.json
+server.bat
+server.properties
+whitelist.json
+/world
+
 # Junctions to other local repositories
 /master
 /test
