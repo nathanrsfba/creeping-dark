@@ -60,6 +60,9 @@ server.properties
 whitelist.json
 /world
 
+# Don't even know where this one came from
+/encyclopedia-servers
+
 # Junctions to other local repositories
 /master
 /test
