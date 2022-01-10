@@ -55,7 +55,8 @@ Server Installation
 3. Run the server again to generate the needed files and folders, then
    shut it down
 4. In the server.properties file, set "enable-command-block" to "true".
-   (And adjust any other options to taste)
+   (And adjust any other options to taste. It might be a good idea to
+   set allow-flight=true, as there are legit flight items in the pack)
 5. From a Creeping Dark client install, copy the following folders into
    the server folder:
 
