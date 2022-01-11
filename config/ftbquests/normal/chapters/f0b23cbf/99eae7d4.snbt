@@ -6,9 +6,6 @@
 	text: [
 		"These occasionally drop from redstone ore... but there's ways of crafting them as well."
 	],
-	dependencies: [
-		"8970e2a3"
-	],
 	tasks: [{
 		uid: "565f5254",
 		type: "item",
