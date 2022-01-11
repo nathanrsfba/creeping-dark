@@ -10,7 +10,9 @@
 	x: 3.5d,
 	y: 2.5d,
 	text: [
-		"Build the Tropics Portal Enchantment Wand. This can be used to create TropiCraft portals, but it has another use..."
+		"Build the Tropics Portal Enchantment Wand. This can be used to create TropiCraft portals, but it has another use...",
+		"",
+		"§4§LIMPORTANT NOTE§R: Don't attempt to use this wand to create Tropics portals on multiplayer servers. It causes bad crashes."
 	],
 	dependencies: [
 		"2dcf420f",
