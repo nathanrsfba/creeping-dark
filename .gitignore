@@ -45,8 +45,9 @@ icon.png
 libraries/
 minecraftinstance.json
 modmg.bat
-hs_err_pid5520.log
+hs_err_*.log
 knownkeys.txt
+config.json
 
 # Server-related stuff
 banned-ips.json
