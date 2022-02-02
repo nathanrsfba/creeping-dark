@@ -12,7 +12,7 @@
 	text: [
 		"The next tier of Astral crafting, and the one you need to make the key to the End.",
 		"",
-		"(As before, you need to pick up the altar to get quest credit)"
+		"(As before, you need to pick up the altar to get quest credit. It also requires a new multiblock structure. As always, consult the Tome)"
 	],
 	dependencies: [
 		"9942cab4"

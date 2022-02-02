@@ -12,6 +12,8 @@
 	text: [
 		"The third tier of Astral crafting.",
 		"",
+		"This crafting altar is actually part of a multiblock structure. Consult the Astral Tome to see how to build it.",
+		"",
 		"(The ritual actually upgrades the Luminous crafting table in place. Just pick it up to complete the quest.)"
 	],
 	dependencies: [
