@@ -44,12 +44,10 @@ To install with the Curse launcher:
 Server Installation
 -------------------
 
-1. Download Minecraft Forge v14.23.5.2854 and install it into a folder
-   (The standalone server doesn't seem to like v2847, even though it works on
-   the client just file)
+1. Download Minecraft Forge v14.23.5.2860 and install it into a folder
 2. From the command line, run the server and accept the EULA.
    The command will look something like the following:
-   ```java -jar forge-1.12.2-14.23.5.2854 nogui```
+   ```java -jar forge-1.12.2-14.23.5.2860 nogui```
    The 'nogui' part is important. For some reason, the GUI will slow the
    server to a crawl
 3. Run the server again to generate the needed files and folders, then
@@ -121,6 +119,22 @@ for god knows what reason
 
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
+
+Changes in v1.6
+---------------
+
+* New Void City dungeon
+
+  No longer will you summon a blaze out of a spatial storage unit... instead
+  you'll zap yourself *into* a spatial storage unit. Inside you'll find a city
+  yoinked wholesale from the End, with the gold key, and some end resources
+  (including an Elyra)
+
+* Added Prefab. Now you can summon prebuilt houses instead of building your
+  own, if you're so inclined
+
+* Added XNet, an advanced system for transporting resources from Point A to
+  Point B
 
 Changes in v1.5.5
 -----------------
