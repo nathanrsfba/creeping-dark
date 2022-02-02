@@ -14,7 +14,9 @@
 		"",
 		"Once you've built the chamber, attach the spatial IO port to the network, charge the network with plenty of power (you'll probably need to attach an ME energy cell) place the storage unit into the left side of it, and stick a button (or other source of redstone pulse) onto it.",
 		"",
-		"Then stand inside the chamber, and ... zap yourself inside."
+		"Then stand inside the chamber, and ... zap yourself inside.",
+		"",
+		"Having some method of teleporting yourself back might be useful... however, there is a hidden portal that will transport you back to the overworld surface."
 	],
 	dependencies: [
 		"3b04b038",
