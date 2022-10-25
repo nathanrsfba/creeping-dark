@@ -1,3 +1,5 @@
+#!/usr/bin/perl
+
 use strict;
 
 # Simplified data for modded weapons. Relevant data is generated
