@@ -19,7 +19,7 @@ customization {
 }
 
 customization {
-  identifier = %id=400322%
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
   orientation = top-left
   x = 20
   action = movebutton
@@ -27,19 +27,14 @@ customization {
 }
 
 customization {
-  identifier = %id=400322%
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
   width = 120
   action = resizebutton
   height = 20
 }
 
 customization {
-  identifier = %id=400322%
-  action = vanilla_button_visibility_requirements
-}
-
-customization {
-  identifier = %id=400382%
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
   orientation = top-left
   x = 20
   action = movebutton
@@ -47,19 +42,14 @@ customization {
 }
 
 customization {
-  identifier = %id=400382%
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
   width = 80
   action = resizebutton
   height = 20
 }
 
 customization {
-  identifier = %id=400382%
-  action = vanilla_button_visibility_requirements
-}
-
-customization {
-  identifier = %id=502382%
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
   orientation = top-left
   x = 20
   action = movebutton
@@ -67,19 +57,14 @@ customization {
 }
 
 customization {
-  identifier = %id=502382%
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
   width = 120
   action = resizebutton
   height = 20
 }
 
 customization {
-  identifier = %id=502382%
-  action = vanilla_button_visibility_requirements
-}
-
-customization {
-  identifier = %id=376382%
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
   orientation = top-left
   x = 120
   action = movebutton
@@ -87,12 +72,7 @@ customization {
 }
 
 customization {
-  identifier = %id=376382%
-  action = vanilla_button_visibility_requirements
-}
-
-customization {
-  identifier = %id=400298%
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
   orientation = top-left
   x = 20
   action = movebutton
@@ -100,19 +80,14 @@ customization {
 }
 
 customization {
-  identifier = %id=400298%
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
   width = 120
   action = resizebutton
   height = 20
 }
 
 customization {
-  identifier = %id=400298%
-  action = vanilla_button_visibility_requirements
-}
-
-customization {
-  identifier = %id=400346%
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
   orientation = top-left
   x = 20
   action = movebutton
@@ -120,19 +95,14 @@ customization {
 }
 
 customization {
-  identifier = %id=400346%
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
   width = 120
   action = resizebutton
   height = 20
 }
 
 customization {
-  identifier = %id=400346%
-  action = vanilla_button_visibility_requirements
-}
-
-customization {
-  identifier = %id=502346%
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
   orientation = top-left
   x = 20
   action = movebutton
@@ -140,15 +110,10 @@ customization {
 }
 
 customization {
-  identifier = %id=502346%
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
   width = 120
   action = resizebutton
   height = 20
-}
-
-customization {
-  identifier = %id=502346%
-  action = vanilla_button_visibility_requirements
 }
 
 customization {
@@ -160,8 +125,71 @@ customization {
 }
 
 customization {
-  identifier = %id=376346%
-  action = vanilla_button_visibility_requirements
+  orientation = top-left
+  hidden = false
+  x = 135
+  width = 268
+  action = deep_customization_element:title_screen_forge_top
+  actionid = 46c65451-63d0-4ba4-ad95-aa37a3c467ca1666769876698
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 2
+  width = 169
+  action = deep_customization_element:title_screen_branding
+  actionid = 9468e3b4-e3a9-4116-ab95-e7f209150f861666769876703
+  y = 307
+  height = 40
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 310
+  width = 228
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = adc713dc-ba70-45c0-94b3-31b0fa8cbb111666769876704
+  y = 329
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 372
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = 27b06c4c-02ff-453a-9dbd-7eaebc3bc8601666769876705
+  y = 187
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 132
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = fc75dd81-162e-46fb-a5d7-20676713f6f41666769876705
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = true
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = a6be2e96-e6e4-4a59-b2be-f2d16b82e75d1666769876706
+  y = 0
+  height = 30
 }
 
 customization {
@@ -184,10 +212,5 @@ customization {
   action = addtexture
   y = 12
   height = 75
-}
-
-customization {
-  identifier = %id=0%
-  action = vanilla_button_visibility_requirements
 }
 
