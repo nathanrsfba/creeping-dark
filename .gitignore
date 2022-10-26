@@ -15,6 +15,7 @@ config/thaumicjei_itemstack_aspects.json
 
 # Various crap that generally lives in the minecraft folder
 *.dll
+*.so
 /.ReAuth.cfg
 /.mixin.out
 /BotaniaVars.dat
@@ -41,6 +42,7 @@ config/thaumicjei_itemstack_aspects.json
 /tv-cache
 /usercache.json
 /usernamecache.json
+/fancymenu_data
 icon.png
 libraries/
 minecraftinstance.json
@@ -48,6 +50,9 @@ modmg.bat
 hs_err_*.log
 knownkeys.txt
 config.json
+
+# wtf?
+.fuse_hidden*
 
 # Server-related stuff
 banned-ips.json
