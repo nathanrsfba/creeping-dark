@@ -8,6 +8,7 @@ agricraft-2.12.0-1.12.2-b2.jar
 AkashicTome-1.2-12.jar
 AppleSkin-mc1.12-1.0.14.jar
 appliedenergistics2-rv6-stable-7.jar
+AquaAcrobatics-1.15.0.jar
 Aroma1997Core-1.12.2-2.0.0.2.b167.jar
 Aroma1997s-Dimensional-World-1.12.2-2.0.0.2.b89.jar
 AromaBackup-1.12.2-3.0.0.0.b135.jar
@@ -28,6 +29,7 @@ Chameleon-1.12-4.1.3.jar
 ChickenChunks-1.12.2-2.4.2.74-universal.jar
 Chisel-MC1.12.2-1.0.2.45.jar
 chiselsandbits-14.33.jar
+Clumps-3.1.2.jar
 CodeChickenLib-1.12.2-3.2.3.358-universal.jar
 CoFHCore-1.12.2-4.6.6.1-universal.jar
 CoFHWorld-1.12.2-1.4.0.1-universal.jar
@@ -39,6 +41,7 @@ CosmeticArmorReworked-1.12.2-v5a.jar
 CraftingTweaks_1.12.2-8.1.9.jar
 CraftTweaker2-1.12-4.1.20.681.jar
 CTM-MC1.12.2-1.0.2.31.jar
+Debark-0.1.3.jar
 Decocraft-2.6.3.7_1.12.2.jar
 DefaultOptions_1.12.2-9.2.8.jar
 DefaultWorldGenerator-port-1.12-2.3.jar
@@ -56,6 +59,9 @@ Exchangers-1.12.2-2.10.1.jar
 ExtraCells-1.12.2-2.6.5.jar
 extrautils2-1.12-1.9.9.jar
 fancymenu_forge_2.12.6_MC_1.12-1.12.2.jar
+FarmingForBlockheads_1.12.2-3.1.28.jar
+FastFurnace-1.12.2-1.3.1.jar
+FastWorkbench-1.12.2-1.7.4.jar
 foamfix-0.10.15-1.12.2.jar
 Forgelin-1.8.4.jar
 ForgeMultipart-1.12.2-2.6.2.83-universal.jar
@@ -95,6 +101,9 @@ malisisdoors-1.12.2-7.3.0.jar
 Mantle-1.12-1.3.3.55.jar
 mcjtylib-1.12-3.5.4.jar
 MCMultiPart-2.5.3.jar
+mcw-fences-1.0.0-mc1.12.2.jar
+mcw-roofs-1.0.2-mc1.12.2.jar
+mcw-windows-1.0.0-mc1.12.2.jar
 Mekanism-1.12.2-9.8.3.390.jar
 MekanismGenerators-1.12.2-9.8.3.390.jar
 MekanismTools-1.12.2-9.8.3.390.jar
@@ -149,6 +158,7 @@ rftoolsdim-1.12-5.71.jar
 rftoolspower-1.12-1.2.0.jar
 RTG-1.12.2-6.1.0.0-snapshot.1.jar
 SimplyJetpacks2-1.12.2-2.2.20.0.jar
+stg-1.12.2-1.2.3.jar
 StorageDrawers-1.12.2-5.4.2.jar
 TConstruct-1.12.2-2.13.0.183.jar
 tellme-1.12.2-0.7.0-dev.20200919.184303.jar
