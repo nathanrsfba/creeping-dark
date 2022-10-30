@@ -1,0 +1,33 @@
+{
+	title: "Beaconator",
+	x: -0.5d,
+	y: 1.0d,
+	text: [
+		"Before cracking open that nether star to get at its key, you might want to consider making a beacon.",
+		"",
+		"Not only do beacons grant beneficial effects to those in their general vicinity, they also can remove small patches of plague from the sky.",
+		"",
+		"Place a beacon directly under a patch of plague, and immedialtely a hole will be blasted into it. The beacon doesn't need to be activated, nor have a pyramid base beneath it.",
+		"",
+		"Sadly, there is no visual effect, as I'm too lazy.",
+		"",
+		"However, a placed beacon will not stop plague from growing over it. But you can break it and re-place again to blast away more if nececssary.",
+		"",
+		"When you're ready to open the End, you can even recover the star from the beacon using an Uncrafting Table from the Twilight Forest."
+	],
+	dependencies: [
+		"08096143"
+	],
+	tasks: [{
+		uid: "13a385a2",
+		type: "item",
+		items: [{
+			item: "minecraft:beacon"
+		}]
+	}],
+	rewards: [{
+		uid: "01828aaa",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}
