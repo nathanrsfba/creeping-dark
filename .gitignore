@@ -43,6 +43,8 @@ config/thaumicjei_itemstack_aspects.json
 /usercache.json
 /usernamecache.json
 /fancymenu_data
+/*.zip
+/release.txt
 icon.png
 libraries/
 minecraftinstance.json
