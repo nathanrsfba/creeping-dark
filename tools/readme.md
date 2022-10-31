@@ -91,3 +91,45 @@ post-checkout
 A shell script that runs modmg to switch out mods when checking out a branch.
 Copy or link it in .git/hooks to have it automatically run on checkout
 
+publish
+-------
+A shell script that automates the process of pushing a release onto GitHub, in
+conjunction with mkpkg.py.
+
+The script will:
+
+1) Run an editor for the user to write some release notes
+2) Run mkpkg.py to create the package file
+3) Rename the pack file to the desired format
+4) Apply an appropriate tag to the head of the repo
+5) Push the current branch and the newly created tag to the remote repo
+6) Create a new release on GitHub with the pack file as an asset
+
+The top of the script contains configuration data, in both variables and
+functions to control the process.
+
+The script takes a single parameter, which is the version to tag the release
+as. It should be specified as a version number, with no 'v' prefix or anything
+of the sort. Alpha or Beta versions can be specified by appending an 'a' or 'b'
+to the end, following by the alpha/beta number.
+
+For example:
+
+For a release version:
+
+```
+tools/publish 1.6.1
+```
+
+For a beta version:
+```
+tools/publish 1.6.1b1
+```
+
+The configuration functions will translate the given version number into the
+appropriate options, including release title, filename, pack metadata, Git tag,
+and prerelease status.
+
+The script also takes one option: '-t' does not create the pack, but shows
+what would have been done.
+
