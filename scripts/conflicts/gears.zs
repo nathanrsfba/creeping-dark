@@ -25,3 +25,16 @@ recipes.addShaped( "GoldGearNew", goldgear, [
 [gold, stick, gold],
 [null, gold, null]
 ] );
+
+// ------------------------------------------------------------
+// Remove spurious wooden gear recipes
+// (potentially conflicts with blockcraftery)
+
+val woodgear = <thermalfoundation:material:22>;
+
+recipes.remove( woodgear );
+recipes.addShaped( "WoodGearNew", woodgear, [ 
+[null, stick, null],
+[stick, null, stick],
+[null, stick, null]
+] );
