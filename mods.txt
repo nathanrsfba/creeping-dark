@@ -157,6 +157,7 @@ rftoolsdim-1.12-5.71.jar
 rftoolspower-1.12-1.2.0.jar
 RTG-1.12.2-6.1.0.0-snapshot.1.jar
 SimplyJetpacks2-1.12.2-2.2.20.0.jar
+simplylight-1.12.2-0.8.7.jar
 stg-1.12.2-1.2.3.jar
 StorageDrawers-1.12.2-5.4.2.jar
 TConstruct-1.12.2-2.13.0.183.jar
