@@ -94,7 +94,7 @@ Copy or link it in .git/hooks to have it automatically run on checkout
 publish
 -------
 A shell script that automates the process of pushing a release onto GitHub, in
-conjunction with mkpkg.py.
+conjunction with mkpkg.py. It depends on the GitHub CLI client being installed.
 
 The script will:
 
