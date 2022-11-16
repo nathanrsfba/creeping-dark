@@ -10,6 +10,7 @@
 		"47eabc1f",
 		"5f57bda8"
 	],
+	dependency_requirement: "all_started",
 	tasks: [{
 		uid: "57ce3659",
 		type: "item",
