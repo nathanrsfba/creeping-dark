@@ -57,14 +57,27 @@
 		},
 		{
 			item: "advancedrocketry:advrocketmotor"
+		},
+		{
+			item: "advancedrocketry:bipropellantrocketmotor"
+		},
+		{
+			item: "advancedrocketry:advbipropellantrocketmotor"
 		}],
 		ignore_nbt: 1b
 	},
 	{
 		uid: "da5388e3",
 		type: "item",
+		title: "Fuel Tank",
 		items: [{
 			item: "advancedrocketry:fueltank"
+		},
+		{
+			item: "advancedrocketry:bipropellantfueltank"
+		},
+		{
+			item: "advancedrocketry:oxidizerfueltank"
 		}],
 		ignore_nbt: 1b
 	},
