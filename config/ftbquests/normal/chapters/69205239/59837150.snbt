@@ -8,7 +8,9 @@
 		"",
 		"To build the launch pad, place down a square launch pad made out of launch pad blocks, place a vertical stack of structure towers on the outside edge (with one touching the side of the pad), and then put the assembling machine on the outside edge, one block above the launch pad.",
 		"",
-		"The rocket itself is a more-or-less freeform multiblock. As long as you have enough fuel and engines, you can make it any size and shape you want. You'll also need a seat to ride it, and a guidance computer to control where it goes."
+		"The rocket itself is a more-or-less freeform multiblock. As long as you have enough fuel and engines, you can make it any size and shape you want. You'll also need a seat to ride it, and a guidance computer to control where it goes.",
+		"",
+		"Note that there are two types of rockets you can build: Monopropellant or bipropellant. Check out the Fuel quest to learn the difference."
 	],
 	dependencies: [
 		"59581749",

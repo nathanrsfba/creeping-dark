@@ -4,22 +4,26 @@
 	x: 3.0d,
 	y: 4.0d,
 	text: [
+		"You have two options for fuelling a rocket:",
+		"",
+		"1. Build a monopropellant rocket. To do this, build a rocket with monopropellant engines and tanks. To fuel it, you'll need to make rocket fuel.",
+		"",
 		"To make rocket fuel, pipe the hydrogen and oxygen from the electrolyzer into a chemical reactor. You can store it in tanks and load them into your rocket using a fueling station. Use the linker to connect the fueling station to the rocket.",
 		"",
-		"(The chemical reactor is, once again, a multiblock.)"
+		"(The chemical reactor is, once again, a multiblock.)",
+		"",
+		"2. Build a bipropellant rocket. To do this, build a rocket with bipropellant engines, and an equal amount of bipropellant fuel tanks and oxidizer tanks. To fuel it, you'll provide hydrogen and oxygen separately, using the fuel station once again.",
+		"",
+		"It may be easier to use two separate fuel stations in this instance; one with hydrogen, and one with oxygen. Link both of them to the rocket and pump in the fuels.",
+		"",
+		"This type of rocket appears to need quite a bit more fuel than the monopropellant rocket.",
+		"",
+		"Unfortunately, the rocket UI only displays the amount of fuel it contains, and not the amount of oxygen."
 	],
 	dependencies: [
 		"59581749"
 	],
 	tasks: [{
-		uid: "bf93aaff",
-		type: "item",
-		items: [{
-			item: "advancedrocketry:chemicalreactor"
-		}],
-		ignore_nbt: 1b
-	},
-	{
 		uid: "5034a395",
 		type: "item",
 		items: [{
