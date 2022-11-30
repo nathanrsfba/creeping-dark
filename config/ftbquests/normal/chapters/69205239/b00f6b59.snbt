@@ -14,6 +14,8 @@
 		"",
 		"You'll also need at least one pressure tank (of any tier), a suit workbench to install it into your chestpiece, and a gas charge pad to fill it. You'll need to build a Rolling Machine in order to make the pressure tank.",
 		"",
+		"(The recipe for making the tanks in the rolling machine is currently broken, so you can make them in the crafting bench. You'll still need the rolling machine to make the ingredients however)",
+		"",
 		"(As with the other machines, the Electrolyzer and the Rolling Machine are multiblock structures. Use the Holo-Projector to see how to build them)"
 	],
 	dependencies: [
