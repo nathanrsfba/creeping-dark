@@ -31,6 +31,8 @@ To install with GDLauncher:
 4. Copy the URL of the latest version of the .zip file from the
    [releases](https://github.com/nathanrsfba/creeping-dark/releases) 
    page, and paste it in to GDLauncher
+5. GDLauncher may need to go through a few extra steps to install a few mods.
+   Just follow the prompts and let it do its thing.
 
 To install with the Curse launcher:
 
@@ -119,6 +121,30 @@ for god knows what reason
 
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
+
+Changes in v1.6.1
+-----------------
+
+* Some new mods, including:
+  * Simply Light, which gives you some new lighting options
+  * Aqua Acrobatics: Aquatic Update-style swimming
+  * Debark: Stripped logs
+  * Farming for Blockheads: Among other things, a much nicer market for Pams
+    crops
+  * Some Macaw's decorative mods
+* Removed LagGoggles and TickCentral for now, due to a conflict with
+  AquaAcrobatics. If you need to use LagGoggles and/or TickCentral on your
+  server, disable bubble columns in aquaacrobatics.cfg, and disable mixins in
+  aquaacrobatics_core.cfg
+* Updated mods, as usual
+* Advanced Rocketry has had a few gameplay updates, including different types
+  of rocket engines
+* You can now blast away small patches of sky plague using beacons
+* Added some more weapons to the shop
+* Added a bit more mad science to the mad science lab
+* Nerfed creepers even harder
+* Miscellaneous minor tweaks and bugfixes
+
 
 Changes in v1.6
 ---------------
