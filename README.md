@@ -69,20 +69,26 @@ Server Installation
    Remove the following mods from the 'mods' folder as they're client side
    only, and not required on the server:
 
-   * controlling
-   * ctgui
-   * ctm
-   * ding
+   * Controlling
+   * CTM
+   * Ding
    * jeiintegration
-   * jeresources
-   * llor
+   * JustEnoughResources
+   * LLOverlayReloaded
    * moreoverlays
-   * mousetweaks
-   * thaumicjei
-   * toastcontrol
-   * reauth
+   * MouseTweaks
+   * ReAuth
+   * ThaumicJEI
+   * Toast Control
 
-6. Start the server, or upload the folder to your hosting platform and run it
+6. If you want to use Biomes O' Plenty or Realistic Terrain Generation, go into
+   the config/defaultworldgenerator-port folder, delete the default
+   `worldsettings.data` file, and rename either `worldsettings.data.bop` or
+   `worldsettings.data.rtg` to `worldsettings.data`.
+
+   There's also copies of the configuration for some of the other world types
+   in this folder as well.
+7. Start the server, or upload the folder to your hosting platform and run it
 
 Questions
 ---------
