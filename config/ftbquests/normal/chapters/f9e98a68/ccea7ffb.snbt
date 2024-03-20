@@ -11,20 +11,6 @@
 		"c7606fe2"
 	],
 	tasks: [{
-		uid: "809d3c61",
-		type: "item",
-		items: [{
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			},
-			id: "immersiveengineering:blueprint",
-			tag: {
-				blueprint: "electrode"
-			}
-		}],
-		ignore_damage: true
-	},
-	{
 		uid: "1a38f4df",
 		type: "item",
 		items: [{
@@ -36,9 +22,11 @@
 		uid: "ea128a74",
 		type: "item",
 		items: [{
-			item: "immersiveengineering:graphite_electrode 3"
+			item: "immersiveengineering:graphite_electrode"
 		}],
-		count: 3L
+		count: 3L,
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "d8e002d0",
