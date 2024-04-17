@@ -128,6 +128,17 @@ for god knows what reason
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
 
+Changes in v1.6.1.1
+-------------------
+
+* Arc furnace electrodes made using the metal press now count for the quest
+* Arc fucnace electrodes quest no longer requires the blueprint
+* Tweaked AE2 quests to fix issues with items being craftable before quests
+  unlock
+* Questline will now accept creosote oil being made from the Thermal Expansion
+  pyrolytic converter
+* Added some configuration files so alternate world types can now be selected.
+
 Changes in v1.6.1
 -----------------
 
