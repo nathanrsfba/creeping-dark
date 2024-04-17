@@ -10,6 +10,7 @@
 		"2abd4eef",
 		"de6af314"
 	],
+	dependency_requirement: "all_started",
 	tasks: [{
 		uid: "34112607",
 		type: "item",

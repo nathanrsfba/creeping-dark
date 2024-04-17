@@ -9,6 +9,7 @@
 	dependencies: [
 		"2abd4eef"
 	],
+	dependency_requirement: "all_started",
 	tasks: [{
 		uid: "323cdcfc",
 		type: "item",
