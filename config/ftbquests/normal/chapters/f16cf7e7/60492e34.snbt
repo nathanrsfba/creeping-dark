@@ -1,0 +1,54 @@
+{
+	title: "Save 15 percent or more",
+	icon: "thebetweenlands:gecko_cage",
+	x: -3.5d,
+	y: 1.5d,
+	text: [
+		"Go find a gecko and cage him up. For ... alchemical purposes."
+	],
+	dependencies: [
+		"22e01f6d"
+	],
+	tasks: [{
+		uid: "550b7a66",
+		type: "item",
+		items: [{
+			item: "thebetweenlands:gecko_cage"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e696d991",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "thebetweenlands:net"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9b774f6c",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "thebetweenlands:critter",
+			tag: {
+				Entity: {
+					id: "thebetweenlands:gecko"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "32230611",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

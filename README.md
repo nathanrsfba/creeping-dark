@@ -17,41 +17,46 @@ unlocks a new tier of technology... and one of the Keys.
 While there is a progression mechanic, the recipes are unchanged, with a few
 exceptions. Once you've "unlocked" a mod, it works the way it always has.
 
-About v1.5
-----------
-
-Due to the drama surrounding LandMaster mods, LandCraft has been removed
-from the pack. In its place have been inserted TropiCraft and Atum. Other
-recipes involving Landia have been altered to reflect this change.
-
-See the changelog below for the full details.
-
 Installation
 ------------
 
-As of 1.5 Beta 8, Twitch no longer supports Minecraft mods, and its replacement
-isn't ready yet, so I'm now targetting GDLauncher. It's supposed to create
-CurseForge compatible packs, so feel free to use the official launcher
-(whenever it gets its shit together), but from now on GDLauncher will be the
-official platform for this pack.
+Creeping Dark officially supports GDLauncher as the preferred launcher
+platform, though it can be installed with the official Curse launcher as well.
 
-To install the pack in GDLauncher, click the [+] button, select "Import Zip", then navigate to the Creeping Dark .zip file.
+To install with GDLauncher:
+
+1. Install and launch [GDLauncher](https://gdevs.io/)
+2. Click the [+] button
+3. Select "Import Zip"
+4. Copy the URL of the latest version of the .zip file from the
+   [releases](https://github.com/nathanrsfba/creeping-dark/releases) 
+   page, and paste it in to GDLauncher
+5. GDLauncher may need to go through a few extra steps to install a few mods.
+   Just follow the prompts and let it do its thing.
+
+To install with the Curse launcher:
+
+1. Install and launch the [CurseForge App](https://download.curseforge.com/)
+2. Download one of the files from the 
+   [releases](https://github.com/nathanrsfba/creeping-dark/releases) page
+3. Click the "Create Custom Profile" button
+4. Click "import a previously created profile"
+5. Point it to the file you downloaded in step 2
 
 Server Installation
 -------------------
 
-1. Download Minecraft Forge v14.23.5.2854 and install it into a folder
-   (The standalone server doesn't seem to like v2847, even though it works on
-   the client just file)
+1. Download Minecraft Forge v14.23.5.2860 and install it into a folder
 2. From the command line, run the server and accept the EULA.
    The command will look something like the following:
-   ```java -jar forge-1.12.2-14.23.5.2854 nogui```
+   ```java -jar forge-1.12.2-14.23.5.2860 nogui```
    The 'nogui' part is important. For some reason, the GUI will slow the
    server to a crawl
 3. Run the server again to generate the needed files and folders, then
    shut it down
 4. In the server.properties file, set "enable-command-block" to "true".
-   (And adjust any other options to taste)
+   (And adjust any other options to taste. It might be a good idea to
+   set allow-flight=true, as there are legit flight items in the pack)
 5. From a Creeping Dark client install, copy the following folders into
    the server folder:
 
@@ -64,23 +69,38 @@ Server Installation
    Remove the following mods from the 'mods' folder as they're client side
    only, and not required on the server:
 
-   * controlling
-   * ctgui
-   * ctm
-   * ding
+   * Controlling
+   * CTM
+   * Ding
    * jeiintegration
-   * jeresources
-   * llor
+   * JustEnoughResources
+   * LLOverlayReloaded
    * moreoverlays
-   * mousetweaks
-   * thaumicjei
-   * toastcontrol
-   * reauth
+   * MouseTweaks
+   * ReAuth
+   * ThaumicJEI
+   * Toast Control
 
-6. Start the server, or upload the folder to your hosting platform and run it
+6. If you want to use Biomes O' Plenty or Realistic Terrain Generation, go into
+   the config/defaultworldgenerator-port folder, delete the default
+   `worldsettings.data` file, and rename either `worldsettings.data.bop` or
+   `worldsettings.data.rtg` to `worldsettings.data`.
+
+   There's also copies of the configuration for some of the other world types
+   in this folder as well.
+7. Start the server, or upload the folder to your hosting platform and run it
 
 Questions
 ---------
+
+Q: My money disappeared!
+A: This seems to happen when changing dimensions. Completing a quest that gives
+money seems to restore it. It's similar to the glitch where all your XP
+disappears when you change dimensions, but magically comes back when you pick
+up more XP. I've added a quest to the opening questline that gives you 0 money,
+which causes the missing money to reappear. Also, signing out of the
+world/server and signing back in seems to restore it, so it should never be
+truly 'gone'.
 
 Q: I see a console message about objects being summoned?  
 A: That's a redstone mechanism I have hidden away in a utility dimension that
@@ -108,22 +128,101 @@ for god knows what reason
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
 
+Changes in v1.6.1
+-----------------
+
+* Some new mods, including:
+  * Simply Light, which gives you some new lighting options
+  * Aqua Acrobatics: Aquatic Update-style swimming
+  * Debark: Stripped logs
+  * Farming for Blockheads: Among other things, a much nicer market for Pams
+    crops
+  * Some Macaw's decorative mods
+* Removed LagGoggles and TickCentral for now, due to a conflict with
+  AquaAcrobatics. If you need to use LagGoggles and/or TickCentral on your
+  server, disable bubble columns in aquaacrobatics.cfg, and disable mixins in
+  aquaacrobatics_core.cfg
+* Updated mods, as usual
+* Advanced Rocketry has had a few gameplay updates, including different types
+  of rocket engines
+* You can now blast away small patches of sky plague using beacons
+* Added some more weapons to the shop
+* Added a bit more mad science to the mad science lab
+* Nerfed creepers even harder
+* Miscellaneous minor tweaks and bugfixes
+
+
+Changes in v1.6
+---------------
+
+* New Void City dungeon
+
+  No longer will you summon a blaze out of a spatial storage unit... instead
+  you'll zap yourself *into* a spatial storage unit. Inside you'll find a city
+  yoinked wholesale from the End, with the gold key, and some end resources
+  (including an Elyra)
+
+* Added Prefab. Now you can summon prebuilt houses instead of building your
+  own, if you're so inclined
+
+* Added XNet, an advanced system for transporting resources from Point A to
+  Point B
+
+Changes in v1.5.5
+-----------------
+
+* Converted the quest system to FTB Quests.
+
+  One notable change is that FTB Quests doesn't have the option to recognize
+  progress on quests that are still locked. Some minor reworking of the quest
+  lines has been done to minimize the impact of this, but you may occasionally
+  find yourself having to 'redo' some task in order for it to be recognized. If
+  you find any particularly egregious examples, please report them as issues.
+
+* Added Epic Fight Mod, which gives you some new melee combat mechanics.
+
+  I've added configurations for most modded weapons and armors. Some items may
+  glitch out visually in combat mode, and some of the weapon types don't 100%
+  match with their EFM types, but everything should at least have reasonable
+  values.
+
+* Added Akashic Tome, which lets you combine most of your guidebooks into
+  a single item
+
+* Added Tinkers Tool Leveling, which gives your tools extra modifier slots
+  as you use them
+
+* Added Nature's Compass, which can be used to find specific biomes
+
+* Creeper damage has been severly reduced, thanks to Environmental Creepers. No
+  more getting one-shot at full health and full armor! And no more damage to
+  your base!
+
+* Fixed the recipes for marble bricks only giving one block of bricks instead
+  of four
+
+* Tweaked the dependencies for some of the questlines, so less chance of a
+  quest still being locked despite being completable. Some other minor
+  questline tweaks as well.
+
+* Tweaked the default keybindings a bit
+
 Changes in v1.5.4.1
 -------------------
 
 Fixed some recipe conflicts:
 
-    * Quark vs. Agricraft trowel
-    * Sound box vs. stained planks
-    * Iron ladder vs. rusty ladder
-    * Bibliocraft vs. Random Things golden compass
-    * RandomThings ID card vs. EnderIO black paper
-    * Respawn obelisk vs. Minecraft chest
-    * Multiple variants of marble bricks
-    * Multiple variants of bronze tools
-    * Malisis curtains vs. Aether capes
-    * Multiple variantes of sickles
-    * Scaffolding vs. Block of Sticks
+* Quark vs. Agricraft trowel
+* Sound box vs. stained planks
+* Iron ladder vs. rusty ladder
+* Bibliocraft vs. Random Things golden compass
+* RandomThings ID card vs. EnderIO black paper
+* Respawn obelisk vs. Minecraft chest
+* Multiple variants of marble bricks
+* Multiple variants of bronze tools
+* Malisis curtains vs. Aether capes
+* Multiple variantes of sickles
+* Scaffolding vs. Block of Sticks
 
 Changes in v1.5.4
 -----------------

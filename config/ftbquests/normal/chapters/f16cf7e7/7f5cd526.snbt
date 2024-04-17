@@ -1,0 +1,28 @@
+{
+	title: "Are You My Mummy?",
+	icon: "thebetweenlands:mummy_bait",
+	x: 5.5d,
+	y: 3.0d,
+	text: [
+		"The Emerald Key is held by the Dreadful Peat Mummy. Use the resources and knowledge you've gathered, and summon it by creating Mummy Bait and throwing it down in a Sludge Plains biome,"
+	],
+	dependencies: [
+		"2ccc7d74",
+		"e5cd1c34",
+		"d32b0eff",
+		"f7dd3b3a"
+	],
+	tasks: [{
+		uid: "7120a8be",
+		type: "item",
+		items: [{
+			item: "contenttweaker:emeraldkey"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b93a0dd5",
+		type: "ftbmoney:money",
+		ftb_money: 4096L
+	}]
+}

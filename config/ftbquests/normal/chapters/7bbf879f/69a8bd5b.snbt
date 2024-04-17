@@ -1,0 +1,25 @@
+{
+	title: "Not for swimming",
+	icon: "botania:pool",
+	x: 4.0d,
+	y: -0.5d,
+	text: [
+		"The Mana Pool is used to store mana"
+	],
+	dependencies: [
+		"be0aadeb"
+	],
+	dependency_requirement: "all_started",
+	tasks: [{
+		uid: "827ea915",
+		type: "item",
+		items: [{
+			item: "botania:pool"
+		}]
+	}],
+	rewards: [{
+		uid: "7ee95d77",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

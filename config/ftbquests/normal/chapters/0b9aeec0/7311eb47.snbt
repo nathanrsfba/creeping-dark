@@ -1,0 +1,30 @@
+{
+	title: "RTFM (Tinkerers Edition)",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "tconstruct:book"
+	},
+	x: -7.0d,
+	y: -5.5d,
+	text: [
+		"Not technically required. But it tells you how to do stuff."
+	],
+	tasks: [{
+		uid: "93a5682a",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "tconstruct:book"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "808a4106",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

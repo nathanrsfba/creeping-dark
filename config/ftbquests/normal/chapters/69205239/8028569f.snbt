@@ -1,0 +1,46 @@
+{
+	title: "Holodeck",
+	icon: {
+		id: "libvulpes:holoprojector",
+		tag: {
+			yOffset: 4,
+			machineId: 7,
+			machineIdPrev: 7,
+			x: -177,
+			y: 5,
+			z: 1432,
+			dir: 3
+		}
+	},
+	x: 1.5d,
+	y: -0.5d,
+	text: [
+		"This will show you how to build the various multiblock machines.",
+		"",
+		"Shift-right click to select the machine you want to build. Click and drag the background to scroll around the list of machines.",
+		"",
+		"Right-click the ground where you want to build. Shift-mousewheel to cycle between vertical layers."
+	],
+	tasks: [{
+		uid: "fd1d0e56",
+		type: "item",
+		items: [{
+			id: "libvulpes:holoprojector",
+			tag: {
+				yOffset: 4,
+				machineId: 7,
+				machineIdPrev: 7,
+				x: -177,
+				y: 5,
+				z: 1432,
+				dir: 3
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ce2e3771",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

@@ -1,0 +1,10 @@
+{
+	title: "Infernus",
+	icon: "immersiveengineering:graphite_electrode",
+	description: [
+		"More Nether and Immersive Engineering"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

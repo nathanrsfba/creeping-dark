@@ -1,0 +1,24 @@
+{
+	title: "Treated Wood",
+	icon: "immersiveengineering:treated_wood",
+	x: 0.5d,
+	y: -2.0d,
+	text: [
+		"Get a bottle (or other fluid container) of creosote oil from the coke oven and surround it with 8 planks of wood. Any old wood."
+	],
+	dependencies: [
+		"3728f643"
+	],
+	tasks: [{
+		uid: "ac9d5de8",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:treated_wood"
+		}]
+	}],
+	rewards: [{
+		uid: "ca9ee318",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "The Wither",
+	icon: "minecraft:nether_star",
+	x: -2.0d,
+	y: 1.0d,
+	text: [
+		"Plonk down 4 soul sand in a T shape, then plonk 3 wither skeleton skulls on top.",
+		"",
+		"Then stand back.",
+		"",
+		"And arm yourself to the teeth first.",
+		"",
+		"When you're done, take his star and break it open to retrieve the key inside."
+	],
+	dependencies: [
+		"c59e1b1f"
+	],
+	tasks: [{
+		uid: "a227f675",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ironkey"
+		}]
+	}],
+	rewards: [{
+		uid: "fff6a020",
+		type: "ftbmoney:money",
+		ftb_money: 4096L
+	}]
+}

@@ -1,0 +1,26 @@
+{
+	title: "Reinforcement",
+	icon: "mekanism:reinforcedalloy",
+	x: -2.0d,
+	y: -8.0d,
+	text: [
+		"Toss a piece of diamond and an enriched alloy into the infuser.",
+		"",
+		"Better yet, make an enrichment chamber, toss a diamond in it, and put the resulting compressed diamond into the infuser with §oeight§r enriched alloys."
+	],
+	dependencies: [
+		"9acba2f4"
+	],
+	tasks: [{
+		uid: "2bfa8114",
+		type: "item",
+		items: [{
+			item: "mekanism:reinforcedalloy"
+		}]
+	}],
+	rewards: [{
+		uid: "76e8f464",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

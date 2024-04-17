@@ -1,0 +1,39 @@
+{
+	title: "Enchanted",
+	icon: "aether_legacy:enchanter",
+	x: -2.5d,
+	y: 0.0d,
+	text: [
+		"You'll need to enchant the gravitite ore in order to use it. Find some zanite, build an enchanter, and put the gravitite into it with some ambrosium."
+	],
+	dependencies: [
+		"ef4c409a"
+	],
+	dependency_requirement: "all_started",
+	tasks: [{
+		uid: "8ccd41bc",
+		type: "item",
+		items: [{
+			item: "aether_legacy:ambrosium_shard"
+		}]
+	},
+	{
+		uid: "3031c9fb",
+		type: "item",
+		items: [{
+			item: "aether_legacy:enchanter"
+		}]
+	},
+	{
+		uid: "016f4743",
+		type: "item",
+		items: [{
+			item: "aether_legacy:enchanted_gravitite"
+		}]
+	}],
+	rewards: [{
+		uid: "477395ba",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

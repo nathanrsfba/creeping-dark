@@ -1,0 +1,29 @@
+{
+	title: "Spirit Tree",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "thebetweenlands:spirit_tree_face_large_mask"
+	},
+	x: -7.0d,
+	y: -4.0d,
+	text: [
+		"You'll need the sapling from a Spirit tree. Look for one in the Swamplands, then stab it in the face. Literally."
+	],
+	dependencies: [
+		"1fd04681"
+	],
+	tasks: [{
+		uid: "9206b72b",
+		type: "item",
+		items: [{
+			item: "thebetweenlands:sapling_spirit_tree"
+		}]
+	}],
+	rewards: [{
+		uid: "ec926531",
+		type: "ftbmoney:money",
+		ftb_money: 512L
+	}]
+}

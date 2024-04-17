@@ -1,0 +1,34 @@
+{
+	title: "Missing Link",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "astralsorcery:itemlinkingtool"
+	},
+	x: 0.5d,
+	y: 4.0d,
+	text: [
+		"Link Astral devices and resources to each other"
+	],
+	dependencies: [
+		"20f2115f"
+	],
+	tasks: [{
+		uid: "5289082a",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemlinkingtool"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a26e160c",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

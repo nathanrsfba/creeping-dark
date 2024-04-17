@@ -1,0 +1,24 @@
+{
+	title: "Mad Science Lair",
+	icon: "minecraft:skull",
+	x: -4.0d,
+	y: 1.0d,
+	text: [
+		"The Sapphire Key is hidden in an underground laboratory hidden in the mining world. Only a small elevator shaft can be seen above the ground..."
+	],
+	dependencies: [
+		"ebfed8eb"
+	],
+	tasks: [{
+		uid: "ca00f30c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:sapphirekey"
+		}]
+	}],
+	rewards: [{
+		uid: "62d34d98",
+		type: "ftbmoney:money",
+		ftb_money: 512L
+	}]
+}

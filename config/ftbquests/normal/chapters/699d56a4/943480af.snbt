@@ -1,0 +1,38 @@
+{
+	title: "City on the Edge of ... Nothing",
+	icon: "minecraft:shulker_shell",
+	x: -6.0d,
+	y: -3.0d,
+	text: [
+		"The Gold Key is in a city hidden away in ME spatial storage.",
+		"",
+		"You'll need a 4x4x4 spacial chamber. Use the pylons to build a 5x5x5 wireframe, minus the corners. Then connect them to an ME network. ",
+		"",
+		"Each strip of pylons requires a channel (12 in total), but a regular fluix cable can only connect 8 channels, so you'll need an ME controller to connect them all. ",
+		"",
+		"You can either use dense fluix cables and connect all the strips together, or you can use strategically placed fluix cables and cable anchors, making sure no more than 8 strips are connected together.",
+		"",
+		"Once you've built the chamber, attach the spatial IO port to the network, charge the network with plenty of power (you'll probably need to attach an ME energy cell) place the storage unit into the left side of it, and stick a button (or other source of redstone pulse) onto it.",
+		"",
+		"Then stand inside the chamber, and ... zap yourself inside.",
+		"",
+		"Having some method of teleporting yourself back might be useful... however, there is a hidden portal that will transport you back to the overworld surface."
+	],
+	dependencies: [
+		"3b04b038",
+		"de27bfd1",
+		"8f53c45d"
+	],
+	tasks: [{
+		uid: "bf71327a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:goldkey"
+		}]
+	}],
+	rewards: [{
+		uid: "1c680d7b",
+		type: "ftbmoney:money",
+		ftb_money: 512L
+	}]
+}

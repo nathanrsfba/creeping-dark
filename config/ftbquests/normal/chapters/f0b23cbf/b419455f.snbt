@@ -1,0 +1,26 @@
+{
+	title: "Titanium",
+	icon: "libvulpes:productingot 1 7",
+	x: -3.0d,
+	y: -1.0d,
+	text: [
+		"Used extensively for aerospace purposes.",
+		"",
+		"Look for Rutile Ore. It can't be smelted in normal furnaces. You could build the Electric Arc Furnace to smelt it, or just use one of several ore-grinding machines and smelt the dust."
+	],
+	dependencies: [
+		"9452a68e"
+	],
+	tasks: [{
+		uid: "e3ad6c83",
+		type: "item",
+		items: [{
+			item: "libvulpes:productingot 1 7"
+		}]
+	}],
+	rewards: [{
+		uid: "ac5da4ae",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

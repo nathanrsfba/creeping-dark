@@ -1,0 +1,489 @@
+Description
+===========
+
+A standard kitchen-sink tech mod pack. With a bit of exploration. And a tiny
+bit of progression. And an artifact hunt quest. But mostly a standard
+kitchen-sink tech mod pack.
+
+Also, the sun is slowly being blotted out.
+
+Welcome to Creeping Dark, a mod pack about saving the world. It contains many
+of your standard tech, magic, and dimension mods, with a twist. Each dimension
+is gated to the tech tree of one of the tech/magic mods. You need to journey
+to each of the dimensions, find and kill a boss for a fragment of the key to
+the End, combine the fragments to unlock the End, and kill the Dragon to end
+the plague that is slowly covering the sky.
+
+Early Changelog
+===============
+
+What follows is mainly changes from before the pack data was hosted in Git.
+This is the sort of stuff that would have gone into commit logs if they
+existed at the time.
+
+Changes from default configurations
+-----------------------------------
+
+Planets added to Advanced Rocketry
+Removed ores from IE: Copper, Lead, Silver, Nickel
+  (Will generate from Thermal Foundation instead)
+Removed ores from IE: Uranium
+  (Will generate from NuclearCraft instead)
+Removed ores from Mekanism: Copper, Tin
+  (Will generate from Thermal Foundation instead)
+Removed ores from ProjectRed: Copper, Tin, Silver
+  (Will generate from Thermal Foundation instead)
+Removed ores from Advanced Rocketry: Copper, Tin, Aluminum
+  (Will generate from TF/IE instead)
+Removed ores from LandCraft: Thorium
+  (Will generate from NuclearCraft instead)
+Removed ores from NuclearCraft: Copper, Tin, Lead
+  (Will generate from TF instead)
+Aether portal requires skyroot bucket (via Aether config)
+Twilight Portal activated with empowered diamatine (via TwiFo config)
+End Portal requires end key (via Restricted Portals)
+Don't generate dimensional shards outside RFT dimensions (via RFT config)
+Created ReCom structures for miniboss dungeons
+Added keys using ContentTweaker
+Gated Erebus to EnderIO (via Crafttweaker)
+Gated Landia to IE (via Crafttweaker)
+Gated Hunting Dimension to TE (via Crafttweaker)
+Gated mining world to RFT (via Crafttweaker)
+Gated deep dark to EU2 tech (via Crafttweaker)
+Skyroot can be created using Botania (via Crafttweaker)
+Wither drops iron key (via Crafttweaker)
+Big Brother drops tin key (via Crafttweaker)
+Valkyrie Queen treasure chest contains silver key (via data folder defaults)
+Disabled the betweenlands main menu
+Disabled the Aether tips
+AE2 press tweaks (inspired by ATM3)
+Copied AR machine recipes from ATM3, since the defaults are so badly fukt
+Created a utility dimension (using rft) to hold redstone mechanisms
+Added a new recipe for iron gears (using a stick)
+  (resolves conflict with aether rings)
+Set EnderIO's protectAgainstEnergyOverflow to SOFT
+  (stops explosions from connecting universal cables to EIO device)
+  (apparently Mekanism is doing something not entirely kosher with the
+  Forge energy API; although this may have been fixed in the current version)
+Enabled Nuclearcraft materials to drop from vanilla ores
+Now generating the utility dimension from a RC structure
+  (so modded block IDs aren't mangulated)
+  (Still not sure how to make sure this chunk gets force loaded)
+Enabled Iridium generation in AR
+Explicitly mapped Biomes O' Plenty biome IDs to not conflict (hopefully)
+Disabled /back, /home, /spawn, and /warp in FTButils
+Disabled block-o-bones in Erebus, since it overrides TMG
+
+Changes in 1.1
+--------------
+
+Added four new keys: Earth, air, fire, water
+Keys are dropped as 'fragments' that must be activated with items from
+  their respective realm
+Earth fragment is in the Erebus, dropped from the Antlion overlord, activated
+  with exoskeleton plates, mahogany sapling, and jade at the Botania runic altar
+Water fragment is in the Betweenlands, dropped from the Primordial 
+  Malevolence, activated with valonite, spirit tree sapling and a wight
+  heart with the Landia crafting altar, activated by murdering a squid.
+Air fragment is in the Aether, in the slider labyrinth treasure chest,
+  activated with a moa egg, golden oak sapling, and enchanted gravitite
+  in the Thaumcraft infusion alter, with some Aer essentia
+Fire fragment is found in the Nether, in a new dungeon, activated with
+  glowstone, a ghast tear, and nether wart in the IE arc furnace.
+
+The quest reward system has been reworked. Instead of loot crates, the
+  player will be awarded with currency which can be spent in the
+  'shop' quest line. (Taking a page out of Ozone 3's playbook here.)
+  Items in the shop will generally unlock as they're discovered in
+  the game
+Landia crafting altar component recipes changed to not require post-end
+  materials (since it's required to access the End)
+The silver key is now in the Valkyrie's treasure chest, rather than dropped
+  from the Queen herself.
+Electrode blueprints for the arc furnace are now craftable. Fuck going on
+  hunting expeditions, we've got enough of those as is :P
+All quests are now always visible, and will register completed items
+  even when locked.
+Trash button from Quark only appears on the inventory screen.
+  (It overlaps a lot of other UIs)
+Disabled the varied chests/bookshelves/trapdoors/etc in Quark
+  (Makes it harder to get the 'normal' versions)
+Profiled resources for JER
+Skyroot sapling is now obtained from conjuration catalyst
+  (which is Elven-tier technology)
+Hunting dimension frame is now made with a resuable morb containing a
+  zombie, and some resonant ender, instead of a TE upgrade
+
+Changes in 1.2
+--------------
+
+Added OreExcavaor
+Tweaked the Plagued Sky mod. Spread is now hard limited to 500 blocks per
+  minute. (Adjustable in the configuration) A similar limit applies to
+  decay once the dragon's egg is placed
+More meaningful questline names
+Dilithium now only spawns on the moon
+Added HarvestCraft and Nutrition
+Fixed a bug in the HarvestCraft config where juniper berries didn't drop
+  from frost gardens
+Added JSON files for AgriCraft to support recent plant additions to
+  HarvestCraft
+Added JSON files for Agricraft to support LandCraft crops
+Added LandCraft and NuclearCraft support to Nutrition
+Removed a spurious recipe for pizza slices from Harvestcraft
+Added missing recipes for HarvestCraft seeds
+You now get Harvestcraft items for killing Quarks' crabs and frogs.
+  You can craft the harvestcraft items into the Quark items if you need them
+Twilight forest venison can now be used in Harvestcraft recipes
+Swapped planetary biomes around a bit. Mercury is now stormland (a hot biome
+  better suited to a planet like Mercury), while Crystal Chasms has been moved
+  over to Callisto (completely arbitrary.)
+NuclearCraft thorium and depleted fuel blocks can now be used as heat sources
+  for IE's thermoelectric generator. Supercold ice works as a cold source as
+  well.
+Blocks of valuables now generate in planets. 
+  Check the worldgen tab in JEI to find out where.
+Added Biomes O' Plenty and Realistic Terrain Gen
+  (RTG is still in beta; your mileage may vary)
+  Select either BoP or RTG world types in the New World screen to use them
+Added JustEnoughIDs (BoP pushed it over the edge)
+Fixed a bug that caused garbage to be pregenerated into the spatial io
+  dimension (causing pregenerated spatial io units not to work)
+Wider variety of blocks for dragonscale to decay into
+
+Changes in 1.3
+--------------
+
+Dimensions and mods now must (mostly) be unlocked in a given order. Once a mod
+  is unlocked, it functions (more or less) as normal. Quest lines will be
+  unlocked as mods become available.
+Tweaked the ExtraTiC config so the Trash trait doesn't generate loot with
+  invalid metadata
+Blacklisted dimension -2 (space stations) from slime generation
+Changed the progression for the magic mods so you don't have to progress
+  so far in the previous one to unlock the next one
+Added a Big Brother drop for the weather wand, to ensure that he always
+  drops at least one.
+Removed most mob drop changes from ZenScript files and moved them to loot
+  table files, since they seem to work more reliably.
+Tarantula Brood Mother and Antlion Overlord no longer drop their keys
+  directly; they are instead crafted from the eggs they drop.
+  (They appear not to have loot table files for me to modify)
+The Wither also does not drop its key directly, since it also has no loot
+  table (at least in this version of Minecraft). The key is now crafted
+  from a wither star.
+Due to the above, Big Brother now drops an 'inert' nether star, which can
+  be activated by combining it with a regular nether star, yielding two
+  stars. This prevents you from skipping the Wither fight.
+
+Changes in 1.4
+--------------
+
+The pack has been renamed to "Creeping Dark". ('plaguesky' is still used
+  internally)
+The 'linear' version is now the only version. The previous linear version
+  is now just 1.3.
+Added AromaBackup
+Added Tomb Many Graves. Disabled OpenBlocks graves.
+Added Storage Drawers
+Added FTBUtils
+Added LagGoggles
+Added Controlling
+Updated the plaguesky mod: No longer seeds chunks when nobody is in the
+  overworld. Also removed a lot of debugging spam output to the console.
+Reduced teleport sound volume in Waystones. Also enabled Journeymap
+  integration
+New logo screen. Now 5% less rubbish!
+Some more, higher-tier shop loot. A use for all those platinum
+  coins you've been hoarding
+
+Questions
+=========
+
+(Mostly duplicates of what's in the official Readme)
+
+Q: I see a console message about objects being summoned?
+A: That's a redstone mechanism I have hidden away in a utility dimension
+that recreates certain objects. You can just ignore the message.
+
+Q: The Blaze boss spatial IO isn't loading or regenerating, or the 
+'Swamp Magic' frequency isn't showing up in the entangloporter
+A: Apparently my utility dimension gets nuked sometimes. Why? Haven't
+a goddamn clue. To fix this, try exiting your world/restarting the server a
+couple times. It should get regenerated every time the world loads.
+
+Q: RFTools dimensions don't seem to be generating dimensional shard ore
+A: If the base block of the dimension isn't plain stone, ore generation won't
+occur. (This is part of Minecraft's own oregen mechanics.) Try generating
+more dimensions until you get one with a base material of stone.
+
+Q: The rocket assembler does nothing when I try to scan or build a rocket
+A: I ran into this once... try making the structure tower a little taller,
+even if it looks like you have enough.
+
+Q: When I try to run a standalone server, it runs obscenely slowly
+A: Try adding the 'nogui' option. The GUI really fucks everything up
+for god knows what reason
+
+Q: Minibosses aren't spawning when running a standalone server
+A: Edit your server.properties and enable command blocks
+
+Known Dimensions
+================
+
+-343800852: Spectre cage
+-11325: Deep Dark
+-9999: EU2 Quarry
+-127: Tropics
+-6: Mining World
+-2: AR space dimension
+-1: Nether
+0: Overworld
+1: End
+2: AE2 storage dimension
+4: Aether
+7: Twilight Forest
+17: Atum
+20: Betweenlands
+66: Erebus
+87: My utility dimension (RFTools)
+150+: AR planets (See config\advRocketry\planetDefs.xml for details)
+1304: Landia (No longer present in 1.5+)
+4598: NuclearCraft wasteland dimension
+28885: Hunting Dimension
+
+Technical Notes
+===============
+
+(A.k.a. Miscellaneous notes about the inner workings for myself/anyone else
+that wants to work on the pack)
+
+This pack does a few mildly novel things, and I'm far from an expect on
+Minecraft's deep inner workings, so I've pulled a few things that could
+charitably be called 'chicanery'.
+
+Most of the novel changes are implemented either in the custom mod Plagued
+Skies, or using CraftTweaker and friends. There is nothing particularly
+unusual about such changes; you can check the sources and scripts for the
+details.
+
+Some configuration options in various mods have been used to 'gate' the mod to
+the appropriate point in progression. In particular:
+
+* Aether portals require skyroot buckets; skyroot can now be acquired using
+  Botania
+* The Twilight Forest activation object is changed to an object created using
+  Actually Additions tech
+* Ores for various mods have been restricted to certain dimensions
+
+Most of the other 'gates' are accomplished by editing recipes using
+CraftTweaker.
+
+The Betweenlands talisman has been gated by changing the loot table for the
+druids; the talisman now needs Mekanism tech to 'activate' one of the pieces.
+
+One of the things included is a 'utility' dimension, in the form of a custom
+RFTools dimension. This dimension has two main purposes:
+
+1. To activate the Talisman Head when piped in from a tangloporter
+2. To generate the Void City spatial dungeon when the disk is removed from the
+   ender chest, and also to respawn the disk in the chest.
+
+These both are redstone contrpations, using a few modded blocks, and command
+blocks. It also uses a '/loadchunk' command (added by the Plagued Skies mod)
+to ensure certain chunks get loaded, and chunkloaders activated. The utility
+dimension itself is spawned from a Recurrent Structure on world load, though
+the chunks seem to not get loaded until the world is loaded a *second* time.
+This is a long-standing bug that so far I've been too lazy to fix.
+
+One of the mods used is defaultworldgenerator-port. This is used to copy some
+predefined data into each newly created world. Some of the things included
+here include:
+
+* Loot tables for mob drops. This has proven more reliable than CraftTweaker's
+  builtin methods for adding mob drops. See the Minecraft wiki on loot tables
+  to see the format of these files.
+* Data files for RFtools dimensions, for a custom RFTools dimension that
+  spawns in every world
+* Data files establishing AE2 spatial storage chambers
+* A pre-populated EnderStorage ender chest
+
+It also executes commands on world load to spawn and chunkload the utility
+dimension.
+
+The files are located in config\defaultworldgenerator-port\common.
+
+Recurrent Complex is used to spawn 'dungeons' containing minibosses in various
+places, containing quest items. Most of them are marked 'active', meaning they
+generate in the world automatically, but some of them are 'inactive', and
+generated explictly by the utility dimension, or world load commands.
+
+One of the dungeons in the game is the Void City, which is located in the
+Spatial Storage dimension. The dungeon is rather large (it's just a copied End
+City), so rather than have the player build an enormous spatial IO chamber,
+they instead build a smaller one, zap *themselves* inside it, and a
+redstone-activated command block teleports them to the dungeon proper. This
+contraption is spawned with the void city, and is actually inside the bedrock
+box in the corner.
+
+The spatial disk for this entry chamber is located in an Ender Chest, the code
+for which is given in the quests.
+
+The End Portal has been 'keyed' using a mod called Restricted Portals.
+
+One thing I attempted but later abandoned, was to have the ability to launch
+rockets from dimensions other than Earth (or AR planets). AR has the ability
+to add other dimensions to its solar systems, but my attempts to add suitable
+dimensions resulted in nondeterministic crashes, so I gave up on it.
+
+The pack has a custom 'credits' message that displays when returning from the
+end. This is accomplished by having ResourceLoader load and override the
+minecraft:texts/end.txt resource. I have no idea how 'kosher' this is, but it
+seems to work.
+
+Genesis
+=======
+
+(A.k.a. "Some ramblings about the creation of the pack for those that care")
+
+For some time now I've had the idea rattling around the inside of my head of a
+mod pack centered around exploring the various extradimensional realms of the
+modded Minecraft universe. At the same time, I got the idea of creating a pack
+with a tangible goal -- an actual reason to progress through the various tech
+trees, besides "some questbook told me to."
+
+It occured to me to have the End locked away, with the various keys hidden in
+the various dimensions. Each dimension could then be gated to a tech mod. A
+player would then need to progress through the techcs and explore the
+dimensions to acccess the End and kill the Dragon.
+
+And yet I still felt a need for a concrete reason to embark on such a quest. A
+tangible reward. High stakes.
+
+I vaguely recall an episode of the Shaft where they talked about a modded
+server -- early in the days of modded Minecraft -- where, once the sun set, it
+wouldn't rise again until the Dragon was defeated. This piqued my interest.
+But perpetually dark worlds are a huge pain in the ass; it's just an endless
+spam of mobs.
+
+But then, I hit on a variation on a theme -- The sun would rise and set as
+usual... but the sky would slowly be blotted out bt cancerous growths.
+Something that would be gradual and more controllable.
+
+That's the moment I decided this was a pack I was interested in playing.
+
+I began making my plans for the pack. I would include some of the most common
+tech/magic, and dimension mods (and a few less common), and gate the latter to
+the former. Progressing through a teceh mod would yield access to a dimension,
+and a key fragment would be acquired by killing a boss or miniboss.
+
+Gating dimensions was fairly simple; Craftweaker could be used to alter
+recipes for gateway items. Some mods even had configurable gateways.
+Craftweaker also had the ability to modify loot tables for mobs, so bosses
+could be made to drop keys.
+
+For dimensions lacking native bosses, Recurrant Complex could be used to spawn
+custom dungeons with minibosses -- Usually just a buffed mundane mob with
+custom drops. The design of these dungeons were fairly simple -- easy for my
+simple mind to handle. Mainly they were built from simple geometric shapes,
+made with the help of Worldedit, decorated with blocks from Chisel, and
+populated with spawners.
+
+Restricting access to the End was accomplished using Restricted Portals, which
+could require a set item to use either a Nether portal or an End portal;
+obviously I only used the latter for this project.
+
+Another essential mod was defaultworldgenerator-port. This mod allowed me to
+have world data inserted into every new world created. This allowed me to have
+a small utility dimension pre-generated in each new world, along with a
+Spatial IO chamber, along with some loot tables that Craftweaker wasn't able
+to alter.
+
+ContentTweaker was another essential piece of the puzzle. While Craftweaker on
+its own can redefine recipes, it can't insert completely new items.
+ContentTweaker (an addon to Craftweaker) provided me with that ability, and
+with that, the ability to add the various keys to unlock the End.
+
+However, the key feature of the mod -- the plagued sky -- required delving
+into the world of mod development. This was perhaps the most difficult part of
+the project, since there really is no comprehensive documentation on the
+subject. Once you get past the basics of adding items, blocks and recipes,
+you're on your own. Everything past that point is a matter of searching Google
+and examining existing code.
+
+Thankfully, the requirements were fairly simple -- some indestructable blocks
+that would randomly spawn at the build limit, and slowly spread to adjacent
+spaces, similarly to how grass spreads. Really, the hard part was figuring out
+how to optimize the spread; as it turns out, it's a rather CPU intensive
+process. I'm fairly sure the culprit is the fact that the game has to
+recalculate light levels every time a block is inserted between the sun and
+the ground. At any rate, the answer I came up with was (1) batch all updates
+to occur once a minute, resulting in occasional lag spikes rather than
+constant slowness, and (2) placing a hard limit on how many updates occurred
+with every spread, to keep the lag in check.
+
+One design decision of note is the makeup of the keys. The materials weren't
+arbitrary; at least, in the sense that, I didn't make them up. They're
+actually a bit of history from classical antiquity: The Five Cardinal Gems --
+considered especially rare and precious at the time -- and the Seven Metals
+of Antiquity -- the metals known and identified since prehistoric times.
+
+At any rate, I put everything together, gave it a playthrough, ironed out the
+numerous bugs, and was happy with it.
+
+---
+
+I've revised the pack a few times, adding a few new features and tweaking the
+mechanics a bit.
+
+One of the things I felt was a bit lacking in the original version was, a lot
+of content in several mods went unused. At least, not used as part of the main
+quest. Things like Jade -- an important material of the Erebus -- or the
+various minerals of the Aether, or even much of the Immersive Engineering
+machinery.
+
+My answer was to add four more keys. Once again I took a page out of antique
+history, and made them the Four Classical Elements. These keys would be
+different from the others; the bosses and minibosses wouldn't drop the keys
+themselves, but just the cores, which had to be crafted into the full key. I
+even went a step further, and had each key associated with the dimension that
+most represented its element, and also required crafting processes which
+likewise represented its element. It also features another concept cribbed
+from antique classification: Each key requires a piece of animal, vegetable,
+and mineral from its respective realm.
+
+Thus, we have the water key: Retrieved from the swampy Betweenlands, using
+the crafting altar of the stormy Landia, and requiring the sacrifice of a
+water creature -- a squid. The air key: Retrieved from the sky realm of the
+Aether, and crafted in the infusion altar with Aer essense. The earth key:
+Retrieved from the underground Erebus, and crafted in Botania's infusion
+alter, requiring a piece of livingrock to finish. And finally, the fire key:
+Retrieved from the fiery nether, and requiring the heat of the Arc Furnace to
+reconstitute.
+
+I also took this opportunity to add Thaumcraft to the mix, giving the player
+even more opportunities for magical exploration. In addition, I revamped the
+quest reward system. Instead of questing granting crates of random loot, I
+stole a page out of Project Ozone 3's playbook, and gave out currency as a
+reward, which could be used to buy raw materials as they were unlocked. Also,
+many minor tweaks were made to make the pack a little more user-friendly.
+
+Finally, I tweaked some portal recipes to make them seem more natural.
+Whereas some mod packs have altered recipes that felt obviously contrived, 
+I've tried to make the altered recipes seem like a natural fit, instead of
+being clearly designed just to make the quests work.
+
+I was not entirely successful originally, and feel like I'm not entirely
+successful now, but I believe I've improved matters a bit. Originally the
+hunting dimension portal was crafted from a Thermal Expansion upgrade kit.
+While this certainly made use of the various new alloys and materials
+introduced by TE, it certainily didn't feel natural. Instead, now it's crafted
+by capturing a zombie in a morb (which seems fitting for the resulting
+dimension), and dunking it in a bucket of resonant ender.
+
+Similarly, in the original version, skyroot was initially acquired by crafting
+pixie dust (Elven gateway-tier materials) with a plain sapling. While this
+feels fairly reasonable, I changed it to something that feels even more
+natural: It is transmuted using the conjuration catalyst. This still requires
+elven technology, but it fits in well with the existing alchemy catalyst
+recipes for changing sapling varieties.

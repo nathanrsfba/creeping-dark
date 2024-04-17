@@ -1,0 +1,24 @@
+{
+	title: "Sludge",
+	icon: "thebetweenlands:sludge_ball",
+	x: 4.0d,
+	y: 1.5d,
+	text: [
+		"Just a wad of filth. But useful for summoning eldritch horrors."
+	],
+	dependencies: [
+		"1fd04681"
+	],
+	tasks: [{
+		uid: "27325d4d",
+		type: "item",
+		items: [{
+			item: "thebetweenlands:sludge_ball"
+		}]
+	}],
+	rewards: [{
+		uid: "c6eb33bc",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

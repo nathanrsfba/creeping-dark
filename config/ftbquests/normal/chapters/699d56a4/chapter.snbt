@@ -1,0 +1,16 @@
+{
+	title: "MC Squared",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "appliedenergistics2:storage_cell_1k",
+		tag: {}
+	},
+	description: [
+		"Applied Energistics"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

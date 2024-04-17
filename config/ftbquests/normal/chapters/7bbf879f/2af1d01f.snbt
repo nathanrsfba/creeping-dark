@@ -1,0 +1,42 @@
+{
+	title: "Magic Wand",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "botania:twigwand",
+		tag: {
+			color1: 0,
+			color2: 0
+		}
+	},
+	x: 1.0d,
+	y: -0.5d,
+	text: [
+		"Basically, Botania's version of a wrench."
+	],
+	dependencies: [
+		"be0aadeb"
+	],
+	dependency_requirement: "all_started",
+	tasks: [{
+		uid: "1c4b9827",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "botania:twigwand",
+			tag: {
+				color1: 0,
+				color2: 0
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "1914a976",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	title: "Genetic Engineering",
+	icon: "enderio:block_slice_and_splice",
+	x: 2.5d,
+	y: 0.5d,
+	text: [
+		"Use the heads of your fallen enemies ... as circuitry?"
+	],
+	dependencies: [
+		"9aa9c23b"
+	],
+	tasks: [{
+		uid: "07b70bfb",
+		type: "item",
+		items: [{
+			item: "enderio:block_slice_and_splice"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "57050b9c",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

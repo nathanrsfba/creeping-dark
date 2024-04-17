@@ -1,0 +1,25 @@
+{
+	title: "Cyber Controller",
+	icon: "appliedenergistics2:controller",
+	x: -6.0d,
+	y: -1.0d,
+	text: [
+		"You'll need an ME controller in order to connect more than 8 devices in an ME network"
+	],
+	dependencies: [
+		"2abd4eef"
+	],
+	dependency_requirement: "one_started",
+	tasks: [{
+		uid: "ec49ae1f",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:controller"
+		}]
+	}],
+	rewards: [{
+		uid: "15ee188f",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

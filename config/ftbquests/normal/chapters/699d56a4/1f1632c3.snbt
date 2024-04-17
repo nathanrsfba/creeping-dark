@@ -1,0 +1,33 @@
+{
+	title: "Walter White",
+	icon: "ae2stuff:grower",
+	x: -1.5d,
+	y: -3.0d,
+	text: [
+		"You'll need one of these to grow pure crystals. It runs on AE power, so you'll need an energy acceptor to run it from RF power.",
+		"",
+		"You can also use it to grow fluix crystals, instead of tossing the ingredients into water."
+	],
+	dependencies: [
+		"c0f0224f"
+	],
+	tasks: [{
+		uid: "e7cb3288",
+		type: "item",
+		items: [{
+			item: "ae2stuff:grower"
+		}]
+	},
+	{
+		uid: "e33ba7bf",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:energy_acceptor"
+		}]
+	}],
+	rewards: [{
+		uid: "10cacf69",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

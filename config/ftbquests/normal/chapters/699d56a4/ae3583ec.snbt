@@ -1,0 +1,52 @@
+{
+	title: "The Sky is Falling",
+	icon: "appliedenergistics2:sky_stone_block",
+	x: -4.5d,
+	y: -1.5d,
+	text: [
+		"The good news: You don't have go hunting all over the countryside for meteorites anymore. You just need to find one. You can duplicate whatever press(es) you find and convert them into the others using sky stone dust.",
+		"",
+		"If you're having trouble finding even a single meteor, build a meteorite compass."
+	],
+	tasks: [{
+		uid: "73864c22",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 14"
+		}]
+	},
+	{
+		uid: "19e78ad0",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 15"
+		}]
+	},
+	{
+		uid: "33c1d775",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 13"
+		}]
+	},
+	{
+		uid: "8cae2890",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 19"
+		}]
+	},
+	{
+		uid: "2dcfd93e",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:sky_stone_block 16"
+		}],
+		count: 16L
+	}],
+	rewards: [{
+		uid: "edef3025",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

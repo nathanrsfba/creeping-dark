@@ -1,0 +1,32 @@
+{
+	title: "Chunky",
+	icon: "tropicraft:chunk",
+	x: 3.5d,
+	y: 1.0d,
+	text: [
+		"Find some Chunks O' Head.",
+		"",
+		"There are three ways to get them:",
+		"",
+		"1. Find and murder an Easter Island Head mob. You'll need a pickaxe to kill it.",
+		"",
+		"2. Find an Easter Island Head statue and mine the blocks it's made of. Careful of the lava inside.",
+		"",
+		"3. Find a volcano, which is also made of chunk. Obviously the same caveat about lava applies."
+	],
+	dependencies: [
+		"e51e3ef1"
+	],
+	tasks: [{
+		uid: "8c18491a",
+		type: "item",
+		items: [{
+			item: "tropicraft:chunk"
+		}]
+	}],
+	rewards: [{
+		uid: "d5b1ef6b",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

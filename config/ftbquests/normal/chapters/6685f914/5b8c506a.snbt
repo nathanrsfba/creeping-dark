@@ -1,0 +1,112 @@
+{
+	title: "Terry Tibbs",
+	icon: "minecraft:iron_ingot",
+	x: -2.5d,
+	y: 0.0d,
+	text: [
+		"You'll need to smelt those metal ores into ingots to make use of them. You could just dump them in a furnace... but eventually you'll want something that will increase your ore output. One option is the various crushing machines (see the Don't Breathe This! quest). Another is the Tinker's Construct smeltery. (See the book Materials and You)"
+	],
+	dependencies: [
+		"627c3307"
+	],
+	dependency_requirement: "all_started",
+	tasks: [{
+		uid: "8efe2c19",
+		type: "item",
+		title: "Copper Ingot",
+		icon: "thermalfoundation:material 1 128",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "ingotCopper",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotCopper"
+				}
+			}
+		}]
+	},
+	{
+		uid: "4d25a8cf",
+		type: "item",
+		title: "Silver Ingot",
+		icon: "thermalfoundation:material 1 130",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "ingotSilver",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotSilver"
+				}
+			}
+		}]
+	},
+	{
+		uid: "684dab5f",
+		type: "item",
+		items: [{
+			item: "minecraft:gold_ingot"
+		}]
+	},
+	{
+		uid: "4233922f",
+		type: "item",
+		title: "Tin Ingot",
+		icon: "thermalfoundation:material 1 129",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "ingotTin",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotTin"
+				}
+			}
+		}]
+	},
+	{
+		uid: "15db3a03",
+		type: "item",
+		items: [{
+			item: "minecraft:iron_ingot"
+		}]
+	},
+	{
+		uid: "61bbfee0",
+		type: "item",
+		title: "Lead Ingot",
+		icon: "thermalfoundation:material 1 131",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "ingotLead",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotLead"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "2b279463",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	title: "Watery Grave",
+	icon: "tconstruct:casting 1 1",
+	x: -5.0d,
+	y: -4.0d,
+	text: [
+		"You'll need to use the Smeltery to reconstitute the water key. Place the sapling, some valonite, and a wight heart into the smeltry and let them melt and combine. Then put a casting basin under the faucet, put the core in it, then pour the smeltery contents onto it."
+	],
+	dependencies: [
+		"cc0eb8df",
+		"51a7caae",
+		"c77c6685",
+		"b4dd590b",
+		"585787e9"
+	],
+	tasks: [{
+		uid: "f9ea6c9e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:waterkey"
+		}]
+	}],
+	rewards: [{
+		uid: "5f4e8215",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

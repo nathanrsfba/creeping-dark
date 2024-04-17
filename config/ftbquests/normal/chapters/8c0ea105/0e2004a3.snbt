@@ -1,0 +1,26 @@
+{
+	title: "High Tech Alchemy",
+	icon: "actuallyadditions:block_atomic_reconstructor",
+	x: -1.0d,
+	y: -2.0d,
+	text: [
+		"Zaps stuff into other stuff.",
+		"",
+		"Handy tip: Right-click it with a redstone torch until it's in 'pulse' mode. Then place it on top of a block, put a wood pressure plate in front of it, and throw stuff onto the pressure plate to zap it."
+	],
+	dependencies: [
+		"43a2bab9"
+	],
+	tasks: [{
+		uid: "7d2cd325",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_atomic_reconstructor"
+		}]
+	}],
+	rewards: [{
+		uid: "6ea42e7d",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

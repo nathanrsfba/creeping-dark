@@ -1,0 +1,26 @@
+{
+	title: "Protection",
+	icon: "thebetweenlands:items_misc 1 23",
+	disable_toast: true,
+	x: -5.0d,
+	y: -4.0d,
+	text: [
+		"Find a rubber tree, and right-click it with a syrmorite bucket. Then smelt it."
+	],
+	dependencies: [
+		"1fd04681"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "a7672831",
+		type: "item",
+		items: [{
+			item: "thebetweenlands:items_misc 1 23"
+		}]
+	}],
+	rewards: [{
+		uid: "90354134",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

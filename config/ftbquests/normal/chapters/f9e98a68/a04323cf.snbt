@@ -1,0 +1,26 @@
+{
+	title: "Fires of Hell and Damnation",
+	icon: "immersiveengineering:stone_decoration 1 2",
+	x: -4.0d,
+	y: -2.0d,
+	text: [
+		"To reconstitute the key, you'll need to build an arc smelter. Then, put the core into furnace, along with the wart, tear, and glowstone. Then give it §olots§r of power."
+	],
+	dependencies: [
+		"eff86bfc",
+		"ccea7ffb",
+		"47b5999b"
+	],
+	tasks: [{
+		uid: "7989c168",
+		type: "item",
+		items: [{
+			item: "contenttweaker:firekey"
+		}]
+	}],
+	rewards: [{
+		uid: "a667529b",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

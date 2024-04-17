@@ -1,0 +1,50 @@
+{
+	title: "Elven Gateway",
+	icon: "botania:alfheimportal",
+	x: -2.5d,
+	y: 1.0d,
+	text: [
+		"The Elven Gateway will open a portal to Alfheim, allowing you to trade with the Elves for rare and valuable resources.",
+		"",
+		"Read the Lexica Botania to learn how to build the structure."
+	],
+	dependencies: [
+		"44e60fc2"
+	],
+	tasks: [{
+		uid: "28f39bf1",
+		type: "item",
+		items: [{
+			item: "botania:livingwood 8"
+		}],
+		count: 8L
+	},
+	{
+		uid: "0c63cb89",
+		type: "item",
+		items: [{
+			item: "botania:livingwood 3 5"
+		}],
+		count: 3L
+	},
+	{
+		uid: "0b305941",
+		type: "item",
+		items: [{
+			item: "botania:alfheimportal"
+		}]
+	},
+	{
+		uid: "1c39b2ce",
+		type: "item",
+		items: [{
+			item: "botania:pylon 2 1"
+		}],
+		count: 2L
+	}],
+	rewards: [{
+		uid: "82eee757",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

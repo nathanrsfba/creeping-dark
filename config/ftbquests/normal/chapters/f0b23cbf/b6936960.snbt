@@ -1,0 +1,24 @@
+{
+	title: "Wizard of Osmium",
+	icon: "mekanism:ingot 1 1",
+	x: -4.5d,
+	y: -1.0d,
+	text: [
+		"An essential element of all Mekanism machines"
+	],
+	dependencies: [
+		"9452a68e"
+	],
+	tasks: [{
+		uid: "4eb3f478",
+		type: "item",
+		items: [{
+			item: "mekanism:ingot 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "c72d336c",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

@@ -1,0 +1,37 @@
+{
+	title: "Forks and knives not included",
+	icon: "thermalfoundation:material 1 320",
+	x: -2.5d,
+	y: -0.5d,
+	text: [
+		"You'll need a way to make metal plates. You could just hammer some out with the engineer's hammer... but that's inefficient. You could build a Metal Press (see the Engineer's Manual), or a Compactor, or just smelt them in the Tinker's Smeltery."
+	],
+	dependencies: [
+		"6b9cf0dc"
+	],
+	tasks: [{
+		uid: "ff197b82",
+		type: "item",
+		title: "Copper Plate",
+		icon: "thermalfoundation:material 1 320",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "plateCopper",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any plateCopper"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "003102ba",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

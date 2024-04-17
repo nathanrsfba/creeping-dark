@@ -1,0 +1,25 @@
+{
+	title: "Swamp Things",
+	icon: "thebetweenlands:swamp_reed_item",
+	x: -3.5d,
+	y: -1.5d,
+	text: [
+		"These grow like sugar cane in watery, swampy biomes"
+	],
+	dependencies: [
+		"1fd04681"
+	],
+	dependency_requirement: "all_started",
+	tasks: [{
+		uid: "82e3a347",
+		type: "item",
+		items: [{
+			item: "thebetweenlands:swamp_reed_item"
+		}]
+	}],
+	rewards: [{
+		uid: "71bd59e1",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

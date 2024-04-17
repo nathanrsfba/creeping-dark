@@ -1,0 +1,36 @@
+{
+	title: "Shocking!",
+	icon: "immersiveengineering:graphite_electrode",
+	x: -2.5d,
+	y: -3.5d,
+	text: [
+		"Smelt the graphite dust, and use the workbench to make electrodes out of it."
+	],
+	dependencies: [
+		"5c4d2040",
+		"c7606fe2"
+	],
+	tasks: [{
+		uid: "1a38f4df",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:material 12 19"
+		}],
+		count: 12L
+	},
+	{
+		uid: "ea128a74",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:graphite_electrode"
+		}],
+		count: 3L,
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d8e002d0",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

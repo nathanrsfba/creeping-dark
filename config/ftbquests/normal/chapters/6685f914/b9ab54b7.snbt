@@ -1,0 +1,150 @@
+{
+	title: "Don't Breathe This!",
+	icon: "thermalfoundation:material",
+	x: -5.5d,
+	y: 0.0d,
+	text: [
+		"You'll need a way to turn metals (and other materials) into dust. Not only are they required for crafting, but they can also double your ore output.",
+		"",
+		"Some early options are:",
+		" * Crusher (Actually Additions)",
+		" * Manufactory (Nuclearcraft)",
+		"",
+		"Some later options you can use as you unlock mods:",
+		" * Pulverizer (Thermal Expansion)",
+		" * Enrichment chamber and Crusher (Mekanism)",
+		" * Sag Mill (Ender IO)",
+		" * Quartz Grindstone (Applied Energistics) -- has to be hand-cranked, but the only option that doesn't require power",
+		"",
+		"Not all machines are capable of crushing all items... use JEI to see what does what!"
+	],
+	dependencies: [
+		"627c3307"
+	],
+	dependency_requirement: "all_started",
+	tasks: [{
+		uid: "f202924a",
+		type: "item",
+		title: "Iron Dust",
+		icon: "thermalfoundation:material",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "dustIron",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustIron"
+				}
+			}
+		}]
+	},
+	{
+		uid: "f6ef6daa",
+		type: "item",
+		title: "Copper Dust",
+		icon: "thermalfoundation:material 1 64",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "dustCopper",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustCopper"
+				}
+			}
+		}]
+	},
+	{
+		uid: "5a81389a",
+		type: "item",
+		title: "Tin Dust",
+		icon: "thermalfoundation:material 1 65",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "dustTin",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustTin"
+				}
+			}
+		}]
+	},
+	{
+		uid: "9f48c990",
+		type: "item",
+		title: "Silver Dust",
+		icon: "thermalfoundation:material 1 66",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "dustSilver",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustSilver"
+				}
+			}
+		}]
+	},
+	{
+		uid: "d53b0a61",
+		type: "item",
+		title: "Gold Dust Woman",
+		icon: "thermalfoundation:material 1 1",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "dustGold",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustGold"
+				}
+			}
+		}]
+	},
+	{
+		uid: "5ec4d394",
+		type: "item",
+		title: "Lead Dust",
+		icon: "thermalfoundation:material 1 67",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "dustLead",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any dustLead"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "941f483f",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	title: "Beam me up!",
+	icon: "mekanism:teleportationcore",
+	x: -0.5d,
+	y: -6.5d,
+	text: [
+		"The key to teleportation technology"
+	],
+	dependencies: [
+		"ab8a7c1b"
+	],
+	tasks: [{
+		uid: "3a2e2b04",
+		type: "item",
+		items: [{
+			item: "mekanism:teleportationcore"
+		}]
+	}],
+	rewards: [{
+		uid: "2df88520",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

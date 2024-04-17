@@ -1,0 +1,28 @@
+{
+	title: "Magical Trees",
+	icon: "thaumcraft:log_silverwood",
+	x: 3.5d,
+	y: -1.5d,
+	text: [
+		"Unlike money, magic§  apparently §odoes§r grow on trees."
+	],
+	tasks: [{
+		uid: "72aaf203",
+		type: "item",
+		items: [{
+			item: "thaumcraft:log_greatwood"
+		}]
+	},
+	{
+		uid: "4faeea04",
+		type: "item",
+		items: [{
+			item: "thaumcraft:log_silverwood"
+		}]
+	}],
+	rewards: [{
+		uid: "b5e68660",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

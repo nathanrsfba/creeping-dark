@@ -1,0 +1,24 @@
+{
+	title: "Walter Wight",
+	icon: "thebetweenlands:wight_heart",
+	x: 4.0d,
+	y: -4.5d,
+	text: [
+		"Kill these undead beings and tear the heart out of ... what's left of their chest"
+	],
+	dependencies: [
+		"1fd04681"
+	],
+	tasks: [{
+		uid: "fc9c9a42",
+		type: "item",
+		items: [{
+			item: "thebetweenlands:wight_heart"
+		}]
+	}],
+	rewards: [{
+		uid: "5ee399ff",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

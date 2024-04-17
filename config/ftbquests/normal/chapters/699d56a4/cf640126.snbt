@@ -1,0 +1,25 @@
+{
+	title: "ME Shuffle",
+	icon: "appliedenergistics2:io_port",
+	x: -3.0d,
+	y: 1.5d,
+	text: [
+		"Used to move stuff into or out of storage units en masse... and also needed for Spatial IO"
+	],
+	dependencies: [
+		"2abd4eef",
+		"de6af314"
+	],
+	tasks: [{
+		uid: "34112607",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:io_port"
+		}]
+	}],
+	rewards: [{
+		uid: "25d2d1f5",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

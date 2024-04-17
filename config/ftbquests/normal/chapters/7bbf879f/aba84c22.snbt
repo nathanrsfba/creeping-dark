@@ -1,0 +1,32 @@
+{
+	title: "I want flames!",
+	icon: {
+		id: "botania:specialflower",
+		tag: {
+			type: "endoflame"
+		}
+	},
+	x: -0.5d,
+	y: -0.5d,
+	text: [
+		"One of the most basic mana-generating flowers, this generates mana by burning solid fuels"
+	],
+	dependencies: [
+		"3ed7abb9"
+	],
+	tasks: [{
+		uid: "8e2d7009",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "endoflame"
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "6080cfde",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

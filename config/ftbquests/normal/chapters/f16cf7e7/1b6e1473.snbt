@@ -1,0 +1,25 @@
+{
+	title: "Alembic",
+	icon: "thebetweenlands:alembic",
+	x: 2.5d,
+	y: 1.5d,
+	text: [
+		"Purify alchemical infusions"
+	],
+	dependencies: [
+		"6b66fc45"
+	],
+	tasks: [{
+		uid: "ee7cc953",
+		type: "item",
+		items: [{
+			item: "thebetweenlands:alembic"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6a55fa57",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

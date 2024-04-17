@@ -1,0 +1,25 @@
+{
+	title: "Genesis",
+	icon: "rftoolsdim:dimension_builder",
+	x: -2.5d,
+	y: -0.5d,
+	text: [
+		"Once you have a dimension tab, you'll need to put it into the world builder, and wait for it to create the world."
+	],
+	dependencies: [
+		"33d7f31d"
+	],
+	tasks: [{
+		uid: "6ed691d6",
+		type: "item",
+		items: [{
+			item: "rftoolsdim:dimension_builder"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "428dc845",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

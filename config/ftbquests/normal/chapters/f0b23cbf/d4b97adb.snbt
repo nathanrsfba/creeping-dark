@@ -1,0 +1,25 @@
+{
+	title: "ResoNates",
+	icon: "extrautils2:resonator",
+	x: -6.0d,
+	y: -4.0d,
+	text: [
+		"Like a crafting table... but requires Grid Power. (Read the EU2 manual to learn how to generate it)"
+	],
+	dependencies: [
+		"99eae7d4",
+		"8970e2a3"
+	],
+	tasks: [{
+		uid: "5fb3d4b8",
+		type: "item",
+		items: [{
+			item: "extrautils2:resonator"
+		}]
+	}],
+	rewards: [{
+		uid: "721ac949",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

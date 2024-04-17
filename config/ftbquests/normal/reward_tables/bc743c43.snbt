@@ -1,0 +1,68 @@
+{
+	title: "Common",
+	loot_size: 1,
+	rewards: [{
+		item: "minecraft:iron_ingot",
+		count: 16
+	},
+	{
+		item: "appliedenergistics2:material",
+		count: 16
+	},
+	{
+		item: "minecraft:quartz",
+		count: 16
+	},
+	{
+		item: "minecraft:coal",
+		count: 16
+	},
+	{
+		item: "minecraft:clay_ball",
+		count: 16,
+		weight: 2
+	},
+	{
+		item: "minecraft:string",
+		count: 8,
+		weight: 2
+	},
+	{
+		item: "minecraft:gunpowder",
+		count: 10,
+		weight: 2
+	},
+	{
+		item: "thermalfoundation:material 1 128",
+		count: 16
+	},
+	{
+		item: "thermalfoundation:material 1 129",
+		count: 16
+	},
+	{
+		item: "thermalfoundation:material 1 131",
+		count: 16
+	},
+	{
+		item: "thermalfoundation:material 1 132",
+		count: 16
+	},
+	{
+		item: "mekanism:ingot 1 1"
+	},
+	{
+		item: "minecraft:glass",
+		count: 64
+	}],
+	loot_crate: {
+		string_id: "common",
+		item_name: "Common",
+		color: 16777215,
+		drops: {
+			boss: 0,
+			passive: 0,
+			monster: 0
+		}
+	}
+}

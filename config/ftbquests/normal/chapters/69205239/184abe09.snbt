@@ -1,0 +1,21 @@
+{
+	title: "Silicon",
+	icon: "libvulpes:productingot 1 3",
+	x: -1.5d,
+	y: -0.5d,
+	text: [
+		"You could build the Electric Arc Smelter to make this. But the NuclearCraft manufactory is probably easier."
+	],
+	tasks: [{
+		uid: "7668d3e9",
+		type: "item",
+		items: [{
+			item: "libvulpes:productingot 1 3"
+		}]
+	}],
+	rewards: [{
+		uid: "9efa2be9",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

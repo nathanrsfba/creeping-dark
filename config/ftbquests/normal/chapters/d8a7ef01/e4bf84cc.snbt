@@ -1,0 +1,25 @@
+{
+	title: "Soul Slavery",
+	icon: "enderio:block_soul_binder",
+	x: 1.0d,
+	y: 0.5d,
+	text: [
+		"Use the souls of your fallen enemies ... in machinery?"
+	],
+	dependencies: [
+		"9aa9c23b"
+	],
+	tasks: [{
+		uid: "f7d9e8a0",
+		type: "item",
+		items: [{
+			item: "enderio:block_soul_binder"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "1177eaf7",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

@@ -1,0 +1,33 @@
+{
+	title: "Octocap",
+	icon: "enderio:item_basic_capacitor 1 2",
+	x: 4.0d,
+	y: 0.5d,
+	text: [
+		"These will improve the performance of your machines. They're also necessary for some of the advanced machihnes"
+	],
+	dependencies: [
+		"47eabc1f",
+		"5f57bda8"
+	],
+	dependency_requirement: "all_started",
+	tasks: [{
+		uid: "57ce3659",
+		type: "item",
+		items: [{
+			item: "enderio:item_basic_capacitor 1 1"
+		}]
+	},
+	{
+		uid: "fa3e9b0f",
+		type: "item",
+		items: [{
+			item: "enderio:item_basic_capacitor 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "2d9e8939",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

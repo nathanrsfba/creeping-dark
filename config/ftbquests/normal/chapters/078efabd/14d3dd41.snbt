@@ -1,0 +1,37 @@
+{
+	title: "Slagging Off",
+	icon: "thermalfoundation:material 1 864",
+	x: -3.5d,
+	y: -2.5d,
+	text: [
+		"You'll need to make Slag, which can be done in two ways:",
+		"",
+		"* Smelt some metal dusts in the Induction Smelter",
+		"",
+		"* Make some steel in the IE Blast Furnace"
+	],
+	tasks: [{
+		uid: "2bebac4d",
+		type: "item",
+		title: "Slag",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "itemSlag",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any itemSlag"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "354e40a1",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

@@ -1,0 +1,57 @@
+{
+	title: "Into the Erebus",
+	icon: "erebus:gaean_keystone",
+	x: 4.0d,
+	y: 2.0d,
+	text: [
+		"The Lead Key is hidden away in the Erebus... an underground world of giant arthropods.",
+		"",
+		"Build a portal frame (similar to a Nether portal) out of stone bricks, fill it with leaves, plonk the keystone in front of it and place the staff on it.",
+		"",
+		"Very important: There will be a return portal built on the other side when you enter the Erebus... but it will be deactivated. You'll need to build a second staff to return... or bring some other manner of teleportation with you."
+	],
+	dependencies: [
+		"12c51e79",
+		"b47d7fc3"
+	],
+	tasks: [{
+		uid: "859fcfec",
+		type: "item",
+		items: [{
+			item: "erebus:gaean_keystone"
+		}]
+	},
+	{
+		uid: "021d6fcd",
+		type: "item",
+		items: [{
+			item: "minecraft:stonebrick 10"
+		}],
+		count: 10L
+	},
+	{
+		uid: "b7149d3f",
+		type: "item",
+		title: "Leaves",
+		icon: "minecraft:leaves",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "treeLeaves",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any treeLeaves"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "1eae434a",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

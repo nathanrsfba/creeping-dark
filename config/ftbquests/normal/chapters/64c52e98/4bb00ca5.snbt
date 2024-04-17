@@ -1,0 +1,20 @@
+{
+	title: "Arcane Crafting",
+	x: -1.0d,
+	y: -3.0d,
+	text: [
+		"A crafting table that combines Vis from the atmosphere with objects to make magical items.",
+		"",
+		"(You need to pick up the table to complete the quest)"
+	],
+	dependencies: [
+		"049b0fcf"
+	],
+	tasks: [{
+		uid: "6043ede0",
+		type: "item",
+		items: [{
+			item: "thaumcraft:arcane_workbench"
+		}]
+	}]
+}

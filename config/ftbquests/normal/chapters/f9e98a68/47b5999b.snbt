@@ -1,0 +1,30 @@
+{
+	title: "Unimpressed",
+	icon: {
+		id: "openblocks:trophy",
+		tag: {
+			entity_id: "minecraft:ghast"
+		},
+		Damage: 17s
+	},
+	x: -5.5d,
+	y: -2.0d,
+	text: [
+		"The Fire Key Core is held by a ghast in the Nether. Look for him in a fortress build in his likeness"
+	],
+	dependencies: [
+		"2ec6a63f"
+	],
+	tasks: [{
+		uid: "d99db6ff",
+		type: "item",
+		items: [{
+			item: "contenttweaker:firekeyfrag"
+		}]
+	}],
+	rewards: [{
+		uid: "f5863c55",
+		type: "ftbmoney:money",
+		ftb_money: 512L
+	}]
+}

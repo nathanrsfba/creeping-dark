@@ -1,0 +1,26 @@
+{
+	title: "Cappa",
+	icon: "enderio:item_basic_capacitor",
+	x: 5.5d,
+	y: 2.0d,
+	text: [
+		"You'll need to make quite a few of these."
+	],
+	dependencies: [
+		"031c96a4",
+		"5b8c506a"
+	],
+	dependency_requirement: "all_started",
+	tasks: [{
+		uid: "243fb696",
+		type: "item",
+		items: [{
+			item: "enderio:item_basic_capacitor"
+		}]
+	}],
+	rewards: [{
+		uid: "fd39ff95",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

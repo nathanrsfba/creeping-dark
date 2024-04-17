@@ -1,0 +1,32 @@
+{
+	title: "RTFM (Botanical edition)",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "botania:lexicon",
+		tag: {}
+	},
+	x: -0.5d,
+	y: -3.5d,
+	text: [
+		"Not technically required. But it tells you how to do stuff."
+	],
+	tasks: [{
+		uid: "6a1e7d5f",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "botania:lexicon",
+			tag: {}
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "1004f1f6",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

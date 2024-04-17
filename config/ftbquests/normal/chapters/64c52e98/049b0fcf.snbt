@@ -1,0 +1,37 @@
+{
+	title: "RTFM (Thaumological edition)",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "thaumcraft:thaumonomicon"
+	},
+	x: -2.5d,
+	y: -3.0d,
+	text: [
+		"§o§o§rYou really §odo§r need this one to progress.",
+		"",
+		"To progress in Thaumcraft, you have to study various lines of research in the Thaumononicon. Many lines of research require the appropriate knowledge in a given field; these requirements will be shown at the bottom of the first page of that section.",
+		"",
+		"To gain knowledge, scan items with the thaumometer, or do research at the research table."
+	],
+	dependencies: [
+		"3d11744f"
+	],
+	tasks: [{
+		uid: "25045ed4",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "thaumcraft:thaumonomicon"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f00d0e28",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

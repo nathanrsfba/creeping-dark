@@ -1,0 +1,25 @@
+{
+	title: "Perchance.",
+	icon: "thebetweenlands:moss_bed_item",
+	x: -2.0d,
+	y: -1.5d,
+	text: [
+		"Once you have some syrmorite, make some shears, grab some moss and make a bed. Else you might respawn in a highly hostile environment"
+	],
+	dependencies: [
+		"b17715e5"
+	],
+	dependency_requirement: "all_started",
+	tasks: [{
+		uid: "768b6214",
+		type: "item",
+		items: [{
+			item: "thebetweenlands:moss_bed_item"
+		}]
+	}],
+	rewards: [{
+		uid: "db545a14",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

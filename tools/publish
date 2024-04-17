@@ -1,0 +1,117 @@
+#!/bin/sh
+
+# Name of the pack
+NAME="Creeping Dark"
+# Pack author (ideally, Curse username)
+AUTHOR="NathanRsfba"
+# Folders to include
+OVERRIDES="mods config scripts structures resources"
+# Editor to write release notes in
+EDITOR="vim"
+# Remote Git repository
+REPO="origin"
+
+# github release title
+title() {
+    echo -n "$NAME v"
+    echo "$version" | sed -e 's/a/ Alpha /' -e 's/b/ Beta /'
+}
+
+# Pack filename
+filename() {
+    local name="`echo $NAME | sed 's/ /-/g'`"
+    name="`echo $name | tr '[:upper:]' '[:lower:]'`"
+    echo "$name-`version`.zip"
+}   
+
+# git tag to create
+tag() {
+    echo "v`version`"
+}
+
+# Pack version
+version() {
+    local tag="$version"
+    if echo "$tag" | grep -q a; then
+        tag="`echo "$tag" | sed 's/a/-alpha./'`"
+    elif echo "$tag" | grep -q b; then
+        tag="`echo "$tag" | sed 's/b/-beta./'`"
+    fi
+    echo $tag
+}
+
+# Determine if this is a prerelease
+prerelease() {
+    echo "$version" | grep -q '[ab]'
+}
+
+# End of configuration
+
+while getopts "t?" opt; do
+    case $opt in
+        t) test='echo';;
+        ?)
+            echo "Usage: `basename "$0"` [-t] version"
+            echo ""
+            echo "-t        Test: Display what is to be done"
+            echo ""
+            echo "version   Version of pack to publish"
+            exit
+            ;;
+    esac
+done
+
+shift $(($OPTIND - 1))
+
+if [ "$1" = "" ]; then
+    exec $0 '-?'
+fi
+
+
+version="$1"
+pkg="$NAME-`version`.zip"
+if prerelease; then
+    opts="-p"
+fi
+
+if [ $test ]; then
+    echo "Pack will be created with the following attributes:"
+    echo "Name:         $NAME"
+    echo "Author:       $AUTHOR"
+    echo "Pack version: `version`"
+    echo "Title:        `title`"
+    echo "Filename:     `filename`"
+    echo "Git tag:      `tag`"
+    echo -n "Prerelease:   "
+    if prerelease; then
+        echo "Yes"
+    else
+        echo "No"
+    fi
+
+    echo "Included directories:"
+    for dir in $OVERRIDES; do
+        echo "$dir"
+    done
+
+    echo "Commands that will be run:"
+fi
+
+echo "Running editor to edit release notes..."
+$test "$EDITOR" release.txt || exit 1
+
+echo "Creating pack file..."
+$test tools/mkpkg.py -n "$NAME" -a "$AUTHOR" "`version`" $OVERRIDES || exit 1
+$test mv "$pkg" "`filename`" || exit 1
+
+echo "Tagging git repo..."
+if [ "`git tag --points-at HEAD`" = "" ]; then
+    $test git tag "`tag`" || exit 1
+fi
+
+echo "Pushing repo..."
+$test git push "$REPO" "`git branch --show-current`" "`tag`"
+
+echo "Publishing to GitHub..."
+$test gh release create -t "`title`" -F release.txt "$opts" "`tag`" "`filename`" || exit 1
+

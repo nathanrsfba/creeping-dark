@@ -1,0 +1,24 @@
+{
+	title: "Silicon fab",
+	icon: "advancedrocketry:itemcircuitplate",
+	x: 1.5d,
+	y: 1.0d,
+	text: [
+		"Build a Precision Assembler and add some gold and redstone to the wafer to make circuitry"
+	],
+	dependencies: [
+		"5be3ad63"
+	],
+	tasks: [{
+		uid: "bc4094c6",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:itemcircuitplate"
+		}]
+	}],
+	rewards: [{
+		uid: "1c9499e5",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

@@ -1,0 +1,23 @@
+{
+	title: "Into the Nether",
+	icon: "minecraft:obsidian",
+	x: -2.0d,
+	y: -2.0d,
+	text: [
+		"To get into the Nether, you'll first need to get some Obsidian and a Flint and Steel. The simplest way to get Obsidian is to pour water onto lava and bash it out with a diamond (or better) pick, but if you're willing to dig into JEI a little you might find some machines to make it for you instead."
+	],
+	dependencies: [
+		"5b8c506a"
+	],
+	dependency_requirement: "all_started",
+	tasks: [{
+		uid: "2bdb9f0b",
+		type: "dimension",
+		dim: -1
+	}],
+	rewards: [{
+		uid: "f0130fd1",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

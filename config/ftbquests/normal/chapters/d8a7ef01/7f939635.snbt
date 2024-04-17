@@ -1,0 +1,21 @@
+{
+	title: "Headhunter",
+	icon: "enderio:block_enderman_skull",
+	x: 2.5d,
+	y: -1.0d,
+	text: [
+		"You'll probably want to get a sword with Beheading on it for this one."
+	],
+	tasks: [{
+		uid: "b85929b1",
+		type: "item",
+		items: [{
+			item: "enderio:block_enderman_skull"
+		}]
+	}],
+	rewards: [{
+		uid: "0e82d9db",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

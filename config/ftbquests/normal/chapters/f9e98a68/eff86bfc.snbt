@@ -1,0 +1,38 @@
+{
+	title: "Nether Bits",
+	icon: "minecraft:nether_wart",
+	x: -2.5d,
+	y: -2.0d,
+	text: [
+		"You'll need a bit of glowstone, nether wart, and a ghast tear."
+	],
+	dependencies: [
+		"2ec6a63f"
+	],
+	tasks: [{
+		uid: "087be19b",
+		type: "item",
+		items: [{
+			item: "minecraft:nether_wart"
+		}]
+	},
+	{
+		uid: "918510cf",
+		type: "item",
+		items: [{
+			item: "minecraft:ghast_tear"
+		}]
+	},
+	{
+		uid: "059ca5a9",
+		type: "item",
+		items: [{
+			item: "minecraft:glowstone_dust"
+		}]
+	}],
+	rewards: [{
+		uid: "7edcf5d3",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

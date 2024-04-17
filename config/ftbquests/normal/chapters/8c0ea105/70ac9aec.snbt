@@ -1,0 +1,24 @@
+{
+	title: "Labors of Hercules",
+	icon: "twilightforest:trophy 1 2",
+	x: 2.0d,
+	y: 1.0d,
+	text: [
+		"The Ruby Key is guarded by the Hydra. Find him in his lair in the Fire Swamp. Kill him."
+	],
+	dependencies: [
+		"c20517e8"
+	],
+	tasks: [{
+		uid: "7ff69c94",
+		type: "item",
+		items: [{
+			item: "contenttweaker:rubykey"
+		}]
+	}],
+	rewards: [{
+		uid: "ffdf8ad4",
+		type: "ftbmoney:money",
+		ftb_money: 4096L
+	}]
+}

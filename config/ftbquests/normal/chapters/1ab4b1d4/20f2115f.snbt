@@ -1,0 +1,40 @@
+{
+	title: "Starlight Crafting",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "astralsorcery:blockaltar",
+		Damage: 1s
+	},
+	x: 0.5d,
+	y: 2.5d,
+	text: [
+		"The third tier of Astral crafting.",
+		"",
+		"This crafting altar is actually part of a multiblock structure. Consult the Astral Tome to see how to build it.",
+		"",
+		"(The ritual actually upgrades the Luminous crafting table in place. Just pick it up to complete the quest.)"
+	],
+	dependencies: [
+		"add64d94",
+		"cc9597cb",
+		"627c3307"
+	],
+	tasks: [{
+		uid: "21fbf0da",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:blockaltar",
+			Damage: 1s
+		}]
+	}],
+	rewards: [{
+		uid: "24c4bc0d",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

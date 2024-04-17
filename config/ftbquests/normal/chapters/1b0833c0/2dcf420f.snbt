@@ -1,0 +1,31 @@
+{
+	title: "Tropical Gems",
+	icon: "tropicraft:azurite",
+	x: 2.0d,
+	y: 1.0d,
+	text: [
+		"Go mining to find some Azurite and Zircon"
+	],
+	dependencies: [
+		"e51e3ef1"
+	],
+	tasks: [{
+		uid: "a42f0666",
+		type: "item",
+		items: [{
+			item: "tropicraft:azurite"
+		}]
+	},
+	{
+		uid: "63932e0b",
+		type: "item",
+		items: [{
+			item: "tropicraft:zircon"
+		}]
+	}],
+	rewards: [{
+		uid: "77dc395a",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

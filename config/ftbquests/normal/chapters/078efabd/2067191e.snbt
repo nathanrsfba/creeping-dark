@@ -1,0 +1,24 @@
+{
+	title: "Just Like The Curse...",
+	icon: "contenttweaker:huntericon",
+	x: -0.5d,
+	y: -1.0d,
+	text: [
+		"The Tin Key is hidden in the everlasting darkness of the Hunting World, guarded by the Lost Hunter. Look for him atop the Horned Tower."
+	],
+	dependencies: [
+		"5c58048d"
+	],
+	tasks: [{
+		uid: "e580e1a0",
+		type: "item",
+		items: [{
+			item: "contenttweaker:tinkey"
+		}]
+	}],
+	rewards: [{
+		uid: "4f219a17",
+		type: "ftbmoney:money",
+		ftb_money: 512L
+	}]
+}

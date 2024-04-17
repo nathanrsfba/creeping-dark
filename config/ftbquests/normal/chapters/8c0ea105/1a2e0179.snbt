@@ -1,0 +1,32 @@
+{
+	title: "If you only knew the [Em]power...",
+	icon: "actuallyadditions:block_empowerer",
+	x: 0.5d,
+	y: -2.0d,
+	text: [
+		"Like the Thaumcraft infusion alter... but more technical."
+	],
+	dependencies: [
+		"0e2004a3"
+	],
+	tasks: [{
+		uid: "b26377e0",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_display_stand 4"
+		}],
+		count: 4L
+	},
+	{
+		uid: "11e8faa7",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_empowerer"
+		}]
+	}],
+	rewards: [{
+		uid: "69892f66",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

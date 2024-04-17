@@ -1,0 +1,37 @@
+{
+	title: "Dimensions (Neither temporal nor relative)",
+	icon: "rftoolsdim:empty_dimension_tab",
+	x: -4.0d,
+	y: -0.5d,
+	text: [
+		"You'll need dimensional shards to build the portal to the mining world... and they can only be found within artificial dimensions.",
+		"",
+		"First, you need a blank dimension tab, and a dimension enscriber to write to it.",
+		"",
+		"You can just shovel the tab into the enscriber and create a random dimension, or build dimlets in a dimlet workbench, using bits of dimlets you've looted."
+	],
+	dependencies: [
+		"4f6e4f14"
+	],
+	tasks: [{
+		uid: "998bbbb6",
+		type: "item",
+		items: [{
+			item: "rftoolsdim:dimension_enscriber"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "251e4e0e",
+		type: "item",
+		items: [{
+			item: "rftoolsdim:empty_dimension_tab"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b198d553",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

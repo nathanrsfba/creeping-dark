@@ -1,0 +1,24 @@
+{
+	title: "The Cure",
+	icon: "minecraft:dragon_egg",
+	x: -2.5d,
+	y: 1.0d,
+	text: [
+		"Find her. Kill her. Place her egg in the world to end the plague."
+	],
+	dependencies: [
+		"a3082803"
+	],
+	tasks: [{
+		uid: "dd52d8a3",
+		type: "item",
+		items: [{
+			item: "minecraft:dragon_egg"
+		}]
+	}],
+	rewards: [{
+		uid: "fc9fb89b",
+		type: "ftbmoney:money",
+		ftb_money: 4096L
+	}]
+}

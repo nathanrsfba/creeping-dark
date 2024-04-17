@@ -1,0 +1,25 @@
+{
+	title: "Spread 'em",
+	icon: "botania:spreader",
+	x: 2.5d,
+	y: -0.5d,
+	text: [
+		"The Mana Spreader transports mana over short distances"
+	],
+	dependencies: [
+		"be0aadeb"
+	],
+	dependency_requirement: "all_started",
+	tasks: [{
+		uid: "578a7a00",
+		type: "item",
+		items: [{
+			item: "botania:spreader"
+		}]
+	}],
+	rewards: [{
+		uid: "00e16f25",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

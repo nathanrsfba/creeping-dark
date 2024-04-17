@@ -1,0 +1,26 @@
+{
+	title: "Inscriber",
+	icon: "appliedenergistics2:inscriber",
+	x: -3.0d,
+	y: -1.5d,
+	text: [
+		"You'll need these to make ME circuits. Unlike most ME machines, these run on RF power.",
+		"",
+		"You can also make advanced inscribers. Those do run on AE power, so you'll need to power it from an energy acceptor"
+	],
+	dependencies: [
+		"c0f0224f"
+	],
+	tasks: [{
+		uid: "f1a24a79",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:inscriber"
+		}]
+	}],
+	rewards: [{
+		uid: "f7239907",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

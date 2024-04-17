@@ -1,0 +1,56 @@
+{
+	title: "Rocky",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "astralsorcery:itemrockcrystalsimple",
+		tag: {
+			astralsorcery: {
+				crystalProperties: {
+					collectiveCapability: 100,
+					size: 400,
+					fract: 0,
+					purity: 100,
+					sizeOverride: -1
+				}
+			}
+		}
+	},
+	x: 0.5d,
+	y: 1.0d,
+	text: [
+		"Hold the wand in your hand and walk around at night until you see sparkles in the ground. Then dig."
+	],
+	dependencies: [
+		"503fa398",
+		"627c3307"
+	],
+	tasks: [{
+		uid: "5717d8bc",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemrockcrystalsimple",
+			tag: {
+				astralsorcery: {
+					crystalProperties: {
+						collectiveCapability: 100,
+						size: 400,
+						fract: 0,
+						purity: 100,
+						sizeOverride: -1
+					}
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "729cf73b",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

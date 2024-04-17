@@ -1,0 +1,44 @@
+{
+	title: "Melty Tank",
+	icon: "tconstruct:smeltery_controller",
+	x: -5.0d,
+	y: -5.5d,
+	text: [
+		"Chances are you already have a smeltery by now. But in case you don't: You'll need one to reconstitute the Water Key.",
+		"",
+		"The Smeltery is a multiblock structure. Consult Materials and You to learn how to build and use it."
+	],
+	tasks: [{
+		uid: "7318b79b",
+		type: "item",
+		items: [{
+			item: "tconstruct:smeltery_controller"
+		}]
+	},
+	{
+		uid: "ba057113",
+		type: "item",
+		items: [{
+			item: "tconstruct:smeltery_io"
+		}]
+	},
+	{
+		uid: "3fbeefef",
+		type: "item",
+		items: [{
+			item: "tconstruct:faucet"
+		}]
+	},
+	{
+		uid: "23f4784b",
+		type: "item",
+		items: [{
+			item: "tconstruct:casting 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "7f9943e3",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

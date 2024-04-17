@@ -1,0 +1,35 @@
+{
+	title: "Makes tea as well!",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "mekanism:machineblock",
+		Damage: 8s
+	},
+	x: -5.0d,
+	y: -9.5d,
+	text: [
+		"Makes a number of essential components for Mekansim machines"
+	],
+	dependencies: [
+		"b6936960"
+	],
+	tasks: [{
+		uid: "0d5e883f",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "mekanism:machineblock",
+			Damage: 8s
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d8bb4dbc",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

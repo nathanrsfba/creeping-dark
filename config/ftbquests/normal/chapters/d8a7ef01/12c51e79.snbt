@@ -1,0 +1,39 @@
+{
+	title: "An Earthen Staff has a knob on the end",
+	icon: "erebus:materials 1 38",
+	x: 4.0d,
+	y: 3.5d,
+	text: [
+		"Throw an obsidian, a diamond, and an emerald onto the offering table and wait a moment"
+	],
+	tasks: [{
+		uid: "59a6b565",
+		type: "item",
+		items: [{
+			item: "erebus:altar_offering"
+		}]
+	},
+	{
+		uid: "36f917c9",
+		type: "item",
+		items: [{
+			item: "erebus:materials 1 38"
+		}]
+	},
+	{
+		uid: "96f84510",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "erebus:portal_activator"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "c139c5b8",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

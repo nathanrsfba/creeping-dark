@@ -3,24 +3,214 @@ type = menu
 customization-meta {
   identifier = net.minecraft.client.gui.GuiMainMenu
   randomgroup = 1
-  renderorder = foreground
+  renderorder = background
   randommode = false
   randomonlyfirsttime = false
 }
 
 customization {
-  path = resources/creeping/textures/gui/bg.png
-  action = texturizebackground
+  name = mainbg
+  action = setbackgroundslideshow
+}
+
+customization {
+  keepaspectratio = true
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = top-left
+  x = 20
+  action = movebutton
+  y = 120
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  width = 120
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = top-left
+  x = 20
+  action = movebutton
+  y = 140
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  width = 80
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  orientation = top-left
+  x = 20
+  action = movebutton
+  y = 200
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  width = 120
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  orientation = top-left
+  x = 120
+  action = movebutton
+  y = 140
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = top-left
+  x = 20
+  action = movebutton
+  y = 100
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  width = 120
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  orientation = top-left
+  x = 20
+  action = movebutton
+  y = 160
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  width = 120
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  orientation = top-left
+  x = 20
+  action = movebutton
+  y = 180
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  width = 120
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=376346%
+  orientation = top-left
+  x = 100
+  action = movebutton
+  y = 140
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 135
+  width = 268
+  action = deep_customization_element:title_screen_forge_top
+  actionid = 46c65451-63d0-4ba4-ad95-aa37a3c467ca1666769876698
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 2
+  width = 169
+  action = deep_customization_element:title_screen_branding
+  actionid = 9468e3b4-e3a9-4116-ab95-e7f209150f861666769876703
+  y = 307
+  height = 40
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 310
+  width = 228
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = adc713dc-ba70-45c0-94b3-31b0fa8cbb111666769876704
+  y = 329
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 372
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = 27b06c4c-02ff-453a-9dbd-7eaebc3bc8601666769876705
+  y = 187
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 132
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = fc75dd81-162e-46fb-a5d7-20676713f6f41666769876705
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = true
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = a6be2e96-e6e4-4a59-b2be-f2d16b82e75d1666769876706
+  y = 0
+  height = 30
+}
+
+customization {
+  path = config/fancymenu/strip.png
+  orientation = top-left
+  x = 0
+  width = 160
+  actionid = ebced461-3829-42d8-a757-50e934b5a8381635325471156
+  action = addtexture
+  y = 0
+  height = 400
 }
 
 customization {
   path = resources/creeping/textures/gui/minecraft.png
-  orientation = top-centered
-  x = -97
-  width = 195
+  orientation = top-left
+  x = 5
+  width = 150
   actionid = b9676d7b-ff94-410e-81d6-eef151f770551625040884681
   action = addtexture
-  y = 14
-  height = 94
+  y = 12
+  height = 75
 }
 

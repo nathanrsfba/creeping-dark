@@ -1,0 +1,34 @@
+{
+	title: "Bring Me To Life",
+	icon: "thebetweenlands:items_misc 1 25",
+	x: 5.5d,
+	y: -1.5d,
+	text: [
+		"...the heart beats again!"
+	],
+	dependencies: [
+		"6f4a9a3e",
+		"b4dd590b",
+		"550fae51",
+		"0dcf41e0"
+	],
+	tasks: [{
+		uid: "cf79aaa4",
+		type: "item",
+		items: [{
+			item: "thebetweenlands:animator"
+		}]
+	},
+	{
+		uid: "6e2d7fc2",
+		type: "item",
+		items: [{
+			item: "thebetweenlands:items_misc 1 25"
+		}]
+	}],
+	rewards: [{
+		uid: "0fbb42c4",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

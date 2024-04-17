@@ -1,0 +1,41 @@
+{
+	title: "Mining Portal",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "aroma1997sdimension:miningmultitool"
+	},
+	x: -2.5d,
+	y: 1.0d,
+	text: [
+		"Once you have dimensional shards, you can now create the portal to the mining world."
+	],
+	dependencies: [
+		"70ebbf49"
+	],
+	tasks: [{
+		uid: "83b65a14",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "aroma1997sdimension:miningmultitool"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "b477d3ab",
+		type: "item",
+		items: [{
+			item: "aroma1997sdimension:portalframe 10"
+		}],
+		count: 10L
+	}],
+	rewards: [{
+		uid: "8bf9b73b",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

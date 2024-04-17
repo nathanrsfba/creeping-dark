@@ -1,0 +1,28 @@
+{
+	title: "Moo.",
+	icon: "twilightforest:trophy 1 6",
+	x: 0.5d,
+	y: 1.0d,
+	text: [
+		"Find the Labyrinth within the Twilight Swamp. Traverse the maze and find the Minoshroom, and kill him. Eat one of the Meef Stroganoff to gain access to the Hydra."
+	],
+	dependencies: [
+		"4954a4f1"
+	],
+	tasks: [{
+		uid: "cc4619de",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "twilightforest:meef_stroganoff"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "a8d69adb",
+		type: "ftbmoney:money",
+		ftb_money: 512L
+	}]
+}

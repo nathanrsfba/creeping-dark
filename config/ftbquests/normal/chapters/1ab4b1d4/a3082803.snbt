@@ -1,0 +1,44 @@
+{
+	title: "The Key To It All",
+	icon: "contenttweaker:endkey",
+	x: -2.5d,
+	y: 2.5d,
+	text: [
+		"Finally, you have everything you need to access the End.",
+		"",
+		"Craft the End Key from all the other keys. Find a stronghold, open the portal, and right-click it with the key to unlock it.",
+		"",
+		"Note that the key only unlocks the portal for §oyou§r. If you're playing multiplayer, you can duplicate the initial key by crafting it with an ender eye."
+	],
+	dependencies: [
+		"70ac9aec",
+		"0243bb23",
+		"c64e6889",
+		"fab63adc",
+		"08096143",
+		"8c4ad3c0",
+		"a04323cf",
+		"cee685f6",
+		"4d47e216",
+		"ebf86a2e",
+		"be5188c7",
+		"27908468",
+		"2067191e",
+		"7f5cd526",
+		"97df0f45",
+		"943480af",
+		"b461085a"
+	],
+	tasks: [{
+		uid: "842dd78b",
+		type: "item",
+		items: [{
+			item: "contenttweaker:endkey"
+		}]
+	}],
+	rewards: [{
+		uid: "aee2a9c6",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

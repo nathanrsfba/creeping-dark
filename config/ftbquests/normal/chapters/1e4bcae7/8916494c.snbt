@@ -1,0 +1,38 @@
+{
+	title: "Erebus Materials",
+	icon: "erebus:materials 1 1",
+	x: -6.0d,
+	y: -3.5d,
+	text: [
+		"Find a bit of animal, vegetable, and mineral from the Erebus to reconstitute the Earth key"
+	],
+	dependencies: [
+		"10d047d4"
+	],
+	tasks: [{
+		uid: "b617c794",
+		type: "item",
+		items: [{
+			item: "erebus:materials"
+		}]
+	},
+	{
+		uid: "d3e30514",
+		type: "item",
+		items: [{
+			item: "erebus:sapling_mahogany"
+		}]
+	},
+	{
+		uid: "7e629758",
+		type: "item",
+		items: [{
+			item: "erebus:materials 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "c5486b02",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

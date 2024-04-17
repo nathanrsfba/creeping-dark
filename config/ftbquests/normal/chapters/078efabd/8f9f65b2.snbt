@@ -1,0 +1,43 @@
+{
+	title: "Signalum",
+	icon: "thermalfoundation:material 1 165",
+	x: -0.5d,
+	y: -2.5d,
+	text: [
+		"Signalum is an alloy made of Copper, Silver and Redstone in a 3:1:10 ratio. It has a few uses, one of which is making locks for securing machines.",
+		"",
+		"There's a few ways to make it:",
+		"",
+		"* Signalum Blend plus sand in the Induction Smelter. (You'll need to use the Magma Crucible to melt down the redstone to make the blend)",
+		"",
+		"* Make Shibuichi alloy from Copper and Silver in the Alloy Furnace, then melt down some redstone in a Melter (or Magma Crucible) and pipe the whole lot into a Fluid Infuser",
+		"",
+		"* Throw all three in the Alloy Smelter",
+		"",
+		"* Throw all three into the Tinker's Smeltery"
+	],
+	tasks: [{
+		uid: "0b5dd62a",
+		type: "item",
+		title: "Signalum",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "ingotSignalum",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any ingotSignalum"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "389089d2",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

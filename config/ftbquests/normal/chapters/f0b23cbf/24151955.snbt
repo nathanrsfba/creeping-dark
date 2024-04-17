@@ -1,0 +1,24 @@
+{
+	title: "Long-Distance Nuclear Fusion",
+	icon: "extrautils2:passivegenerator",
+	x: -3.0d,
+	y: -4.0d,
+	text: [
+		"You'll need some grid power to run the resonator. There's several ways of generating it, but most of them require some solar power to get started."
+	],
+	dependencies: [
+		"99eae7d4"
+	],
+	tasks: [{
+		uid: "83012ee9",
+		type: "item",
+		items: [{
+			item: "extrautils2:passivegenerator"
+		}]
+	}],
+	rewards: [{
+		uid: "96480968",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

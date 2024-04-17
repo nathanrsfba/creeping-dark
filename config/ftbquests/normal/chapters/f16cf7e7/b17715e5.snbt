@@ -1,0 +1,39 @@
+{
+	title: "Don't Smoke This",
+	icon: "thebetweenlands:log_weedwood",
+	x: -1.0d,
+	y: -2.0d,
+	text: [
+		"These are some basic resources that you're going to want to find as soon as possible"
+	],
+	dependencies: [
+		"1fd04681"
+	],
+	tasks: [{
+		uid: "792e7745",
+		type: "item",
+		items: [{
+			item: "thebetweenlands:log_weedwood"
+		}],
+		ignore_damage: true
+	},
+	{
+		uid: "2ad547dc",
+		type: "item",
+		items: [{
+			item: "thebetweenlands:items_misc 1 11"
+		}]
+	},
+	{
+		uid: "1c50e4ee",
+		type: "item",
+		items: [{
+			item: "thebetweenlands:sulfur_torch"
+		}]
+	}],
+	rewards: [{
+		uid: "4ed9eea1",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

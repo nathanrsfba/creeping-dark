@@ -1,0 +1,18 @@
+{
+	title: "Star Bright",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "astralsorcery:itemwand",
+		tag: {
+			astralsorcery: {}
+		}
+	},
+	description: [
+		"Astral Sorcery and the End"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

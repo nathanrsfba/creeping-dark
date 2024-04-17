@@ -1,0 +1,31 @@
+{
+	title: "Ride of the Valkyries",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "aether_legacy:valkyrie_helmet"
+	},
+	x: 0.5d,
+	y: 2.5d,
+	text: [
+		"The Silver Key is held by the Queen Valkyrie in her temple in the sky. Kill ten of her minions, then talk to her.",
+		"",
+		"(Note that the key she drops §oisn't§o§r the silver key for the quest. You'll find that in her treasure chest, which you §owill§r need her key to open.)"
+	],
+	dependencies: [
+		"fc9ec406"
+	],
+	tasks: [{
+		uid: "13cb8b1e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:silverkey"
+		}]
+	}],
+	rewards: [{
+		uid: "df7de5d9",
+		type: "ftbmoney:money",
+		ftb_money: 4096L
+	}]
+}

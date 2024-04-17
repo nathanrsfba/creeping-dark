@@ -1,0 +1,30 @@
+{
+	title: "RTFM (Utilitarian edition)",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "extrautils2:book"
+	},
+	x: -6.0d,
+	y: -2.5d,
+	text: [
+		"Not strictly required... unless you acutally need to learn how to use all this stuff."
+	],
+	tasks: [{
+		uid: "f73182f8",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "extrautils2:book"
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "b8d494f1",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

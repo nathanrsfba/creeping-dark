@@ -1,0 +1,33 @@
+{
+	title: "Infusion",
+	icon: "thaumcraft:infusion_matrix",
+	x: 2.0d,
+	y: -1.5d,
+	text: [
+		"Mix liquid essentia with stuff to make new stuff"
+	],
+	dependencies: [
+		"6868eb6c",
+		"ff80c365"
+	],
+	tasks: [{
+		uid: "ae3ec73b",
+		type: "item",
+		items: [{
+			item: "thaumcraft:infusion_matrix"
+		}]
+	},
+	{
+		uid: "e777f25b",
+		type: "item",
+		items: [{
+			item: "thaumcraft:pedestal_arcane 4"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "2a7bf6f3",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

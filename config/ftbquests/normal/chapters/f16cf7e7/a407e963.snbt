@@ -1,0 +1,37 @@
+{
+	title: "Rock hard ingots",
+	icon: "mekanism:ingot",
+	x: 1.0d,
+	y: -8.0d,
+	text: [
+		"Make an osmium compressor, then throw in some refined obsidian and osmium"
+	],
+	dependencies: [
+		"49592d1e"
+	],
+	tasks: [{
+		uid: "7c0cef41",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "mekanism:machineblock",
+			Damage: 1s
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e8065b27",
+		type: "item",
+		items: [{
+			item: "mekanism:ingot"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "aa3ee356",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

@@ -1,0 +1,107 @@
+{
+	title: "JPL",
+	icon: "advancedrocketry:rocketbuilder",
+	x: -1.5d,
+	y: 5.5d,
+	text: [
+		"Everything needed to build a rocket.",
+		"",
+		"To build the launch pad, place down a square launch pad made out of launch pad blocks, place a vertical stack of structure towers on the outside edge (with one touching the side of the pad), and then put the assembling machine on the outside edge, one block above the launch pad.",
+		"",
+		"The rocket itself is a more-or-less freeform multiblock. As long as you have enough fuel and engines, you can make it any size and shape you want. You'll also need a seat to ride it, and a guidance computer to control where it goes.",
+		"",
+		"Note that there are two types of rockets you can build: Monopropellant or bipropellant. Check out the Fuel quest to learn the difference."
+	],
+	dependencies: [
+		"59581749",
+		"b419455f"
+	],
+	tasks: [{
+		uid: "fb035526",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:rocketbuilder"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "cec53ca4",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:launchpad 9"
+		}],
+		count: 9L,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "90f27258",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:structuretower 4"
+		}],
+		count: 4L,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "1f190e5e",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:seat"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "8c4f7909",
+		type: "item",
+		title: "Rocket Engine",
+		items: [{
+			item: "advancedrocketry:rocketmotor"
+		},
+		{
+			item: "advancedrocketry:advrocketmotor"
+		},
+		{
+			item: "advancedrocketry:bipropellantrocketmotor"
+		},
+		{
+			item: "advancedrocketry:advbipropellantrocketmotor"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "da5388e3",
+		type: "item",
+		title: "Fuel Tank",
+		items: [{
+			item: "advancedrocketry:fueltank"
+		},
+		{
+			item: "advancedrocketry:bipropellantfueltank"
+		},
+		{
+			item: "advancedrocketry:oxidizerfueltank"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "893cf3aa",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:guidancecomputer"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "fef211fb",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:planetidchip"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "50674b6e",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

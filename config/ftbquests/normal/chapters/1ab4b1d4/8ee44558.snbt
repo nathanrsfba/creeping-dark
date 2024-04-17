@@ -1,0 +1,38 @@
+{
+	title: "Mystic Shrine",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "astralsorcery:itemconstellationpaper",
+		tag: {
+			astralsorcery: {
+				constellationName: "astralsorcery.constellation.discidia"
+			}
+		}
+	},
+	x: -1.0d,
+	y: -0.5d,
+	text: [
+		"Search the world for a starlight shrine made of marble. Dig into it to find a mystic crystal, and some loot."
+	],
+	tasks: [{
+		uid: "84cd892d",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemconstellationpaper",
+			tag: {
+				astralsorcery: {}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4c862f66",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

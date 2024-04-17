@@ -2,14 +2,20 @@
 *~
 *.bak
 *.swp
+config.bak.json
 
 # End-user settings that for some reason live in config.
 # Don't want them spamming up the repo.
 config/jei/bookmarks.ini
 config/machinemuse/powersuits-keybinds.cfg
+config/jei/worldSettings.cfg
+
+# Various client-side crap that doesn't need to go in the repo
+config/thaumicjei_itemstack_aspects.json
 
 # Various crap that generally lives in the minecraft folder
 *.dll
+*.so
 /.ReAuth.cfg
 /.mixin.out
 /BotaniaVars.dat
@@ -17,7 +23,6 @@ config/machinemuse/powersuits-keybinds.cfg
 /astralsorcery
 /backups
 /betweenlands_gallery
-/config.json
 /crafttweaker.log
 /crash-reports
 /fonts
@@ -37,9 +42,34 @@ config/machinemuse/powersuits-keybinds.cfg
 /tv-cache
 /usercache.json
 /usernamecache.json
+/fancymenu_data
+/*.zip
+/release.txt
 icon.png
 libraries/
 minecraftinstance.json
+modmg.bat
+hs_err_*.log
+knownkeys.txt
+config.json
+
+# wtf?
+.fuse_hidden*
+
+# Server-related stuff
+banned-ips.json
+banned-players.json
+eula.txt
+forge-*.jar
+minecraft_server.*.jar
+ops.json
+server.bat
+server.properties
+whitelist.json
+/world
+
+# Don't even know where this one came from
+/encyclopedia-servers
 
 # Junctions to other local repositories
 /master

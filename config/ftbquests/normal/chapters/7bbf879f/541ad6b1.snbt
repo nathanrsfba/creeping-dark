@@ -1,0 +1,34 @@
+{
+	title: "Purity",
+	icon: {
+		id: "botania:specialflower",
+		tag: {
+			type: "puredaisy"
+		}
+	},
+	x: 1.0d,
+	y: -2.0d,
+	text: [
+		"A lot of Botania constructs require livingwood and livingrock... for which you'll need a Pure Daisy to create.",
+		"",
+		"Throw some water into the apothecary, throw in four white petals, and finally throw in some seeds."
+	],
+	dependencies: [
+		"3ed7abb9"
+	],
+	tasks: [{
+		uid: "a5adb32d",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "puredaisy"
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "37a54692",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

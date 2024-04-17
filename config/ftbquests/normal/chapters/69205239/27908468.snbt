@@ -1,0 +1,25 @@
+{
+	title: "Ill Intergalactic",
+	icon: "contenttweaker:axlicon",
+	x: 3.0d,
+	y: -0.5d,
+	text: [
+		"The Quicksilver key is held by a Vindicator on Alpha Centauri IIIa. Warp there, find him in his toroid tower, and kill him."
+	],
+	dependencies: [
+		"3d7bbcbf"
+	],
+	tasks: [{
+		uid: "787f2b98",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quicksilverkey"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "af20a32b",
+		type: "ftbmoney:money",
+		ftb_money: 512L
+	}]
+}

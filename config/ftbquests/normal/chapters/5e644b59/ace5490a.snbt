@@ -1,0 +1,33 @@
+{
+	title: "Hot Metal",
+	icon: "tconstruct:ingots",
+	x: -3.5d,
+	y: -0.5d,
+	text: [
+		"Metals found fairly commonly in the Nether, they make good Tinker's tools.",
+		"",
+		"You'll need an Obsidian pickaxe (made with the Tinkers crafting stations) to obtain them."
+	],
+	dependencies: [
+		"2ec6a63f"
+	],
+	tasks: [{
+		uid: "5c62e088",
+		type: "item",
+		items: [{
+			item: "tconstruct:ore"
+		}]
+	},
+	{
+		uid: "f56cde93",
+		type: "item",
+		items: [{
+			item: "tconstruct:ore 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "db7b8282",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

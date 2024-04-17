@@ -1,0 +1,33 @@
+{
+	title: "Wither Bait",
+	icon: "minecraft:skull 1 1",
+	x: -2.0d,
+	y: -0.5d,
+	text: [
+		"To summon the Wither, you'll need some soul sand and Wither skeleton skulls. You can usually find the latter in nether fortresses; a sword with a few levels of beheading are highly recommended."
+	],
+	dependencies: [
+		"2ec6a63f"
+	],
+	tasks: [{
+		uid: "bee7a4f8",
+		type: "item",
+		items: [{
+			item: "minecraft:soul_sand 4"
+		}],
+		count: 4L
+	},
+	{
+		uid: "2a7bf665",
+		type: "item",
+		items: [{
+			item: "minecraft:skull 3 1"
+		}],
+		count: 3L
+	}],
+	rewards: [{
+		uid: "e9a3e725",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

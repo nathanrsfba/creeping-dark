@@ -1,0 +1,31 @@
+{
+	title: "Nether Minerals",
+	icon: "minecraft:quartz",
+	x: -3.5d,
+	y: -2.0d,
+	text: [
+		"Reasonably abundant resources found in the Nether"
+	],
+	dependencies: [
+		"2ec6a63f"
+	],
+	tasks: [{
+		uid: "a55454d2",
+		type: "item",
+		items: [{
+			item: "minecraft:quartz"
+		}]
+	},
+	{
+		uid: "ebe36adc",
+		type: "item",
+		items: [{
+			item: "minecraft:glowstone_dust"
+		}]
+	}],
+	rewards: [{
+		uid: "c836bedd",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

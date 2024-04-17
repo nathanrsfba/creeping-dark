@@ -1,0 +1,25 @@
+{
+	title: "Use Your Head... actually use someone else's",
+	icon: "enderio:item_material 1 43",
+	x: 4.0d,
+	y: -1.0d,
+	text: [
+		"Turns out, enderman heads make for good control circuits"
+	],
+	dependencies: [
+		"6f210be9",
+		"7f939635"
+	],
+	tasks: [{
+		uid: "a9ecd19a",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 43"
+		}]
+	}],
+	rewards: [{
+		uid: "366afa5b",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

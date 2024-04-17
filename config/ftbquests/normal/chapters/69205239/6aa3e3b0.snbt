@@ -1,0 +1,26 @@
+{
+	title: "There And Back Again",
+	icon: "extrautils2:ingredients 1 5",
+	x: 3.0d,
+	y: 5.5d,
+	text: [
+		"Build a rocket (See the JPL quest for details), and fly it to the moon."
+	],
+	dependencies: [
+		"4e4ea937",
+		"8b3cffd7",
+		"59837150",
+		"b00f6b59"
+	],
+	tasks: [{
+		uid: "0b3ed379",
+		type: "dimension",
+		title: "Land on Luna",
+		dim: 152
+	}],
+	rewards: [{
+		uid: "dfbcd130",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

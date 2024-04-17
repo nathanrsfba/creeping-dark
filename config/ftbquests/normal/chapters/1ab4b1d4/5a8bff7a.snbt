@@ -1,0 +1,37 @@
+{
+	title: "Bright and Shiny",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "astralsorcery:blockaltar"
+	},
+	x: -1.0d,
+	y: 1.0d,
+	text: [
+		"The next tier of Astral crafting. Plonk a crafting table down in a mystical shrine and use it to craft one.",
+		"",
+		"You'll need starlight for this and many Astral devices. If a device isn't receiving enough starlight, you can try moving it to a different place in the world, or higher in altitude.",
+		"",
+		"You'll need an unobstructed view of the sky, which can be tricky when the sky is covered by disease. But there are other dimensions with clear night skies..."
+	],
+	dependencies: [
+		"8ee44558",
+		"627c3307"
+	],
+	tasks: [{
+		uid: "ae15aab0",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:blockaltar"
+		}]
+	}],
+	rewards: [{
+		uid: "3e5596dd",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

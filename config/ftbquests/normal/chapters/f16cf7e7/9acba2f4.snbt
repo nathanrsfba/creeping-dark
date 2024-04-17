@@ -1,0 +1,24 @@
+{
+	title: "Enrichment",
+	icon: "mekanism:enrichedalloy",
+	x: -3.5d,
+	y: -8.0d,
+	text: [
+		"Toss a piece of redstone and iron into the infuser"
+	],
+	dependencies: [
+		"dcc1c885"
+	],
+	tasks: [{
+		uid: "9a55f6c5",
+		type: "item",
+		items: [{
+			item: "mekanism:enrichedalloy"
+		}]
+	}],
+	rewards: [{
+		uid: "4a576ce6",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

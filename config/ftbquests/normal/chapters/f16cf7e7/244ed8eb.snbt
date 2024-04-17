@@ -1,0 +1,25 @@
+{
+	title: "Toothy crystal",
+	icon: "thebetweenlands:dentrothyst_shard_green",
+	x: -4.0d,
+	y: -3.0d,
+	text: [
+		"Look for these in the stumps of large weedwood trees"
+	],
+	dependencies: [
+		"1fd04681"
+	],
+	dependency_requirement: "all_started",
+	tasks: [{
+		uid: "cff9cfd5",
+		type: "item",
+		items: [{
+			item: "thebetweenlands:dentrothyst_shard_green"
+		}]
+	}],
+	rewards: [{
+		uid: "e96c7ffe",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

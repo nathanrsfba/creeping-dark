@@ -1,0 +1,42 @@
+{
+	title: "80386",
+	icon: "appliedenergistics2:material 1 24",
+	x: -3.0d,
+	y: 0.0d,
+	text: [
+		"You'll need lots of these for various ME devices"
+	],
+	dependencies: [
+		"9a362bdf",
+		"ae3583ec",
+		"66e815ab",
+		"ece1b7fe"
+	],
+	dependency_requirement: "one_started",
+	tasks: [{
+		uid: "4dceb446",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 24"
+		}]
+	},
+	{
+		uid: "05b6dcca",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 22"
+		}]
+	},
+	{
+		uid: "9a075699",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 23"
+		}]
+	}],
+	rewards: [{
+		uid: "83f6cb99",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}

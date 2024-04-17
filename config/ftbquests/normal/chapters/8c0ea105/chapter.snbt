@@ -1,0 +1,10 @@
+{
+	title: "Perpetual Dusk",
+	icon: "actuallyadditions:item_crystal 1 2",
+	description: [
+		"Actualy Additions and the Twilight Forest"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

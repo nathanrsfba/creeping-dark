@@ -1,0 +1,36 @@
+{
+	title: "Black Quartz",
+	icon: "actuallyadditions:item_misc 1 5",
+	x: -2.5d,
+	y: -2.0d,
+	text: [
+		"The key ingredient for Actually Additions machines. You can find it in the Nether."
+	],
+	dependencies: [
+		"2ec6a63f"
+	],
+	tasks: [{
+		uid: "b7c0c233",
+		type: "item",
+		title: "Black Quartz",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "gemQuartzBlack",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any gemQuartzBlack"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "f5138414",
+		type: "ftbmoney:money",
+		ftb_money: 8L
+	}]
+}
