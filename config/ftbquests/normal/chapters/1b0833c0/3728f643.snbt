@@ -1,25 +1,53 @@
 {
 	title: "Don't snort this",
-	icon: "immersiveengineering:stone_decoration",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {
+				AS_Amulet_HolderLeast: -5987286033772693031L,
+				AS_Amulet_HolderMost: 730092477226173684L
+			}
+		},
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "creosote",
+			Amount: 1000
+		}
+	},
 	x: -1.0d,
 	y: -2.0d,
 	text: [
-		"Put down coke bricks in a 3x3x3 cube, then thwack the front side with the engineer's hammer.",
+		"To make treated wood, you need to make creosote oil.",
+		"",
+		"You can either:",
+		"",
+		"a. Make the Immersive Engineering coke oven:",
+		"Make 27 coke bricks. Put them down in a 3x3x3 cube, then thwack the front side with the engineer's hammer.",
+		"",
+		"b. Make the Pyrolytic Converter:",
+		"Make a Redstone Furnace from Thermal Expansion. Install a Hardened Upgrade Kit. Then install the Pyrolytic Conversion Augment.",
 		"",
 		"Then shovel some coal or logs into it to start generating creosote oil.",
 		"",
-		"Logs will turn into charcoal; coal will turn into coke, which is useful for making steel."
-	],
-	dependencies: [
-		"6b9cf0dc"
+		"Logs will turn into charcoal; coal will turn into coke, which is useful for making steel, and which you will need later for the Arc Furnace"
 	],
 	tasks: [{
-		uid: "7f561503",
+		uid: "492cc1ae",
 		type: "item",
 		items: [{
-			item: "immersiveengineering:stone_decoration 27"
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -5987286033772693031L,
+					AS_Amulet_HolderMost: 730092477226173684L
+				}
+			},
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "creosote",
+				Amount: 1000
+			}
 		}],
-		count: 27L
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "58f20c7b",

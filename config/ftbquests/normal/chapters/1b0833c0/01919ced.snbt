@@ -4,7 +4,7 @@
 	x: 0.5d,
 	y: -2.0d,
 	text: [
-		"Get a bottle (or other fluid container) of creosote oil from the coke oven and surround it with 8 planks of wood. Any old wood."
+		"Get a bucket (or other fluid container) of creosote oil from the coke oven and surround it with 8 planks of wood. Any old wood."
 	],
 	dependencies: [
 		"3728f643"
