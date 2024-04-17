@@ -75,3 +75,14 @@ whitelist.json
 /master
 /test
 
+# Custom client mod stuff
+config/replaymod*
+.replay_cache
+config/replaymod-rendersettings.json
+config/replaymod.cfg
+ffmpeg-*
+replay_recordings/
+replay_videos/
+
+# Agricraft server configuration cache?
+config/agricraft/json/server_*
