@@ -80,6 +80,8 @@ For Creeping Dark, this command usually is something line the following:
 
     mkpkg.py -n "Creeping Dark" -a NathanRsfba 1.6 mods config scripts structures resources 
 
+If no directories are specified, 'mods' is added implicitly.
+
 You can also pass the -m option to update the manifest.json file without
 creating a pack file. This can be useful if you're committing the manifest to
 git to manage mods.

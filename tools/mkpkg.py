@@ -16,6 +16,9 @@ def main():
     else:
         manifest = createManifest()
 
+    if not args.overrides:
+        args.overrides = ['mods']
+
     modFiles = {}
 
     print( "Getting mod info from instance config..." )
@@ -54,6 +57,8 @@ def main():
                     }
             manifest['files'].append( mModInfo )
             # print( f'M {f}' )
+        elif not os.path.exists( f ):
+            raise FileNotFoundError( f"{f} does not exist" )
         else:
             # print( f'O {f}' )
             overrides.append( f )
@@ -118,7 +123,7 @@ def getArgs():
             help='Author of the pack' )
     parser.add_argument( '-m', '--manifest-only', action='store_true',
             help='Generate the manifest.json, but not the archive' )
-    parser.add_argument( 'overrides', nargs='+',
+    parser.add_argument( 'overrides', nargs='*',
             help='Folders/files to include in the pack' )
 
     return parser.parse_args()
