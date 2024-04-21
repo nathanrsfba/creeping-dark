@@ -16,6 +16,9 @@ def main():
     else:
         manifest = createManifest()
 
+    if not args.overrides:
+        args.overrides = ['mods']
+
     modFiles = {}
 
     print( "Getting mod info from instance config..." )
@@ -30,13 +33,14 @@ def main():
     (mcver, ldver) = loader['loaderVersion'].split( '-' )
     loaderStr = f"{loader['loaderType']}-{ldver}"
     manifest['minecraft']['modLoaders'][0]['id'] = loaderStr
-    manifest['version'] = args.version
     if( ('author' not in manifest and args.author == None) or
-            ('name' not in manifest and args.name == None) ):
-        raise RuntimeError( "Must specify a pack name and author when creating a new pack file" )
+            ('name' not in manifest and args.name == None) or
+            ('version' not in manifest and args.version == None) ):
+        raise RuntimeError( "Must specify a pack name, author, and version when creating a new pack file" )
 
     if args.author: manifest['author'] = args.author
     if args.name: manifest['name'] = args.name 
+    if args.version: manifest['version'] = args.version
 
     manifest['files'] = []
     overrides = []
@@ -53,6 +57,8 @@ def main():
                     }
             manifest['files'].append( mModInfo )
             # print( f'M {f}' )
+        elif not os.path.exists( f ):
+            raise FileNotFoundError( f"{f} does not exist" )
         else:
             # print( f'O {f}' )
             overrides.append( f )
@@ -61,15 +67,20 @@ def main():
     with open( 'manifest.json', 'w' ) as f:
         json.dump( manifest, f, indent=2 )
 
-    print( "Creating archive..." )
-    packFN = f"{manifest['name']}-{manifest['version']}.zip"
-    with ZipFile( packFN, 'w', compression=ZIP_DEFLATED ) as z:
-        z.write( 'manifest.json' )
+    if args.manifest_only:
+        print( 'Overrides:' )
         for f in overrides:
-            print( f"Adding {f}..." )
-            z.write( f, os.path.join( 'overrides', f ))
+            print( f )
+    else:
+        print( "Creating archive..." )
+        packFN = f"{manifest['name']}-{manifest['version']}.zip"
+        with ZipFile( packFN, 'w', compression=ZIP_DEFLATED ) as z:
+            z.write( 'manifest.json' )
+            for f in overrides:
+                print( f"Adding {f}..." )
+                z.write( f, os.path.join( 'overrides', f ))
 
-    print( f"Created {packFN}" )
+        print( f"Created {packFN}" )
 
 def createManifest():
     manifest = {
@@ -104,13 +115,15 @@ def fileList( *args ):
 def getArgs():
     parser = argparse.ArgumentParser(
             description='Create a curse pack package from GDLauncher instance config' )
-    parser.add_argument( 'version', type=str,
+    parser.add_argument( 'version', type=str, nargs='?',
             help='Version of the pack' )
     parser.add_argument( '-n', '--name', nargs='?', default=None,
             help='Name of the pack' )
     parser.add_argument( '-a', '--author', nargs='?', default=None,
             help='Author of the pack' )
-    parser.add_argument( 'overrides', nargs='+',
+    parser.add_argument( '-m', '--manifest-only', action='store_true',
+            help='Generate the manifest.json, but not the archive' )
+    parser.add_argument( 'overrides', nargs='*',
             help='Folders/files to include in the pack' )
 
     return parser.parse_args()
