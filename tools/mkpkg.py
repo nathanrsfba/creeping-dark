@@ -207,8 +207,6 @@ def getArgs():
         instance = Path( '../instance.json' )
         config = Path( 'config.json' )
 
-        print( db )
-        print( instance )
         if db.exists() and instance.exists():
             print( "Detected GDL Carbon" )
             args.instance_json = instance
