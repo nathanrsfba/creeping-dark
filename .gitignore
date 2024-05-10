@@ -30,6 +30,7 @@ config/thaumicjei_itemstack_aspects.json
 /local
 /logs
 /mods
+/disabled
 /modrepo
 /natives
 /options.txt
