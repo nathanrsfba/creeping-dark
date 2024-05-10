@@ -29,7 +29,6 @@ config/thaumicjei_itemstack_aspects.json
 /journeymap
 /local
 /logs
-/mods
 /disabled
 /modrepo
 /natives
@@ -52,6 +51,10 @@ modmg.bat
 hs_err_*.log
 knownkeys.txt
 config.json
+
+# Mods that we don't include in the zip
+/mods/*
+!/mods/plaguesky-*.jar
 
 # wtf?
 .fuse_hidden*
