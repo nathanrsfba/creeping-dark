@@ -11,11 +11,7 @@ import sqlite3
 
 def main():
     args = getArgs()
-    (config, modFiles) = getConfig( args )
-
-    # print( config )
-    # print( modFiles )
-    # return
+    keep = args.from_manifest
 
     if( os.path.exists( 'manifest.json' )):
         with open( 'manifest.json' ) as f:
@@ -26,38 +22,44 @@ def main():
     if not args.overrides:
         args.overrides = ['mods']
 
-    print( "Updating manifest info from config..." )
-    manifest['minecraft']['version'] = config.mcVersion
-    manifest['minecraft']['modLoaders'][0]['id'] = config.loader
-    if( ('author' not in manifest and args.author == None) or
-            ('name' not in manifest and args.name == None) or
-            ('version' not in manifest and args.version == None) ):
-        raise RuntimeError( "Must specify a pack name, author, and version when creating a new pack file" )
+    if not keep:
+        (config, modFiles) = getConfig( args )
+
+        print( "Updating manifest info from config..." )
+        manifest['minecraft']['version'] = config.mcVersion
+        manifest['minecraft']['modLoaders'][0]['id'] = config.loader
+        if( ('author' not in manifest and args.author == None) or
+                ('name' not in manifest and args.name == None) or
+                ('version' not in manifest and args.version == None) ):
+            raise RuntimeError( "Must specify a pack name, author, " +
+                               "and version when creating a new pack file" )
+
+        manifest['files'] = []
 
     if args.author: manifest['author'] = args.author
     if args.name: manifest['name'] = args.name 
     if args.version: manifest['version'] = args.version
-
-    manifest['files'] = []
-    overrides = []
-    
+        
     print( "Gathering list of files..." )
-    for f in fileList( *(args.overrides )):
-        (_, fn) = os.path.split( f )
-        if fn in modFiles:
-            cModInfo = modFiles[fn]
-            mModInfo = {
-                    'projectID': cModInfo.projectID,
-                    'fileID': cModInfo.fileID,
-                    'required': True
-                    }
-            manifest['files'].append( mModInfo )
-            # print( f'M {f}' )
-        elif not os.path.exists( f ):
-            raise FileNotFoundError( f"{f} does not exist" )
-        else:
-            # print( f'O {f}' )
-            overrides.append( f )
+    overrides = fileList( *(args.overrides ))
+
+    if not keep:
+        files = overrides
+        overrides = []
+        for f in files:
+            (_, fn) = os.path.split( f )
+            if fn in modFiles:
+                cModInfo = modFiles[fn]
+                mModInfo = {
+                        'projectID': cModInfo.projectID,
+                        'fileID': cModInfo.fileID,
+                        'required': True
+                        }
+                manifest['files'].append( mModInfo )
+                # print( f'M {f}' )
+            else:
+                # print( f'O {f}' )
+                overrides.append( f )
 
     print( "Writing manifest..." )
     with open( 'manifest.json', 'w' ) as f:
@@ -77,7 +79,6 @@ def main():
                 z.write( f, os.path.join( 'overrides', f ))
 
         print( f"Created {packFN}" )
-
 
 def getConfig( args ):
     """Get the GDLauncher instance configuration.
@@ -190,6 +191,8 @@ def getArgs():
             help='Author of the pack' )
     parser.add_argument( '-m', '--manifest-only', action='store_true',
             help='Generate the manifest.json, but not the archive' )
+    parser.add_argument( '-M', '--from-manifest', action='store_true',
+            help='Build from manifest without installed instance' )
     parser.add_argument( '--config-json',
             help='Path to config.json (for GDLaucher Legacy).' )
     parser.add_argument( '--instance-json',
