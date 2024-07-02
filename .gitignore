@@ -3,6 +3,7 @@
 *.bak
 *.swp
 config.bak.json
+*.swo
 
 # End-user settings that for some reason live in config.
 # Don't want them spamming up the repo.
@@ -29,8 +30,7 @@ config/thaumicjei_itemstack_aspects.json
 /journeymap
 /local
 /logs
-/manifest.json
-/mods
+/disabled
 /modrepo
 /natives
 /options.txt
@@ -52,6 +52,10 @@ modmg.bat
 hs_err_*.log
 knownkeys.txt
 config.json
+
+# Mods that we don't include in the zip
+/mods/*
+!/mods/plaguesky-*.jar
 
 # wtf?
 .fuse_hidden*

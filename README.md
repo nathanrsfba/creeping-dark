@@ -329,11 +329,23 @@ Changes in v1.4.2
 About This Repository
 ---------------------
 
-This repository contains the files that make the pack, minus ths mods. This
-includes configuration, scripts, custom assets, and worldgen structures. The
-'mods.txt' file contains a list of the mod files used by the pack, though
-normally these would be downloaded and installed as part of a Curse pack
-file.
+This repository contains the files that make the pack, minus the mods. This
+includes configuration, scripts, custom assets, and worldgen structures. This
+also includes the [Plagued Skies](https://github.com/nathanrsfba/plagued-skies)
+mod, designed specifically for this pack. Also included is a `manifest.json`
+file, which is used to build the pack file in the form of a CurseForge pack.
+
+As of version 1.6.1.1, the pack can now be "built" from the repository using
+the included `mkpkg.py` tool in the `tools` directory. The command to build it
+will look something like this:
+
+```
+tools/mkpkg.py -M [version] mods config resources scripts structures tools
+```
+
+This should still be considered experimental and untested.
+
+See `tools/readme.md` for more information about `mkpkg.py`.
 
 License
 -------

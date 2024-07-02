@@ -73,12 +73,45 @@ report will be sent to the CraftTweaker log file
 mkpkg.py
 --------
 A Python script to create a pack .zip files automatically. Takes information
-from the instance's config.json, and from the existing manifest.json (if
+from the instance's configuration, and from the existing manifest.json (if
 available), generates an updated manifest, and a new .zip of the pack.
+
+The script expects to be passed a version number, followed by a list of
+`overrides` directories; this specifies the directories to be included in the
+pack. This should include the `mods` directory; the script will look for mods
+in the CurseForge library, and reference them in the manifest, rather than
+include them directly. Mods *not* listed on CurseForge will be included in the
+.zip file.
+
+This is expected to be run in the main "instance" directory; the one containing
+the `mods` and `config` directories etc.
 
 For Creeping Dark, this command usually is something line the following:
 
-    mkpkg.py -n "Creeping Dark" -a NathanRsfba 1.6 mods config scripts structures resources 
+    tools/mkpkg.py 1.6 mods config scripts structures resources 
+
+You can also pass the -m option to update the manifest.json file without
+creating a pack file. This can be useful if you're committing the manifest to
+git to manage mods. In this instance, you don't need to specify any
+`overrides`, nor a version number. It will check the `mods` folder implcitly,
+and the existing manifest, if they aren't specified.
+
+You can specify the `-n` and `-a` options to set the pack name and author in
+the manifest file.
+
+You can specify the `-M` option to build a pack file from the manifest file,
+without an installed instance present. This is mainly intended for building the
+pack fresh from the repo without having to install it first -- is it not
+intended to be used on an installed instance. It will not attempte to update
+the manifest from either the content of the `mods` folder, nor the GDLauncher
+config.  With this option, the `mods` folder should be empty, except for mods
+that are intended to be included in the built pack file. 
+
+You can explicitly specify the path to the `config.json` file (for GDLauncher
+Legacy), or the `instance.json` and `gdl_conf.db` files (for GDLauncher
+Carbon), using the `--config-json`, `--instance-json`, and `--db-path` options.
+Normally mkpkg will find these on its own if launched from the instance
+directory.
 
 pre-commit
 ----------
