@@ -93,6 +93,8 @@ Server Installation
 Questions
 ---------
 
+(a.k.a. Problems I've run into so you don't have to)
+
 Q: My money disappeared!
 A: This seems to happen when changing dimensions. Completing a quest that gives
 money seems to restore it. It's similar to the glitch where all your XP
@@ -106,7 +108,7 @@ Q: I see a console message about objects being summoned?
 A: That's a redstone mechanism I have hidden away in a utility dimension that
 recreates certain objects. You can just ignore the message.
 
-Q: The Blaze boss spatial IO isn't loading or regenerating, or the 
+Q: The Void City spatial IO isn't loading or regenerating, or the 
 'Swamp Magic' frequency isn't showing up in the entangloporter  
 A: Apparently my utility dimension gets nuked sometimes. Why? Haven't
 a goddamn clue. To fix this, try exiting your world/restarting the server a
