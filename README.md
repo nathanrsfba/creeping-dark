@@ -130,6 +130,14 @@ for god knows what reason
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
 
+Q: My warp ship has stopped accepting dilithium
+A: One piece of dilithium is worth 500 units of fuel in the warp core, and it
+can hold a maximum of 1000 units. If there is more than 500 in the system, it
+will not accept any further fuel. If you're finding yourself unable to warp to
+the planet you want due to lack of fuel, the workaround is simple (but stupid):
+Warp to a planet in another star system first, as interstellar jumps appear to
+always cost 500 units.
+
 Changes in v1.6.1
 -----------------
 
