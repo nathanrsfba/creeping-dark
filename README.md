@@ -95,7 +95,7 @@ Questions
 
 (a.k.a. Problems I've run into so you don't have to)
 
-Q: My money disappeared!
+Q: My money disappeared!  
 A: This seems to happen when changing dimensions. Completing a quest that gives
 money seems to restore it. It's similar to the glitch where all your XP
 disappears when you change dimensions, but magically comes back when you pick
@@ -130,7 +130,7 @@ for god knows what reason
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
 
-Q: My warp ship has stopped accepting dilithium
+Q: My warp ship has stopped accepting dilithium  
 A: One piece of dilithium is worth 500 units of fuel in the warp core, and it
 can hold a maximum of 1000 units. If there is more than 500 in the system, it
 will not accept any further fuel. If you're finding yourself unable to warp to
