@@ -24,6 +24,11 @@
 
     - NR 2019-06-17
 
+    Scaling back the orbital distances for the various planets, as distances to
+    planets beyond Saturn are so large as to be unable to warp to
+
+    - NR 2024-10-19
+
 -->
 <galaxy>
   <star name="Sol" temp="100" x="0" y="0" numPlanets="0">
@@ -186,7 +191,7 @@
       <hasRings>true</hasRings>
       <atmosphereDensity>0</atmosphereDensity>
       <gravitationalMultiplier>107</gravitationalMultiplier>
-      <orbitalDistance>958</orbitalDistance>
+      <orbitalDistance>600</orbitalDistance>
       <rotationalPeriod>12000</rotationalPeriod>
       <planet name="Mimas" customIcon="moon" DIMID="163">
         <isKnown>True</isKnown>
@@ -291,7 +296,7 @@
       <GasGiant>true</GasGiant>
       <atmosphereDensity>0</atmosphereDensity>
       <gravitationalMultiplier>91</gravitationalMultiplier>
-      <orbitalDistance>1920</orbitalDistance>
+      <orbitalDistance>700</orbitalDistance>
       <rotationalPeriod>18000</rotationalPeriod>
       <planet name="Miranda" customIcon="moon" DIMID="172">
         <isKnown>True</isKnown>
@@ -359,7 +364,7 @@
       <GasGiant>true</GasGiant>
       <atmosphereDensity>0</atmosphereDensity>
       <gravitationalMultiplier>114</gravitationalMultiplier>
-      <orbitalDistance>3005</orbitalDistance>
+      <orbitalDistance>750</orbitalDistance>
       <rotationalPeriod>18000</rotationalPeriod>
       <planet name="Triton" customIcon="moon" DIMID="178">
         <isKnown>True</isKnown>
@@ -379,7 +384,7 @@
       <GasGiant>false</GasGiant>
       <atmosphereDensity>0</atmosphereDensity>
       <gravitationalMultiplier>10</gravitationalMultiplier>
-      <orbitalDistance>3948</orbitalDistance>
+      <orbitalDistance>800</orbitalDistance>
       <rotationalPeriod>144000</rotationalPeriod>
       <OreGen>
           <ore block="minecraft:emerald_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Emerald -->
@@ -403,7 +408,7 @@
       <GasGiant>false</GasGiant>
       <atmosphereDensity>0</atmosphereDensity>
       <gravitationalMultiplier>10</gravitationalMultiplier>
-      <orbitalDistance>4322</orbitalDistance>
+      <orbitalDistance>850</orbitalDistance>
       <rotationalPeriod>6000</rotationalPeriod>
       <OreGen>
           <ore block="actuallyadditions:block_misc" meta="6" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Enderpearl -->
@@ -415,7 +420,7 @@
       <GasGiant>false</GasGiant>
       <atmosphereDensity>0</atmosphereDensity>
       <gravitationalMultiplier>10</gravitationalMultiplier>
-      <orbitalDistance>4556</orbitalDistance>
+      <orbitalDistance>900</orbitalDistance>
       <rotationalPeriod>24000</rotationalPeriod>
       <OreGen>
           <ore block="minecraft:diamond_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Diamond -->
@@ -427,7 +432,7 @@
       <GasGiant>false</GasGiant>
       <atmosphereDensity>0</atmosphereDensity>
       <gravitationalMultiplier>10</gravitationalMultiplier>
-      <orbitalDistance>6795</orbitalDistance>
+      <orbitalDistance>1000</orbitalDistance>
       <rotationalPeriod>24000</rotationalPeriod>
       <OreGen>
           <ore block="actuallyadditions:block_misc" meta="2" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Black Quartz -->
