@@ -40,6 +40,8 @@
       <orbitalDistance>39</orbitalDistance>
       <rotationalPeriod>4224000</rotationalPeriod>
       <biomeIds>advancedrocketry:stormland</biomeIds>
+      <generateCaves>true</generateCaves>
+      <generateStructures>true</generateStructures>
       <OreGen>
           <ore block="thermalfoundation:storage" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Copper -->
           <ore block="minecraft:coal_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Coal -->
@@ -54,6 +56,8 @@
       <orbitalDistance>72</orbitalDistance>
       <rotationalPeriod>2808000</rotationalPeriod>
       <biomeIds>advancedrocketry:deepswamp</biomeIds>
+      <generateCaves>true</generateCaves>
+      <generateStructures>true</generateStructures>
       <OreGen>
           <ore block="minecraft:diamond_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" />
           <ore block="minecraft:quartz_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" />
@@ -74,6 +78,7 @@
         <orbitalDistance>100</orbitalDistance>
         <rotationalPeriod>648000</rotationalPeriod>
         <biomeIds>advancedrocketry:moon</biomeIds>
+        <generateCraters>true</generateCraters>
         <OreGen>
           <ore block="libvulpes:ore0" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" />
         </OreGen>
@@ -96,6 +101,7 @@
         <gravitationalMultiplier>10</gravitationalMultiplier>
         <orbitalDistance>12</orbitalDistance>
         <rotationalPeriod>6000</rotationalPeriod>
+        <generateCraters>true</generateCraters>
         <OreGen>
             <ore block="thermalfoundation:storage" meta="6" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Platinum -->
             <ore block="tconstruct:metal" meta="1" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Ardite -->
@@ -108,6 +114,7 @@
         <gravitationalMultiplier>10</gravitationalMultiplier>
         <orbitalDistance>24</orbitalDistance>
         <rotationalPeriod>24000</rotationalPeriod>
+        <generateCraters>true</generateCraters>
         <OreGen>
             <ore block="nuclearcraft:ingot_block" meta="10" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Zirconium Block -->
             <ore block="thermalfoundation:storage" meta="2" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Silver -->
@@ -121,6 +128,7 @@
       <gravitationalMultiplier>10</gravitationalMultiplier>
       <orbitalDistance>277</orbitalDistance>
       <rotationalPeriod>12000</rotationalPeriod>
+      <generateCraters>true</generateCraters>
       <OreGen>
           <ore block="minecraft:iron_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Iron -->
           <ore block="minecraft:gold_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Gold -->
@@ -141,6 +149,7 @@
         <orbitalDistance>110</orbitalDistance>
         <rotationalPeriod>48000</rotationalPeriod>
         <biomeIds>advancedrocketry:stormland</biomeIds>
+        <generateVolcanos>true</generateVolcanos>
         <OreGen>
             <ore block="nuclearcraft:ingot_block" meta="9" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Beryllium Block -->
             <ore block="thermalfoundation:storage" meta="5" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Nickel -->
@@ -154,11 +163,13 @@
         <orbitalDistance>175</orbitalDistance>
         <rotationalPeriod>96000</rotationalPeriod>
         <biomeIds>advancedrocketry:oceanspires</biomeIds>
+        <generateCaves>true</generateCaves>
+        <generateStructures>true</generateStructures>
+        <OreGen>
+            <ore block="thermalfoundation:storage" meta="4" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Aluminum -->
+            <ore block="projectred-exploration:stone" meta="5" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Ruby -->
+        </OreGen>
       </planet>
-      <OreGen>
-          <ore block="thermalfoundation:storage" meta="4" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Aluminum -->
-          <ore block="projectred-exploration:stone" meta="5" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Ruby -->
-      </OreGen>
       <planet name="Ganymede" customIcon="moon" DIMID="160">
         <isKnown>True</isKnown>
         <GasGiant>false</GasGiant>
@@ -166,6 +177,7 @@
         <gravitationalMultiplier>15</gravitationalMultiplier>
         <orbitalDistance>278</orbitalDistance>
         <rotationalPeriod>168000</rotationalPeriod>
+        <generateCraters>true</generateCraters>
         <OreGen>
             <ore block="nuclearcraft:ingot_block" meta="11" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Manganese Block -->
             <ore block="nuclearcraft:ingot_block" meta="3" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Thorium Block -->
@@ -179,6 +191,8 @@
         <orbitalDistance>490</orbitalDistance>
         <rotationalPeriod>408000</rotationalPeriod>
         <biomeIds>advancedrocketry:crystalchasms</biomeIds>
+        <generateCraters>true</generateCraters>
+        <generateGeodes>true</generateGeodes>
         <OreGen>
             <ore block="minecraft:redstone_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Redstone -->
             <ore block="immersiveengineering:storage" meta="5" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Uranium -->
@@ -200,6 +214,7 @@
         <gravitationalMultiplier>10</gravitationalMultiplier>
         <orbitalDistance>48</orbitalDistance>
         <rotationalPeriod>24000</rotationalPeriod>
+        <generateCraters>true</generateCraters>
         <OreGen>
             <ore block="nuclearcraft:ingot_block" meta="5" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Boron Block -->
             <ore block="nuclearcraft:ingot_block" meta="7" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Magnesium Block -->
@@ -212,6 +227,7 @@
         <gravitationalMultiplier>10</gravitationalMultiplier>
         <orbitalDistance>62</orbitalDistance>
         <rotationalPeriod>24000</rotationalPeriod>
+        <generateCraters>true</generateCraters>
         <OreGen>
             <ore block="actuallyadditions:block_misc" meta="2" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Black Quartz -->
             <ore block="thaumcraft:amber_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Amber Block -->
@@ -224,6 +240,7 @@
         <gravitationalMultiplier>10</gravitationalMultiplier>
         <orbitalDistance>77</orbitalDistance>
         <rotationalPeriod>48000</rotationalPeriod>
+        <generateCraters>true</generateCraters>
         <OreGen>
             <ore block="thermalfoundation:storage" meta="1" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Tin -->
             <ore block="thermalfoundation:storage" meta="7" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Iridium -->
@@ -236,6 +253,7 @@
         <gravitationalMultiplier>10</gravitationalMultiplier>
         <orbitalDistance>98</orbitalDistance>
         <rotationalPeriod>72000</rotationalPeriod>
+        <generateCraters>true</generateCraters>
         <OreGen>
             <ore block="mekanism:basicblock" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Osmium Block -->
             <ore block="appliedenergistics2:quartz_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Certus Quartz Block -->
@@ -248,6 +266,7 @@
         <gravitationalMultiplier>10</gravitationalMultiplier>
         <orbitalDistance>137</orbitalDistance>
         <rotationalPeriod>120000</rotationalPeriod>
+        <generateCraters>true</generateCraters>
         <OreGen>
             <ore block="thermalfoundation:storage" meta="3" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Lead -->
             <ore block="projectred-exploration:stone" meta="7" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Peridot -->
@@ -261,6 +280,8 @@
         <orbitalDistance>318</orbitalDistance>
         <rotationalPeriod>384000</rotationalPeriod>
         <biomeIds>advancedrocketry:alien_forest</biomeIds>
+        <generateCaves>true</generateCaves>
+        <generateStructures>true</generateStructures>
         <OreGen>
             <ore block="minecraft:lapis_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Lapis Lazuli Block -->
             <ore block="nuclearcraft:ingot_block" meta="8" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Graphite Block -->
@@ -273,6 +294,7 @@
         <gravitationalMultiplier>10</gravitationalMultiplier>
         <orbitalDistance>385</orbitalDistance>
         <rotationalPeriod>504000</rotationalPeriod>
+        <generateCraters>true</generateCraters>
         <OreGen>
             <ore block="projectred-exploration:stone" meta="6" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Sapphire -->
             <ore block="tconstruct:metal" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Cobalt -->
@@ -285,6 +307,7 @@
         <gravitationalMultiplier>10</gravitationalMultiplier>
         <orbitalDistance>926</orbitalDistance>
         <rotationalPeriod>1896000</rotationalPeriod>
+        <generateCraters>true</generateCraters>
         <OreGen>
             <ore block="actuallyadditions:block_misc" meta="6" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Enderpearl -->
             <ore block="nuclearcraft:ingot_block" meta="6" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Lithium Block -->
@@ -305,6 +328,7 @@
         <gravitationalMultiplier>10</gravitationalMultiplier>
         <orbitalDistance>34</orbitalDistance>
         <rotationalPeriod>24000</rotationalPeriod>
+        <generateCraters>true</generateCraters>
         <OreGen>
             <ore block="minecraft:emerald_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Emerald -->
             <ore block="tconstruct:metal" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Cobalt -->
@@ -317,6 +341,7 @@
         <gravitationalMultiplier>10</gravitationalMultiplier>
         <orbitalDistance>50</orbitalDistance>
         <rotationalPeriod>72000</rotationalPeriod>
+        <generateCraters>true</generateCraters>
         <OreGen>
             <ore block="projectred-exploration:stone" meta="7" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Peridot -->
             <ore block="appliedenergistics2:quartz_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Certus Quartz Block -->
@@ -329,6 +354,7 @@
         <gravitationalMultiplier>10</gravitationalMultiplier>
         <orbitalDistance>69</orbitalDistance>
         <rotationalPeriod>96000</rotationalPeriod>
+        <generateCraters>true</generateCraters>
         <OreGen>
             <ore block="thermalfoundation:storage" meta="6" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Platinum -->
             <ore block="minecraft:redstone_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Redstone -->
@@ -341,6 +367,7 @@
         <gravitationalMultiplier>10</gravitationalMultiplier>
         <orbitalDistance>114</orbitalDistance>
         <rotationalPeriod>216000</rotationalPeriod>
+        <generateCraters>true</generateCraters>
         <OreGen>
             <ore block="thaumcraft:amber_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Amber Block -->
             <ore block="minecraft:lapis_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Lapis Lazuli Block -->
@@ -353,6 +380,7 @@
         <gravitationalMultiplier>10</gravitationalMultiplier>
         <orbitalDistance>152</orbitalDistance>
         <rotationalPeriod>312000</rotationalPeriod>
+        <generateCraters>true</generateCraters>
         <OreGen>
             <ore block="nuclearcraft:ingot_block" meta="10" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Zirconium Block -->
             <ore block="minecraft:quartz_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Quartz -->
@@ -373,6 +401,7 @@
         <gravitationalMultiplier>10</gravitationalMultiplier>
         <orbitalDistance>92</orbitalDistance>
         <rotationalPeriod>72000</rotationalPeriod>
+        <generateCraters>true</generateCraters>
         <OreGen>
             <ore block="thermalfoundation:storage" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Copper -->
             <ore block="nuclearcraft:ingot_block" meta="7" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Magnesium Block -->
@@ -386,6 +415,7 @@
       <gravitationalMultiplier>10</gravitationalMultiplier>
       <orbitalDistance>800</orbitalDistance>
       <rotationalPeriod>144000</rotationalPeriod>
+      <generateCraters>true</generateCraters>
       <OreGen>
           <ore block="minecraft:emerald_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Emerald -->
           <ore block="thermalfoundation:storage" meta="4" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Aluminum -->
@@ -397,6 +427,7 @@
         <gravitationalMultiplier>10</gravitationalMultiplier>
         <orbitalDistance>5</orbitalDistance>
         <rotationalPeriod>144000</rotationalPeriod>
+        <generateCraters>true</generateCraters>
         <OreGen>
             <ore block="thermalfoundation:storage" meta="1" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Tin -->
             <ore block="nuclearcraft:ingot_block" meta="5" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Boron Block -->
@@ -410,6 +441,7 @@
       <gravitationalMultiplier>10</gravitationalMultiplier>
       <orbitalDistance>850</orbitalDistance>
       <rotationalPeriod>6000</rotationalPeriod>
+      <generateCraters>true</generateCraters>
       <OreGen>
           <ore block="actuallyadditions:block_misc" meta="6" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Enderpearl -->
           <ore block="projectred-exploration:stone" meta="6" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Sapphire -->
@@ -422,6 +454,7 @@
       <gravitationalMultiplier>10</gravitationalMultiplier>
       <orbitalDistance>900</orbitalDistance>
       <rotationalPeriod>24000</rotationalPeriod>
+      <generateCraters>true</generateCraters>
       <OreGen>
           <ore block="minecraft:diamond_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Diamond -->
           <ore block="projectred-exploration:stone" meta="5" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Ruby -->
@@ -434,6 +467,7 @@
       <gravitationalMultiplier>10</gravitationalMultiplier>
       <orbitalDistance>1000</orbitalDistance>
       <rotationalPeriod>24000</rotationalPeriod>
+      <generateCraters>true</generateCraters>
       <OreGen>
           <ore block="actuallyadditions:block_misc" meta="2" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Black Quartz -->
           <ore block="thermalfoundation:storage" meta="2" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Silver -->
@@ -452,6 +486,8 @@
           <rotationalPeriod>10923</rotationalPeriod>
           <atmosphereDensity>84</atmosphereDensity>
           <biomeIds>minecraft:desert,advancedrocketry:oceanspires,minecraft:plains,minecraft:savanna_rock,minecraft:mutated_forest</biomeIds>
+          <generateCaves>true</generateCaves>
+          <generateStructures>true</generateStructures>
           <OreGen>
               <ore block="mekanism:basicblock" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Osmium Block -->
               <ore block="thermalfoundation:storage" meta="3" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Lead -->
@@ -468,6 +504,9 @@
           <atmosphereDensity>126</atmosphereDensity>
           <biomeIds>advancedrocketry:hotdryrock</biomeIds>
           <oceanBlock>minecraft:lava</oceanBlock>
+          <generateVolcanos>true</generateVolcanos>
+          <generateGeodes>true</generateGeodes>
+          <generateCaves>true</generateCaves>
           <OreGen>
               <ore block="minecraft:gold_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Gold -->
               <ore block="minecraft:coal_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Coal -->
@@ -485,6 +524,8 @@
           <rotationalPeriod>23294</rotationalPeriod>
           <atmosphereDensity>110</atmosphereDensity>
           <biomeIds>minecraft:ice_flats</biomeIds>
+          <generateCaves>true</generateCaves>
+          <generateStructures>true</generateStructures>
           <OreGen>
               <ore block="nuclearcraft:ingot_block" meta="11" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Manganese Block -->
               <ore block="thermalfoundation:storage" meta="5" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Nickel -->
@@ -499,6 +540,8 @@
               <rotationalPeriod>263374</rotationalPeriod>
               <atmosphereDensity>90</atmosphereDensity>
               <biomeIds>minecraft:mutated_jungle,minecraft:mutated_mesa,minecraft:stone_beach,minecraft:plains,minecraft:mesa</biomeIds>
+              <generateCaves>true</generateCaves>
+              <generateStructures>true</generateStructures>
               <OreGen>
                   <ore block="nuclearcraft:ingot_block" meta="8" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Graphite Block -->
                   <ore block="immersiveengineering:storage" meta="5" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Uranium -->
@@ -518,6 +561,8 @@
           <rotationalPeriod>17082</rotationalPeriod>
           <atmosphereDensity>76</atmosphereDensity>
           <biomeIds>minecraft:desert_hills,minecraft:mutated_jungle,minecraft:forest_hills,minecraft:forest,minecraft:roofed_forest</biomeIds>
+          <generateCaves>true</generateCaves>
+          <generateStructures>true</generateStructures>
           <OreGen>
               <ore block="nuclearcraft:ingot_block" meta="3" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Thorium Block -->
               <ore block="nuclearcraft:ingot_block" meta="6" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Lithium Block -->
@@ -532,6 +577,7 @@
               <rotationalPeriod>375000</rotationalPeriod>
               <atmosphereDensity>30</atmosphereDensity>
               <biomeIds>minecraft:plains,minecraft:savanna_rock,minecraft:jungle_hills,minecraft:beaches,minecraft:mutated_jungle_edge</biomeIds>
+              <generateCraters>true</generateCraters>
               <OreGen>
                   <ore block="minecraft:iron_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Iron -->
                   <ore block="tconstruct:metal" meta="1" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Ardite -->
@@ -547,6 +593,7 @@
               <rotationalPeriod>180925</rotationalPeriod>
               <atmosphereDensity>13</atmosphereDensity>
               <biomeIds>advancedrocketry:moon,advancedrocketry:moondark</biomeIds>
+              <generateCraters>true</generateCraters>
               <OreGen>
                   <ore block="thermalfoundation:storage" meta="7" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Iridium -->
                   <ore block="nuclearcraft:ingot_block" meta="9" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Beryllium Block -->
@@ -562,6 +609,7 @@
               <rotationalPeriod>46875</rotationalPeriod>
               <atmosphereDensity>23</atmosphereDensity>
               <biomeIds>advancedrocketry:moon,advancedrocketry:moondark</biomeIds>
+              <generateCraters>true</generateCraters>
               <OreGen>
                   <ore block="minecraft:emerald_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Emerald -->
                   <ore block="thaumcraft:amber_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Amber Block -->
@@ -579,6 +627,9 @@
           <atmosphereDensity>149</atmosphereDensity>
           <seaLevel>71</seaLevel>
           <biomeIds>minecraft:forest_hills,minecraft:mutated_plains,advancedrocketry:space,minecraft:beaches,minecraft:birch_forest</biomeIds>
+          <generateGeodes>true</generateGeodes>
+          <generateCaves>true</generateCaves>
+          <generateStructures>true</generateStructures>
           <OreGen>
               <ore block="thermalfoundation:storage" meta="2" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Silver -->
               <ore block="minecraft:lapis_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Lapis Lazuli Block -->
@@ -595,6 +646,7 @@
               <seaLevel>60</seaLevel>
               <biomeIds>advancedrocketry:moon,advancedrocketry:moondark</biomeIds>
               <oceanBlock>advancedrocketry:oxygenfluid</oceanBlock>
+              <generateCraters>true</generateCraters>
               <OreGen>
                   <ore block="nuclearcraft:ingot_block" meta="11" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Manganese Block -->
                   <ore block="actuallyadditions:block_misc" meta="2" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Black Quartz -->
@@ -611,6 +663,7 @@
               <atmosphereDensity>26</atmosphereDensity>
               <seaLevel>47</seaLevel>
               <biomeIds>advancedrocketry:deepswamp,minecraft:birch_forest_hills,minecraft:birch_forest,minecraft:ocean,minecraft:swampland</biomeIds>
+              <generateCraters>true</generateCraters>
               <OreGen>
                   <ore block="thermalfoundation:storage" meta="6" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Platinum -->
                   <ore block="minecraft:iron_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Iron -->
@@ -626,6 +679,7 @@
               <rotationalPeriod>246568</rotationalPeriod>
               <atmosphereDensity>26</atmosphereDensity>
               <biomeIds>minecraft:mutated_extreme_hills_with_trees,minecraft:forest,minecraft:beaches,minecraft:mutated_forest,minecraft:mutated_mesa_clear_rock</biomeIds>
+              <generateCraters>true</generateCraters>
               <OreGen>
                   <ore block="nuclearcraft:ingot_block" meta="8" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Graphite Block -->
                   <ore block="minecraft:coal_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Coal -->
@@ -642,6 +696,8 @@
           <rotationalPeriod>13888</rotationalPeriod>
           <atmosphereDensity>50</atmosphereDensity>
           <biomeIds>advancedrocketry:stormland,minecraft:mutated_jungle,minecraft:jungle_hills,minecraft:plains,minecraft:mushroom_island_shore</biomeIds>
+          <generateGeodes>true</generateGeodes>
+          <generateCraters>true</generateCraters>
           <OreGen>
               <ore block="actuallyadditions:block_misc" meta="6" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Enderpearl -->
               <ore block="thermalfoundation:storage" meta="5" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Nickel -->
@@ -656,6 +712,7 @@
               <rotationalPeriod>61693</rotationalPeriod>
               <atmosphereDensity>21</atmosphereDensity>
               <biomeIds>advancedrocketry:moon,advancedrocketry:moondark</biomeIds>
+              <generateCraters>true</generateCraters>
               <OreGen>
                   <ore block="thermalfoundation:storage" meta="4" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Aluminum -->
                   <ore block="thermalfoundation:storage" meta="1" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Tin -->
@@ -689,6 +746,7 @@
               <rotationalPeriod>87391</rotationalPeriod>
               <atmosphereDensity>31</atmosphereDensity>
               <biomeIds>minecraft:mutated_extreme_hills_with_trees,minecraft:deep_ocean,minecraft:mesa_clear_rock,minecraft:desert_hills,minecraft:desert</biomeIds>
+              <generateCraters>true</generateCraters>
               <OreGen>
                   <ore block="tconstruct:metal" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Cobalt -->
                   <ore block="appliedenergistics2:quartz_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Certus Quartz Block -->
@@ -704,6 +762,7 @@
               <rotationalPeriod>61693</rotationalPeriod>
               <atmosphereDensity>21</atmosphereDensity>
               <biomeIds>advancedrocketry:moon,advancedrocketry:moondark</biomeIds>
+              <generateCraters>true</generateCraters>
               <OreGen>
                   <ore block="nuclearcraft:ingot_block" meta="7" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Magnesium Block -->
                   <ore block="minecraft:quartz_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Quartz -->
@@ -719,6 +778,7 @@
               <rotationalPeriod>61693</rotationalPeriod>
               <atmosphereDensity>32</atmosphereDensity>
               <biomeIds>minecraft:mutated_extreme_hills,minecraft:mutated_redwood_taiga_hills,minecraft:mutated_birch_forest_hills,minecraft:mutated_plains,minecraft:mutated_mesa_rock</biomeIds>
+              <generateCraters>true</generateCraters>
               <OreGen>
                   <ore block="thermalfoundation:storage" meta="7" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Iridium -->
                   <ore block="projectred-exploration:stone" meta="5" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Ruby -->
@@ -734,6 +794,7 @@
               <rotationalPeriod>667835</rotationalPeriod>
               <atmosphereDensity>22</atmosphereDensity>
               <biomeIds>advancedrocketry:moon,advancedrocketry:moondark</biomeIds>
+              <generateCraters>true</generateCraters>
               <OreGen>
                   <ore block="nuclearcraft:ingot_block" meta="10" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Zirconium Block -->
                   <ore block="projectred-exploration:stone" meta="6" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Sapphire -->
@@ -749,6 +810,7 @@
               <rotationalPeriod>69970</rotationalPeriod>
               <atmosphereDensity>31</atmosphereDensity>
               <biomeIds>advancedrocketry:marsh,minecraft:deep_ocean,minecraft:mutated_birch_forest,minecraft:jungle_hills,minecraft:swampland</biomeIds>
+              <generateCraters>true</generateCraters>
               <OreGen>
                   <ore block="mekanism:basicblock" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Osmium Block -->
                   <ore block="nuclearcraft:ingot_block" meta="3" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Thorium Block -->
@@ -765,6 +827,7 @@
               <atmosphereDensity>36</atmosphereDensity>
               <seaLevel>80</seaLevel>
               <biomeIds>minecraft:ice_flats</biomeIds>
+              <generateCraters>true</generateCraters>
               <OreGen>
                   <ore block="nuclearcraft:ingot_block" meta="5" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Boron Block -->
                   <ore block="immersiveengineering:storage" meta="5" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Uranium -->
@@ -780,6 +843,7 @@
               <rotationalPeriod>83479</rotationalPeriod>
               <atmosphereDensity>13</atmosphereDensity>
               <biomeIds>advancedrocketry:moon,advancedrocketry:moondark</biomeIds>
+              <generateCraters>true</generateCraters>
               <OreGen>
                   <ore block="minecraft:gold_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Gold -->
                   <ore block="minecraft:diamond_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="1" /> <!-- Block of Diamond -->
