@@ -340,7 +340,7 @@ the included `mkpkg.py` tool in the `tools` directory. The command to build it
 will look something like this:
 
 ```
-tools/mkpkg.py -M [version] mods config resources scripts structures tools
+tools/mkpkg.py -M [version] mods config resources scripts structures
 ```
 
 This should still be considered experimental and untested.
