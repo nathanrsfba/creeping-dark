@@ -138,6 +138,10 @@ Changes in v1.6.1.1
 * Questline will now accept creosote oil being made from the Thermal Expansion
   pyrolytic converter
 * Added some configuration files so alternate world types can now be selected.
+* Adjusted Advanced Rocketry planet definitions to fix issues with traveling
+  to outer solar system bodies
+* Added planetary feature generation to planets, including caves, volcanos, and
+  geodes
 
 Changes in v1.6.1
 -----------------
