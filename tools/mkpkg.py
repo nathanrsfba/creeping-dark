@@ -203,8 +203,9 @@ def getArgs():
             help='Folders/files to include in the pack' )
 
     args = parser.parse_args()
+    # The following probably ought to be done in getConfig(), but oh well
     if( (args.db_path == None or args.instance_json == None) and
-       args.config_json == None ):
+       args.config_json == None and not args.from_manifest ):
         print( "Attempting to autodetect config" )
         db = Path( '../../../gdl_conf.db' )
         instance = Path( '../instance.json' )
