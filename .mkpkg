@@ -1,0 +1,9 @@
+{
+  "overrides": [
+    "mods",
+    "config",
+    "scripts",
+    "structures",
+    "resources"
+  ]
+}

@@ -193,6 +193,8 @@ def getArgs():
             help='Generate the manifest.json, but not the archive' )
     parser.add_argument( '-M', '--from-manifest', action='store_true',
             help='Build from manifest without installed instance' )
+    parser.add_argument( '-C', '--dump-config', action='store_true',
+            help='Dump JSON of current options to stdout' )
     parser.add_argument( '--config-json',
             help='Path to config.json (for GDLaucher Legacy).' )
     parser.add_argument( '--instance-json',
@@ -202,7 +204,26 @@ def getArgs():
     parser.add_argument( 'overrides', nargs='*',
             help='Folders/files to include in the pack' )
 
+    cfg = Path( '.mkpkg' )
+    if cfg.exists() and cfg.stat().st_size != 0:
+        with open( cfg ) as f:
+            try:
+                cfgs = json.load( f )
+            except json.decoder.JSONDecodeError as e:
+                print( "Error in .mkpkg:", file=sys.stderr )
+                print( e, file=sys.stderr )
+                exit( 1 )
+
+            parser.set_defaults( **cfgs )
     args = parser.parse_args()
+
+    if args.dump_config:
+        v = vars( args )
+        del v['dump_config']
+        print( json.dumps( v, indent=2 ))
+        exit( 0 )
+
+
     # The following probably ought to be done in getConfig(), but oh well
     if( (args.db_path == None or args.instance_json == None) and
        args.config_json == None and not args.from_manifest ):

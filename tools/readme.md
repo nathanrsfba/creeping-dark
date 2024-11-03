@@ -113,6 +113,11 @@ Carbon), using the `--config-json`, `--instance-json`, and `--db-path` options.
 Normally mkpkg will find these on its own if launched from the instance
 directory.
 
+If a `.mkpkg` file is found in the current directory, it will be used to set
+default values for `mkpkg`. It is expected to be in JSON format: Passing the
+`-C` option to `mkpkg` will dump the current configuration (including that
+specified on the command line) to stdout in the appropriate format.
+
 pre-commit
 ----------
 A shell script that runs modmg before commit, and aborts the commit if mods.txt

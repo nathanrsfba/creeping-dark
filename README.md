@@ -340,11 +340,11 @@ mod, designed specifically for this pack. Also included is a `manifest.json`
 file, which is used to build the pack file in the form of a CurseForge pack.
 
 As of version 1.6.1.1, the pack can now be "built" from the repository using
-the included `mkpkg.py` tool in the `tools` directory. The command to build it
-will look something like this:
+the included `mkpkg.py` tool in the `tools` directory. It can be built using
+the following command:
 
 ```
-tools/mkpkg.py -M [version] mods config resources scripts structures
+tools/mkpkg.py -M
 ```
 
 This should still be considered experimental and untested.
