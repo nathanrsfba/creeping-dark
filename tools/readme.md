@@ -42,11 +42,17 @@ update the world-gen.json file:
 
 updatemods.bat
 --------------
+**Depricated.** modmg.pl performs this task now.
+
 A simple batch file to update mods.txt from the content of the mods directory.
 Superceded by modmg.pl.
 
 modmg.pl
 --------
+**Mostly depricated.** Mods are now tracked via the 'manifest.json' file. This
+tool may still be useful in combination with `pre-commit` and/or
+`post-checkout` when dealing with multiple branches with differing mod lists.
+
 A Perl script that updates the mods.txt file based on the mods in the mods/
 folder, and vice-versa. Mods removed from the mods/ folder are stored in the
 modrepo directory, to facilitate the switching of mod versions when checking
