@@ -180,6 +180,11 @@ you specify which ones to perform. This can be useful for, for example,
 recovering from a partially-failed publish operation. Run `publish` without
 options to see the list.
 
-The script also takes the option '-t', which does not create the pack, but shows
-what would have been done.
+The script also takes some other options::
+
+`-t` does not create the pack, but shows what would have been done.
+
+`-M` passes the `-M` option to mkpkg, which will create a pack file from the
+`manifest.json` file, without attepmting to inspect the gdlauncher config. This
+will publish the pack from a "fresh" clone of the repo.
 

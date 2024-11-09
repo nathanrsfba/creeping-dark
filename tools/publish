@@ -48,9 +48,10 @@ prerelease() {
 
 # End of configuration
 
-while getopts "temrTpP?" opt; do
+while getopts "tMemrTpP?" opt; do
     case $opt in
         t) test='echo';;
+        M) manifest=1;;
         e) EDIT=1;;
         m) MKPKG=1;;
         r) RENAME=1;;
@@ -61,6 +62,7 @@ while getopts "temrTpP?" opt; do
             echo "Usage: `basename "$0"` [-temrTpP] version"
             echo ""
             echo "-t        Test: Display what is to be done"
+            echo "-M        Pass -M option to mkpkg"
             echo ""
             echo "version   Version of pack to publish"
             echo ""
@@ -146,7 +148,11 @@ fi
 
 if [ $MKPKG ]; then
     echo "Creating pack file..."
-    $test tools/mkpkg.py -n "$NAME" -a "$AUTHOR" "`version`" $OVERRIDES || exit 1
+    opts=''
+    if [ $manifest ]; then
+        opts='-M'
+    fi
+    $test tools/mkpkg.py $opts -n "$NAME" -a "$AUTHOR" "`version`" $OVERRIDES || exit 1
 fi
 
 if [ $RENAME ]; then
