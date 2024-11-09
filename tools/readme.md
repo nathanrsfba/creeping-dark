@@ -174,6 +174,12 @@ The configuration functions will translate the given version number into the
 appropriate options, including release title, filename, pack metadata, Git tag,
 and prerelease status.
 
-The script also takes one option: '-t' does not create the pack, but shows
+The script takes several options to control what steps are performed. By
+default, all aforementioned functions will be performed. The options will let
+you specify which ones to perform. This can be useful for, for example,
+recovering from a partially-failed publish operation. Run `publish` without
+options to see the list.
+
+The script also takes the option '-t', which does not create the pack, but shows
 what would have been done.
 

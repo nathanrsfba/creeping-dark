@@ -11,6 +11,7 @@ EDITOR="vim"
 # Remote Git repository
 REPO="origin"
 
+
 # github release title
 title() {
     echo -n "$NAME v"
@@ -47,19 +48,48 @@ prerelease() {
 
 # End of configuration
 
-while getopts "t?" opt; do
+while getopts "temrTpP?" opt; do
     case $opt in
         t) test='echo';;
+        e) EDIT=1;;
+        m) MKPKG=1;;
+        r) RENAME=1;;
+        T) TAG=1;;
+        p) PUSH=1;;
+        P) PUBLISH=1;;
         ?)
-            echo "Usage: `basename "$0"` [-t] version"
+            echo "Usage: `basename "$0"` [-temrTpP] version"
             echo ""
             echo "-t        Test: Display what is to be done"
             echo ""
             echo "version   Version of pack to publish"
+            echo ""
+            echo "The following specify what actions to perform. By default,"
+            echo "all are performed:"
+            echo ""
+            echo "-e        Edit release notes"
+            echo "-m        Make package file"
+            echo "-r        Rename package to expected format"
+            echo "-T        Tag repo with version"
+            echo "-p        Push repo to remote"
+            echo "-P        Publish to github"
             exit
             ;;
     esac
 done
+
+if [ $EDIT$MKPKG$RENAME$TAG$PUSH$PUBLISH ]; then
+    # Some action was specified; do nothing
+    true
+else
+    # Enable everything
+    EDIT=1
+    MKPKG=1
+    RENAME=1
+    TAG=1
+    PUSH=1
+    PUBLISH=1
+fi
 
 shift $(($OPTIND - 1))
 
@@ -97,21 +127,49 @@ if [ $test ]; then
     echo "Commands that will be run:"
 fi
 
-echo "Running editor to edit release notes..."
-$test "$EDITOR" release.txt || exit 1
-
-echo "Creating pack file..."
-$test tools/mkpkg.py -n "$NAME" -a "$AUTHOR" "`version`" $OVERRIDES || exit 1
-$test mv "$pkg" "`filename`" || exit 1
-
-echo "Tagging git repo..."
-if [ "`git tag --points-at HEAD`" = "" ]; then
-    $test git tag "`tag`" || exit 1
+if [ $EDIT ]; then
+    echo "Running editor to edit release notes..."
+    if [ ! $test ]; then
+        cp release.txt release.txt.bak
+    fi
+    $test "$EDITOR" release.txt || exit 1
+    if [ ! $test ]; then
+        if ! grep -q '[^[:space:]]' release.txt; then
+            echo "Empty release notes file, cancelling"
+            mv release.txt.bak release.txt
+            exit 
+        fi
+        rm release.txt.bak
+    fi
 fi
 
-echo "Pushing repo..."
-$test git push "$REPO" "`git branch --show-current`" "`tag`"
 
-echo "Publishing to GitHub..."
-$test gh release create -t "`title`" -F release.txt "$opts" "`tag`" "`filename`" || exit 1
+if [ $MKPKG ]; then
+    echo "Creating pack file..."
+    $test tools/mkpkg.py -n "$NAME" -a "$AUTHOR" "`version`" $OVERRIDES || exit 1
+fi
+
+if [ $RENAME ]; then
+    echo "Renaming pack file..."
+    $test mv "$pkg" "`filename`" || exit 1
+fi
+
+if [ $TAG ]; then
+    echo "Tagging git repo..."
+    if [ "`git tag --points-at HEAD`" = "" ]; then
+        $test git tag "`tag`" || exit 1
+    else
+        echo "(Tag already present)"
+    fi
+fi
+
+if [ $PUSH ]; then
+    echo "Pushing repo..."
+    $test git push "$REPO" "`git branch --show-current`" "`tag`"
+fi
+
+if [ $PUBLISH ]; then
+    echo "Publishing to GitHub..."
+    $test gh release create -t "`title`" -F release.txt "$opts" "`tag`" "`filename`" || exit 1
+fi
 
