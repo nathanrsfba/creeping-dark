@@ -175,6 +175,7 @@ tinkersjei-1.2.jar
 TinkerToolLeveling-1.12.2-1.1.0.jar
 Toast Control-1.12.2-1.8.1.jar
 TombManyGraves-1.12-4.2.0.jar
+tropicraft-MC1.12.2-7.1.9.115.jar
 twilightforest-1.12.2-3.11.1021-universal.jar
 UniDict-1.12.2-3.0.10.jar
 WanionLib-1.12.2-2.9.jar
