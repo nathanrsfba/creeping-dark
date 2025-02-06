@@ -2,10 +2,7 @@
 	title: "Don't snort this",
 	icon: {
 		ForgeCaps: {
-			"astralsorcery:cap_item_amulet_holder": {
-				AS_Amulet_HolderLeast: -5987286033772693031L,
-				AS_Amulet_HolderMost: 730092477226173684L
-			}
+			"astralsorcery:cap_item_amulet_holder": {}
 		},
 		id: "forge:bucketfilled",
 		tag: {
@@ -35,10 +32,7 @@
 		type: "item",
 		items: [{
 			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {
-					AS_Amulet_HolderLeast: -5987286033772693031L,
-					AS_Amulet_HolderMost: 730092477226173684L
-				}
+				"astralsorcery:cap_item_amulet_holder": {}
 			},
 			id: "forge:bucketfilled",
 			tag: {
@@ -47,7 +41,7 @@
 			}
 		}],
 		ignore_damage: true,
-		ignore_nbt: 1b
+		ignore_nbt: 2b
 	}],
 	rewards: [{
 		uid: "58f20c7b",
