@@ -52,6 +52,7 @@ modmg.bat
 hs_err_*.log
 knownkeys.txt
 config.json
+jei_bookmarks.ini
 
 # Mods that we don't include in the zip
 /mods/*
