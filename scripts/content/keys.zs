@@ -84,9 +84,9 @@ liquidHeart.register();
 var liquidTree =
      VanillaFactory.createFluid( "spirit_essence", Color.fromHex("e5bf57"));
 liquidTree.register();
-var liquidValonite =
-     VanillaFactory.createFluid( "liquid_valonite", Color.fromHex("f2eaf2"));
-liquidValonite.register();
+// var liquidValonite =
+//      VanillaFactory.createFluid( "liquid_valonite", Color.fromHex("f2eaf2"));
+// liquidValonite.register();
 var waterKeyEssence =
      VanillaFactory.createFluid( "water_key_essence", Color.fromHex("0080c0"));
 waterKeyEssence.register();
