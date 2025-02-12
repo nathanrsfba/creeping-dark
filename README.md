@@ -93,7 +93,9 @@ Server Installation
 Questions
 ---------
 
-Q: My money disappeared!
+(a.k.a. Problems I've run into so you don't have to)
+
+Q: My money disappeared!  
 A: This seems to happen when changing dimensions. Completing a quest that gives
 money seems to restore it. It's similar to the glitch where all your XP
 disappears when you change dimensions, but magically comes back when you pick
@@ -106,7 +108,7 @@ Q: I see a console message about objects being summoned?
 A: That's a redstone mechanism I have hidden away in a utility dimension that
 recreates certain objects. You can just ignore the message.
 
-Q: The Blaze boss spatial IO isn't loading or regenerating, or the 
+Q: The Void City spatial IO isn't loading or regenerating, or the 
 'Swamp Magic' frequency isn't showing up in the entangloporter  
 A: Apparently my utility dimension gets nuked sometimes. Why? Haven't
 a goddamn clue. To fix this, try exiting your world/restarting the server a
@@ -127,6 +129,14 @@ for god knows what reason
 
 Q: Minibosses aren't spawning when running a standalone server  
 A: Edit your server.properties and enable command blocks
+
+Q: My warp ship has stopped accepting dilithium  
+A: One piece of dilithium is worth 500 units of fuel in the warp core, and it
+can hold a maximum of 1000 units. If there is more than 500 in the system, it
+will not accept any further fuel. If you're finding yourself unable to warp to
+the planet you want due to lack of fuel, the workaround is simple (but stupid):
+Warp to a planet in another star system first, as interstellar jumps appear to
+always cost 500 units.
 
 Changes in v1.6.1.1
 -------------------
