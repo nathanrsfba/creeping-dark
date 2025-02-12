@@ -20,28 +20,34 @@ exceptions. Once you've "unlocked" a mod, it works the way it always has.
 Installation
 ------------
 
+This following is subject to change soon, as the pack is currently in the
+process of being submitted to Curseforge. Finally.
+
+For now:
+
 Creeping Dark officially supports GDLauncher as the preferred launcher
 platform, though it can be installed with the official Curse launcher as well.
 
 To install with GDLauncher:
 
-1. Install and launch [GDLauncher](https://gdevs.io/)
-2. Click the [+] button
-3. Select "Import Zip"
-4. Copy the URL of the latest version of the .zip file from the
-   [releases](https://github.com/nathanrsfba/creeping-dark/releases) 
-   page, and paste it in to GDLauncher
-5. GDLauncher may need to go through a few extra steps to install a few mods.
+1. Download one of the files from the 
+   [releases](https://github.com/nathanrsfba/creeping-dark/releases) page
+2. Install and launch [GDLauncher](https://gdevs.io/)
+3. Click the "+ Add Instance" button
+4. Select the "Import" tab
+5. Click the "CurseForge Zip" button
+6. Point it to the file you downloaded in step 1
+7. GDLauncher may need to go through a few extra steps to install a few mods.
    Just follow the prompts and let it do its thing.
 
 To install with the Curse launcher:
 
-1. Install and launch the [CurseForge App](https://download.curseforge.com/)
-2. Download one of the files from the 
+1. Download one of the files from the 
+2. Install and launch the [CurseForge App](https://download.curseforge.com/)
    [releases](https://github.com/nathanrsfba/creeping-dark/releases) page
-3. Click the "Create Custom Profile" button
-4. Click "import a previously created profile"
-5. Point it to the file you downloaded in step 2
+3. Click the "Import" button
+4. Select "Choose .zip file"
+5. Point it to the file you downloaded in step 1
 
 Server Installation
 -------------------
@@ -136,7 +142,19 @@ can hold a maximum of 1000 units. If there is more than 500 in the system, it
 will not accept any further fuel. If you're finding yourself unable to warp to
 the planet you want due to lack of fuel, the workaround is simple (but stupid):
 Warp to a planet in another star system first, as interstellar jumps appear to
-always cost 500 units.
+always cost 500 units. Note that this is *mostly* fixed since 1.6.1.1, though
+some *really* far out planets might still need this workaround.
+
+Changes in v1.6.2
+-----------------
+
+* Updated mods to latest version
+* Fixed some bugs in the Void City dungeon
+* Fixed a longstanding issue where the utility dimension didn't chunkload on
+  the first world load, and subsequently, the things it does didn't work until
+  a reload. Now, in the unlikely event that someone progresses far enough in a
+  single session for this to matter, it will work.
+* Various insignificant tweaks
 
 Changes in v1.6.1.1
 -------------------
