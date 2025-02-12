@@ -56,7 +56,6 @@ jei_bookmarks.ini
 
 # Mods that we don't include in the zip
 /mods/*
-!/mods/plaguesky-*.jar
 
 # wtf?
 .fuse_hidden*
