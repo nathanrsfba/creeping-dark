@@ -20,18 +20,24 @@ exceptions. Once you've "unlocked" a mod, it works the way it always has.
 Installation
 ------------
 
-This following is subject to change soon, as the pack is currently in the
-process of being submitted to Curseforge. Finally.
+Well, I finally got off my ass and submitted Creeping Dark to CurseForge! You can find it here:
 
-For now:
+https://www.curseforge.com/minecraft/modpacks/creeping-dark
+
+You can also search for "Creeping Dark" in the official CurseForge launcher.
+
+You'll also find betas and older versions on the GitHub releases page:
+
+https://github.com/nathanrsfba/creeping-dark/releases
+
+### Manual Installation ###
 
 Creeping Dark officially supports GDLauncher as the preferred launcher
 platform, though it can be installed with the official Curse launcher as well.
 
 To install with GDLauncher:
 
-1. Download one of the files from the 
-   [releases](https://github.com/nathanrsfba/creeping-dark/releases) page
+1. Download one of the files from one of the above links
 2. Install and launch [GDLauncher](https://gdevs.io/)
 3. Click the "+ Add Instance" button
 4. Select the "Import" tab
@@ -42,15 +48,14 @@ To install with GDLauncher:
 
 To install with the Curse launcher:
 
-1. Download one of the files from the 
+1. Download one of the files from one of the above links
 2. Install and launch the [CurseForge App](https://download.curseforge.com/)
    [releases](https://github.com/nathanrsfba/creeping-dark/releases) page
 3. Click the "Import" button
 4. Select "Choose .zip file"
 5. Point it to the file you downloaded in step 1
 
-Server Installation
--------------------
+### Server Installation ###
 
 1. Download Minecraft Forge v14.23.5.2860 and install it into a folder
 2. From the command line, run the server and accept the EULA.
