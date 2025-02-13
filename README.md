@@ -149,6 +149,7 @@ Changes in v1.6.2
 -----------------
 
 * Updated mods to latest version
+* Added Thaumic Tinkerer: Thaumcraft gadgets, including an item for sharing research
 * Fixed some bugs in the Void City dungeon
 * Fixed a longstanding issue where the utility dimension didn't chunkload on
   the first world load, and subsequently, the things it does didn't work until
