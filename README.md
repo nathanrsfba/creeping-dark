@@ -57,6 +57,14 @@ To install with the Curse launcher:
 
 ### Server Installation ###
 
+There is now an official server pack on the CurseForge project page:
+
+https://www.curseforge.com/minecraft/modpacks/creeping-dark/files/6231825
+
+A README is included in the server pack with instructions on using it.
+
+To create a server manually:
+
 1. Download Minecraft Forge v14.23.5.2860 and install it into a folder
 2. From the command line, run the server and accept the EULA.
    The command will look something like the following:
@@ -82,7 +90,9 @@ To install with the Curse launcher:
 
    * Controlling
    * CTM
+   * DefaultOptions
    * Ding
+   * FancyMenu
    * jeiintegration
    * JustEnoughResources
    * LLOverlayReloaded
