@@ -188,3 +188,52 @@ The script also takes some other options::
 `manifest.json` file, without attepmting to inspect the gdlauncher config. This
 will publish the pack from a "fresh" clone of the repo.
 
+
+mkserverpack.sh
+---------------
+
+This tool will create the official server pack for uploading to CurseForge.
+
+This requires a populated `mods` folder, so it can't build a pack fresh out of
+the repository. This can be provided by passing the path to the `mods` folder
+in a client install using the `-m` option. Copying this script and the
+`serverfiles` directory to a fresh client install and running it there should
+work as well.
+
+The script will copy all the required server files to a staging directory and
+then zip them up. The files copied include everything in the `serverfiles`
+directory, the folders required for the pack, and the mods, excluding mods that
+are client-side only. The variables at the top of the script will control
+various aspects of this process.
+
+Usage:
+```
+$0 [-m MODDIR] [-n PACKNAME] [-v VERSION] [-s SERVERVERSION]
+          [-f FOLDERS] [-x EXCLUDE] [-t TMP] [-d INNERDIR] [-k] [-z] [output]
+```
+
+* MODDIR: Path to a populated Creeping Dark mods folder. Defaults to `./mods`
+* PACKNAME: Name of pack. This should be `Creeping-Dark` (the default), unless
+  you're repurposing this script for your own use
+* VERSION: Pack version.
+* SERVERVERSION: Server pack version. Bump this when a new server pack is
+  released for the same Creeping Dark version.
+* FOLDERS: Space-separated list of folders to include. This is the same set as
+  used when generating the CurseForge clientside pack, which is the default.
+* EXCLUDE: Space-separated list of mods to exclude. This will exclude any mod
+  whose filename starts with one of these strings followed by a space, hyphen,
+  or underscore. The default settings should normally contain the appropriate
+  set for the current version of the pack.
+* TMP: Temporary direcory for staging. Default is `./tmp`
+* INNERDIR: Directory to place files in. The `zip` file created by this tool
+  will contain a single folder, with this name, containing all the files.
+  Default is `cdserver`.
+* output: Directory and/or filename where `zip` file will be saved. If this
+  exists and is a directory, the file will be placed in that directory, with a
+  filename generated from the values of PACKNAME, VERSION, and SERVERVERSION.
+  Otherwise, the file will be created at the given path. Default is the current
+  directory.
+
+* `-k`: Keep temporary directory when done.
+* `-z`: Stage the files in the temporary directory but don't zip them up.
+  Implies `-k`
