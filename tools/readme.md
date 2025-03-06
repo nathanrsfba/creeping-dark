@@ -203,8 +203,8 @@ work as well.
 The script will copy all the required server files to a staging directory and
 then zip them up. The files copied include everything in the `serverfiles`
 directory, the folders required for the pack, and the mods, excluding mods that
-are client-side only. The variables at the top of the script will control
-various aspects of this process.
+are client-side only. The `serverfiles/options.sh` will control various aspects
+of this process.
 
 Usage:
 ```
@@ -212,10 +212,11 @@ $0 [-m MODDIR] [-n PACKNAME] [-v VERSION] [-s SERVERVERSION]
           [-f FOLDERS] [-x EXCLUDE] [-t TMP] [-d INNERDIR] [-k] [-z] [output]
 ```
 
-* MODDIR: Path to a populated Creeping Dark mods folder. Defaults to `./mods`
+* MODDIR: Path to a populated Creeping Dark mods folder. Defaults to `./mods`.
 * PACKNAME: Name of pack. This should be `Creeping-Dark` (the default), unless
-  you're repurposing this script for your own use
-* VERSION: Pack version.
+  you're repurposing this script for your own use.
+* VERSION: Pack version. The default should match the version of the pack
+  represented by the repository.
 * SERVERVERSION: Server pack version. Bump this when a new server pack is
   released for the same Creeping Dark version.
 * FOLDERS: Space-separated list of folders to include. This is the same set as

@@ -18,6 +18,10 @@ MODDIR="./mods"
 # Staging directory
 TMP="./tmp"
 
+if [ -e serverfiles/options.sh ]; then
+    . serverfiles/options.sh
+fi
+
 main() {
     while getopts "m:kzn:v:s:f:x:t:hd:" arg; do
         case $arg in
@@ -60,7 +64,14 @@ main() {
     mkdir -p "$STAGE" || exit 1
 
     echo "Copying server pack files..."
-    cp -a serverfiles/*  "$STAGE"
+    for f in serverfiles/*; do
+        base="`basename "$f"`"
+        if [ $base == "README.txt" ]; then
+            grep -v "^!" "$f" > "$STAGE/$base"
+        elif [ $base != 'options.sh' ]; then
+            cp -a $f "$STAGE"
+        fi
+    done
 
     for f in $FOLDERS; do
         if [ "$f" != "mods" ]; then

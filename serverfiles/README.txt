@@ -1,3 +1,12 @@
+! This directory contains files used to create the official server pack for
+! curseforge.
+! 
+! See the tools/mkserverpack.sh file and related documentation in
+! tools/readme.md.
+!
+! Everything is this file not preceeded by a ! will be copied into the
+! README.txt file in the final pack
+!
 Creeping Dark Server Pack
 =========================
 
