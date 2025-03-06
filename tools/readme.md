@@ -206,6 +206,10 @@ directory, the folders required for the pack, and the mods, excluding mods that
 are client-side only. The `serverfiles/options.sh` will control various aspects
 of this process.
 
+Note that the `serverfiles` folders gets copied *last*, so it can be used to,
+say, override configuration files that need to be changed for servers.
+
+
 Usage:
 ```
 $0 [-m MODDIR] [-n PACKNAME] [-v VERSION] [-s SERVERVERSION]

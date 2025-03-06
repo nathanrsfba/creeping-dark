@@ -63,16 +63,6 @@ main() {
     STAGE="$TMP/$SERVERDIR"
     mkdir -p "$STAGE" || exit 1
 
-    echo "Copying server pack files..."
-    for f in serverfiles/*; do
-        base="`basename "$f"`"
-        if [ $base == "README.txt" ]; then
-            grep -v "^!" "$f" > "$STAGE/$base"
-        elif [ $base != 'options.sh' ]; then
-            cp -a $f "$STAGE"
-        fi
-    done
-
     for f in $FOLDERS; do
         if [ "$f" != "mods" ]; then
             echo "Copying $f..."
@@ -86,6 +76,16 @@ main() {
         cp "$MODDIR/$f" "$STAGE/mods" || exit 1
     done
     
+    echo "Copying server pack files..."
+    for f in serverfiles/*; do
+        base="`basename "$f"`"
+        if [ $base == "README.txt" ]; then
+            grep -v "^!" "$f" > "$STAGE/$base"
+        elif [ $base != 'options.sh' ]; then
+            cp -a $f "$STAGE"
+        fi
+    done
+
     if [ $NOZIP ]; then
         return
     fi
