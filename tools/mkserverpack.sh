@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Pack name
-PACKNAME="Creeping-Dark"
+PACKNAME="Creeping-Dark-Server"
 # Pack version
 PACKVER="1.6.2"
 # Server pack version
