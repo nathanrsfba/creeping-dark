@@ -109,7 +109,7 @@ You can specify the `-M` option to build a pack file from the manifest file,
 without an installed instance present. This is mainly intended for building the
 pack fresh from the repo without having to install it first -- is it not
 intended to be used on an installed instance. It will not attempte to update
-the manifest from either the content of the `mods` folder, nor the GDLauncher
+the manifest from either the content of the `mods` folder, nor the launcher
 config.  With this option, the `mods` folder should be empty, except for mods
 that are intended to be included in the built pack file. 
 
@@ -118,6 +118,10 @@ Legacy), or the `instance.json` and `gdl_conf.db` files (for GDLauncher
 Carbon), using the `--config-json`, `--instance-json`, and `--db-path` options.
 Normally mkpkg will find these on its own if launched from the instance
 directory.
+
+The Curseforge launcher is now supported, experimentally. It will read the
+`minecraftinstance.json` file for configuraiton information, the path to which
+may be explicitly specified with `--minecraftinstance-ison`.
 
 If a `.mkpkg` file is found in the current directory, it will be used to set
 default values for `mkpkg`. It is expected to be in JSON format: Passing the

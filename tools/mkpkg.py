@@ -94,15 +94,18 @@ def getConfig( args ):
     modFiles = {}
 
     if( (args.db_path == None or args.instance_json == None) and
-       args.config_json == None and not args.from_manifest ):
+       args.config_json == None and args.minecraftinstance_json == None and
+       not args.from_manifest ):
         if not detectConfig( args ):
-            print( "Couldn't find GDLauncher configs" )
+            print( "Couldn't find launcher configs" )
             exit( 1 )
 
     if args.config_json:
         return getConfigClassic( args )
-    else:
+    elif args.db_path:
         return getConfigCarbon( args )
+    else:
+        return getConfigCurseforge( args )
 
 def detectConfig( args ):
     """Detect which launcher is in use.
@@ -117,6 +120,7 @@ def detectConfig( args ):
     db = Path( '../../../gdl_conf.db' )
     instance = Path( '../instance.json' )
     config = Path( 'config.json' )
+    minecraftinstance = Path( 'minecraftinstance.json' )
 
     if db.exists() and instance.exists():
         print( "Detected GDL Carbon" )
@@ -125,6 +129,9 @@ def detectConfig( args ):
     elif config.exists():
         print( "Detected GDL Legacy" )
         args.config_json = config
+    elif minecraftinstance.exists():
+        print( "Detected Curseforge launcher" )
+        args.minecraftinstance_json = minecraftinstance
     else:
         return False
 
@@ -200,6 +207,25 @@ def getConfigCarbon( args ):
 
     return (config, modFiles)
 
+def getConfigCurseforge( args ):
+    """Get configuration from official Curseforge Client"""
+
+    modFiles = {}
+
+    with open( args.minecraftinstance_json ) as f:
+        config = json.load( f )
+
+    for mod in config['installedAddons']:
+        if( 'addonID' in mod ):
+            modInfo = ModInfo(
+                    mod['fileNameOnDisk'], mod['addonID'], mod['installedFile']['id'] )
+            modFiles[modInfo.fileName] = modInfo
+
+    config = ConfigInfo( config['baseModLoader']['minecraftVersion'], 
+                        config['baseModLoader']['name'] )
+
+    return (config, modFiles)
+
 def createManifest():
     manifest = {
             "minecraft": {
@@ -251,6 +277,8 @@ def getArgs():
             help='Path to instance.json (for GDLaucher Carbon).' )
     parser.add_argument( '--db-path',
             help='Path to gdl_conf.db (for GDLaucher Carbon).' )
+    parser.add_argument( '--minecraftinstance-json',
+            help='Path to minecraftinstance.json (for Curseforge launcher)' )
     parser.add_argument( 'overrides', nargs='*',
             help='Folders/files to include in the pack' )
 
