@@ -93,10 +93,43 @@ def getConfig( args ):
 
     modFiles = {}
 
+    if( (args.db_path == None or args.instance_json == None) and
+       args.config_json == None and not args.from_manifest ):
+        if not detectConfig( args ):
+            print( "Couldn't find GDLauncher configs" )
+            exit( 1 )
+
     if args.config_json:
         return getConfigClassic( args )
     else:
         return getConfigCarbon( args )
+
+def detectConfig( args ):
+    """Detect which launcher is in use.
+
+    args: Arguments, as returned by ArgumentParser. Will be modified with paths
+    to the relevant launcher config files.
+
+    Return: Success as boolean
+    """
+
+    print( "Attempting to autodetect config" )
+    db = Path( '../../../gdl_conf.db' )
+    instance = Path( '../instance.json' )
+    config = Path( 'config.json' )
+
+    if db.exists() and instance.exists():
+        print( "Detected GDL Carbon" )
+        args.instance_json = instance
+        args.db_path = db
+    elif config.exists():
+        print( "Detected GDL Legacy" )
+        args.config_json = config
+    else:
+        return False
+
+    return True
+
 
 def getConfigClassic( args ):
     """Get configuration from GDLauncher Classic"""
@@ -240,25 +273,6 @@ def getArgs():
         print( json.dumps( v, indent=2 ))
         exit( 0 )
 
-
-    # The following probably ought to be done in getConfig(), but oh well
-    if( (args.db_path == None or args.instance_json == None) and
-       args.config_json == None and not args.from_manifest ):
-        print( "Attempting to autodetect config" )
-        db = Path( '../../../gdl_conf.db' )
-        instance = Path( '../instance.json' )
-        config = Path( 'config.json' )
-
-        if db.exists() and instance.exists():
-            print( "Detected GDL Carbon" )
-            args.instance_json = instance
-            args.db_path = db
-        elif config.exists():
-            print( "Detected GDL Legacy" )
-            args.config_json = config
-        else:
-            print( "Couldn't find GDLauncher configs" )
-            exit( 1 )
 
     return args
 
