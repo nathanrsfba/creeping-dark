@@ -9,6 +9,9 @@ from pathlib import Path
 from collections import namedtuple
 import sqlite3
 
+ModInfo = namedtuple( 'ModInfo', ('fileName', 'projectID', 'fileID') )
+ConfigInfo = namedtuple( 'ConfigInfo', ('mcVersion', 'loader') )
+    
 def main():
     args = getArgs()
     keep = args.from_manifest
@@ -88,65 +91,79 @@ def getConfig( args ):
     Cabon or Legacy.
     """
 
-    ModInfo = namedtuple( 'ModInfo', ('fileName', 'projectID', 'fileID') )
-    ConfigInfo = namedtuple( 'ConfigInfo', ('mcVersion', 'loader') )
     modFiles = {}
 
     if args.config_json:
-        with open( args.config_json ) as f:
-            config = json.load( f )
-
-        for mod in config['mods']:
-            if( 'projectID' in mod ):
-                modInfo = ModInfo(
-                        mod['fileName'], mod['projectID'], mod['fileID'] )
-                modFiles[modInfo.fileName] = modInfo
-
-        loader = config['loader']
-        (mcver, ldver) = loader['loaderVersion'].split( '-' )
-        loaderStr = f"{loader['loaderType']}-{ldver}"
-        config = ConfigInfo( mcver, loaderStr )
+        return getConfigClassic( args )
     else:
-        with open( args.instance_json ) as f:
-            config = json.load( f )
-        loader = config["game_configuration"]["version"]["modloaders"][0]
-        (mcver, ldver) = loader['version'].split( '-' )
-        loaderStr = f"{loader['type'].lower()}-{ldver}"
-        config = ConfigInfo( mcver, loaderStr )
+        return getConfigCarbon( args )
 
-        # A note on how GDLauncher Carbon stores mod information:
-        # Under Legacy, the list of mods was stored in the config.json file.
-        # This included the filename, project ID and file ID for each mod.
-        # In Carbon, this is stored in the GDLauncher config, which is in
-        # `gdl_conf.db` in the `data` directory.
-        #
-        # This is a sqlite3 database which contains most of the GDL config.
-        # Of note here is the `ModFileCache` table, which lists each mod file,
-        # along with a metadata ID. Also of note is the `CurseForgeModCache`
-        # table, which contains the project ID and file ID of the mod on
-        # curseforge; it also contains a metadata ID entry, which will match
-        # the entry in ModFileCache.
-        #
-        # We use the following SQL query to grab the information out of these
-        # tables, and build a list of all mod files that the GDL install is
-        # aware of -- basically every file in every installed instance.
-        #
-        # The rest of the configuration for individual instances is stored in
-        # the `instance.json` file in individual instance folders.
+def getConfigClassic( args ):
+    """Get configuration from GDLauncher Classic"""
 
-        con = sqlite3.connect( args.db_path )
-        cur = con.cursor()
-        res = cur.execute( """
-                          SELECT ModFileCache.filename,
-                          CurseForgeModCache.projectId,
-                          CurseForgeModCache.fileId
-                          FROM ModFileCache
-                          JOIN CurseForgeModCache
-                          ON ModFileCache.metadataId = CurseForgeModCache.metadataId;
-                          """ )
-        for data in res:
-            info = ModInfo( *data )
-            modFiles[info.fileName] = info
+    modFiles = {}
+
+    with open( args.config_json ) as f:
+        config = json.load( f )
+
+    for mod in config['mods']:
+        if( 'projectID' in mod ):
+            modInfo = ModInfo(
+                    mod['fileName'], mod['projectID'], mod['fileID'] )
+            modFiles[modInfo.fileName] = modInfo
+
+    loader = config['loader']
+    (mcver, ldver) = loader['loaderVersion'].split( '-' )
+    loaderStr = f"{loader['loaderType']}-{ldver}"
+    config = ConfigInfo( mcver, loaderStr )
+
+    return (config, modFiles)
+
+def getConfigCarbon( args ):
+    """Get configuration from GDLauncher Carbon"""
+
+    modFiles = {}
+
+    with open( args.instance_json ) as f:
+        config = json.load( f )
+    loader = config["game_configuration"]["version"]["modloaders"][0]
+    (mcver, ldver) = loader['version'].split( '-' )
+    loaderStr = f"{loader['type'].lower()}-{ldver}"
+    config = ConfigInfo( mcver, loaderStr )
+
+    # A note on how GDLauncher Carbon stores mod information:
+    # Under Legacy, the list of mods was stored in the config.json file.
+    # This included the filename, project ID and file ID for each mod.
+    # In Carbon, this is stored in the GDLauncher config, which is in
+    # `gdl_conf.db` in the `data` directory.
+    #
+    # This is a sqlite3 database which contains most of the GDL config.
+    # Of note here is the `ModFileCache` table, which lists each mod file,
+    # along with a metadata ID. Also of note is the `CurseForgeModCache`
+    # table, which contains the project ID and file ID of the mod on
+    # curseforge; it also contains a metadata ID entry, which will match
+    # the entry in ModFileCache.
+    #
+    # We use the following SQL query to grab the information out of these
+    # tables, and build a list of all mod files that the GDL install is
+    # aware of -- basically every file in every installed instance.
+    #
+    # The rest of the configuration for individual instances is stored in
+    # the `instance.json` file in individual instance folders.
+
+    con = sqlite3.connect( args.db_path )
+    cur = con.cursor()
+    res = cur.execute( """
+                      SELECT ModFileCache.filename,
+                      CurseForgeModCache.projectId,
+                      CurseForgeModCache.fileId
+                      FROM ModFileCache
+                      JOIN CurseForgeModCache
+                      ON ModFileCache.metadataId = CurseForgeModCache.metadataId;
+                      """ )
+    for data in res:
+        info = ModInfo( *data )
+        modFiles[info.fileName] = info
 
     return (config, modFiles)
 
