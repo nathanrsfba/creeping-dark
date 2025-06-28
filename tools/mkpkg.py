@@ -7,6 +7,7 @@ import os
 from zipfile import ZipFile, ZIP_DEFLATED
 from pathlib import Path
 from collections import namedtuple
+from re import search
 import sqlite3
 
 ModInfo = namedtuple( 'ModInfo', ('fileName', 'projectID', 'fileID') )
@@ -44,7 +45,7 @@ def main():
     if args.version: manifest['version'] = args.version
         
     print( "Gathering list of files..." )
-    overrides = fileList( *(args.overrides ))
+    overrides = fileList( *(args.overrides), ignore=args.exclude )
 
     if not keep:
         files = overrides
@@ -244,13 +245,17 @@ def createManifest():
 
     return manifest
 
-def fileList( *args ):
+def fileList( *args, ignore=None ):
     files = []
     for arg in args:
         if( os.path.isdir( arg )):
             for d in os.walk( arg ):
                 for f in d[2]:
-                    files.append( os.path.join( d[0], f ))
+                    # print( f"{f} =~ {ignore}", file=sys.stderr )
+                    if ignore and search( ignore, f ):
+                        print( "Ignoring", f )
+                    else:
+                        files.append( os.path.join( d[0], f ))
         else:
             files.append( arg )
 
@@ -271,6 +276,9 @@ def getArgs():
             help='Build from manifest without installed instance' )
     parser.add_argument( '-C', '--dump-config', action='store_true',
             help='Dump JSON of current options to stdout' )
+    parser.add_argument( '-x', '--exclude', metavar='REGEX',
+            help='Ignore files matching REGEX' )
+    
     parser.add_argument( '--config-json',
             help='Path to config.json (for GDLaucher Legacy).' )
     parser.add_argument( '--instance-json',
