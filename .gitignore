@@ -68,7 +68,7 @@ forge-*.jar
 minecraft_server.*.jar
 ops.json
 server.bat
-server.properties
+/server.properties
 whitelist.json
 /world
 
