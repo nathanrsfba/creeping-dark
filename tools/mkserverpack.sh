@@ -74,6 +74,7 @@ main() {
     mkdir -p "$STAGE/mods" || exit 1
     modlist | while read f; do
         cp "$MODDIR/$f" "$STAGE/mods" || exit 1
+        chmod a-x "$STAGE/mods/$f" > /dev/null 2>&1
     done
     
     echo "Copying server pack files..."
