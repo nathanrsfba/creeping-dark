@@ -142,7 +142,7 @@ help() {
 	output: Directory and/or filename of zip file
 
 	-k: Keep temporary directory when done
-	-z: No not create zip file
+	-z: Do not create zip file
 	END
 
     exit
