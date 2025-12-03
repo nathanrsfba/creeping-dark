@@ -1,15 +1,15 @@
 #!/bin/sh
 
 # Name of the pack
-NAME="Creeping Dark"
+NAME="${NAME:-Creeping Dark}"
 # Pack author (ideally, Curse username)
-AUTHOR="NathanRsfba"
+AUTHOR="${AUTHOR:-NathanRsfba}"
 # Folders to include
-OVERRIDES="mods config scripts structures resources"
+OVERRIDES="${OVERRIDES:-mods config scripts structures resources}"
 # Editor to write release notes in
-EDITOR="vim"
+EDITOR="${EDITOR:-vim}"
 # Remote Git repository
-REPO="origin"
+REPO="${REPO:-origin}"
 
 
 # github release title
