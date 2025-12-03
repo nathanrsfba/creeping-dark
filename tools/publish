@@ -103,7 +103,7 @@ fi
 version="$1"
 pkg="$NAME-`version`.zip"
 if prerelease; then
-    opts="-p"
+    propts="-p"
 fi
 
 if [ $test ]; then
@@ -176,6 +176,6 @@ fi
 
 if [ $PUBLISH ]; then
     echo "Publishing to GitHub..."
-    $test gh release create -t "`title`" -F release.txt "$opts" "`tag`" "`filename`" || exit 1
+    $test gh release create -t "`title`" -F release.txt $propts "`tag`" "`filename`" || exit 1
 fi
 
