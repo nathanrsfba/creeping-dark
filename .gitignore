@@ -54,6 +54,7 @@ knownkeys.txt
 config.json
 jei_bookmarks.ini
 /.curseclient
+/modlist.html
 
 # Mods that we don't include in the zip
 /mods/*
