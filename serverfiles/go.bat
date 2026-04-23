@@ -8,6 +8,7 @@ set MCVER=1.12.2
 set FORGEVER=14.23.5.2860
 set FORGEURL=https://maven.minecraftforge.net/net/minecraftforge/forge/%MCVER%-%FORGEVER%/forge-%MCVER%-%FORGEVER%-installer.jar
 
+if exist go-opts.bat call go-opts.bat
 if "%JAVAEXE%" == "" set JAVAEXE=java
 
 set INSTALLER=forge-%MCVER%-%FORGEVER%-installer.jar
@@ -44,4 +45,5 @@ echo An error occurred, exiting
 
 :end
 echo.
+if exist go-exit.bat call go-exit.bat
 pause

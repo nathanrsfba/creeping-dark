@@ -11,6 +11,10 @@ FORGEURL="https://maven.minecraftforge.net/net/minecraftforge/forge/$MCVER-$FORG
 INSTALLER="forge-$MCVER-$FORGEVER-installer.jar"
 SERVER="forge-$MCVER-$FORGEVER.jar"
 
+if [ -e go-opts.sh ]; then
+    . ./go-opts.sh || exit 1
+fi
+
 JAVAEXE=${JAVAEXE:-java}
 
 if ! which "$JAVAEXE" > /dev/null 2>&1; then
@@ -46,7 +50,13 @@ fi
 # Run the server
 echo "Starting server..."
 "$JAVAEXE" -jar forge-$MCVER-$FORGEVER.jar nogui
+STATUS=$?
 
 echo ""
-echo "Server exited. To restart, run:"
+echo "Server exited with status $STATUS. To restart, run:"
 echo "$0"
+
+if [ -e go-exit.sh ]; then
+   . ./go-exit.sh || exit 1
+fi
+
