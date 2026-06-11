@@ -11,5 +11,5 @@ recipes.addShaped( "beaconfromkey", beacon, [
 [obsidian, obsidian, obsidian]
 ] );
 
-mods.thermalexpansion.Pulverizer.addRecipe( beacon, key, 400 );
+mods.thermalexpansion.Pulverizer.addRecipe( key, beacon, 400 );
 
