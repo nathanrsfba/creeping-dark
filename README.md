@@ -57,11 +57,8 @@ To install with the Curse launcher:
 
 ### Server Installation ###
 
-There is now an official server pack on the CurseForge project page:
-
-https://www.curseforge.com/minecraft/modpacks/creeping-dark/files/6231825
-
-A README is included in the server pack with instructions on using it.
+There is now an official server pack on the CurseForge project page. A README
+is included in the server pack with instructions on using it.
 
 To create a server manually:
 
@@ -159,6 +156,16 @@ the planet you want due to lack of fuel, the workaround is simple (but stupid):
 Warp to a planet in another star system first, as interstellar jumps appear to
 always cost 500 units. Note that this is *mostly* fixed since 1.6.1.1, though
 some *really* far out planets might still need this workaround.
+
+Changes in v1.6.3
+-----------------
+
+This is a minor update with just some small tweaks and fixes.
+
+* Updated all mods
+* Removed Thorium-232 blocks due to recipe conflict
+* Beacon can now be crafted from the iron key
+* Iron key can be reclaimed by pulverizing beacon
 
 Changes in v1.6.2
 -----------------
