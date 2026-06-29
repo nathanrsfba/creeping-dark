@@ -4,7 +4,7 @@
 # Pack name
 PACKNAME="Creeping-Dark"
 # Pack version
-PACKVER="1.6.2"
+PACKVER="1.6.3"
 # Server pack version
 SERVERVER="1"
 # Name of directory within zip to place files
